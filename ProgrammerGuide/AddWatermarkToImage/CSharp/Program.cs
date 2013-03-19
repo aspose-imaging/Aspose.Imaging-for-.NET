@@ -32,7 +32,7 @@ namespace AddWatermarkToImage
                 brush.Color = Color.Black;
                 brush.Opacity = 100;
 
-                //Draw a String using the SolidBrush object and Font, at specific Point
+                //Draw a String using the SolidBrush object and Font, at specific Point.
                 graphics.DrawString("Aspose.Imaging for .Net", font, brush, new PointF(image.Width / 2, image.Height / 2));
 
                 // save the image with changes.
