@@ -21,7 +21,7 @@ namespace AddWatermarkToImage
             //Create an instance of Image and load an existing image.
             using (Image image = Image.Load(dataDir + "sample.bmp"))
             {
-                //Create and initialize an instance of Graphics class
+                //Create and initialize an instance of Graphics class.
                 Graphics graphics = new Graphics(image);
 
                 //Creates an instance of Font
