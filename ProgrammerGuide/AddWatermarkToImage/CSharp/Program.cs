@@ -27,7 +27,7 @@ namespace AddWatermarkToImage
                 //Creates an instance of Font.
                 Aspose.Imaging.Font font = new Aspose.Imaging.Font("Times New Roman", 16, FontStyle.Bold);
 
-                //Create an instance of SolidBrush and set its various properties
+                //Create an instance of SolidBrush and set its various properties.
                 Aspose.Imaging.Brushes.SolidBrush brush = new Aspose.Imaging.Brushes.SolidBrush();
                 brush.Color = Color.Black;
                 brush.Opacity = 100;
