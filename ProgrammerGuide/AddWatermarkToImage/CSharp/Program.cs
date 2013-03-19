@@ -24,7 +24,7 @@ namespace AddWatermarkToImage
                 //Create and initialize an instance of Graphics class.
                 Graphics graphics = new Graphics(image);
 
-                //Creates an instance of Font
+                //Creates an instance of Font.
                 Aspose.Imaging.Font font = new Aspose.Imaging.Font("Times New Roman", 16, FontStyle.Bold);
 
                 //Create an instance of SolidBrush and set its various properties
