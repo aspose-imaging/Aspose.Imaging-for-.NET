@@ -183,6 +183,76 @@ When the GraphicsPath has been fully described, use the corresponding Graphics c
             </Example>
           </Examples>
         </Folder>
+        <Folder>
+          <Title>Drawing Shapes</Title>
+          <Description>This section includes examples related to following topics:
+
+- Drawing Arc
+- Drawing Bezier
+- Drawing Ellipse
+- Drawing Lines
+- Drawing Rectangle</Description>
+          <FolderName>DrawingShapes</FolderName>
+          <Order>5</Order>
+          <Examples>
+            <Example>
+              <Title>Drawing Arc</Title>
+              <Description>In this example of drawing shape series, we will draw the Arc shape on the Image surface. We will use DrawArc method of Graphics to demonstrate the operation on a BMP image.
+
+First, we will create an object of the BMPOptions class from Aspose.Imaging.ImageOptions namespace and set its various properties. The most important property is the Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class to create a new BMP image. Once the image has been created, we will use the Clear method exposed by the Graphics class to set its background color.
+
+The DrawArc method of the Graphics class is used to draw the Arc shape on an image surface. DrawsArc represent a portion of an ellipse specified by the rectangle structure or pair of the coordinates. This method has several overloads accepting the instances of the Pen classes and Rectangle/RectangleF structure or a pair of the coordinates, a width, and a height as arguments.</Description>
+              <FolderName>DrawingArc</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Drawing Arc</DisplayName>
+                <Url>Drawing+Arc</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputarc.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Ellipse</Title>
+              <Description>In this example we will use Graphics class to draw the ellipse shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draws ellipse shape on the Image surface using DrawEllipse method exposed by Graphics class. First, we will create an object of the BmpOptions class from Aspose.Imaging.ImageOptions namespace and set its various properties e.g. Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class along with height and width arguments.
+
+After creating image, we will create and initialize Graphics class object and set image background color using the Clear method of the Graphics class. The DrawEllipse method of the Graphics class is used to draw ellipse shape on an image surface specified by the bounding rectangle structure. This method has several overloads accepting the instances of the Pen and Rectangle/RectangleF classes or a pair of coordinates, a height, and a width as arguments. The Pen Class defines an object used to draw lines, curves and figures. The Pen class has several overloaded constructors to draw lines with specified color, width &amp; brush. The Rectangle class stores a set of four integers that represent the location and size of a rectangle. The Rectangle class has several overloaded constructors to draw the rectangle structure with specified size and location.</Description>
+              <FolderName>DrawingEllipse</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Drawing Ellipse</DisplayName>
+                <Url>Drawing+Ellipse</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Lines</Title>
+              <Description>This example uses Graphics class to draw the line shapes on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draws lines on the Image surface using DrawLine method exposed by Graphics class. First, we will create an instance of FileSteram and then we will create an object of the BmpOptions class from Aspose.Imaging. ImageOptions namespace and set its various properties. The most important property is the Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class along with height and width parameters.
+
+Once the image has been created, we will use the Clear method exposed by the Graphics class to set its background color. The DrawLine method of the Graphics class is used to draw a line on an image connecting two point structures. This method has several overloads accepting the instance of Pen class and coordinates pairs of points or Point/PointF structures as arguments. The Pen Class defines an object used to draw lines, curves and figures. The Pen class has several overloaded constructors to draw lines with specified color, width &amp; brush.</Description>
+              <FolderName>DrawingLines</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Drawing Lines</DisplayName>
+                <Url>Drawing+Lines</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
       </Folders>
     </Folder>
   </Folders>
