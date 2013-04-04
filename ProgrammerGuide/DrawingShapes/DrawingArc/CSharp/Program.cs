@@ -18,6 +18,11 @@ namespace DrawingArc
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+			// Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+				
             //Creates an instance of FileStream
             using (System.IO.FileStream stream = new System.IO.FileStream(dataDir + "outputarc.bmp", System.IO.FileMode.Create))
             {

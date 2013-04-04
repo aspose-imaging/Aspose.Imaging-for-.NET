@@ -24,7 +24,7 @@ namespace ExportImageToPSD
                 //Create an instance of PsdOptions and set it’s various properties
                 Aspose.Imaging.ImageOptions.PsdOptions psdOptions = new Aspose.Imaging.ImageOptions.PsdOptions();
                 psdOptions.ColorMode = Aspose.Imaging.FileFormats.Psd.ColorModes.RGB;
-                psdOptions.CompressionMethod = Aspose.Imaging.FileFormats.Psd.CompressionMethod.RLE;
+                psdOptions.CompressionMethod = Aspose.Imaging.FileFormats.Psd.CompressionMethod.Raw;
                 psdOptions.Version = 4;
 
                 //Save image to disk in PSD format
