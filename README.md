@@ -1,6 +1,6 @@
 #Aspose.Imaging for .NET Examples Repository
 
-This package contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
+This repository contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
 
 ##How to use the Examples?
 
@@ -46,45 +46,6 @@ This package contains C# and VB.NET Example Projects for [Aspose.Imaging for .NE
   <tr><td>Draw using Graphics</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to draw images using advanced techniques like Graphics.</td></tr>
   <tr><td>Draw using GraphicsPaths</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to draw images using advanced techniques like GraphicsPaths.</td></tr>
 </table>
-
-###Data
-
-Input Images - Some examples require images as input. User can specify any image by browsing the disk.
-
-###Output
-
-All examples will output the result to client machine through browser. Its upto the user to save the output or open it directly with the help of any image viewer
-
-
-###Help Material
-
-For further details on setting up the examples and any requirements refer to the readme.txt found in the root of the repository.
-
-
-##Download the examples
-
-Please [download the Aspose.Imaging for .NET examples](https://github.com/asposeimaging/Aspose_Imaging_NET/downloads) to try at your end.
-
-
-##How to use the examples?
-
-This package contains C# and VB.NET ASP.NET examples of Aspose.Imaging for .NET.
-
-Firstly make sure that you have downloaded and installed the latest version of [Aspose.Imaging for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.imaging-for-.net/default.aspx). We recommend using the .MSI installer for fast installation and seamless intergration with the examples.
-
-Download the examples from the above link. The solution files for Microsoft Visual Studio 2005, 2008 and 2010 are provided with the examples. 
-
-Once downloaded you can open the examples by opening the appropriate solution file (.sln) according to the version of Visual Studio installed on your system.
-
-+ Aspose.Imaging.Demos.2005.sln - Open with Microsoft Visual Studio 2005
-+ Aspose.Imaging Demos.2008.sln - Open with Microsoft Visual Studio 2008
-+ Aspose.Imaging Demos.2010.sln - Open with Microsoft Visual Studio 2010
-
-The example should be ready to compile. Click on "Debug" menu and choose one of the following menu items to start the example:
-
-- Start Debugging
-- Start Without Debugging
-
 
 ##Contact Us
 
