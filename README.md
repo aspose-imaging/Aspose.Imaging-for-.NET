@@ -1,13 +1,20 @@
 #Aspose.Imaging for .NET Examples Repository
 
-Aspose.Imaging for .NET is an imaging library that lets developers create, edit, draw or convert images in their .NET applications. Aspose.Imaging provides features that go beyond the native capabilities of the development platform. It works independent of other applications and although Aspose.Imaging allows you to save to Adobe PhotoShop format (PSD), you do not need PhotoShop on the machine.
+This package contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
 
-Aspose.Imaging for .NET is flexible, stable and powerful. It's many features and image processing routines should meet most imaging requirements. Like all Aspose file format components, Aspose.Imaging for .NET works well with both Win Form and Web Form applications. It also supports Silverlight.
+##How to use the Examples?
 
-These example projects provide helpful demonstrations and code when using Aspose.Imaging for .NET .
+###With the Examples Dashboard
 
-## Aspose.Imaging for .NET at a Glance
-![Aspose.Imaging Overview](http://www.aspose.com/Images/Aspose.Imaging-for-NET-AtaGlance-Diagram.jpg "The Main Features of Aspose.Imaging for .NET")
+Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
+
+![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/04/Dotnet-Dashboard.png "Aspose Examples Dashboard")
+
+###With IDE
+
+Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
+
+Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.imaging-for-.net/default.aspx) of Aspose.Imaging for .NET and set/fix dll references.
 
 ##Open Source Feel of Aspose.Imaging
 
