@@ -253,6 +253,61 @@ Once the image has been created, we will use the Clear method exposed by the Gra
             </Example>
           </Examples>
         </Folder>
+        <Folder>
+          <Title>Working with Image files</Title>
+          <Description>This section includes the following examples:
+
+1: Opening image files
+2: Creating image files
+3: Saving image files</Description>
+          <FolderName>WorkingWithImagefiles</FolderName>
+          <Order>6</Order>
+          <Folders>
+            <Folder>
+              <Title>Creating Image files</Title>
+              <Description>Aspose.Imaging for .NET allows developers to create their own images. Image files can be created by setting:
+
+1: An output path 
+2: A Stream</Description>
+              <FolderName>CreatingImagefiles</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating an Image by Setting a Path</Title>
+                  <Description>This example demonstrates how to create an image using the path.</Description>
+                  <FolderName>CreatingAnImageBySettingPath</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating Image files</DisplayName>
+                    <Url>Creating+Image+files</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.bmp</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating an Image Using a Stream</Title>
+                  <Description>Following example shows how Aspose.Imaging can be used to create an image using stream.</Description>
+                  <FolderName>CreatingImageUsingStream</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating an Image Using a Stream</DisplayName>
+                    <Url>Creating+Image+files</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\sample.bmp</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
       </Folders>
     </Folder>
   </Folders>

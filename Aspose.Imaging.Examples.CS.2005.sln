@@ -28,6 +28,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingEllipse", "Programme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingLines", "ProgrammerGuide\DrawingShapes\DrawingLines\CSharp\DrawingLines.csproj", "{4732A12D-3841-4102-A7D5-281E0B8DEFF2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithImagefiles", "WorkingWithImagefiles", "{A32DB762-DE61-4BF4-B8AC-73F58EB5370D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingImagefiles", "CreatingImagefiles", "{C4802E96-898F-4C87-9AC8-62D29B87EAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingAnImageBySettingPath", "ProgrammerGuide\WorkingWithImagefiles\CreatingImagefiles\CreatingAnImageBySettingPath\CSharp\CreatingAnImageBySettingPath.csproj", "{8A0C8D2C-BE74-416D-B6E0-082B5EEA5767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingImageUsingStream", "ProgrammerGuide\WorkingWithImagefiles\CreatingImagefiles\CreatingImageUsingStream\CSharp\CreatingImageUsingStream.csproj", "{EDB0CD66-88F7-41EA-882F-5AE6CB300C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +69,12 @@ Global
 		{4732A12D-3841-4102-A7D5-281E0B8DEFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4732A12D-3841-4102-A7D5-281E0B8DEFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4732A12D-3841-4102-A7D5-281E0B8DEFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0C8D2C-BE74-416D-B6E0-082B5EEA5767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0C8D2C-BE74-416D-B6E0-082B5EEA5767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0C8D2C-BE74-416D-B6E0-082B5EEA5767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB0CD66-88F7-41EA-882F-5AE6CB300C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB0CD66-88F7-41EA-882F-5AE6CB300C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB0CD66-88F7-41EA-882F-5AE6CB300C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +93,9 @@ Global
 		{752B29B7-8433-4791-A2D1-82A230047E0D} = {4E6BA18F-38DB-4412-B0A7-D1A7D47286B3}
 		{9D50C60C-7CF0-47EF-94CE-F5870AC9F027} = {4E6BA18F-38DB-4412-B0A7-D1A7D47286B3}
 		{4732A12D-3841-4102-A7D5-281E0B8DEFF2} = {4E6BA18F-38DB-4412-B0A7-D1A7D47286B3}
+		{A32DB762-DE61-4BF4-B8AC-73F58EB5370D} = {1BBA9999-79C5-4995-A461-486D1DA2DB15}
+		{C4802E96-898F-4C87-9AC8-62D29B87EAB5} = {A32DB762-DE61-4BF4-B8AC-73F58EB5370D}
+		{8A0C8D2C-BE74-416D-B6E0-082B5EEA5767} = {C4802E96-898F-4C87-9AC8-62D29B87EAB5}
+		{EDB0CD66-88F7-41EA-882F-5AE6CB300C04} = {C4802E96-898F-4C87-9AC8-62D29B87EAB5}
 	EndGlobalSection
 EndGlobal
