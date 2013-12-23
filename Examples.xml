@@ -61,6 +61,17 @@
           </OutputFiles>
           <Type>Console</Type>
         </Example>
+        <Example>
+          <Title>Add Frames to TIFF Image with Different Settings</Title>
+          <Description>The TIFF file format allows different frames to be added, with different dimensions, compression and other settings. TIFF is a very flexible format. From Aspose.Imaging 1.8, you can add any TIFF frame of any size which helps create a complex document.</Description>
+          <FolderName>AddFramesToTIFFImage</FolderName>
+          <Order>7</Order>
+          <DocLink>
+            <DisplayName>Add Frames to TIFF Image with Different Settings</DisplayName>
+            <Url>Add+Frames+to+TIFF+Image+with+Different+Settings</Url>
+          </DocLink>
+          <Type>Console</Type>
+        </Example>
       </Examples>
       <Folders>
         <Folder>
@@ -243,6 +254,38 @@ Once the image has been created, we will use the Clear method exposed by the Gra
               <DocLink>
                 <DisplayName>Drawing Lines</DisplayName>
                 <Url>Drawing+Lines</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Bezier</Title>
+              <Description>This example uses Graphics class to draw the Bezier shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draw Bezier shape on the Image surface using DrawBezier method exposed by Graphics class.</Description>
+              <FolderName>DrawingBezier</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Drawing Bezier</DisplayName>
+                <Url>Drawing+Bezier</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Rectangle</Title>
+              <Description>In this example we will draw the rectangle shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draw rectangle shape on the Image surface using DrawRectangle method exposed by Graphics class.</Description>
+              <FolderName>DrawingRectangle</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Drawing Rectangle</DisplayName>
+                <Url>Drawing+Rectangle</Url>
               </DocLink>
               <OutputFiles>
                 <DataFile>
