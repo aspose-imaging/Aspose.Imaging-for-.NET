@@ -3,7 +3,7 @@
 This repository contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
 <br/><br/>
 <p align="center">
-  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
   </a>
   &nbsp;
