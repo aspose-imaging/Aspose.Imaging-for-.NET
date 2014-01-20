@@ -28,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingEllipse", "Programme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingLines", "ProgrammerGuide\DrawingShapes\DrawingLines\VisualBasic\DrawingLines.vbproj", "{4732A12D-3841-4102-A7D5-281E0B8DEFF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingBezier", "ProgrammerGuide\DrawingShapes\DrawingBezier\VisualBasic\DrawingBezier.vbproj", "{FC991719-E164-4465-BAC4-27EBB8AAE788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingRectangle", "ProgrammerGuide\DrawingShapes\DrawingRectangle\VisualBasic\DrawingRectangle.vbproj", "{62004644-A9F8-416E-BF8E-2D82FDF4D473}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithImagefiles", "WorkingWithImagefiles", "{A32DB762-DE61-4BF4-B8AC-73F58EB5370D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingImagefiles", "CreatingImagefiles", "{C4802E96-898F-4C87-9AC8-62D29B87EAB5}"
