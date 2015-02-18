@@ -55,6 +55,9 @@ This package contains C# and VB.NET Example Projects for [Aspose.Imaging for .NE
   <tr><td>Draw using basic operations</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to draw images using the core functionality.</td></tr>
   <tr><td>Draw using Graphics</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to draw images using advanced techniques like Graphics.</td></tr>
   <tr><td>Draw using GraphicsPaths</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to draw images using advanced techniques like GraphicsPaths.</td></tr>
+  <tr><td>Draw Shapes</td><td>These examples demonstrate the ability of Aspose.Imaging for .NET to draw primitive shapes such as Arc, Bezier, Ellipse, Line & Rectangle.</td></tr>
+  <tr><td>Export Image</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to export images to different raster image formats including BMP, TIFF, GIF, PNG and JPEG.</td></tr>
+  <tr><td>Export Image to PSD Format</td><td>This example demonstrates the ability of Aspose.Imaging for .NET to export raster images to PSD (Photoshop) format.</td></tr>
 </table>
 
 ##Contact Us
