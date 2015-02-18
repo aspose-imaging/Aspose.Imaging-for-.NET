@@ -1,0 +1,59 @@
+'////////////////////////////////////////////////////////////////////////
+' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+'
+' This file is part of Aspose.Imaging. The source code in this file
+' is only intended as a supplement to the documentation, and is provided
+' "as is", without warranty of any kind, either expressed or implied.
+'////////////////////////////////////////////////////////////////////////
+
+Imports Microsoft.VisualBasic
+Imports System.IO
+
+Imports Aspose.Imaging
+Imports Aspose.Imaging.ImageOptions
+Imports Aspose.Imaging.FileFormats.Tiff
+Imports Aspose.Imaging.FileFormats.Tiff.Enums
+Imports Aspose.Imaging.Sources
+
+Namespace AddFramesToTIFFImage
+	Public Class Program
+		Public Shared Sub Main(ByVal args As String())
+			' The path to the documents directory.
+			Dim dataDir As String = Path.GetFullPath("../../../Data/")
+
+			Dim outputSettings As TiffOptions = New TiffOptions()
+			outputSettings.BitsPerSample = New UShort() { 1 }
+			outputSettings.Compression = TiffCompressions.CcittFax3
+			outputSettings.Photometric = TiffPhotometrics.MinIsWhite
+			outputSettings.Source = New StreamSource(New MemoryStream())
+			Dim newWidth As Integer = 500
+			Dim newHeight As Integer = 500
+			Dim path As String = dataDir & "output.tif"
+			Using tiffImage As TiffImage = CType(Image.Create(outputSettings, newWidth, newHeight), TiffImage)
+				Dim index As Integer = 0
+				For Each file As var In Directory.GetFiles(dataDir, "*.jpg")
+					Using ri As RasterImage = CType(Image.Load(file), RasterImage)
+						ri.Resize(newWidth, newHeight, ResizeType.NearestNeighbourResample)
+						Dim frame As TiffFrame = tiffImage.ActiveFrame
+						If index > 0 Then
+							frame = New TiffFrame(New TiffOptions(outputSettings), newWidth, newHeight)
+							' If there is a TIFF image loaded you need to enumerate the frames and perform the following
+							' frame = TiffFrame.CreateFrameFrom(sourceFrame, outputSettings);
+						End If
+
+						frame.SavePixels(frame.Bounds, ri.LoadPixels(ri.Bounds))
+						If index > 0 Then
+							tiffImage.AddFrame(frame)
+						End If
+
+						index += 1
+					End Using
+				Next file
+
+				tiffImage.Save(path)
+			End Using
+
+
+		End Sub
+	End Class
+End Namespace
