@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmer’s Guide</Title>
+      <Description>This section includes the examples related to following topics: 
+
+- Introduction
+- Working with Image files
+- Exporting Images
+- Drawing Images
+- Adding a Watermark to an image
+- Concatenate multiple TIFF images
+- Drawing Shapes
+- Migrating from Earlier Versions of Aspose.Imaging</Description>
+      <FolderName>ProgrammerGuide</FolderName>
+      <Order>1</Order>
+      <Examples>
+        <Example>
+          <Title>Concatenate multiple TIFF images</Title>
+          <Description>Sometimes you need to concatenate a TIFF Image into another TIFF image and Aspose.Imaging supports this feature of concatenating multiple Tiff images. This example explains the TIFF image concatenation feature of Aspose.Imaging for .Net API. We will use TiffImage and TiffFrame classes to concatenate multiple TIFF images. We can use both standard methods, from file and from stream, to concatenate TIFF images.</Description>
+          <FolderName>ConcatTIFFImages</FolderName>
+          <Order>1</Order>
+          <DocLink>
+            <DisplayName>Concatenate multiple TIFF images</DisplayName>
+            <Url>Concatenate+multiple+TIFF+images</Url>
+          </DocLink>
+          <InputFiles>
+            <DataFile>
+              <Path>..\Data\demo.tif</Path>
+            </DataFile>
+            <DataFile>
+              <Path>..\Data\sample.tif</Path>
+            </DataFile>
+          </InputFiles>
+          <OutputFiles>
+            <DataFile>
+              <Path>..\Data\TestDemo.tif</Path>
+            </DataFile>
+          </OutputFiles>
+          <Type>Console</Type>
+        </Example>
+        <Example>
+          <Title>Adding a Watermark to an image</Title>
+          <Description>This example provides understanding on how to add a Watermark to an Image using Aspose.Imaging API. Adding Watermark to an image is a common requirement for Image processing applications. This example uses Graphics class to draw the string on the Image surface. To demonstrate the operation, we will load a BMP image from disk and draw a string as Watermark on Image surface using DrawString method of Graphics class.</Description>
+          <FolderName>AddWatermarkToImage</FolderName>
+          <Order>3</Order>
+          <DocLink>
+            <DisplayName>Adding a Watermark to an image</DisplayName>
+            <Url>Adding+a+Watermark+to+an+image</Url>
+          </DocLink>
+          <InputFiles>
+            <DataFile>
+              <Path>..\Data\sample.bmp</Path>
+            </DataFile>
+          </InputFiles>
+          <OutputFiles>
+            <DataFile>
+              <Path>..\Data\out.bmp</Path>
+            </DataFile>
+          </OutputFiles>
+          <Type>Console</Type>
+        </Example>
+        <Example>
+          <Title>Add Frames to TIFF Image with Different Settings</Title>
+          <Description>The TIFF file format allows different frames to be added, with different dimensions, compression and other settings. TIFF is a very flexible format. From Aspose.Imaging 1.8, you can add any TIFF frame of any size which helps create a complex document.</Description>
+          <FolderName>AddFramesToTIFFImage</FolderName>
+          <Order>7</Order>
+          <DocLink>
+            <DisplayName>Add Frames to TIFF Image with Different Settings</DisplayName>
+            <Url>Add+Frames+to+TIFF+Image+with+Different+Settings</Url>
+          </DocLink>
+          <Type>Console</Type>
+        </Example>
+      </Examples>
+      <Folders>
+        <Folder>
+          <Title>Drawing Images</Title>
+          <Description>This section includes examples related to the following topics: 
+
+- Drawing Images using core functionality 
+- Drawing Images using advanced functionality</Description>
+          <FolderName>DrawingImages</FolderName>
+          <Order>2</Order>
+          <Examples>
+            <Example>
+              <Title>Drawing Images using Core Functionality</Title>
+              <Description>Aspose.Imaging is an imaging library that offers many valuable features including creating images from scratch. Draw using the core functionality like manipulating an image's bitmap information, or use the advanced features like Graphics and GraphicsPath to draw shapes on image surface with the help of different brushes and pens. These concepts are explained in this example in detail.</Description>
+              <FolderName>DrawImagesUsingCoreFunctionality</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Drawing Images using Core Functionality</DisplayName>
+                <Url>Drawing+Images+using+Core+Functionality</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\sample.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Drawing Images using Advanced Functionality</Title>
+              <Description>This section includes the examples related to following topics: 
+
+- Drawing using Graphics 
+- Drawing using GraphicsPath</Description>
+              <FolderName>DrawImagesUsingAdvancedFunctionality</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Drawing using GraphicsPath</Title>
+                  <Description>The GraphicsPath class is responsible for creating and maintaining a graphics path. The GraphicsPath has no reference to an image and does not change the image itself, instead, it can be considered an object that contains metadata that describes the paths that the Graphics class can draw.
+The GraphicsPath class uses figures; each figure is either composed of a sequence of connected lines and curves or a geometric shape primitive. Each shape may be split into shape segments. You can add, remove and change different figures or shapes in a GraphicsPath object.
+When the GraphicsPath has been fully described, use the corresponding Graphics class methods (DrawPath and FillPath) to draw over or fill the paths. The Graphics class takes each shape segment and draws it to produce the final image. This example demonstrating the use of the GraphicsPath class in detail.</Description>
+                  <FolderName>DrawingUsingGraphicsPath</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Drawing using GraphicsPath</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/imagingjava/Drawing+using+GraphicsPath</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\sample.bmp</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Exporting Images</Title>
+          <Description>This section includes the examples related to following topics: 
+
+- Exporting Image to BMP, JPEG, PNG and TIFF 
+- Exporting Image to PSD</Description>
+          <FolderName>ExportingImages</FolderName>
+          <Order>4</Order>
+          <Examples>
+            <Example>
+              <Title>Exporting Image to PSD</Title>
+              <Description>PSD, PhotoShop document, is the default file format used by Adobe PhotoShop for working with images. Aspose.Imaging lets you save files to PSD so that they can be opened and edited in PhotoShop. This example shows how to save a file to PSD with Aspose.Imaging and discusses some of the settings that can be used when saving to this format.</Description>
+              <FolderName>ExportImageToPSD</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Exporting Image to PSD</DisplayName>
+                <Url>Exporting+Image+to+PSD</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\sample.bmp</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.psd</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Exporting Images to BMP, JPEG, PNG and TIFF Formats</Title>
+              <Description>Along with a rich set of image processing routines, Aspose.Imaging provides specialized classes to convert images to other formats. Using this library, image format conversion is as simple as changing the file extension to desired format in the Image class' Save method and by specifying the appropriate SaveOptions values. In this example, a GIF image is loaded by passing the file path as a parameter to the Load method. It is then exported to various image formats using the Save method.</Description>
+              <FolderName>ExportImageToDifferentFormats</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Exporting Images to BMP, JPEG, PNG and TIFF Formats</DisplayName>
+                <Url>Exporting+Images+to+BMP,+JPEG,+PNG+and+TIFF+Formats</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\sample.gif</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.bmp</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\output.jpeg</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\output.png</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\output.tiff</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Drawing Shapes</Title>
+          <Description>This section includes examples related to following topics:
+
+- Drawing Arc
+- Drawing Bezier
+- Drawing Ellipse
+- Drawing Lines
+- Drawing Rectangle</Description>
+          <FolderName>DrawingShapes</FolderName>
+          <Order>5</Order>
+          <Examples>
+            <Example>
+              <Title>Drawing Arc</Title>
+              <Description>In this example of drawing shape series, we will draw the Arc shape on the Image surface. We will use DrawArc method of Graphics to demonstrate the operation on a BMP image.
+
+First, we will create an object of the BMPOptions class from Aspose.Imaging.ImageOptions namespace and set its various properties. The most important property is the Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class to create a new BMP image. Once the image has been created, we will use the Clear method exposed by the Graphics class to set its background color.
+
+The DrawArc method of the Graphics class is used to draw the Arc shape on an image surface. DrawsArc represent a portion of an ellipse specified by the rectangle structure or pair of the coordinates. This method has several overloads accepting the instances of the Pen classes and Rectangle/RectangleF structure or a pair of the coordinates, a width, and a height as arguments.</Description>
+              <FolderName>DrawingArc</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Drawing Arc</DisplayName>
+                <Url>Drawing+Arc</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputarc.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Ellipse</Title>
+              <Description>In this example we will use Graphics class to draw the ellipse shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draws ellipse shape on the Image surface using DrawEllipse method exposed by Graphics class. First, we will create an object of the BmpOptions class from Aspose.Imaging.ImageOptions namespace and set its various properties e.g. Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class along with height and width arguments.
+
+After creating image, we will create and initialize Graphics class object and set image background color using the Clear method of the Graphics class. The DrawEllipse method of the Graphics class is used to draw ellipse shape on an image surface specified by the bounding rectangle structure. This method has several overloads accepting the instances of the Pen and Rectangle/RectangleF classes or a pair of coordinates, a height, and a width as arguments. The Pen Class defines an object used to draw lines, curves and figures. The Pen class has several overloaded constructors to draw lines with specified color, width &amp; brush. The Rectangle class stores a set of four integers that represent the location and size of a rectangle. The Rectangle class has several overloaded constructors to draw the rectangle structure with specified size and location.</Description>
+              <FolderName>DrawingEllipse</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Drawing Ellipse</DisplayName>
+                <Url>Drawing+Ellipse</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Lines</Title>
+              <Description>This example uses Graphics class to draw the line shapes on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draws lines on the Image surface using DrawLine method exposed by Graphics class. First, we will create an instance of FileSteram and then we will create an object of the BmpOptions class from Aspose.Imaging. ImageOptions namespace and set its various properties. The most important property is the Source property, the Source property actually determines where the image data will reside (in the file or stream) and in this case it is a stream. After setting these properties, pass this object to the static Create method of the Image class along with height and width parameters.
+
+Once the image has been created, we will use the Clear method exposed by the Graphics class to set its background color. The DrawLine method of the Graphics class is used to draw a line on an image connecting two point structures. This method has several overloads accepting the instance of Pen class and coordinates pairs of points or Point/PointF structures as arguments. The Pen Class defines an object used to draw lines, curves and figures. The Pen class has several overloaded constructors to draw lines with specified color, width &amp; brush.</Description>
+              <FolderName>DrawingLines</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Drawing Lines</DisplayName>
+                <Url>Drawing+Lines</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Bezier</Title>
+              <Description>This example uses Graphics class to draw the Bezier shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draw Bezier shape on the Image surface using DrawBezier method exposed by Graphics class.</Description>
+              <FolderName>DrawingBezier</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Drawing Bezier</DisplayName>
+                <Url>Drawing+Bezier</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Drawing Rectangle</Title>
+              <Description>In this example we will draw the rectangle shape on the Image surface. To demonstrate the operation, the example creates a new Image in BMP format and draw rectangle shape on the Image surface using DrawRectangle method exposed by Graphics class.</Description>
+              <FolderName>DrawingRectangle</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Drawing Rectangle</DisplayName>
+                <Url>Drawing+Rectangle</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outputlines.bmp</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Working with Image files</Title>
+          <Description>This section includes the following examples:
+
+1: Opening image files
+2: Creating image files
+3: Saving image files</Description>
+          <FolderName>WorkingWithImagefiles</FolderName>
+          <Order>6</Order>
+          <Folders>
+            <Folder>
+              <Title>Creating Image files</Title>
+              <Description>Aspose.Imaging for .NET allows developers to create their own images. Image files can be created by setting:
+
+1: An output path 
+2: A Stream</Description>
+              <FolderName>CreatingImagefiles</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating an Image by Setting a Path</Title>
+                  <Description>This example demonstrates how to create an image using the path.</Description>
+                  <FolderName>CreatingAnImageBySettingPath</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating Image files</DisplayName>
+                    <Url>Creating+Image+files</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.bmp</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating an Image Using a Stream</Title>
+                  <Description>Following example shows how Aspose.Imaging can be used to create an image using stream.</Description>
+                  <FolderName>CreatingImageUsingStream</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating an Image Using a Stream</DisplayName>
+                    <Url>Creating+Image+files</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\sample.bmp</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
