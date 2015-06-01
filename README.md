@@ -19,7 +19,3 @@ Directory | Description
 + **Documentation:** [Aspose.Imaging for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.imaging-for-.net/index.html)
 + **Forum:** [Aspose.Imaging for .NET Forum](http://www.aspose.com/community/forums/aspose.imaging-product-family/498/showforum.aspx)
 + **Blog:** [Aspose.Imaging for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose.imaging-product-family.html)
-
-## How to use the Examples?
-
-Read our [documentation](http://www.aspose.com/docs/display/imagingnet/How+to+use+the+Examples) for details.
