@@ -1,4 +1,4 @@
-# Aspose.Imaging for .NET
+## Aspose.Imaging for .NET
 
 This repository contains C# and VB.NET examples for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
 <p align="center">
