@@ -2,7 +2,7 @@
 
 This repository contains C# and VB.NET examples for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
 <p align="center">
-  <a title="Download ZIP" href="https://github.com/asposecells/Aspose_Cells_Cloud/archive/master.zip">
+  <a title="Download ZIP" href="https://github.com/asposeimaging/Aspose_Imaging_NET/archive/master.zip">
      <img src="http://i.imgur.com/hwNhrGZ.png" />
   </a>
 </p>
