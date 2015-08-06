@@ -10,6 +10,7 @@ This repository contains C# and VB.NET examples for [Aspose.Imaging for .NET](ht
 Directory | Description
 --------- | -----------
 [Examples](Examples) | C# and VB.NET examples
+[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or multiple features of Aspose.Imaging for .NET
 
 ## Resources
 

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Aspose.UmbracoImageResizer.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Aspose.UmbracoImageResizer.dll</orgName>
+    </file>
+    <file>
+      <guid>Aspose.Imaging.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Aspose.Imaging.dll</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Aspose Image Resizer</name>
+      <version>1.0</version>
+      <license url="https://asposeumbraco.codeplex.com/license">MIT license</license>
+      <url>https://asposeumbraco.codeplex.com/</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Aspose Pty Ltd</name>
+      <website>http://www.aspose.com</website>
+    </author>
+    <readme>
+      <![CDATA[ Datatype to allow automatic image resizing on save.
+
+                Use multiple copies on one document (i.e. multiple resizes)
+                Use on Media as well as Content and Members
+                Doesn't resize larger than original image
+                Doesn't overwrite original image
+
+                Saved resized images in the original image media folder
+
+                Stores url to image as plain text for easy access via xslt
+                (i.e. <xsl:value-of select="umbraco.library:GetMedia($image,0)/resizedImage"/> )
+      ]]>
+    </readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>

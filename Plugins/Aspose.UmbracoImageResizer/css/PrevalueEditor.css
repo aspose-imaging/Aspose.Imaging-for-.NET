@@ -1,0 +1,78 @@
+﻿/* Standard clearfix */
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+
+html[xmlns] .clearfix
+{
+	display: block;
+}
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+/* image resizer styles */
+.imageResizerPreValues div.row
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.imageResizerPreValues div.label
+{
+	float: left;
+	width: 120px;
+	margin-right: 10px;
+}
+.imageResizerPreValues div.field
+{
+	float: left;
+}
+
+.imageResizerPreValues div.description
+{
+	clear: left;
+	color: #666;
+	float: left;
+	font-style: italic;
+	margin: 3px 0 10px 130px;
+}
+
+/* validation */
+.imageResizerPreValues .validator
+{
+	color: red;
+	display: block;
+	font-size: 11px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	visibility: visible;
+}
+
+/* headers */
+.imageResizerPreValues h3
+{
+	clear: left;
+	color: #666;
+	float: left;
+	font-weight: bold;
+	margin: 3px 10px 20px 0;
+}
+
+/* Tables */
+.imageResizerPreValues td
+{
+	font-weight: bold;
+}
