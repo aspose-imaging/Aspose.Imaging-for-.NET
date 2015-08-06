@@ -29,17 +29,16 @@
       <website>http://www.aspose.com</website>
     </author>
     <readme>
-      <![CDATA[ Datatype to allow automatic image resizing on save.
-
-                Use multiple copies on one document (i.e. multiple resizes)
-                Use on Media as well as Content and Members
-                Doesn't resize larger than original image
-                Doesn't overwrite original image
-
-                Saved resized images in the original image media folder
-
-                Stores url to image as plain text for easy access via xslt
-                (i.e. <xsl:value-of select="umbraco.library:GetMedia($image,0)/resizedImage"/> )
+      <![CDATA[ 
+			Aspose Image resizer is an Umbraco datatype which allow automatic image resizing on save. It uses power image processing features provided by Aspose.Imaging. Aspose.Imaging for .NET is an imaging library that lets developers create, edit, draw or convert images in their .NET applications.
+			<p>This initial version of the datatype have the following features</p>
+			<ul>
+				<li>Use multiple copies on one document</li>
+				<li>Use on Media as well as Content and Members</li>
+				<li>Does not overwrite original image</li>
+				<li>Saves resized images in the original image media folder</li>
+				<li>Stores url to image as plain text for easy access via xslt</li>
+			</ul>
       ]]>
     </readme>
   </info>
