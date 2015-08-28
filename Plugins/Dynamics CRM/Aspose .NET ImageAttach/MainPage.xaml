@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Aspose.ImageAttach.MainPage" x:Name="MainControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Button Content="Upload Image" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" x:Name="BTN_Upload" Click="BTN_Upload_Click"/>
+        <Button Content="Remove Image" HorizontalAlignment="Left" Margin="100,10,10,10" VerticalAlignment="Top" x:Name="BTN_Remove" Click="BTN_Remove_Click"/>
+        <Image HorizontalAlignment="Left"  VerticalAlignment="Top" x:Name="IMG_Image" Margin="10,40,10,10" Width="200" Height="200"/>
+
+
+
+
+    </Grid>
+</UserControl>
