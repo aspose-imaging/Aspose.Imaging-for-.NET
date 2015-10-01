@@ -27,7 +27,7 @@ Namespace Aspose.Imaging.Examples.Export
                 image.Save(dataDir & "output.png", New ImageOptions.PngOptions())
 
                 'Export to TIFF file format using the default options
-                image.Save(dataDir & "output.tiff", New ImageOptions.TiffOptions())
+                image.Save(dataDir & "output.tiff", New ImageOptions.TiffOptions(FileFormats.Tiff.Enums.TiffExpectedFormat.Default))
             End Using
 
             ' Display Status.

@@ -21,7 +21,7 @@ Namespace Aspose.Imaging.Examples.Images
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            Dim outputSettings As TiffOptions = New TiffOptions()
+            Dim outputSettings As TiffOptions = New TiffOptions(TiffExpectedFormat.Default)
             outputSettings.BitsPerSample = New UShort() {1}
             outputSettings.Compression = TiffCompressions.CcittFax3
             outputSettings.Photometric = TiffPhotometrics.MinIsWhite

@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.Export
                 image.Save(dataDir + "output.png", new Aspose.Imaging.ImageOptions.PngOptions());
 
                 //Export to TIFF file format using the default options
-                image.Save(dataDir + "output.tiff", new Aspose.Imaging.ImageOptions.TiffOptions());
+                image.Save(dataDir + "output.tiff", new Aspose.Imaging.ImageOptions.TiffOptions(Aspose.Imaging.FileFormats.Tiff.Enums.TiffExpectedFormat.Default));
             }
 
             // Display Status.

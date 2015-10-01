@@ -35,8 +35,9 @@
     <StartupObject>Aspose.Imaging.Examples.Utils</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging">
-      <HintPath>..\packages\Aspose.Imaging.3.0.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.3.1.0\lib\net40\Aspose.Imaging.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,8 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Export\ExportDxfToPdf.cs" />
     <Compile Include="Export\ExportImageToDifferentFormats.cs" />
     <Compile Include="Export\ExportImageToPSD.cs" />
+    <Compile Include="Export\ExportPsdLayersToImages.cs" />
     <Compile Include="Files\CreatingAnImageBySettingPath.cs" />
     <Compile Include="Files\CreatingImageUsingStream.cs" />
     <Compile Include="Images\AddWatermarkToImage.cs" />

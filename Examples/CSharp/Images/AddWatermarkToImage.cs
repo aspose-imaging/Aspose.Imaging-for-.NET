@@ -22,7 +22,7 @@ namespace Aspose.Imaging.Examples.Images
             // The path to the documents directory.
             string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            TiffOptions outputSettings = new TiffOptions();
+            TiffOptions outputSettings = new TiffOptions(TiffExpectedFormat.Default);
             outputSettings.BitsPerSample = new ushort[] { 1 };
             outputSettings.Compression = TiffCompressions.CcittFax3;
             outputSettings.Photometric = TiffPhotometrics.MinIsWhite;
