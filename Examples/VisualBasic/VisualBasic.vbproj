@@ -46,8 +46,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.3.0.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.3.1.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -70,8 +70,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Export\ExportDxfToPdf.vb" />
     <Compile Include="Export\ExportImageToDifferentFormats.vb" />
     <Compile Include="Export\ExportImageToPSD.vb" />
+    <Compile Include="Export\ExportPsdLayersToImages.vb" />
     <Compile Include="Files\CreatingAnImageBySettingPath.vb" />
     <Compile Include="Files\CreatingImageUsingStream.vb" />
     <Compile Include="Images\AddFramesToTIFFImage.vb" />
