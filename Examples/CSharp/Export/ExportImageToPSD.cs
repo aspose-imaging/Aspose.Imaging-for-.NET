@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.Export
             {
                 //Create an instance of PsdOptions and set it’s various properties
                 Aspose.Imaging.ImageOptions.PsdOptions psdOptions = new Aspose.Imaging.ImageOptions.PsdOptions();
-                psdOptions.ColorMode = Aspose.Imaging.FileFormats.Psd.ColorModes.RGB;
+                psdOptions.ColorMode = Aspose.Imaging.FileFormats.Psd.ColorModes.Rgb;
                 psdOptions.CompressionMethod = Aspose.Imaging.FileFormats.Psd.CompressionMethod.Raw;
                 psdOptions.Version = 4;
 
