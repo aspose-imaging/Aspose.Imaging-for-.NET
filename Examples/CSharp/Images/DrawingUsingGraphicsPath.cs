@@ -7,7 +7,7 @@ namespace Aspose.Imaging.Examples.Images
 {
     public class DrawingUsingGraphicsPath
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
             // The path to the documents directory.
             string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

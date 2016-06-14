@@ -5,7 +5,7 @@ Imports Aspose.Imaging.FileFormats.Tiff
 
 Namespace Aspose.Imaging.Examples.Images
     Public Class ConcatTIFFImages
-        Public Shared Sub Main(ByVal args() As String)
+        Public Shared Sub Run()
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -13,9 +13,9 @@ Namespace Aspose.Imaging.Examples.Images
             File.Copy(dataDir & "demo.tif", dataDir & "TestDemo.tif", True)
 
             'Create an instance of TiffImage and load the copied destination image
-            Using image As TiffImage = CType(image.Load(dataDir & "TestDemo.tif"), TiffImage)
+            Using image As TiffImage = CType(Global.Aspose.Imaging.Image.Load(dataDir & "TestDemo.tif"), TiffImage)
                 'Create an instance of TiffImage and load the source image
-                Using image1 As TiffImage = CType(image.Load(dataDir & "sample.tif"), TiffImage)
+                Using image1 As TiffImage = CType(Global.Aspose.Imaging.Image.Load(dataDir & "sample.tif"), TiffImage)
                     ' Create an instance of TIffFrame and copy active frame of source image
                     Dim frame As TiffFrame = TiffFrame.CopyFrame(image1.ActiveFrame)
 

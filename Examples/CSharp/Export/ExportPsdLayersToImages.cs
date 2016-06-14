@@ -4,7 +4,7 @@ namespace Aspose.Imaging.Examples.Export
 {
     class ExportPsdLayersToImages
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
             string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
