@@ -3,11 +3,11 @@ Imports System.IO
 Imports Aspose.Imaging
 Imports Aspose.Imaging.FileFormats.Tiff
 
-Namespace Aspose.Imaging.Examples.Images
+Namespace Aspose.Imaging.Examples.VisualBasic.Images
     Public Class ConcatTIFFImages
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Images("ConcatTIFFImages")
 
             'Create a copy of original image to avoid any alteration
             File.Copy(dataDir & "demo.tif", dataDir & "TestDemo.tif", True)

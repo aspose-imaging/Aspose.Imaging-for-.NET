@@ -3,11 +3,11 @@ Imports System.IO
 
 Imports Aspose.Imaging
 
-Namespace Aspose.Imaging.Examples.Shapes
+Namespace Aspose.Imaging.Examples.VisualBasic.Shapes
     Public Class DrawingBezier
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Shapes("DrawingBezier")
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)

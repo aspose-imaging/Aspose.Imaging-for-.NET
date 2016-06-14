@@ -3,14 +3,14 @@ using System.IO;
 using Aspose.Imaging;
 using Aspose.Imaging.FileFormats.Tiff;
 
-namespace Aspose.Imaging.Examples.Images
+namespace Aspose.Imaging.Examples.CSharp.Images
 {
     public class ConcatTIFFImages
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Images("ConcatTIFFImages");
 
             //Create a copy of original image to avoid any alteration
             File.Copy(dataDir + "demo.tif", dataDir + "TestDemo.tif", true);

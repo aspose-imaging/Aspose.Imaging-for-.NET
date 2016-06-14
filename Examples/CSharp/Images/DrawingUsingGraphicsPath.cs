@@ -3,14 +3,14 @@ using System.IO;
 using Aspose.Imaging;
 using Aspose.Imaging.Shapes;
 
-namespace Aspose.Imaging.Examples.Images
+namespace Aspose.Imaging.Examples.CSharp.Images
 {
     public class DrawingUsingGraphicsPath
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Images("DrawingUsingGraphicsPath");
             
             //Create an instance of BmpCreateOptions and set its various properties
             //Create an instance of BmpOptions and set its various properties

@@ -3,11 +3,11 @@ Imports System.IO
 Imports Aspose.Imaging
 Imports Aspose.Imaging.Shapes
 
-Namespace Aspose.Imaging.Examples.Images
+Namespace Aspose.Imaging.Examples.VisualBasic.Images
     Public Class DrawingUsingGraphicsPath
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Images("DrawingUsingGraphicsPath")
 
             'Create an instance of BmpCreateOptions and set its various properties
             'Create an instance of BmpOptions and set its various properties

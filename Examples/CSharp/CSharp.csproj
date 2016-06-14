@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Imaging.Examples.Utils</StartupObject>
+    <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Imaging, Version=3.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
@@ -66,7 +66,7 @@
     <Compile Include="Shapes\DrawingEllipse.cs" />
     <Compile Include="Shapes\DrawingLines.cs" />
     <Compile Include="Shapes\DrawingRectangle.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="RunExamples.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
