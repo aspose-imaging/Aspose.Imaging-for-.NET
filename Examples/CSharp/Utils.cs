@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Aspose.Imaging.Examples.Export;
+using Aspose.Imaging.Examples.Files;
+using Aspose.Imaging.Examples.Images;
+using Aspose.Imaging.Examples.Shapes;
 
 namespace Aspose.Imaging.Examples
 {
@@ -20,12 +24,58 @@ namespace Aspose.Imaging.Examples
             return p;
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("To run an example, Go to 'Project Properties' and set the 'Startup Object'");
+
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
+            Console.WriteLine("=====================================================");
+
+            // Uncomment the one you want to try out
+         
+            //// =====================================================
+            //// =====================================================
+            //// Export
+            //// =====================================================
+            //// =====================================================
+
+            //ExportDxfToPdf.Run();
+            //ExportImageToDifferentFormats.Run();
+            //ExportImageToPSD.Run();
+            //ExportPsdLayersToImages.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Files
+            //// =====================================================
+            //// =====================================================
+
+            //CreatingAnImageBySettingPath.Run();
+            //CreatingImageUsingStream.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Images
+            //// =====================================================
+            //// =====================================================
+
+            //AddFramesToTIFFImage.Run();
+            //ConcatTIFFImages.Run();
+            //DrawImagesUsingCoreFunctionality.Run();
+            //DrawingUsingGraphicsPath.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Shapes
+            //// =====================================================
+            //// =====================================================
+
+            //DrawingArc.Run();
+            //DrawingBezier.Run();
+            //DrawingEllipse.Run();
+            //DrawingLines.Run();
+
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
-
     }
 }

@@ -4,7 +4,7 @@ Imports Aspose.Imaging.FileFormats.Cad
 
 Namespace Aspose.Imaging.Examples.Export
     Public Class ExportDxfToPdf
-        Shared Sub Main()
+        Shared Sub Run()
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 

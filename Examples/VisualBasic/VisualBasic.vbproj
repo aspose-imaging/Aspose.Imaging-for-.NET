@@ -103,7 +103,7 @@
     <Compile Include="Shapes\DrawingEllipse.vb" />
     <Compile Include="Shapes\DrawingLines.vb" />
     <Compile Include="Shapes\DrawingRectangle.vb" />
-    <Compile Include="Utils.vb" />
+    <Compile Include="RunExamples.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

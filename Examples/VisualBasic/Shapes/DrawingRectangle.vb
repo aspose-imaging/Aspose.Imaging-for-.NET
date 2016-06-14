@@ -5,7 +5,7 @@ Imports Aspose.Imaging
 
 Namespace Aspose.Imaging.Examples.Shapes
     Public Class DrawingRectangle
-        Public Shared Sub Main(ByVal args() As String)
+        Public Shared Sub Run()
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 

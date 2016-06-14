@@ -6,7 +6,7 @@ namespace Aspose.Imaging.Examples.Shapes
 {
     public class DrawingArc
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
             // The path to the documents directory.
             string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -35,9 +35,7 @@ namespace Aspose.Imaging.Examples.Shapes
                     //Clear Graphics surface
                     graphic.Clear(Color.Yellow);
 
-                    //Draw an arc shape by specifying the Pen object having red black color and coordinates, height, width, start & end angles
-                    int x = 0;
-                    int y = 0;
+                    //Draw an arc shape by specifying the Pen object having red black color and coordinates, height, width, start & end angles                 
                     int width = 100;
                     int height = 200;
                     int startAngle = 45;
