@@ -2,14 +2,14 @@ using System.IO;
 
 using Aspose.Imaging;
 
-namespace Aspose.Imaging.Examples.Shapes
+namespace Aspose.Imaging.Examples.CSharp.Shapes
 {
     public class DrawingEllipse
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Shapes("DrawingEllipse");
 
 			// Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);

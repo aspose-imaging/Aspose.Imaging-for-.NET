@@ -2,14 +2,14 @@ using System.IO;
 
 using Aspose.Imaging;
 
-namespace Aspose.Imaging.Examples.Images
+namespace Aspose.Imaging.Examples.CSharp.Images
 {
     public class DrawImagesUsingCoreFunctionality
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Images("DrawImagesUsingCoreFunctionality");
 
             //Create an instance of BmpOptions and set its various properties
             Aspose.Imaging.ImageOptions.BmpOptions ImageOptions = new Aspose.Imaging.ImageOptions.BmpOptions();

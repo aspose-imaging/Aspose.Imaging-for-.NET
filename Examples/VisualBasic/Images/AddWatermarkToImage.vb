@@ -2,11 +2,11 @@ Imports System.IO
 
 Imports Aspose.Imaging
 
-Namespace Aspose.Imaging.Examples.Images
+Namespace Aspose.Imaging.Examples.VisualBasic.Images
     Public Class AddWatermarkToImage
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Images("AddWatermarkToImage")
 
             'Create an instance of Image and load an existing image
             Using image As Image = image.Load(dataDir & "sample.bmp")

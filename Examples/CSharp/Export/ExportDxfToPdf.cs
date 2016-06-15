@@ -2,14 +2,14 @@
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.FileFormats.Cad;
 
-namespace Aspose.Imaging.Examples.Export
+namespace Aspose.Imaging.Examples.CSharp.Export
 {
     class ExportDxfToPdf
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Export("ExportDxfToPdf");
 
             using (CadImage cadImage = (CadImage)Image.Load(dataDir + "conic_pyramid.dxf"))
             {

@@ -2,11 +2,11 @@ Imports System.IO
 
 Imports Aspose.Imaging
 
-Namespace Aspose.Imaging.Examples.Export
+Namespace Aspose.Imaging.Examples.VisualBasic.Export
     Public Class ExportImageToDifferentFormats
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Export("ExportImageToDifferentFormats")
 
             'Load an existing image (of type Gif) in an instance of the Image class
             Using image As Image = image.Load(dataDir & "sample.gif")

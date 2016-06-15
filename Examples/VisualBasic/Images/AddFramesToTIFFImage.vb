@@ -7,11 +7,11 @@ Imports Aspose.Imaging.FileFormats.Tiff
 Imports Aspose.Imaging.FileFormats.Tiff.Enums
 Imports Aspose.Imaging.Sources
 
-Namespace Aspose.Imaging.Examples.Images
+Namespace Aspose.Imaging.Examples.VisualBasic.Images
     Public Class AddFramesToTIFFImage
         Public Shared Sub Run()
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir_Images("AddWatermarkToImage")
 
             Dim outputSettings As TiffOptions = New TiffOptions(TiffExpectedFormat.Default)
             outputSettings.BitsPerSample = New UShort() {1}

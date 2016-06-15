@@ -6,14 +6,14 @@ using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.Sources;
 
-namespace Aspose.Imaging.Examples.Images
+namespace Aspose.Imaging.Examples.CSharp.Images
 {
     public class AddFramesToTIFFImage
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Images("AddWatermarkToImage");
 
             TiffOptions outputSettings = new TiffOptions(TiffExpectedFormat.Default);
             outputSettings.BitsPerSample = new ushort[] { 1 };

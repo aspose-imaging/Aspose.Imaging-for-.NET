@@ -2,14 +2,14 @@ using System.IO;
 
 using Aspose.Imaging;
 
-namespace Aspose.Imaging.Examples.Export
+namespace Aspose.Imaging.Examples.CSharp.Export
 {
     public class ExportImageToDifferentFormats
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Export("ExportImageToDifferentFormats");
 
             //Load an existing image (of type Gif) in an instance of the Image class
             using (Aspose.Imaging.Image image = Aspose.Imaging.Image.Load(dataDir + "sample.gif"))

@@ -1,13 +1,13 @@
 ﻿using Aspose.Imaging;
 
-namespace Aspose.Imaging.Examples.Export
+namespace Aspose.Imaging.Examples.CSharp.Export
 {
     class ExportPsdLayersToImages
     {
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Imaging.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Export("ExportPsdLayersToImages");
 
             //Load an existing image
             using (Image image = Image.Load(dataDir + "sample.psd"))

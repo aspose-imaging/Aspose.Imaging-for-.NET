@@ -5,8 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{03217F6F-CC7B-401C-9564-7CBB5EEB0E09}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.Aspose.Imaging.Examples.Utils</StartupObject>
-    <RootNamespace>VisualBasic</RootNamespace>
+    <StartupObject>Aspose.Imaging.Examples.VisualBasic.RunExamples</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
