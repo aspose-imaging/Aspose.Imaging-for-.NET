@@ -49,8 +49,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=3.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.3.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=3.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.3.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -73,17 +73,100 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Export\ExportDxfToPdf.vb" />
-    <Compile Include="Export\ExportImageToDifferentFormats.vb" />
-    <Compile Include="Export\ExportImageToPSD.vb" />
-    <Compile Include="Export\ExportPsdLayersToImages.vb" />
-    <Compile Include="Files\CreatingAnImageBySettingPath.vb" />
-    <Compile Include="Files\CreatingImageUsingStream.vb" />
-    <Compile Include="Images\AddFramesToTIFFImage.vb" />
-    <Compile Include="Images\AddWatermarkToImage.vb" />
-    <Compile Include="Images\ConcatTIFFImages.vb" />
-    <Compile Include="Images\DrawImagesUsingCoreFunctionality.vb" />
-    <Compile Include="Images\DrawingUsingGraphicsPath.vb" />
+    <Compile Include="DrawingAndFormattingImages\CombineImages.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingRectangle.vb" />
+    <Compile Include="DrawingAndFormattingImages\CreatingAnImageBySettingPath.vb" />
+    <Compile Include="DrawingAndFormattingImages\CreatingImageUsingStream.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustBrightness.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImageWithDifferentSettings.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AddWatermarkToImage.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawImagesUsingCoreFunctionality.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphicsPath.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustContrast.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustGamma.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.vb" />
+    <Compile Include="ModifyingAndConvertingImages\BinarizationWithFixedThreshold.vb" />
+    <Compile Include="ModifyingAndConvertingImages\BinarizationWithOtsuThreshold.vb" />
+    <Compile Include="ModifyingAndConvertingImages\BlurAnImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\Bradleythreshold.vb" />
+    <Compile Include="ModifyingAndConvertingImages\CompressingTIFFImagesWithAdobeDeflateCompression.vb" />
+    <Compile Include="ModifyingAndConvertingImages\CompressingTIFFImagesWithLZWAlgorithm.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatTIFFImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertGIFImageLayersToTIFF.vb" />
+    <Compile Include="ModifyingAndConvertingImages\CreatingTIFFImageWithCompression.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustBrightnessDICOM.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustContrastDICOM.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustGammaDICOM.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\ApplyFilterOnDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithBradleysAdaptiveThreshold.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithFixedThresholdOnDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithOtsuThresholdOnDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMCroppingByShifts.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMSimpleResizing.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMSOtherImageResizingOptions.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DitheringForDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\FlipDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\GrayscalingOnDICOM.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\RotatingDICOMImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DitheringRasterImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExpandOrCropAnImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExportDxfToPdf.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExportPsdLayersToImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.vb" />
+    <Compile Include="ModifyingAndConvertingImages\Grayscaling.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AddThumbnailToEXIFSegment.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AddThumbnailToJFIFSegment.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AutoCorrectOrientationOfJPEGImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\CroppingByRectangle.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\CroppingByShifts.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadAllEXIFTags.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadAndModifyJpegEXIFTags.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadJpegEXIFTags.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadSpecificEXIFTagsInformation.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\RotatingAnImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\WritingAndModifyingEXIFData.vb" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertEMFToPDF.vb" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingByRectangleEMFImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingEMFImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ExportMetaFileToRasterFormats.vb" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SpecifyFontFolder.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ApplyFilterMethod.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ChangeBackgroundColor.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\CompressingFiles.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SettingResolution.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyBitDepth.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyTransparency.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyTransparencyUsingRasterImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\CreateIndexedPSDFiles.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\CreateThumbnailsFromPSDFiles.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\DetectFlattenedPSD.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\ExportPSDLayerToRasterImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\ImportImageToPSDLayer.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\MergePSDlayers.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\UpdateTextLayerInPSDFile.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ReadAndWriteXMPDataToImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ResizeImageWithResizeTypeEnumeration.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ResizingWithResizeTypeEnumeration.vb" />
+    <Compile Include="ModifyingAndConvertingImages\RotatingImageOnSpecificAngle.vb" />
+    <Compile Include="ModifyingAndConvertingImages\SavingEachFrameInOtherRasterImageFormat.vb" />
+    <Compile Include="ModifyingAndConvertingImages\SavingRasterImageToTIFFWithCompression.vb" />
+    <Compile Include="ModifyingAndConvertingImages\SimpleResizeImageProportionally.vb" />
+    <Compile Include="ModifyingAndConvertingImages\SimpleResizing.vb" />
+    <Compile Include="ModifyingAndConvertingImages\SplittingTiffFrames.vb" />
+    <Compile Include="ModifyingAndConvertingImages\TiffDataRecovery.vb" />
+    <Compile Include="ModifyingAndConvertingImages\TiffOptionsConfiguration.vb" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ConvertGIFFImageFrame.vb" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\CreatingWebPImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportToWebP.vb" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.vb" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,11 +182,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Shapes\DrawingArc.vb" />
-    <Compile Include="Shapes\DrawingBezier.vb" />
-    <Compile Include="Shapes\DrawingEllipse.vb" />
-    <Compile Include="Shapes\DrawingLines.vb" />
-    <Compile Include="Shapes\DrawingRectangle.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingArc.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingBezier.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingEllipse.vb" />
+    <Compile Include="DrawingAndFormattingImages\DrawingLines.vb" />
     <Compile Include="RunExamples.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +209,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

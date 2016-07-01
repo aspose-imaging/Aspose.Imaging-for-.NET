@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Aspose.Imaging.Examples.CSharp.Export;
-using Aspose.Imaging.Examples.CSharp.Files;
-using Aspose.Imaging.Examples.CSharp.Images;
-using Aspose.Imaging.Examples.CSharp.Shapes;
+using Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
     {
-
-
         static void Main()
         {
 
@@ -25,45 +23,156 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// Export
+            //// Drawing And Formatting Images
             //// =====================================================
             //// =====================================================
 
+            //DrawingUsingGraphics.Run();
+            //DrawingUsingGraphicsPath.Run();
+            //DrawingRectangle.Run();
+            //DrawingArc.Run();
+            //DrawingEllipse.Run();
+            //DrawingBezier.Run();
+            //CombineImages.Run();
+            //DrawingLines.Run();
+            //CreatingAnImageBySettingPath.Run();
+            //CreatingImageUsingStream.Run();
+            //DrawImagesUsingCoreFunctionality.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Modifying And Converting Images
+            //// =====================================================
+            //// =====================================================
+
+            //AddWatermarkToImage.Run();
+            //AddFramesToTIFFImage.Run();
+            //AdjustBrightness.Run();
+            //AdjustContrast.Run();
+            //AdjustGamma.Run();
+            //AlignHorizontalAndVeticalResolutionsOfImage.Run();
+            //ApplyGaussWienerFilter.Run();
+            //ApplyGaussWienerFilterForColoredImage.Run();
+            //ApplyMedianAndWienerFilters.Run();
+            //BinarizationWithFixedThreshold.Run();
+            //BinarizationWithOtsuThreshold.Run();
+            //BlurAnImage.Run();
+            //Bradleythreshold.Run();
+            //CompressingTIFFImagesWithAdobeDeflateCompression.Run();
+            //CompressingTIFFImagesWithLZWAlgorithm.Run();
+            //ConcatTIFFImages.Run();
+            //ConvertGIFImageLayersToTIFF.Run();
+            //CreatingTIFFImageWithCompression.Run();
+            //DitheringRasterImages.Run();
+            //ExpandOrCropAnImage.Run();
+            //ExtractTIFFFramesToBMPImageFormat.Run();
             //ExportDxfToPdf.Run();
             //ExportImageToDifferentFormats.Run();
             //ExportImageToPSD.Run();
             //ExportPsdLayersToImages.Run();
+            //Grayscaling.Run();
+            //ReadAndWriteXMPDataToImages.Run();
+            //ResizeImageWithResizeTypeEnumeration.Run();
+            //ResizingWithResizeTypeEnumeration.Run();
+            //RotatingImageOnSpecificAngle.Run();
+            //SavingEachFrameInOtherRasterImageFormat.Run();
+            //SavingRasterImageToTIFFWithCompression.Run();
+            //SimpleResizeImageProportionally.Run();
+            //SimpleResizing.Run();
+            //SplittingTiffFrames.Run();
+            //TiffDataRecovery.Run();
+            //TiffOptionsConfiguration.Run();
 
             //// =====================================================
             //// =====================================================
-            //// Files
+            //// DICOM
             //// =====================================================
             //// =====================================================
 
-            //CreatingAnImageBySettingPath.Run();
-            //CreatingImageUsingStream.Run();
+            //AdjustBrightnessDICOM.Run();
+            //AdjustContrastDICOM.Run();
+            //AdjustGammaDICOM.Run();
+            //ApplyFilterOnDICOMImage.Run();
+            //BinarizationWithFixedThresholdOnDICOMImage.Run();
+            //BinarizationWithOtsuThresholdOnDICOMImage.Run();
+            //BinarizationWithBradleysAdaptiveThreshold.Run();
+            //DICOMSimpleResizing.Run();
+            //DitheringForDICOMImage.Run();
+            //DICOMSOtherImageResizingOptions.Run();
+            //FlipDICOMImage.Run();
+            //GrayscalingOnDICOM.Run();
+            //RotatingDICOMImage.Run();
 
             //// =====================================================
             //// =====================================================
-            //// Images
+            //// JPEG
             //// =====================================================
             //// =====================================================
 
-            //AddFramesToTIFFImage.Run();
-            //ConcatTIFFImages.Run();
-            //DrawImagesUsingCoreFunctionality.Run();
-            //DrawingUsingGraphicsPath.Run();
+            //AddThumbnailToEXIFSegment.Run();
+            //AddThumbnailToJFIFSegment.Run();
+            //AutoCorrectOrientationOfJPEGImages.Run();
+            //CroppingByRectangle.Run();
+            //CroppingByShifts.Run();
+            //ReadAllEXIFTags.Run();
+            //ReadAndModifyJpegEXIFTags.Run();
+            //ReadJpegEXIFTags.Run();
+            //ReadSpecificEXIFTagsInformation.Run();
+            //RotatingAnImage.Run();
+            //WritingAndModifyingEXIFData.Run();
+
 
             //// =====================================================
             //// =====================================================
-            //// Shapes
+            //// META FILES
             //// =====================================================
             //// =====================================================
 
-            //DrawingArc.Run();
-            //DrawingBezier.Run();
-            //DrawingEllipse.Run();
-            //DrawingLines.Run();
+            //ConvertEMFToPDF.Run();
+            //CroppingByRectangleEMFImage.Run();
+            //CroppingEMFImage.Run();
+            //ExportMetaFileToRasterFormats.Run();
+            //SpecifyFontFolder.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// PNG
+            //// =====================================================
+            //// =====================================================
+
+            //ApplyFilterMethod.Run();
+            //ChangeBackgroundColor.Run();
+            //CompressingFiles.Run();
+            //SettingResolution.Run();
+            //SpecifyBitDepth.Run();
+            //SpecifyTransparency.Run();
+            //SpecifyTransparencyUsingRasterImage.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// PSD
+            //// =====================================================
+            //// =====================================================
+
+            //CreateIndexedPSDFiles.Run();
+            //CreateThumbnailsFromPSDFiles.Run();
+            //DetectFlattenedPSD.Run();
+            //ExportPSDLayerToRasterImage.Run();
+            //ImportImageToPSDLayer.Run();
+            //UpdateTextLayerInPSDFile.Run();
+            //MergePSDlayers.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// WebPImage
+            //// =====================================================
+            //// =====================================================
+
+            //ConvertGIFFImageFrame.Run();
+            //CreatingWebPImage.Run();
+            //ExportToWebP.Run();
+            //ExportWebPToOtherImageFormats.Run();
+            //ExtractFrameFromWebPImage.Run();
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
@@ -84,11 +193,45 @@ namespace Aspose.Imaging.Examples.CSharp
             return Path.GetFullPath(GetDataDir_Data() + "Images/" + path + "/");
         }
 
-        public static String GetDataDir_Shapes(string path)
+        public static String GetDataDir_PNG()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "Shapes/" + path + "/");
+            return Path.GetFullPath(GetDataDir_Data() + "PNG/");
         }
 
+        public static String GetDataDir_DrawingAndFormattingImages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "DrawingAndFormattingImages/");
+        }
+
+        public static String GetDataDir_DICOM()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "DICOM/");
+        }
+
+        public static String GetDataDir_JPEG()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "JPEG/");
+        }
+
+        public static String GetDataDir_ModifyingAndConvertingImages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "ModifyingAndConvertingImages/");
+        }
+
+        public static String GetDataDir_MetaFiles()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "MetaFiles/");
+        }
+
+        public static String GetDataDir_PSD()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "PSD/");
+        }
+
+        public static String GetDataDir_WebPImages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WebPImage/");
+        }
 
         public static string GetDataDir_Data()
         {

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FontCollection>
+<Symbols count="0">
+</Symbols>
+<Fonts count="3">
+<FontMetricsFactory font="Arial" style="Regular">
+<FontsMetrics count="6">
+<Metrics size="8" font="Arial" style="Regular">
+<Ascender>2</Ascender>
+<Descender>3</Descender>
+<Linespace>13</Linespace>
+<Wordspace>3</Wordspace>
+<XHeight>6</XHeight>
+</Metrics>
+
+<Metrics size="16" font="Arial" style="Regular">
+<Ascender>3</Ascender>
+<Descender>4</Descender>
+<Linespace>26</Linespace>
+<Wordspace>7</Wordspace>
+<XHeight>11</XHeight>
+</Metrics>
+
+<Metrics size="32" font="Arial" style="Regular">
+<Ascender>6</Ascender>
+<Descender>10</Descender>
+<Linespace>51</Linespace>
+<Wordspace>13</Wordspace>
+<XHeight>23</XHeight>
+</Metrics>
+
+<Metrics size="64" font="Arial" style="Regular">
+<Ascender>15</Ascender>
+<Descender>17</Descender>
+<Linespace>103</Linespace>
+<Wordspace>25</Wordspace>
+<XHeight>44</XHeight>
+</Metrics>
+
+<Metrics size="128" font="Arial" style="Regular">
+<Ascender>32</Ascender>
+<Descender>34</Descender>
+<Linespace>206</Linespace>
+<Wordspace>50</Wordspace>
+<XHeight>89</XHeight>
+</Metrics>
+
+<Metrics size="256" font="Arial" style="Regular">
+<Ascender>64</Ascender>
+<Descender>66</Descender>
+<Linespace>413</Linespace>
+<Wordspace>101</Wordspace>
+<XHeight>177</XHeight>
+</Metrics>
+
+</FontsMetrics>
+</FontMetricsFactory>
+
+<FontMetricsFactory font="Times New Roman" style="Regular">
+<FontsMetrics count="6">
+<Metrics size="8" font="Times New Roman" style="Regular">
+<Ascender>2</Ascender>
+<Descender>3</Descender>
+<Linespace>13</Linespace>
+<Wordspace>3</Wordspace>
+<XHeight>5</XHeight>
+</Metrics>
+
+<Metrics size="16" font="Times New Roman" style="Regular">
+<Ascender>5</Ascender>
+<Descender>3</Descender>
+<Linespace>26</Linespace>
+<Wordspace>5</Wordspace>
+<XHeight>10</XHeight>
+</Metrics>
+
+<Metrics size="32" font="Times New Roman" style="Regular">
+<Ascender>9</Ascender>
+<Descender>8</Descender>
+<Linespace>52</Linespace>
+<Wordspace>10</Wordspace>
+<XHeight>19</XHeight>
+</Metrics>
+
+<Metrics size="64" font="Times New Roman" style="Regular">
+<Ascender>20</Ascender>
+<Descender>18</Descender>
+<Linespace>104</Linespace>
+<Wordspace>21</Wordspace>
+<XHeight>38</XHeight>
+</Metrics>
+
+<Metrics size="128" font="Times New Roman" style="Regular">
+<Ascender>41</Ascender>
+<Descender>35</Descender>
+<Linespace>208</Linespace>
+<Wordspace>45</Wordspace>
+<XHeight>77</XHeight>
+</Metrics>
+
+<Metrics size="256" font="Times New Roman" style="Regular">
+<Ascender>39</Ascender>
+<Descender>71</Descender>
+<Linespace>416</Linespace>
+<Wordspace>91</Wordspace>
+<XHeight>153</XHeight>
+</Metrics>
+
+</FontsMetrics>
+</FontMetricsFactory>
+
+<FontMetricsFactory font="Courier New" style="Regular">
+<FontsMetrics count="6">
+<Metrics size="8" font="Courier New" style="Regular">
+<Ascender>2</Ascender>
+<Descender>3</Descender>
+<Linespace>13</Linespace>
+<Wordspace>7</Wordspace>
+<XHeight>5</XHeight>
+</Metrics>
+
+<Metrics size="16" font="Courier New" style="Regular">
+<Ascender>3</Ascender>
+<Descender>3</Descender>
+<Linespace>26</Linespace>
+<Wordspace>14</Wordspace>
+<XHeight>9</XHeight>
+</Metrics>
+
+<Metrics size="32" font="Courier New" style="Regular">
+<Ascender>6</Ascender>
+<Descender>8</Descender>
+<Linespace>52</Linespace>
+<Wordspace>28</Wordspace>
+<XHeight>19</XHeight>
+</Metrics>
+
+<Metrics size="64" font="Courier New" style="Regular">
+<Ascender>14</Ascender>
+<Descender>16</Descender>
+<Linespace>105</Linespace>
+<Wordspace>55</Wordspace>
+<XHeight>36</XHeight>
+</Metrics>
+
+<Metrics size="128" font="Courier New" style="Regular">
+<Ascender>29</Ascender>
+<Descender>34</Descender>
+<Linespace>209</Linespace>
+<Wordspace>111</Wordspace>
+<XHeight>73</XHeight>
+</Metrics>
+
+<Metrics size="256" font="Courier New" style="Regular">
+<Ascender>60</Ascender>
+<Descender>69</Descender>
+<Linespace>419</Linespace>
+<Wordspace>221</Wordspace>
+<XHeight>145</XHeight>
+</Metrics>
+
+</FontsMetrics>
+</FontMetricsFactory>
+
+</Fonts>
+</FontCollection>
+
