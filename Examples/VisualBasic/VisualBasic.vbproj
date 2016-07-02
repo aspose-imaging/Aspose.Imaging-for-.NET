@@ -88,7 +88,11 @@
     <Compile Include="ModifyingAndConvertingImages\AdjustGamma.vb" />
     <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.vb" />
-    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage - Copy.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenateTiffImagesHavingSeveralFrames.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenatingTIFFImagesfromStream.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyingMotionWienerFilter.vb" />
     <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.vb" />
     <Compile Include="ModifyingAndConvertingImages\BinarizationWithFixedThreshold.vb" />
     <Compile Include="ModifyingAndConvertingImages\BinarizationWithOtsuThreshold.vb" />

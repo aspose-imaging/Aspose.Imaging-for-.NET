@@ -19,19 +19,14 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
 
             ' Load the image
             Using image__1 As Image = Image.Load(dataDir & Convert.ToString("asposelogo.gif"))
-                ' caste the image into RasterImage
-                Dim rasterImage As RasterImage = TryCast(image__1, RasterImage)
-                If rasterImage Is Nothing Then
-                    Return
-                End If
+                ' Convert the image into RasterImage.
+                Dim rasterImage As RasterImage = DirectCast(image__1, RasterImage)
 
-                ' Create an instance of GaussWienerFilterOptions class and set the radius size and smooth value.
-                Dim options As New GaussWienerFilterOptions(5, 1.5)
-                options.Brightness = 1
+                ' Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method.
+                rasterImage.Filter(rasterImage.Bounds, New GaussianBlurFilterOptions(5, 5))
 
-                ' apply MedianFilterOptions filter to RasterImage object & Save the resultant image
-                rasterImage.Filter(image__1.Bounds, options)
-                image__1.Save(dataDir & Convert.ToString("ApplyGaussWienerFilter_out.gif"))
+                ' Save the results to output path.
+                rasterImage.Save(dataDir + "BlurAnImage_out.gif")
             End Using
             ' ExEnd:BlurAnImage
         End Sub

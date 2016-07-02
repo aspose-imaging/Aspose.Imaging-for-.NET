@@ -52,6 +52,10 @@
   <ItemGroup>
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenateTiffImagesHavingSeveralFrames.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenatingTIFFImagesfromStream.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyingMotionWienerFilter.cs" />
     <Compile Include="ModifyingAndConvertingImages\Bradleythreshold.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportDxfToPdf.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.cs" />

@@ -11,28 +11,36 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
-    class BlurAnImage
+    class ApplyingMotionWienerFilter
     {
         public static void Run()
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-            // ExStart:BlurAnImage
+            // ExStart:ApplyingMotionWienerFilter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             // Load the image
             using (Image image = Image.Load(dataDir + "asposelogo.gif"))
             {
-                // Convert the image into RasterImage.
-                RasterImage rasterImage = (RasterImage)image;
+                // caste the image into RasterImage
+                RasterImage rasterImage = image as RasterImage;
+                if (rasterImage == null)
+                {
+                    return;
+                }
 
-                // Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method.
-                rasterImage.Filter(rasterImage.Bounds, new GaussianBlurFilterOptions(5, 5));
+                // Create an instance of MotionWienerFilterOptions class and set the length, smooth value and angle.
+                MotionWienerFilterOptions options = new MotionWienerFilterOptions(50, 9, 90);
+                options.Grayscale = true;
 
-                // Save the results to output path.
-                rasterImage.Save(dataDir + "BlurAnImage_out.gif");
+                // apply MedianFilterOptions filter to RasterImage object.
+                rasterImage.Filter(image.Bounds, options);
+
+                // Save the resultant image
+                image.Save(dataDir + "ApplyingMotionWienerFilter_out.gif");
             }
-            // ExEnd:BlurAnImage
+            // ExEnd:ApplyingMotionWienerFilter
         }
     }
 }

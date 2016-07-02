@@ -1,5 +1,7 @@
 ﻿using Aspose.Imaging.ImageFilters.FilterOptions;
 using Aspose.Imaging;
+using Aspose.Imaging.FileFormats.Svg;
+using Aspose.Imaging.ImageOptions;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -11,28 +13,25 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
-    class BlurAnImage
+    public class ConvertingSVGToRasterImages
     {
         public static void Run()
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-            // ExStart:BlurAnImage
+            // ExStart:ApplyingMotionWienerFilter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             // Load the image
-            using (Image image = Image.Load(dataDir + "asposelogo.gif"))
+            using (SvgImage image = (SvgImage)Image.Load(dataDir + "aspose_logo.Svg"))
             {
-                // Convert the image into RasterImage.
-                RasterImage rasterImage = (RasterImage)image;
+                // create an instance of PNG options
+                PngOptions pngOptions = new PngOptions();
 
-                // Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method.
-                rasterImage.Filter(rasterImage.Bounds, new GaussianBlurFilterOptions(5, 5));
-
-                // Save the results to output path.
-                rasterImage.Save(dataDir + "BlurAnImage_out.gif");
+                //Save the results to disk
+                image.Save(dataDir + "ConvertingSVGToRasterImages_out.png", pngOptions);
             }
-            // ExEnd:BlurAnImage
+            // ExEnd:ApplyingMotionWienerFilter
         }
     }
 }

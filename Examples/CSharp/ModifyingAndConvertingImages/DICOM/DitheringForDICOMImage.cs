@@ -27,8 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // Load an existing image.
             using (DicomImage image = new DicomImage(dataDir + "image.dcm"))
             {
-                // Transform image to its grayscale representation
-                image.Grayscale();
+                // Peform Threshold dithering on the image
+                image.Dither(DitheringMethod.ThresholdDithering, 1);
 
                 // Save the resultant image.
                 image.Save(dataDir + "DitheringForDICOMImage_out.bmp", new BmpOptions());
