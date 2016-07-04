@@ -18,9 +18,9 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
 
             ' Load an image in an instance of Image
-            Using image__1 As Image = Image.Load(dataDir & Convert.ToString("aspose-logo.jpg"))
+            Using image_1 As Image = Image.Load(dataDir & Convert.ToString("aspose-logo.jpg"))
                 ' Cast object of Image to RasterImage
-                Dim rasterImage As RasterImage = DirectCast(image__1, RasterImage)
+                Dim rasterImage As RasterImage = DirectCast(image_1, RasterImage)
 
                 ' Check if RasterImage is cached
                 If Not rasterImage.IsCached Then

@@ -53,14 +53,18 @@ namespace Aspose.Imaging.Examples.CSharp
             //AlignHorizontalAndVeticalResolutionsOfImage.Run();
             //ApplyGaussWienerFilter.Run();
             //ApplyGaussWienerFilterForColoredImage.Run();
+            //ApplyingMotionWienerFilter.Run();
             //ApplyMedianAndWienerFilters.Run();
             //BinarizationWithFixedThreshold.Run();
             //BinarizationWithOtsuThreshold.Run();
             //BlurAnImage.Run();
             //Bradleythreshold.Run();
+            //ConvertingSVGToRasterImages.Run();
             //CompressingTIFFImagesWithAdobeDeflateCompression.Run();
             //CompressingTIFFImagesWithLZWAlgorithm.Run();
             //ConcatTIFFImages.Run();
+            //ConcatenatingTIFFImagesfromStream.Run();
+            //ConcatenateTiffImagesHavingSeveralFrames.Run();
             //ConvertGIFImageLayersToTIFF.Run();
             //CreatingTIFFImageWithCompression.Run();
             //DitheringRasterImages.Run();
