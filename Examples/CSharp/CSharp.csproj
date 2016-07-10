@@ -57,6 +57,11 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\ApplyingMotionWienerFilter.cs" />
     <Compile Include="ModifyingAndConvertingImages\Bradleythreshold.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertSpecificPortionOfDjVuPage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPagesToSeparateImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToTIFF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportDxfToPdf.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.cs" />
