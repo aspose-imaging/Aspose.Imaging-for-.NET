@@ -213,7 +213,13 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToTIFF.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToPDF.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPagesToSeparateImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertSpecificPortionOfDjVuPage.vb" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

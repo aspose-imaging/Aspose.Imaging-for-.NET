@@ -2,6 +2,7 @@
 Imports Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
 Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
 Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DICOM
+Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DjVu
 Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
 Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaFiles
 Imports Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.PNG
@@ -175,6 +176,18 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             'ExportWebPToOtherImageFormats.Run()
             'ExtractFrameFromWebPImage.Run()
 
+            ' =====================================================
+            ' =====================================================
+            ' Djvu
+            ' =====================================================
+            ' =====================================================
+
+            'ConvertDjVuToTIFF.Run()
+            'ConvertDjVuToPDF.Run()
+            'ConvertRangeOfDjVuPages.Run()
+            'ConvertRangeOfDjVuPagesToSeparateImages.Run()
+            'ConvertSpecificPortionOfDjVuPage.Run()
+
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
         End Sub
@@ -206,6 +219,12 @@ Namespace Aspose.Imaging.Examples.VisualBasic
         Public Shared Function GetDataDir_JPEG() As [String]
             Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("JPEG/"))
         End Function
+
+        Public Shared Function GetDataDir_DjVu() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Djvu/"))
+        End Function
+
+
 
         Public Shared Function GetDataDir_ModifyingAndConvertingImages() As [String]
             Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("ModifyingAndConvertingImages/"))

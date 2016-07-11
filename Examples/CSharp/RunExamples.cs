@@ -3,6 +3,7 @@ using System.IO;
 using Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM;
+using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG;
@@ -178,6 +179,19 @@ namespace Aspose.Imaging.Examples.CSharp
             //ExportWebPToOtherImageFormats.Run();
             //ExtractFrameFromWebPImage.Run();
 
+
+            //// =====================================================
+            //// =====================================================
+            //// DjVu
+            //// =====================================================
+            //// =====================================================
+
+            //ConvertDjVuToTIFF.Run();
+            //ConvertRangeOfDjVuPages.Run();
+            //ConvertRangeOfDjVuPagesToSeparateImages.Run();
+            //ConvertSpecificPortionOfDjVuPage.Run();
+            //ConvertDjVuToPDF.Run();
+
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
@@ -235,6 +249,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_WebPImages()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WebPImage/");
+        }
+
+        public static String GetDataDir_DjVu()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "DjVu/");
         }
 
         public static string GetDataDir_Data()
