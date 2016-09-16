@@ -1,7 +1,7 @@
 ##Aspose.Imaging for .NET Examples
 
-This repository contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/.net/imaging-component.aspx).
+This repository contains C# and VB.NET Example Projects for [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net).
 
 ##How to use the Examples?
 
-Read our [documentation](http://www.aspose.com/docs/display/imagingnet/How+to+use+the+Examples) for details.
+Visit [Aspose Documentation and Developer Guide](http://www.aspose.com/docs/display/imagingnet/How+to+Run+the+Examples) for details.
