@@ -48,6 +48,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             'AdjustBrightness.Run()
             'AdjustContrast.Run()
             'AdjustGamma.Run()
+            'ConvertEMFToWMF.Run()
             'AlignHorizontalAndVeticalResolutionsOfImage.Run()
             'ApplyGaussWienerFilter.Run()
             'ApplyGaussWienerFilterForColoredImage.Run()

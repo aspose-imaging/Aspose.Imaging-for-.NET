@@ -37,8 +37,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=3.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.3.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.4.0.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertEMFToWMF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConcatenateTiffImagesHavingSeveralFrames.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConcatenatingTIFFImagesfromStream.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.cs" />
@@ -62,7 +63,6 @@
     <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPagesToSeparateImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPages.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToTIFF.cs" />
-    <Compile Include="ModifyingAndConvertingImages\ExportDxfToPdf.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.cs" />
     <Compile Include="ModifyingAndConvertingImages\AddWatermarkToImage.cs" />
