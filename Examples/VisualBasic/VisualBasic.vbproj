@@ -49,8 +49,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=3.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.3.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.4.0.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -85,6 +85,7 @@
     <Compile Include="DrawingAndFormattingImages\DrawImagesUsingCoreFunctionality.vb" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphicsPath.vb" />
     <Compile Include="ModifyingAndConvertingImages\AdjustContrast.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertEMFToWMF.vb" />
     <Compile Include="ModifyingAndConvertingImages\AdjustGamma.vb" />
     <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.vb" />
@@ -119,7 +120,6 @@
     <Compile Include="ModifyingAndConvertingImages\DICOM\RotatingDICOMImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\DitheringRasterImages.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExpandOrCropAnImage.vb" />
-    <Compile Include="ModifyingAndConvertingImages\ExportDxfToPdf.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExportPsdLayersToImages.vb" />

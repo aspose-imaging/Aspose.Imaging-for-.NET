@@ -46,11 +46,13 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
+
             //AddWatermarkToImage.Run();
             //AddFramesToTIFFImage.Run();
             //AdjustBrightness.Run();
             //AdjustContrast.Run();
             //AdjustGamma.Run();
+            //ConvertEMFToWMF.Run();
             //AlignHorizontalAndVeticalResolutionsOfImage.Run();
             //ApplyGaussWienerFilter.Run();
             //ApplyGaussWienerFilterForColoredImage.Run();
@@ -70,8 +72,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //CreatingTIFFImageWithCompression.Run();
             //DitheringRasterImages.Run();
             //ExpandOrCropAnImage.Run();
-            //ExtractTIFFFramesToBMPImageFormat.Run();
-            //ExportDxfToPdf.Run();
+            //ExtractTIFFFramesToBMPImageFormat.Run();            
             //ExportImageToDifferentFormats.Run();
             //ExportImageToPSD.Run();
             //ExportPsdLayersToImages.Run();

@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 graphics.Clear(Color.White);
 
                 // Draw Image
-                graphics.DrawImage(Image.Load(dataDir + "SampleImage_out.bmp"), 0, 0, 600, 300);
+                graphics.DrawImage(Image.Load(dataDir + "sample_1.bmp"), 0, 0, 600, 300);
                 graphics.DrawImage(Image.Load(dataDir + "File1.bmp"), 0, 300, 600, 300);
 
                 // Call save method to save the resultant image.
