@@ -16,7 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp
     {
         static void Main()
         {
-
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
@@ -69,7 +68,9 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConcatenatingTIFFImagesfromStream.Run();
             //ConcatenateTiffImagesHavingSeveralFrames.Run();
             //ConvertGIFImageLayersToTIFF.Run();
-            //CreatingTIFFImageWithCompression.Run();
+            //CreatingTIFFImageWithCompression.Run();            
+            //CreateWMFMetaFileImage.Run();
+            //ConvertWMFMetaFileToSVG.Run();             
             //DitheringRasterImages.Run();
             //ExpandOrCropAnImage.Run();
             //ExtractTIFFFramesToBMPImageFormat.Run();            

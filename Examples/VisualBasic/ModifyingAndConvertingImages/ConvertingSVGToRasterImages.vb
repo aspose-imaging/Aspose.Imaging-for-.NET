@@ -1,6 +1,4 @@
-﻿Imports Aspose.Imaging.ImageFilters.FilterOptions
-Imports Aspose.Imaging
-Imports Aspose.Imaging.FileFormats.Svg
+﻿Imports Aspose.Imaging.FileFormats.Svg
 Imports Aspose.Imaging.ImageOptions
 
 '
@@ -11,9 +9,8 @@ Imports Aspose.Imaging.ImageOptions
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
-    Class ConvertingSVGToRasterImages
+    Public Class ConvertingSVGToRasterImages
         Public Shared Sub Run()
             ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             ' ExStart:ApplyingMotionWienerFilter

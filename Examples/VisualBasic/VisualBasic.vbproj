@@ -49,8 +49,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.4.0.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.16.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -78,6 +78,8 @@
     <Compile Include="DrawingAndFormattingImages\DrawingRectangle.vb" />
     <Compile Include="DrawingAndFormattingImages\CreatingAnImageBySettingPath.vb" />
     <Compile Include="DrawingAndFormattingImages\CreatingImageUsingStream.vb" />
+    <Compile Include="ModifyingAndConvertingImages\CreateWMFMetaFileImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFMetaFileToSVG.vb" />
     <Compile Include="ModifyingAndConvertingImages\AdjustBrightness.vb" />
     <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImageWithDifferentSettings.vb" />
     <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImage.vb" />
