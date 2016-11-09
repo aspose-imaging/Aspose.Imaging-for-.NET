@@ -1,9 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
+install it and then add its reference to this project. For any issues, questions or suggestions 
+please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
@@ -15,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            List<string> files = new List<string>(new string[] { dataDir + "TestDemo.tiff", dataDir + "sample.tiff" });
+            List<string> files = new List<string>(new[] { dataDir + "TestDemo.tiff", dataDir + "sample.tiff" });
             TiffOptions createOptions = new TiffOptions(TiffExpectedFormat.Default);
             createOptions.BitsPerSample = new ushort[] { 1 };
             createOptions.Orientation = TiffOrientations.TopLeft;
@@ -40,7 +47,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                         {
                             if (output == null)
                             {
-                                // create a new tiff image with first frame defined.
+                                // Create a new tiff image with first frame defined.
                                 output = new TiffImage(TiffFrame.CopyFrame(frame));
                             }
                             else
@@ -53,7 +60,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 
                     if (output != null)
                     {
-                        // save the result
+                        // Save the result
                         output.Save(dataDir + "ConcatenateTiffImagesHavingSeveralFrames_out.tif", createOptions);
                     }
                 }

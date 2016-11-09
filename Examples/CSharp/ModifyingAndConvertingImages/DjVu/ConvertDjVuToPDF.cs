@@ -1,5 +1,5 @@
 using Aspose.Imaging.FileFormats.Djvu;
-using Aspose.Imaging.FileFormats.Png;
+using Aspose.Imaging.FileFormats.Pdf;
 using Aspose.Imaging.ImageOptions;
 
 /*
@@ -22,15 +22,15 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
             // Load a DjVu image
             using (DjvuImage image = (DjvuImage)Image.Load(dataDir + "Sample.djvu"))
             {
-                // Create an instance of PdfOptions
+                // Create an instance of PdfOptions and Initialize the metadata for Pdf document
                 PdfOptions exportOptions = new PdfOptions();
-                // Initialize the metadata for Pdf document
-                exportOptions.PdfDocumentInfo = new Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo();
+                exportOptions.PdfDocumentInfo = new PdfDocumentInfo();
+                
                 // Create an instance of IntRange and initialize it with the range of DjVu pages to be exported
-                IntRange range = new IntRange(0, 5); //Export first 5 pages
-                // Initialize an instance of DjvuMultiPageOptions with range of DjVu pages to be exported 
+                IntRange range = new IntRange(0, 5); // Export first 5 pages
+
+                // Initialize an instance of DjvuMultiPageOptions with range of DjVu pages to be exported and Save the result in PDF format
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions(range);
-                // Save the result in PDF format
                 image.Save(dataDir + "ConvertDjVuToPDFFormat_out.pdf", exportOptions);
             }
         }

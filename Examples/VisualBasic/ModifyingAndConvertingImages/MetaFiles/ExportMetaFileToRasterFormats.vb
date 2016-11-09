@@ -1,17 +1,15 @@
-﻿
-Imports Aspose.Imaging.CoreExceptions
+﻿Imports Aspose.Imaging.CoreExceptions
 Imports Aspose.Imaging.FileFormats.Emf
 Imports Aspose.Imaging.FileFormats.Tiff.Enums
 Imports Aspose.Imaging.ImageOptions
 
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-'when the project is build. Please check https:// Docs.nuget.org/consume/nuget-faq for more information. 
+'when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
 'If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
 'Install it and then add its reference to this project. For any issues, questions or suggestions 
 'Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
-
 
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaFiles
     Class ExportMetaFileToRasterFormats
@@ -32,42 +30,28 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
                     Throw New ImageLoadException(String.Format("The file {0} is not valid", dataDir & Convert.ToString("Picture1.emf")))
                 End If
 
-                ' Convert EMF to BMP
+                ' Convert EMF to BMP, GIF, JPEG, J2K, PNG, PSD, TIFF and WebP
                 image__1.Save(outputfile & Convert.ToString(".bmp"), New BmpOptions() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to GIF
                 image__1.Save(outputfile & Convert.ToString(".gif"), New GifOptions() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to JPEG
                 image__1.Save(outputfile & Convert.ToString(".jpeg"), New JpegOptions() With {
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to J2K
                 image__1.Save(outputfile & Convert.ToString(".j2k"), New Jpeg2000Options() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to PNG
                 image__1.Save(outputfile & Convert.ToString(".png"), New PngOptions() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to PSD
                 image__1.Save(outputfile & Convert.ToString(".psd"), New PsdOptions() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to TIFF
                 image__1.Save(outputfile & Convert.ToString(".tiff"), New TiffOptions(TiffExpectedFormat.TiffLzwRgb) With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
-
-                ' Convert EMF to WebP
                 image__1.Save(outputfile & Convert.ToString(".webp"), New WebPOptions() With { _
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })

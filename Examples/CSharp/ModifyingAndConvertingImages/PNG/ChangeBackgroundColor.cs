@@ -1,11 +1,6 @@
-﻿using System;
-using Aspose.Imaging.FileFormats.Png;
-using Aspose.Imaging.ImageOptions;
-using Aspose.Imaging;
-
-/*
+﻿/*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https:// Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -31,13 +26,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                     int[] pixels = rasterImg.LoadArgb32Pixels(img.Bounds);
                     if (pixels != null)
                     {
-                        // Iterate through the pixel array.
+                        // Iterate through the pixel array and Check the pixel information that if it is a transparent color pixel and Change the pixel color to white
                         for (int i = 0; i < pixels.Length; i++)
                         {
-                            // Check the pixel information that if it is a transparent color pixel
                             if (pixels[i] == rasterImg.TransparentColor.ToArgb())
                             {
-                                // Change the pixel color to white
                                 pixels[i] = Color.White.ToArgb();
                             }
                         }
@@ -50,7 +43,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 if (rasterImg != null)
                     rasterImg.Save(dataDir + "ChangeBackgroundColor_out.jpg");
             }
-
             // ExEnd:ChangeBackgroundColor
         }
     }

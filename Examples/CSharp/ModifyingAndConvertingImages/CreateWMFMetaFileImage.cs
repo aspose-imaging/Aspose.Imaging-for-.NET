@@ -1,8 +1,10 @@
 using Aspose.Imaging.Brushes;
+using Aspose.Imaging.FileFormats.Wmf;
+using Aspose.Imaging.FileFormats.Wmf.Graphics;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https:// Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -20,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            FileFormats.Wmf.Graphics.WmfRecorderGraphics2D graphics = new FileFormats.Wmf.Graphics.WmfRecorderGraphics2D(new Aspose.Imaging.Rectangle(0, 0, 100, 100), 96);
+            WmfRecorderGraphics2D graphics = new WmfRecorderGraphics2D(new Rectangle(0, 0, 100, 100), 96);
 
             // Define background color
             graphics.BackgroundColor = Color.WhiteSmoke;
@@ -29,16 +31,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             Pen pen = new Pen(Color.Blue);
 
             // Create an instance of Imaging Brush class and mention its color.
-            Brush brush = new Brushes.SolidBrush(Color.YellowGreen);
+            Brush brush = new SolidBrush(Color.YellowGreen);
 
             // Polygon Fill polygon by calling FillPolygon method and passing parameters brush and points.
-            graphics.FillPolygon(brush, new Point[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
+            graphics.FillPolygon(brush, new[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
 
             // Draw a polygon by calling DrawPolygon method and passing parameters pen and points.
-            graphics.DrawPolygon(pen, new Point[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
+            graphics.DrawPolygon(pen, new[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
 
             // Ellipse  Create an instance of HatchBrush class set different properties.
-            brush = new HatchBrush() { HatchStyle = HatchStyle.Cross, BackgroundColor = Color.White, ForegroundColor = Aspose.Imaging.Color.Silver };
+            brush = new HatchBrush { HatchStyle = HatchStyle.Cross, BackgroundColor = Color.White, ForegroundColor = Color.Silver };
 
             // Fill ellipse by calling FillEllipse method and passing parameters brush and an instance of Imaging Rectangle class.
             graphics.FillEllipse(brush, new Rectangle(25, 2, 20, 20));
@@ -60,7 +62,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             pen.Color = Color.Red;
 
             // Draw an CubicBezier by calling DrawCubicBezier method and passing parameters pen and points.
-            graphics.DrawCubicBezier(pen, new Point(10, 25), new Point(20, 50), new Point(30, 50), new Aspose.Imaging.Point(40, 25));
+            graphics.DrawCubicBezier(pen, new Point(10, 25), new Point(20, 50), new Point(30, 50), new Point(40, 25));
 
             // Image  Create an Instance of Image class.
             using (Image image = Image.Load(dataDir + @"WaterMark.bmp"))
@@ -90,7 +92,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             pen.Color = Color.AliceBlue;
 
             // Polyline Draw Polyline by calling DrawPolyline method and passing parameters pen and points.
-            graphics.DrawPolyline(pen, new Point[] { new Point(50, 40), new Point(75, 40), new Point(75, 45), new Point(50, 45) });
+            graphics.DrawPolyline(pen, new[] { new Point(50, 40), new Point(75, 40), new Point(75, 45), new Point(50, 45) });
 
             // For having Strings Create an instance of Font class.
             Font font = new Font("Arial", 16);
@@ -99,7 +101,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             graphics.DrawString("Aspose", font, Color.Blue, 25, 75);
 
             // Call end recording of graphics object and save WMF image by calling Save method.
-            using (FileFormats.Wmf.WmfImage image = graphics.EndRecording())
+            using (WmfImage image = graphics.EndRecording())
             {
                 image.Save(dataDir + "CreateWMFMetaFileImage.wmf");
             }

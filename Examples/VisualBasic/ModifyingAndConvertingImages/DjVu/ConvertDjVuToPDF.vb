@@ -9,7 +9,6 @@ Imports Aspose.Imaging.ImageOptions
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DjVu
     Public Class ConvertDjVuToPDF
         Public Shared Sub Run()
@@ -18,16 +17,14 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DjVu
 
             ' Load a DjVu image
             Using image1 As DjvuImage = DirectCast(Image.Load(dataDir & Convert.ToString("Sample.djvu")), DjvuImage)
-                ' Create an instance of PdfOptions
+                ' Create an instance of PdfOptions and Initialize the metadata for Pdf document
+
                 Dim exportOptions As New PdfOptions()
-                ' Initialize the metadata for Pdf document
                 exportOptions.PdfDocumentInfo = New Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo()
+
                 ' Create an instance of IntRange and initialize it with the range of DjVu pages to be exported
                 Dim range As New IntRange(0, 5)
-                'Export first 5 pages
-                ' Initialize an instance of DjvuMultiPageOptions with range of DjVu pages to be exported 
                 exportOptions.MultiPageOptions = New DjvuMultiPageOptions(range)
-                ' Save the result in PDF format
                 image1.Save(dataDir & Convert.ToString("ConvertDjVuToPDFFormat_out.pdf"), exportOptions)
             End Using
         End Sub
