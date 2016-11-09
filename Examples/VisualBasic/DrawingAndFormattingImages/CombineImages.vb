@@ -28,8 +28,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
                 ' Create and initialize an instance of Graphics, Clear the image surface with white color and Draw Image
                 Dim graphics = New Graphics(image__1)
                 graphics.Clear(Color.White)
-                graphics.DrawImage(Image.Load(dataDir & Convert.ToString("SampleImage_out.bmp")), 0, 0, 600, 300)
-                graphics.DrawImage(Image.Load(dataDir & Convert.ToString("File1_out.bmp")), 0, 300, 600, 300)
+                graphics.DrawImage(Image.Load(dataDir & Convert.ToString("sample_1.bmp")), 0, 0, 600, 300)
+                graphics.DrawImage(Image.Load(dataDir & Convert.ToString("File1.bmp")), 0, 300, 600, 300)
                 image__1.Save()
             End Using
             ' ExEnd:CombineImages
