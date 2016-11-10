@@ -1,9 +1,8 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
-using Aspose.Imaging;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https:// Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -40,14 +39,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
             // Create & initialize an instance of PngImage while specifying size and PngColorType
             using (PngImage png = new PngImage(width, height, PngColorType.TruecolorWithAlpha))
             {
-                // Save the previously loaded pixels on to the new PngImage
+                // Save the previously loaded pixels on to the new PngImage and Set TransparentColor property to specify which color to be rendered as transparent
                 png.SavePixels(new Rectangle(0, 0, width, height), pixels);
-
-                // Set TransparentColor property to specify which color to be rendered as transparent
                 png.TransparentColor = Color.Black;
                 png.HasTransparentColor = true;
-
-                // Save the result on disc
                 png.Save(dataDir + "SpecifyTransparencyforPNGImages_out.jpg");
             }
             // ExEnd:SpecifyTransparency

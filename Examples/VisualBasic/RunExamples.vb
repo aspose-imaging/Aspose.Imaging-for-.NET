@@ -42,6 +42,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             ' =====================================================
             ' =====================================================
 
+            'AddSignatureToImage.Run()
             'AddWatermarkToImage.Run()
             'AddFramesToTIFFImageWithDifferentSettings.Run()
             'AddFramesToTIFFImage.Run()
@@ -86,6 +87,17 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             'SplittingTiffFrames.Run()
             'TiffDataRecovery.Run()
             'TiffOptionsConfiguration.Run()
+            'ControllCacheReallocation.Run()
+            'ColorConversionUsingICCProfiles.Run()
+            'ColorConversionUsingDefaultProfiles.Run()
+            'ExportTextAsShape.Run()
+            'CreateEMFMetaFileImage.Run()
+            'ResizeWMFFile.Run()
+            'ConvertWMFToWebp.Run()
+            'ConvertWMFToPNG.Run()
+            'ConvertWMFToPDF.Run()
+            'GetLastModifiedDate.Run()
+            'AddDiagonalWatermarkToImage.Run()
 
             ' =====================================================
             ' =====================================================
@@ -125,7 +137,6 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             'RotatingAnImage.Run()
             'WritingAndModifyingEXIFData.Run()
 
-
             ' =====================================================
             ' =====================================================
             ' META FILES
@@ -135,9 +146,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             'ConvertEMFToPDF.Run()
             'CroppingByRectangleEMFImage.Run()
             'CroppingEMFImage.Run()
-            'ExportMetaFileToRasterFormats.Run()
-            'SpecifyFontFolder.Run()
-
+           
             ' =====================================================
             ' =====================================================
             ' PNG
@@ -158,13 +167,14 @@ Namespace Aspose.Imaging.Examples.VisualBasic
             ' =====================================================
             ' =====================================================
 
+            'UncompressedImageUsingFile.Run()
             'CreateIndexedPSDFiles.Run()
             'CreateThumbnailsFromPSDFiles.Run()
             'DetectFlattenedPSD.Run()
             'ExportPSDLayerToRasterImage.Run()
-            'ImportImageToPSDLayer.Run()
             'UpdateTextLayerInPSDFile.Run()
             'MergePSDlayers.Run()
+            'UncompressedImageStreamObject.Run()
 
             ' =====================================================
             ' =====================================================
@@ -212,6 +222,10 @@ Namespace Aspose.Imaging.Examples.VisualBasic
 
         Public Shared Function GetDataDir_DrawingAndFormattingImages() As [String]
             Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("DrawingAndFormattingImages/"))
+        End Function
+
+        Public Shared Function GetDataDir_Cache() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Cache/"))
         End Function
 
         Public Shared Function GetDataDir_DICOM() As [String]

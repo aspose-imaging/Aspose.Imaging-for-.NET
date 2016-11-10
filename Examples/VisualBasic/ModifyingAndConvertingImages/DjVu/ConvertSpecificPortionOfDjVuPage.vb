@@ -10,7 +10,6 @@ Imports Aspose.Imaging.ImageOptions
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DjVu
     Public Class ConvertSpecificPortionOfDjVuPage
         Public Shared Sub Run()
@@ -19,18 +18,17 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.DjVu
 
             ' Load a DjVu image
             Using image__1 As DjvuImage = DirectCast(Image.Load(dataDir & Convert.ToString("Sample.djvu")), DjvuImage)
-                ' Create an instance of PngOptions
+
+                ' Create an instance of PngOptions and Set ColorType to Grayscale
                 Dim exportOptions As New PngOptions()
-                ' Set ColorType to Grayscale
                 exportOptions.ColorType = PngColorType.Grayscale
+
                 ' Create an instance of Rectangle and specify the portion on DjVu page
                 Dim exportArea As New Rectangle(0, 0, 500, 500)
-                ' Specify the DjVu page index
+
+                ' Specify the DjVu page index and Initialize an instance of DjvuMultiPageOptions while passing index of DjVu page index and instance of Rectangle covering the area to be exported
                 Dim exportPageIndex As Integer = 2
-                ' Initialize an instance of DjvuMultiPageOptions
-                ' while passing index of DjVu page index and instance of Rectangle covering the area to be exported
                 exportOptions.MultiPageOptions = New DjvuMultiPageOptions(exportPageIndex, exportArea)
-                ' Save the image
                 image__1.Save(dataDir & Convert.ToString("ConvertSpecificPortionOfDjVuPage_out.djvu"), exportOptions)
             End Using
         End Sub

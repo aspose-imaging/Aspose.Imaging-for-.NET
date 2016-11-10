@@ -3,6 +3,14 @@ using Aspose.Imaging.Brushes;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
 
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
+install it and then add its reference to this project. For any issues, questions or suggestions 
+please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+
 namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
 {
     public class DrawingLines
@@ -19,17 +27,13 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 // Create an instance of BmpOptions and set its various properties
                 BmpOptions saveOptions = new BmpOptions();
                 saveOptions.BitsPerPixel = 32;
-
-                // Set the Source for BmpOptions
                 saveOptions.Source = new StreamSource(stream);
 
                 // Create an instance of Image
                 using (Image image = Image.Create(saveOptions, 100, 100))
                 {
-                    // Create and initialize an instance of Graphics class
+                    // Create and initialize an instance of Graphics class and Clear Graphics surface
                     Graphics graphic = new Graphics(image);
-
-                    // Clear Graphics surface
                     graphic.Clear(Color.Yellow);
 
                     // Draw two dotted diagonal lines by specifying the Pen object having blue color and co-ordinate Points
@@ -41,8 +45,6 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     graphic.DrawLine(new Pen(new SolidBrush(Color.Aqua)), new Point(9, 90), new Point(90, 90));
                     graphic.DrawLine(new Pen(new SolidBrush(Color.Black)), new Point(90, 90), new Point(90, 9));
                     graphic.DrawLine(new Pen(new SolidBrush(Color.White)), new Point(90, 9), new Point(9, 9));
-
-                    // Save all changes
                     image.Save();
                 }
             }

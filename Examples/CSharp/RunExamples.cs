@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages;
+using Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG;
@@ -23,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// Drawing And Formatting Images
+            ////            Drawing And Formatting Images
             //// =====================================================
             //// =====================================================
 
@@ -41,10 +41,9 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// Modifying And Converting Images
+            ////            Modifying And Converting Images
             //// =====================================================
             //// =====================================================
-
 
             //AddWatermarkToImage.Run();
             //AddFramesToTIFFImage.Run();
@@ -68,12 +67,12 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConcatenatingTIFFImagesfromStream.Run();
             //ConcatenateTiffImagesHavingSeveralFrames.Run();
             //ConvertGIFImageLayersToTIFF.Run();
-            //CreatingTIFFImageWithCompression.Run();            
+            //CreatingTIFFImageWithCompression.Run();
             //CreateWMFMetaFileImage.Run();
-            //ConvertWMFMetaFileToSVG.Run();             
+            //ConvertWMFMetaFileToSVG.Run();
             //DitheringRasterImages.Run();
             //ExpandOrCropAnImage.Run();
-            //ExtractTIFFFramesToBMPImageFormat.Run();            
+            //ExtractTIFFFramesToBMPImageFormat.Run();
             //ExportImageToDifferentFormats.Run();
             //ExportImageToPSD.Run();
             //ExportPsdLayersToImages.Run();
@@ -89,10 +88,23 @@ namespace Aspose.Imaging.Examples.CSharp
             //SplittingTiffFrames.Run();
             //TiffDataRecovery.Run();
             //TiffOptionsConfiguration.Run();
+            //ControllCacheReallocation.Run();
+            //AddDiagonalWatermarkToImage.Run();
+            //ColorConversionUsingICCProfiles.Run();
+            //ColorConversionUsingDefaultProfiles.Run();
+            //AddSignatureToImage.Run();
+            //ExportTextAsShape.Run();
+            //CreateEMFMetaFileImage.Run();
+            //ResizeWMFFile.Run();
+            //ConvertWMFToWebp.Run();
+            //ConvertWMFToPNG.Run();
+            //ConvertWMFToPDF.Run();
+            //GetLastModifiedDate.Run();
+
 
             //// =====================================================
             //// =====================================================
-            //// DICOM
+            ////                        DICOM
             //// =====================================================
             //// =====================================================
 
@@ -112,7 +124,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// JPEG
+            ////                        JPEG
             //// =====================================================
             //// =====================================================
 
@@ -131,19 +143,17 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// META FILES
+            ////                    META FILES
             //// =====================================================
             //// =====================================================
 
             //ConvertEMFToPDF.Run();
             //CroppingByRectangleEMFImage.Run();
             //CroppingEMFImage.Run();
-            //ExportMetaFileToRasterFormats.Run();
-            //SpecifyFontFolder.Run();
-
+           
             //// =====================================================
             //// =====================================================
-            //// PNG
+            ////                        PNG
             //// =====================================================
             //// =====================================================
 
@@ -157,7 +167,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            //// PSD
+            ////                        PSD
             //// =====================================================
             //// =====================================================
 
@@ -165,13 +175,15 @@ namespace Aspose.Imaging.Examples.CSharp
             //CreateThumbnailsFromPSDFiles.Run();
             //DetectFlattenedPSD.Run();
             //ExportPSDLayerToRasterImage.Run();
-            //ImportImageToPSDLayer.Run();
             //UpdateTextLayerInPSDFile.Run();
             //MergePSDlayers.Run();
+            //UncompressedImageUsingFile.Run();
+            //UncompressedImageStreamObject.Run();
+
 
             //// =====================================================
             //// =====================================================
-            //// WebPImage
+            ////                        WebPImage
             //// =====================================================
             //// =====================================================
 
@@ -181,10 +193,9 @@ namespace Aspose.Imaging.Examples.CSharp
             //ExportWebPToOtherImageFormats.Run();
             //ExtractFrameFromWebPImage.Run();
 
-
             //// =====================================================
             //// =====================================================
-            //// DjVu
+            ////                           DjVu
             //// =====================================================
             //// =====================================================
 
@@ -238,6 +249,11 @@ namespace Aspose.Imaging.Examples.CSharp
             return Path.GetFullPath(GetDataDir_Data() + "ModifyingAndConvertingImages/");
         }
 
+        public static String GetDataDir_Cache()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Cache/");
+        }
+
         public static String GetDataDir_MetaFiles()
         {
             return Path.GetFullPath(GetDataDir_Data() + "MetaFiles/");
@@ -276,6 +292,5 @@ namespace Aspose.Imaging.Examples.CSharp
             }
             return Path.Combine(startDirectory, "Data\\");
         }
-
     }
 }

@@ -1,6 +1,13 @@
-Imports System.IO
 Imports Aspose.Imaging.ImageOptions
 Imports Aspose.Imaging.Sources
+
+'
+'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
+'when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+'If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
+'Install it and then add its reference to this project. For any issues, questions or suggestions 
+'Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+'
 
 Namespace Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
     Public Class CreatingAnImageBySettingPath
@@ -13,8 +20,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
             Dim ImageOptions As New BmpOptions()
             ImageOptions.BitsPerPixel = 24
 
-            ' Define the source property for the instance of BmpOptions
-            ' Second boolean parameter determines if the file is temporal or not
+            ' Define the source property for the instance of BmpOptions  Second boolean parameter determines if the file is temporal or not
             ImageOptions.Source = New FileCreateSource(dataDir & Convert.ToString("CreatingAnImageBySettingPath_out.bmp"), False)
 
             ' Creates an instance of Image and call Create method by passing the BmpOptions object

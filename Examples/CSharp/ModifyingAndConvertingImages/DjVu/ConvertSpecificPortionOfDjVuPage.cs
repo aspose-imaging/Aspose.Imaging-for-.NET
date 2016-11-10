@@ -22,18 +22,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
             // Load a DjVu image
             using (DjvuImage image = (DjvuImage)Image.Load(dataDir + "Sample.djvu"))
             {
-                // Create an instance of PngOptions
+                // Create an instance of PngOptions and Set ColorType to Grayscale
                 PngOptions exportOptions = new PngOptions();
-                // Set ColorType to Grayscale
                 exportOptions.ColorType = PngColorType.Grayscale;
+                
                 // Create an instance of Rectangle and specify the portion on DjVu page
                 Rectangle exportArea = new Rectangle(0, 0, 500, 500);
-                // Specify the DjVu page index
+
+                // Specify the DjVu page index and Initialize an instance of DjvuMultiPageOptions while passing index of DjVu page index and instance of Rectangle covering the area to be exported               
                 int exportPageIndex = 2;
-                // Initialize an instance of DjvuMultiPageOptions
-                // while passing index of DjVu page index and instance of Rectangle covering the area to be exported
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions(exportPageIndex, exportArea);
-                // Save the image
                 image.Save(dataDir + "ConvertSpecificPortionOfDjVuPage_out.djvu", exportOptions);
             }
         }

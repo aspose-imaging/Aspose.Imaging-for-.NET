@@ -52,6 +52,18 @@
   <ItemGroup>
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddSignatureToImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingDefaultProfiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingICCProfiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddDiagonalWatermarkToImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ControllCacheReallocation.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFMetaFileToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateWMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertEMFToWMF.cs" />
@@ -91,6 +103,8 @@
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ExportMetaFileToRasterFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingEMFImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertEMFToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageStreamObject.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageUsingFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\MergePSDlayers.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ExportPSDLayerToRasterImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CreateThumbnailsFromPSDFiles.cs" />

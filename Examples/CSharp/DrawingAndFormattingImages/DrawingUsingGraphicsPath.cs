@@ -4,6 +4,14 @@ using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Shapes;
 using Aspose.Imaging.Sources;
 
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
+when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
+install it and then add its reference to this project. For any issues, questions or suggestions 
+please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+
 namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
 {
     public class DrawingUsingGraphicsPath
@@ -21,49 +29,36 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             // Create an instance of FileCreateSource and assign it to Source property
             ImageOptions.Source = new FileCreateSource(dataDir + "sample_1.bmp", false);
 
-            // Create an instance of Image 
+            // Create an instance of Image and initialize an instance of Graphics
             using (Image image = Image.Create(ImageOptions, 500, 500))
             {
-                // Create and initialize an instance of Graphics
                 Graphics graphics = new Graphics(image);
 
                 // Clear the image surface with white color
                 graphics.Clear(Color.White);
 
-                // Create an instance of GraphicsPath
+                // Create an instance of GraphicsPath and Instance of Figure
                 GraphicsPath graphicspath = new GraphicsPath();
-
-                // Create an instance of Figure
                 Figure figure = new Figure();
 
                 // Add EllipseShape to the figure by defining boundary Rectangle
                 figure.AddShape(new EllipseShape(new RectangleF(0, 0, 499, 499)));
 
-                // Add RectangleShape to the figure
+                // Add RectangleShape, TextShape to the figure
                 figure.AddShape(new RectangleShape(new RectangleF(0, 0, 499, 499)));
-
-                // Add TextShape to the figure by defining the boundary Rectangle and Font
                 figure.AddShape(new TextShape("Aspose.Imaging", new RectangleF(170, 225, 170, 100), new Font("Arial", 20), StringFormat.GenericTypographic));
 
-                // Add figures to the GraphicsPath object
+                // Add figures to the GraphicsPath object Draw Path
                 graphicspath.AddFigures(new[] { figure });
-
-                // Draw Path
                 graphics.DrawPath(new Pen(Color.Blue), graphicspath);
 
-                // Create an instance of HatchBrush and set its properties
+                // Create an instance of HatchBrush and set its properties also Fill path by supplying the brush and GraphicsPath objects
                 HatchBrush hatchbrush = new HatchBrush();
                 hatchbrush.BackgroundColor = Color.Brown;
                 hatchbrush.ForegroundColor = Color.Blue;
                 hatchbrush.HatchStyle = HatchStyle.Vertical;
-
-                // Fill path by supplying the brush and GraphicsPath objects
                 graphics.FillPath(hatchbrush, graphicspath);
-
-                // Save the changes.
                 image.Save();
-
-                // Display Status.
                 Console.WriteLine("Processing completed successfully.");
             }
             // ExEnd:DrawingUsingGraphicsPath

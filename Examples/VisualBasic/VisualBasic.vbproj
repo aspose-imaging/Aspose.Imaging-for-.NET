@@ -78,6 +78,17 @@
     <Compile Include="DrawingAndFormattingImages\DrawingRectangle.vb" />
     <Compile Include="DrawingAndFormattingImages\CreatingAnImageBySettingPath.vb" />
     <Compile Include="DrawingAndFormattingImages\CreatingImageUsingStream.vb" />
+    <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.vb" />
+    <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AddSignatureToImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingDefaultProfiles.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingICCProfiles.vb" />
+    <Compile Include="ModifyingAndConvertingImages\AddDiagonalWatermarkToImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\CreateWMFMetaFileImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFMetaFileToSVG.vb" />
     <Compile Include="ModifyingAndConvertingImages\AdjustBrightness.vb" />
@@ -91,7 +102,7 @@
     <Compile Include="ModifyingAndConvertingImages\AdjustGamma.vb" />
     <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.vb" />
-    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage - Copy.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage.vb" />
     <Compile Include="ModifyingAndConvertingImages\ConcatenateTiffImagesHavingSeveralFrames.vb" />
     <Compile Include="ModifyingAndConvertingImages\ConcatenatingTIFFImagesfromStream.vb" />
     <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.vb" />
@@ -125,6 +136,7 @@
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExportPsdLayersToImages.vb" />
+    <Compile Include="ModifyingAndConvertingImages\ControllCacheReallocation.vb" />
     <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.vb" />
     <Compile Include="ModifyingAndConvertingImages\Grayscaling.vb" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\AddThumbnailToEXIFSegment.vb" />
@@ -154,6 +166,8 @@
     <Compile Include="ModifyingAndConvertingImages\PSD\CreateThumbnailsFromPSDFiles.vb" />
     <Compile Include="ModifyingAndConvertingImages\PSD\DetectFlattenedPSD.vb" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ExportPSDLayerToRasterImage.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageStreamObject.vb" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageUsingFile.vb" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ImportImageToPSDLayer.vb" />
     <Compile Include="ModifyingAndConvertingImages\PSD\MergePSDlayers.vb" />
     <Compile Include="ModifyingAndConvertingImages\PSD\UpdateTextLayerInPSDFile.vb" />
