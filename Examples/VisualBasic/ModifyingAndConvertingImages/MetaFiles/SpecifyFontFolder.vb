@@ -35,7 +35,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
                 FontSettings.Reset()
                 image__1.Save(dataDir & Convert.ToString("Picture1_default_fonts_out.png"), pngOptions)
 
-                'Initialize font list
+                ' Initialize font list
                 Dim fonts As New List(Of String)(FontSettings.GetDefaultFontsFolders())
 
                 ' Add new font path to font list and Assign list of font folders to font settings and Save the EMF file to PNG image with new font
@@ -43,7 +43,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
                 FontSettings.SetFontsFolders(fonts.ToArray(), True)
                 image__1.Save(dataDir & Convert.ToString("Picture1_with_my_fonts_out.png"), pngOptions)
             End Using
+            ' ExEnd:SpecifyFontFolder
         End Sub
-        ' ExEnd:SpecifyFontFolder
     End Class
 End Namespace

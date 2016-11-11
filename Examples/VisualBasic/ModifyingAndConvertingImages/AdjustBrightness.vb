@@ -12,8 +12,6 @@ Imports Aspose.Imaging.ImageOptions
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class AdjustBrightness
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:AdjustBrightness
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -32,13 +30,10 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 ' Adjust the brightness
                 rasterImage.AdjustBrightness(70)
 
-                ' Create an instance of TiffOptions for the resultant image
+                ' Create an instance of TiffOptions for the resultant image, Set various properties for the object of TiffOptions and Save the resultant image
                 Dim tiffOptions As New TiffOptions(TiffExpectedFormat.[Default])
-                ' Set various properties for the object of TiffOptions
                 tiffOptions.BitsPerSample = New UShort() {8, 8, 8}
                 tiffOptions.Photometric = TiffPhotometrics.Rgb
-
-                ' Save the resultant image to TIFF format
                 rasterImage.Save(dataDir & Convert.ToString("AdjustBrightness_out.tiff"), tiffOptions)
             End Using
             ' ExEnd:TiffOptionsConfiguration

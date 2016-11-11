@@ -33,11 +33,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // We do not recommend that you change the following property because it may greatly affect performance
             Cache.ExactReallocateOnly = false;
 
-            // At any time you can check how many bytes are currently allocated for the cache in memory or on disk
-            // By examining the following properties
+            // At any time you can check how many bytes are currently allocated for the cache in memory or on disk By examining the following properties
             long l1 = Cache.AllocatedDiskBytesCount;
             long l2 = Cache.AllocatedMemoryBytesCount;
-
             GifOptions options = new GifOptions();
             options.Palette = new ColorPalette(new[] { Color.Red, Color.Blue, Color.Black, Color.White });
             options.Source = new StreamSource(new MemoryStream(), true);
@@ -59,7 +57,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. If you've forgotten to call dispose on an object the cache values will not be 0.
             l1 = Cache.AllocatedDiskBytesCount;
             l2 = Cache.AllocatedMemoryBytesCount;
-
             // ExEnd:ControllCacheReallocation
         }
     }

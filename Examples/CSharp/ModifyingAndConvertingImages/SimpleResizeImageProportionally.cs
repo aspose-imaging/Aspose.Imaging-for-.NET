@@ -23,7 +23,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 {
                     image.CacheData();
                 }
-
                 // Specifying width and height
                 int newWidth = image.Width / 2;
                 image.ResizeWidthProportionally(newWidth);

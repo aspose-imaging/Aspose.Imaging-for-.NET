@@ -14,7 +14,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         { 
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:ApplyGaussWienerFilterForColoredImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -33,10 +32,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 GaussWienerFilterOptions options = new GaussWienerFilterOptions(5, 1.5);
                 options.Brightness = 1;
 
-                // Apply MedianFilterOptions filter to RasterImage object.
+                // Apply MedianFilterOptions filter to RasterImage object and Save the resultant image
                 rasterImage.Filter(image.Bounds, options);
-
-                // Save the resultant image
                 image.Save(dataDir + "ApplyGaussWienerFilter_out.gif");
             }
             // ExEnd:ApplyGaussWienerFilterForColoredImage

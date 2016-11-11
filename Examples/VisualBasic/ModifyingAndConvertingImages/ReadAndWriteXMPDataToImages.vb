@@ -17,26 +17,20 @@ Imports Aspose.Imaging.Xmp.Schemas.Photoshop
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class ReadAndWriteXMPDataToImages
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:ReadAndWriteXMPDataToImages
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
 
             ' Specify the size of image by defining a Rectangle 
             Dim rect As New Rectangle(0, 0, 100, 200)
-
             Dim tiffOptions As New TiffOptions(TiffExpectedFormat.TiffJpegRgb)
             tiffOptions.Photometric = TiffPhotometrics.MinIsBlack
             tiffOptions.BitsPerSample = New UShort() {8}
 
-
             ' Create the brand new image just for sample purposes
             Using image__1 = New TiffImage(New TiffFrame(tiffOptions, rect.Width, rect.Height))
-                ' Create an instance of XMP-Header
+                ' Create an instance of XMP-Header and Xmp-TrailerPi 
                 Dim xmpHeader As New XmpHeaderPi(Guid.NewGuid().ToString())
-
-                ' Create an instance of Xmp-TrailerPi 
                 Dim xmpTrailer As New XmpTrailerPi(True)
 
                 ' Create an instance of XMPmeta class to set different attributes
@@ -67,14 +61,10 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 xmpData.AddPackage(dublinCorePackage)
 
                 Using ms = New MemoryStream()
-                    ' Update XMP metadata into image
+                    ' Update XMP metadata into image and Save image on the disk or in memory stream
                     image__1.XmpData = xmpData
-
-                    ' Save image on the disk or in memory stream
                     image__1.Save(ms)
-
                     ms.Seek(0, System.IO.SeekOrigin.Begin)
-
                     ' Load the image from moemory stream or from disk to read/get the metadata
                     Using img = DirectCast(Image.Load(ms), TiffImage)
                         ' Getting the XMP metadata

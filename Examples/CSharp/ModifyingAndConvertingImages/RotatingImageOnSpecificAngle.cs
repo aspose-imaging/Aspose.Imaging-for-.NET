@@ -12,8 +12,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:RotatingImageOnSpecificAngle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -26,11 +24,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 {
                     image.CacheData();
                 }
-
-                // Perform the rotation on 20 degree while keeping the image size proportional with red background color
+                // Perform the rotation on 20 degree while keeping the image size proportional with red background color and Save the result to a new file
                 image.Rotate(20f, true, Color.Red);
-
-                // Save the result to a new file
                 image.Save(dataDir + "RotatingImageOnSpecificAngle_out.jpg");
             }
 

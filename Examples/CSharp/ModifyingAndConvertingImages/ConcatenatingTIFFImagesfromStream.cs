@@ -7,7 +7,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -27,6 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     // Add copied frame to destination image
                     image.AddFrame(frame);
                 }
+
                 // Save the image with changes
                 image.Save(dataDir + "ConcatenatingTIFFImagesfromStream_out.tif");
 

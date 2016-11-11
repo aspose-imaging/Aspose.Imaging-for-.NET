@@ -17,16 +17,12 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:ConvertGIFImageLayersToTIFF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            // Load a GIF image
+            // Load a GIF image and Convert the image to GIF image
             Image objImage = Image.Load(dataDir + "asposelogo.gif");
-
-            // Convert the image to GIF image
             using (GifImage gif = (GifImage)objImage)
             {
                 // Iterate through arry of blocks in the GIF image
@@ -41,12 +37,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                         continue;
                     }
 
-                    // Create an instance of TIFF Option class
+                    // Create an instance of TIFF Option class and Save the GIFF block as TIFF image
                     TiffOptions objTiff = new TiffOptions(TiffExpectedFormat.Default);
-
-                    // Save the GIFF block as TIFF image
                     gifBlock.Save(dataDir + "asposelogo"  + i + "_out.tif", objTiff);
-
                 }
             }
             // ExEnd:ConvertGIFImageLayersToTIFF

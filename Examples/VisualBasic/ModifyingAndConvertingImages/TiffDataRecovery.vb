@@ -11,7 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class TiffDataRecovery
         Public Shared Sub Run()
-
             ' ExStart:TiffDataRecovery
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()

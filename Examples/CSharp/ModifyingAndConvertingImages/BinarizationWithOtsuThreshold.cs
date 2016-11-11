@@ -12,7 +12,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:BinarizationWithOtsuThreshold
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -20,17 +19,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an image in an instance of Image
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Cast the image to RasterCachedImage
+                // Cast the image to RasterCachedImage and Check if image is cached
                 RasterCachedImage rasterCachedImage = (RasterCachedImage)image;
-                // Check if image is cached
                 if (!rasterCachedImage.IsCached)
                 {
                     // Cache image if not already cached
                     rasterCachedImage.CacheData();
                 }
-                // Binarize image with Otsu Thresholding
+
+                // Binarize image with Otsu Thresholding and Save the resultant image                
                 rasterCachedImage.BinarizeOtsu();
-                // Save the resultant image
                 rasterCachedImage.Save(dataDir + "BinarizationWithOtsuThreshold_out.jpg");
             }
             // ExEnd:BinarizationWithOtsuThreshold

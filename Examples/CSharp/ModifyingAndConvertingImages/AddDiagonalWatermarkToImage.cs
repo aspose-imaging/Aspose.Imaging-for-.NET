@@ -24,10 +24,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Declare a String object with Watermark Text
                 string theString = "45 Degree Rotated Text";
 
-                // Create and initialize an instance of Graphics class
+                // Create and initialize an instance of Graphics class and Initialize an object of SizeF to store image Size
                 Graphics graphics = new Graphics(image);
-
-                // Initialize an object of SizeF to store image Size
                 SizeF sz = graphics.Image.Size;
 
                 // Creates an instance of Font, initialize it with Font Face, Size and Style
@@ -53,10 +51,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Set the Transformation through Matrix
                 graphics.Transform = matrix;
 
-                // Draw the string on Image
+                // Draw the string on Image Save output to disk
                 graphics.DrawString(theString, font, brush, 0, 0, format);
-
-                // Save output to disk
                 image.Save(dataDir + "AddDiagonalWatermarkToImage_out.jpg");
             }
             // ExStart:AddDiagonalWatermarkToImage

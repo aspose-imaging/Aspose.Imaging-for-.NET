@@ -11,8 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class RotatingImageOnSpecificAngle
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:RotatingImageOnSpecificAngle
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -24,10 +22,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                     image__1.CacheData()
                 End If
 
-                ' Perform the rotation on 20 degree while keeping the image size proportional with red background color
+                ' Perform the rotation on 20 degree while keeping the image size proportional with red background color and  Save the result to a new file
                 image__1.Rotate(20.0F, True, Color.Red)
-
-                ' Save the result to a new file
                 image__1.Save(dataDir & Convert.ToString("RotatingImageOnSpecificAngle_out.jpg"))
             End Using
 

@@ -6,7 +6,6 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class ResizingWithResizeTypeEnumeration
@@ -16,7 +15,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // ExStart:ResizingWithResizeTypeEnumeration
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
                 image.Resize(300, 300, ResizeType.LanczosResample);

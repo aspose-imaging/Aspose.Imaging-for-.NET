@@ -16,8 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:ExportImageToDifferentFormats
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -25,16 +23,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an existing image (of type Gif) in an instance of the Image class
             using (Image image = Image.Load(dataDir + "sample.gif"))
             {
-                // Export to BMP file format using the default options
+                // Export to BMP, JPEG, PNG and TIFF file format using the default options
                 image.Save(dataDir + "_output.bmp", new BmpOptions());
-
-                // Export to JPEG file format using the default options
                 image.Save(dataDir + "_output.jpeg", new JpegOptions());
-
-                // Export to PNG file format using the default options
                 image.Save(dataDir + "_output.png", new PngOptions());
-
-                // Export to TIFF file format using the default options
                 image.Save(dataDir + "_output.tiff", new TiffOptions(TiffExpectedFormat.Default));
             }
             // ExStart:ExportImageToDifferentFormats

@@ -20,7 +20,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                 image__1.RotateFlip(RotateFlipType.Rotate270FlipNone)
                 image__1.Save(dataDir & Convert.ToString("RotatingAnImage_out.jpg"))
             End Using
+            ' ExEnd:RotatingAnImage
         End Sub
-        ' ExEnd:RotatingAnImage
     End Class
 End Namespace

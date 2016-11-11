@@ -14,7 +14,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:Bradleythreshold
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "sample.bmp";
@@ -22,13 +21,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an existing image.
             using (var objimage = (BmpImage)Image.Load(dataDir))
             {
-                // Define threshold value
+                // Define threshold value, Call BinarizeBradley method and pass the threshold value as parameter and Save the output image
                 double threshold = 0.15;
-
-                // Call BinarizeBradley method and pass the threshold value as parameter
                 objimage.BinarizeBradley(threshold);
-
-                // Save the output image
                 objimage.Save(dataDir + "binarized_out.png");
             }
             // ExEnd:Bradleythreshold

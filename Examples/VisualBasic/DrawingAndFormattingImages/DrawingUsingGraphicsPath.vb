@@ -29,29 +29,15 @@ Namespace Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
             Using image__1 As Image = Image.Create(ImageOptions, 500, 500)
                 ' Create and initialize an instance of Graphics
                 Dim graphics As New Graphics(image__1)
-
-                ' Clear the image surface with white color
                 graphics.Clear(Color.White)
 
-                ' Create an instance of GraphicsPath
+                ' Create an instance of GraphicsPath and Instance of Figure, add EllipseShape, RectangleShape and TextShape to the figure
                 Dim graphicspath As New GraphicsPath()
-
-                ' Create an instance of Figure
                 Dim figure As New Figure()
-
-                ' Add EllipseShape to the figure by defining boundary Rectangle
                 figure.AddShape(New EllipseShape(New RectangleF(0, 0, 499, 499)))
-
-                ' Add RectangleShape to the figure
                 figure.AddShape(New RectangleShape(New RectangleF(0, 0, 499, 499)))
-
-                ' Add TextShape to the figure by defining the boundary Rectangle and Font
                 figure.AddShape(New TextShape("Aspose.Imaging", New RectangleF(170, 225, 170, 100), New Font("Arial", 20), StringFormat.GenericTypographic))
-
-                ' Add figures to the GraphicsPath object
                 graphicspath.AddFigures(New Figure() {figure})
-
-                ' Draw Path
                 graphics.DrawPath(New Pen(Color.Blue), graphicspath)
 
                 ' Create an instance of HatchBrush and set its properties
@@ -60,14 +46,9 @@ Namespace Aspose.Imaging.Examples.VisualBasic.DrawingAndFormattingImages
                 hatchbrush.ForegroundColor = Color.Blue
                 hatchbrush.HatchStyle = HatchStyle.Vertical
 
-                ' Fill path by supplying the brush and GraphicsPath objects
+                ' Fill path by supplying the brush and GraphicsPath objects and Save the changes.
                 graphics.FillPath(hatchbrush, graphicspath)
-
-                ' Save the changes.
                 image__1.Save()
-
-                ' Display Status.
-                Console.WriteLine("Processing completed successfully.")
             End Using
             ' ExEnd:DrawingUsingGraphicsPath
         End Sub

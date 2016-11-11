@@ -23,8 +23,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.RotateFlip(RotateFlipType.Rotate270FlipNone);
                 image.Save(dataDir + "RotatingAnImage_out.jpg");
             }
-        }
-        // ExEnd:RotatingAnImage
+            // ExEnd:RotatingAnImage
+        }       
     }
 }
 

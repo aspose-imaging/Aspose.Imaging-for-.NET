@@ -47,7 +47,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                 FontSettings.SetFontsFolders(fonts.ToArray(), true);
                 image.Save(dataDir + "Picture1_with_my_fonts_out.png", pngOptions);
             }
-        }
-        // ExEnd:SpecifyFontFolder
+            // ExEnd:SpecifyFontFolder
+        }     
     }
 }

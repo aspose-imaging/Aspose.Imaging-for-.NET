@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 rasterImage.Crop(rectangle);
                 rasterImage.Save(dataDir + "CroppingByRectangle_out.jpg");
             }
-        }
-        // ExEnd:CroppingByRectangle
+            // ExEnd:CroppingByRectangle
+        }        
     }
 }

@@ -42,17 +42,13 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 ' Create an object of Matrix class for transformation
                 Dim matrix As New Matrix()
 
-                ' First a translation then a rotation                
+                ' First a translation then a rotation and Set the Transformation through Matrix
                 matrix.Translate(sz.Width / 2, sz.Height / 2)
                 matrix.Rotate(-45.0F)
-
-                ' Set the Transformation through Matrix
                 graphics.Transform = matrix
 
-                ' Draw the string on Image
+                ' Draw the string on Image and Save output to disk
                 graphics.DrawString(theString, font, brush, 0, 0, format)
-
-                ' Save output to disk
                 image__1.Save(dataDir & Convert.ToString("AddDiagonalWatermarkToImage_out.jpg"))
             End Using
             ' ExStart:AddDiagonalWatermarkToImage

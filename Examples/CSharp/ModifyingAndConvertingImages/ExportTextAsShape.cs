@@ -23,7 +23,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 emfRasterizationOptions.BackgroundColor = Color.White;
                 emfRasterizationOptions.PageWidth = image.Width;
                 emfRasterizationOptions.PageHeight = image.Height;
-
                 image.Save(dataDir + "TextAsShapes_out.svg", new SvgOptions
                 {
                     VectorRasterizationOptions = emfRasterizationOptions,
@@ -36,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     TextAsShapes = false
                 });
             }
-            // ExStart:ExportTextAsShape
+            // ExEnd:ExportTextAsShape
         }
     }
 }

@@ -16,7 +16,6 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             ' ExStart:CreateWMFMetaFileImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
-
             Dim graphics As New FileFormats.Wmf.Graphics.WmfRecorderGraphics2D(New Aspose.Imaging.Rectangle(0, 0, 100, 100), 96)
 
             ' Define background color

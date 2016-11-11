@@ -26,7 +26,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                     Console.WriteLine([property].GetValue(exifData, Nothing))
                 Next
             End Using
+            ' ExEnd:ReadAllEXIFTags
         End Sub
-        ' ExEnd:ReadAllEXIFTags
     End Class
 End Namespace

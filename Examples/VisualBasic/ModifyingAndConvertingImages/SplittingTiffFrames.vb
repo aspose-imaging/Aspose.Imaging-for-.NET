@@ -19,9 +19,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
 
             ' Create an instance of TiffImage and load the file from disc
             Using multiImage = DirectCast(TiffImage.Load(dataDir & Convert.ToString("SampleTiff1.tiff")), TiffImage)
-                'Initialize a variable to keep track of the frames in the image
+                'Initialize a variable to keep track of the frames in the image and Iterate over the tiff frame collection
                 Dim i As Integer = 0
-                ' Iterate over the tiff frame collection
                 For Each tiffFrame In multiImage.Frames
                     ' Save the frame directly on disc in Jpeg compression
                     tiffFrame.Save((dataDir & System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)) + "_out.tiff", New TiffOptions(TiffExpectedFormat.TiffJpegRgb))

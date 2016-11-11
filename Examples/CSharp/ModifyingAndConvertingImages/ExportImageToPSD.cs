@@ -16,8 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:ExportImageToPSD
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -25,17 +23,12 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an existing image
             using (Image image = Image.Load(dataDir + "sample.bmp"))
             {
-                // Create an instance of PsdOptions and set it’s various properties
+                // Create an instance of PsdOptions, Set it’s various properties Save image to disk in PSD format
                 PsdOptions psdOptions = new PsdOptions();
                 psdOptions.ColorMode = ColorModes.Rgb;
                 psdOptions.CompressionMethod = CompressionMethod.Raw;
                 psdOptions.Version = 4;
-
-                // Save image to disk in PSD format
-                image.Save(dataDir + "ExportImageToPSD_output.psd", psdOptions);
-
-                // Display Status.
-                Console.WriteLine("Export to PSD performed successfully.");
+                image.Save(dataDir + "ExportImageToPSD_output.psd", psdOptions);               
             }
             // ExEnd:ExportImageToPSD
         }

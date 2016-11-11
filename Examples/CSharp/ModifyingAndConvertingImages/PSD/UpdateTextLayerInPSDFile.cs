@@ -21,7 +21,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             // ExStart:UpdateTextLayerInPSDFile
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
-
             try
             {
                 // Load a PSD file as an image and caste it into PsdImage

@@ -22,10 +22,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an existing WMF image
             using (Image image = Image.Load(dataDir + "input.wmf"))
             {
-                // Call the resize method of Image class and width,height values
+                // Call the resize method of Image class and width,height values and Calculate new PNG image height
                 image.Resize(100, 100);
-
-                // Calculate new PNG image height
                 double k = (image.Width * 1.00) / image.Height;
 
                 // Create an instance of EmfRasterizationOptions class and set different properties

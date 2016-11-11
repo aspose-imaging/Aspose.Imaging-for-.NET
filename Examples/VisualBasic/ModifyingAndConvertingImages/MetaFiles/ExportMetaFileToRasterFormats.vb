@@ -56,7 +56,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
                     .VectorRasterizationOptions = emfRasterizationOptions _
                 })
             End Using
+            ' ExEnd:ExportMetaFileToRasterFormats
         End Sub
-        ' ExEnd:ExportMetaFileToRasterFormats
     End Class
 End Namespace

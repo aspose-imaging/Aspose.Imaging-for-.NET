@@ -35,8 +35,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 rasterImage.Crop(leftShift, rightShift, topShift, bottomShift);
                 rasterImage.Save(dataDir + "CroppingByShifts_out.jpg");
             }
-        }
-        // ExEnd:CroppingByShifts
+            // ExEnd:CroppingByShifts
+        }        
     }
 }
 

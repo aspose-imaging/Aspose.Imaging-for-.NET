@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                     Console.WriteLine(property.Name + ":" + property.GetValue(exifData, null));
                 }
             }
+            // ExEnd:ReadAllEXIFTags
         }
-        // ExEnd:ReadAllEXIFTags
     }
 }

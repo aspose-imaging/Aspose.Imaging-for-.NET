@@ -15,7 +15,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:ApplyingMotionWienerFilter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -23,10 +22,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load the image
             using (SvgImage image = (SvgImage)Image.Load(dataDir + "aspose_logo.Svg"))
             {
-                // Create an instance of PNG options
+                // Create an instance of PNG options and Save the results to disk
                 PngOptions pngOptions = new PngOptions();
-
-                //Save the results to disk
                 image.Save(dataDir + "ConvertingSVGToRasterImages_out.png", pngOptions);
             }
             // ExEnd:ApplyingMotionWienerFilter

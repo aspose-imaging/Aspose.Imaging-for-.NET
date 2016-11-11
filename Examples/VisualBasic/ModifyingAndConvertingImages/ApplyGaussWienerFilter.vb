@@ -11,7 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class ApplyGaussWienerFilter
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             ' ExStart:ApplyGaussWienerFilter
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -28,10 +27,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 Dim options As New GaussWienerFilterOptions(12, 3)
                 options.Grayscale = True
 
-                ' Apply MedianFilterOptions filter to RasterImage object.
+                ' Apply MedianFilterOptions filter to RasterImage object and Save the resultant image
                 rasterImage.Filter(image__1.Bounds, options)
-
-                ' Save the resultant image
                 image__1.Save(dataDir & Convert.ToString("ApplyGaussWienerFilter_out.gif"))
             End Using
             ' ExEnd:ApplyGaussWienerFilter

@@ -15,7 +15,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:CompressingTIFFImagesWithLZWAlgorithm
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -26,13 +25,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Create an instance of TiffOptions for the resultant image
             TiffOptions outputSettings = new TiffOptions(TiffExpectedFormat.Default);
 
-            // Set BitsPerSample, Compression and Photometric mode
+            // Set BitsPerSample, Compression, Photometric mode and graycale palette
             outputSettings.BitsPerSample = new ushort[] { 4 };
             outputSettings.Compression = TiffCompressions.Lzw;
             outputSettings.Photometric = TiffPhotometrics.Palette;
-            // Set graycale palette
             outputSettings.Palette = ColorPaletteHelper.Create4BitGrayscale(false);
-
             image.Save(dataDir + "SampleTiff_out.tiff", outputSettings);
             // ExEnd:CompressingTIFFImagesWithLZWAlgorithm
         }

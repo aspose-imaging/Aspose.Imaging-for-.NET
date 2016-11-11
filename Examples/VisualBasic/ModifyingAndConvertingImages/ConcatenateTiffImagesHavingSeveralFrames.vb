@@ -14,10 +14,8 @@ Imports Aspose.Imaging.ImageOptions
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Public Class ConcatenateTiffImagesHavingSeveralFrames
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
-
             Dim files As New List(Of String)(New String() {dataDir & Convert.ToString("TestDemo.tiff"), dataDir & Convert.ToString("sample.tiff")})
             Dim createOptions As New TiffOptions(TiffExpectedFormat.[Default])
             createOptions.BitsPerSample = New UShort() {1}
@@ -26,8 +24,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             createOptions.Compression = TiffCompressions.CcittFax3
             createOptions.FillOrder = TiffFillOrders.Lsb2Msb
 
-            'Create a new image by passing the TiffOptions and size of first frame
-            'we will remove the first frame at the end, cause it will be empty
+            ' Create a new image by passing the TiffOptions and size of first frame  we will remove the first frame at the end, cause it will be empty
             Dim output As TiffImage = Nothing
             Try
                 Dim images As New List(Of TiffImage)()

@@ -17,10 +17,9 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
 
             ' Load an existing WMF image
             Using image__1 As Image = Image.Load(dataDir & Convert.ToString("input.wmf"))
-                ' Call the resize method of Image class and width,height values
-                image__1.Resize(100, 100)
 
-                ' Calculate new PNG image height
+                ' Call the resize method of Image class and width,height values and Calculate new PNG image height
+                image__1.Resize(100, 100)
                 Dim k As Double = (image__1.Width * 1.0) / image__1.Height
 
                 ' Create an instance of EmfRasterizationOptions class and set different properties

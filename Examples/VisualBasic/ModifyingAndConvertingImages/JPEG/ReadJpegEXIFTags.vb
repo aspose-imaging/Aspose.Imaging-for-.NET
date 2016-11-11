@@ -24,7 +24,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                 Console.WriteLine("Focal Length: " & DirectCast(exifData.FocalLength, Object))
                 Console.WriteLine("Compression: " & exifData.Compression)
             End Using
+            ' ExEnd:ReadJpegEXIFTags
         End Sub
-        ' ExEnd:ReadJpegEXIFTags
     End Class
 End Namespace

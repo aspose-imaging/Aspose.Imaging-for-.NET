@@ -11,8 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class ResizeImageWithResizeTypeEnumeration
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:ResizeImageWithResizeTypeEnumeration
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -27,13 +25,11 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 Dim newWidth As Integer = image__1.Width / 2
                 image__1.ResizeWidthProportionally(newWidth, ResizeType.LanczosResample)
 
-                ' Specifying only height and ResizeType
+                ' Specifying only height and ResizeType and Saving result
                 Dim newHeight As Integer = image__1.Height / 2
                 image__1.ResizeHeightProportionally(newHeight, ResizeType.NearestNeighbourResample)
-                ' Saving result
                 image__1.Save(dataDir & Convert.ToString("ResizeImageWithResizeTypeEnumeration_out.png"))
             End Using
-
             ' ExEnd:ResizeImageWithResizeTypeEnumeration
         End Sub
     End Class

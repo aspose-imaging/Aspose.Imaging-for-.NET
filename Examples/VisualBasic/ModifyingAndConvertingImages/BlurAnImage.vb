@@ -11,7 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class BlurAnImage
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             ' ExStart:BlurAnImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -20,11 +19,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             Using image__1 As Image = Image.Load(dataDir & Convert.ToString("asposelogo.gif"))
                 ' Convert the image into RasterImage.
                 Dim rasterImage As RasterImage = DirectCast(image__1, RasterImage)
-
-                ' Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method.
+                ' Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method and Save the results to output path.
                 rasterImage.Filter(rasterImage.Bounds, New GaussianBlurFilterOptions(5, 5))
-
-                ' Save the results to output path.
                 rasterImage.Save(dataDir + "BlurAnImage_out.gif")
             End Using
             ' ExEnd:BlurAnImage

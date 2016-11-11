@@ -24,11 +24,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             {
                 // Initialize a variable to keep track of the frames in the image
                 int i = 0;
-         
-                // Iterate over the tiff frame collection
+
+                // Iterate over the tiff frame collection and Save the frame directly on disc in PNG format
                 foreach (var tiffFrame in multiImage.Frames)
                 {
-                    // Save the frame directly on disc in PNG format
                     tiffFrame.Save(dataDir + i + "_out.png", new PngOptions());
                 }
             }

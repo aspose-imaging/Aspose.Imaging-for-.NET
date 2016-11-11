@@ -14,22 +14,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:ExpandOrCropAnImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            // Load an image in an instance of Image
+            // Load an image in an instance of Image and Setting for image data to be cashed
             using (RasterImage rasterImage = (RasterImage)Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Setting for image data to be cashed
                 rasterImage.CacheData();
-
-                // Create an instance of Rectangle class and define X,Y and Width, height of the rectangle.
+                // Create an instance of Rectangle class and define X,Y and Width, height of the rectangle, and Save output image
                 Rectangle destRect = new Rectangle { X = -200, Y = -200, Width = 300, Height = 300 };
-
-                // Save output image by passing output file name, image options and rectangle object.
                 rasterImage.Save(dataDir + "Grayscaling_out.jpg", new JpegOptions(), destRect);
             }
             // ExEnd:ExpandOrCropAnImage

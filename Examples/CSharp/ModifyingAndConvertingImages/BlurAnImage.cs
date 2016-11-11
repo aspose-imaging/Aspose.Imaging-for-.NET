@@ -22,13 +22,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load the image
             using (Image image = Image.Load(dataDir + "asposelogo.gif"))
             {
-                // Convert the image into RasterImage.
+                // Convert the image into RasterImage, Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method and Save the results
                 RasterImage rasterImage = (RasterImage)image;
-
-                // Pass Bounds[rectangle] of image and GaussianBlurFilterOptions instance to Filter method.
                 rasterImage.Filter(rasterImage.Bounds, new GaussianBlurFilterOptions(5, 5));
-
-                // Save the results to output path.
                 rasterImage.Save(dataDir + "BlurAnImage_out.gif");
             }
             // ExEnd:BlurAnImage
