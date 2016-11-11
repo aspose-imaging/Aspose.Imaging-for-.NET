@@ -21,47 +21,34 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // ExStart:CreateWMFMetaFileImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-
             WmfRecorderGraphics2D graphics = new WmfRecorderGraphics2D(new Rectangle(0, 0, 100, 100), 96);
 
             // Define background color
             graphics.BackgroundColor = Color.WhiteSmoke;
 
-            // Init Create an instance of Imaging Pen class and mention its color.
+            // Init Create an instance of Imaging Pen class,  Brush class and mention its color.
             Pen pen = new Pen(Color.Blue);
-
-            // Create an instance of Imaging Brush class and mention its color.
             Brush brush = new SolidBrush(Color.YellowGreen);
 
-            // Polygon Fill polygon by calling FillPolygon method and passing parameters brush and points.
+            // Polygon Fill polygon and then Draw a polygon             
             graphics.FillPolygon(brush, new[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
-
-            // Draw a polygon by calling DrawPolygon method and passing parameters pen and points.
             graphics.DrawPolygon(pen, new[] { new Point(2, 2), new Point(20, 20), new Point(20, 2) });
-
-            // Ellipse  Create an instance of HatchBrush class set different properties.
             brush = new HatchBrush { HatchStyle = HatchStyle.Cross, BackgroundColor = Color.White, ForegroundColor = Color.Silver };
 
-            // Fill ellipse by calling FillEllipse method and passing parameters brush and an instance of Imaging Rectangle class.
+            // Fill ellipse  and  Draw an ellipse
             graphics.FillEllipse(brush, new Rectangle(25, 2, 20, 20));
-
-            // Draw an ellipse by calling DrawEllipse method and passing parameters pen and an instance of Imaging Rectangle class.
             graphics.DrawEllipse(pen, new Rectangle(25, 2, 20, 20));
 
-            // Arc  Define pen style by setting DashStyle value
+            // Arc Define pen style by setting DashStyle value, Set color of the pen
             pen.DashStyle = DashStyle.Dot;
-
-            // Set color of the pen
             pen.Color = Color.Black;
 
-            // Draw an Arc by calling DrawArc method and passing parameters pen and an instance of Imaging Rectangle class.
+            // Draw an Arc by calling DrawArc method and set CubicBezier
             graphics.DrawArc(pen, new Rectangle(50, 2, 20, 20), 0, 180);
-
-            // CubicBezier
             pen.DashStyle = DashStyle.Solid;
             pen.Color = Color.Red;
 
-            // Draw an CubicBezier by calling DrawCubicBezier method and passing parameters pen and points.
+            // Draw an CubicBezier 
             graphics.DrawCubicBezier(pen, new Point(10, 25), new Point(20, 50), new Point(30, 50), new Point(40, 25));
 
             // Image  Create an Instance of Image class.
@@ -77,18 +64,17 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             }
 
             // Line Draw a line by calling DrawLine method and passing x,y coordinates of 1st point and same for 2nd point along with color infor as Pen.
-            graphics.DrawLine(pen, new  Point(2, 98), new  Point(2, 50));
+            graphics.DrawLine(pen, new Point(2, 98), new Point(2, 50));
 
             // Pie Define settings of the brush object.
-            brush = new  SolidBrush( Color.Green);
-            pen.Color =  Color.DarkGoldenrod;
+            brush = new SolidBrush(Color.Green);
+            pen.Color = Color.DarkGoldenrod;
 
             // Fill pie by calling FillPie method and passing parameters brush and an instance of Imaging Rectangle class.
             graphics.FillPie(brush, new Rectangle(2, 38, 20, 20), 0, 45);
 
             // Draw pie by calling DrawPie method and passing parameters pen and an instance of Imaging Rectangle class.
             graphics.DrawPie(pen, new Rectangle(2, 38, 20, 20), 0, 45);
-
             pen.Color = Color.AliceBlue;
 
             // Polyline Draw Polyline by calling DrawPolyline method and passing parameters pen and points.

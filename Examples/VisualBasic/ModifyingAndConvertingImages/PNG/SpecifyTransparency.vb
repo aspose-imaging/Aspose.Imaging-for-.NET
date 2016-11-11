@@ -24,6 +24,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.PNG
 
             ' Create an instance of RasterImage and load a BMP image
             Using raster As RasterImage = DirectCast(Image.Load(dataDir & Convert.ToString("aspose_logo.png")), RasterImage)
+
                 ' Store the width & height in variables for later use
                 width = raster.Width
                 height = raster.Height

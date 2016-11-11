@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     image.Save(outputStream, pdfOptions);
                 }
             }
-        }
-        // ExEnd:CroppingEMFImage
+            // ExEnd:CroppingEMFImage
+        }      
     }
 }

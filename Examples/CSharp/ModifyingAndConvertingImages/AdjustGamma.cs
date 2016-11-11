@@ -16,7 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:AdjustGamma
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -27,23 +26,19 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Cast object of Image to RasterImage
                 RasterImage rasterImage = (RasterImage)image;
 
-                // Check if RasterImage is cached
+                // Check if RasterImage is cached and Cache RasterImage for better performance
                 if (!rasterImage.IsCached)
                 {
-                    // Cache RasterImage for better performance
                     rasterImage.CacheData();
                 }
 
                 // Adjust the gamma
                 rasterImage.AdjustGamma(2.2f, 2.2f, 2.2f);
 
-                // Create an instance of TiffOptions for the resultant image
+                // Create an instance of TiffOptions for the resultant image,  Set various properties for the object of TiffOptions and Save the resultant image to TIFF format
                 TiffOptions tiffOptions = new TiffOptions(TiffExpectedFormat.Default);
-                // Set various properties for the object of TiffOptions
                 tiffOptions.BitsPerSample = new ushort[] { 8, 8, 8 };
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
-
-                // Save the resultant image to TIFF format
                 rasterImage.Save(dataDir + "AdjustGamma_out.tiff", tiffOptions);
             }
             // ExEnd:AdjustGamma

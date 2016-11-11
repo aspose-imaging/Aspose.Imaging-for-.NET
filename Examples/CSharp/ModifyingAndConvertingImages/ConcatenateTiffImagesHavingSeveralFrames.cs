@@ -18,7 +18,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -30,8 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             createOptions.Compression = TiffCompressions.CcittFax3;
             createOptions.FillOrder = TiffFillOrders.Lsb2Msb;
 
-            //Create a new image by passing the TiffOptions and size of first frame
-            //we will remove the first frame at the end, cause it will be empty
+            // Create a new image by passing the TiffOptions and size of first frame, we will remove the first frame at the end, cause it will be empty
             TiffImage output = null;
             try
             {
@@ -40,7 +38,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 {
                     foreach (var file in files)
                     {
-                        //Create an instance of TiffImage and load the source image
+                        // Create an instance of TiffImage and load the source image
                         TiffImage input = (TiffImage)Image.Load(file);
                         images.Add(input); // Do not dispose before data is fetched. Data is fetched on 'Save' later.
                         foreach (var frame in input.Frames)

@@ -16,7 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:ConcatTIFFImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -30,13 +29,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Create an instance of TiffImage and load the source image
                 using (TiffImage image1 = (TiffImage)Image.Load(dataDir + "sample.tif"))
                 {
-                    // Create an instance of TIffFrame and copy active frame of source image
+                    // Create an instance of TIffFrame and copy active frame of source image, Add copied frame to destination image and  Save the image with changes.
                     TiffFrame frame = TiffFrame.CopyFrame(image1.ActiveFrame);
-                    
-                    // Add copied frame to destination image
-                    image.AddFrame(frame);
-                    
-                    // Save the image with changes.
+                    image.AddFrame(frame);                    
                     image.Save(dataDir + "ConcatTIFFImages_out.tiff");
                 }
             }

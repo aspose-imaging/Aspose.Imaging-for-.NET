@@ -21,7 +21,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                 image__1.AutoRotate()
                 image__1.Save(dataDir & Convert.ToString("aspose-logo_out.jpg"))
             End Using
+            ' ExEnd:ReadAllEXIFTags
         End Sub
-        ' ExEnd:ReadAllEXIFTags
     End Class
 End Namespace

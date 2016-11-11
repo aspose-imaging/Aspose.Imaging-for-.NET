@@ -21,7 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             // ExStart:DrawingUsingGraphicsPath
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
-            
+
             // Create an instance of BmpOptions and set its various properties
             BmpOptions ImageOptions = new BmpOptions();
             ImageOptions.BitsPerPixel = 24;
@@ -33,22 +33,14 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             using (Image image = Image.Create(ImageOptions, 500, 500))
             {
                 Graphics graphics = new Graphics(image);
-
-                // Clear the image surface with white color
                 graphics.Clear(Color.White);
 
-                // Create an instance of GraphicsPath and Instance of Figure
+                // Create an instance of GraphicsPath and Instance of Figure, add EllipseShape, RectangleShape and TextShape to the figure
                 GraphicsPath graphicspath = new GraphicsPath();
                 Figure figure = new Figure();
-
-                // Add EllipseShape to the figure by defining boundary Rectangle
                 figure.AddShape(new EllipseShape(new RectangleF(0, 0, 499, 499)));
-
-                // Add RectangleShape, TextShape to the figure
                 figure.AddShape(new RectangleShape(new RectangleF(0, 0, 499, 499)));
                 figure.AddShape(new TextShape("Aspose.Imaging", new RectangleF(170, 225, 170, 100), new Font("Arial", 20), StringFormat.GenericTypographic));
-
-                // Add figures to the GraphicsPath object Draw Path
                 graphicspath.AddFigures(new[] { figure });
                 graphics.DrawPath(new Pen(Color.Blue), graphicspath);
 

@@ -25,8 +25,6 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
             Dim pdfOptions As New PdfOptions()
             pdfOptions.VectorRasterizationOptions = emfRasterizationOptions
 
-            ' Declare variables to store file paths for input and output images
-
             ' Load an existing image into an instance of EMF class
             Using image__1 As EmfImage = DirectCast(Image.Load(dataDir & Convert.ToString("Picture1.emf")), EmfImage)
                 Using outputStream As New FileStream(dataDir & Convert.ToString("CroppingByRectangleEMFImage_out.pdf"), FileMode.Create)

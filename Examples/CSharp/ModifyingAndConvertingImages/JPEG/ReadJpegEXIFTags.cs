@@ -28,7 +28,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 Console.WriteLine("Focal Length: " + exifData.FocalLength);
                 Console.WriteLine("Compression: " + exifData.Compression);
             }
-        }
-        // ExEnd:ReadJpegEXIFTags
+            // ExEnd:ReadJpegEXIFTags
+        }      
     }
 }

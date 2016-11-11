@@ -37,10 +37,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an existing image in an instance of RasterImage
             using (RasterImage image = (RasterImage)Image.Load(dataDir + "SampleTiff1.tiff"))
             {
-                // Create a new TiffImage from the RasterImage
+                // Create a new TiffImage from the RasterImage and Save the resultant image while passing the instance of TiffOptions
                 using (TiffImage tiffImage = new TiffImage(new TiffFrame(image)))
                 {
-                    // Save the resultant image while passing the instance of TiffOptions
                     tiffImage.Save(dataDir + "SavingRasterImage_out.tiff", options);
                 }
             }

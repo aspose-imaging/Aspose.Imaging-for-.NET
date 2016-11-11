@@ -14,8 +14,6 @@ Imports Aspose.Imaging.ImageOptions
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class ConvertGIFImageLayersToTIFF
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:ConvertGIFImageLayersToTIFF
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -23,9 +21,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             ' Load a GIF image
             Dim objImage As Image = Image.Load(dataDir & Convert.ToString("asposelogo.gif"))
 
-            ' Convert the image to GIF image
+            ' Convert the image to GIF image and Iterate through arry of blocks in the GIF image
             Using gif As GifImage = DirectCast(objImage, GifImage)
-                ' Iterate through arry of blocks in the GIF image
                 For i As Integer = 0 To gif.Blocks.Length - 1
                     ' Convert block to GifFrameBlock class instance
                     Dim gifBlock As GifFrameBlock = TryCast(gif.Blocks(i), GifFrameBlock)
@@ -35,10 +32,8 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                         Continue For
                     End If
 
-                    ' Create an instance of TIFF Option class
+                    ' Create an instance of TIFF Option class and Save the GIFF block as TIFF image
                     Dim objTiff As New TiffOptions(TiffExpectedFormat.[Default])
-
-                    ' Save the GIFF block as TIFF image
                     gifBlock.Save(dataDir & "asposelogo-" & i & "_out.tif", objTiff)
                 Next
             End Using

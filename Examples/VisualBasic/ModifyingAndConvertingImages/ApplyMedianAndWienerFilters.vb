@@ -11,7 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class ApplyMedianAndWienerFilters
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             ' ExStart:ApplyMedianAndWienerFilters
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -25,13 +24,9 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                     Return
                 End If
 
-                ' Create an instance of MedianFilterOptions class and set the size.
+                ' Create an instance of MedianFilterOptions class and set the size, Apply MedianFilterOptions filter to RasterImage object and Save the resultant image
                 Dim options As New MedianFilterOptions(4)
-
-                ' Apply MedianFilterOptions filter to RasterImage object.
                 rasterImage.Filter(image__1.Bounds, options)
-
-                ' Save the resultant image
                 image__1.Save(dataDir & Convert.ToString("median_test_denoise_out.gif"))
             End Using
         End Sub

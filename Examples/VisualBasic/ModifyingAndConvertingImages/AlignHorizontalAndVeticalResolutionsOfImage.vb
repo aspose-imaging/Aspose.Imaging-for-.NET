@@ -11,27 +11,21 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class AlignHorizontalAndVeticalResolutionsOfImage
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             ' ExStart:AlignHorizontalAndVeticalResolutionsOfImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
 
             ' Load an image and convert the image instance to TiffImage
             Using image__1 As TiffImage = DirectCast(Image.Load(dataDir & Convert.ToString("SampleTiff1.tiff")), TiffImage)
-                ' Call the align resolution method
+                ' Call the align resolution method and Save the results to output path.
                 image__1.AlignResolutions()
-
-                ' Save the results to output path.
                 image__1.Save(dataDir & Convert.ToString("AlignHorizontalAndVeticalResolutionsOfImage_out.tiff"))
-
                 Dim framesCount As Integer = image__1.Frames.Length
                 For i As Integer = 0 To framesCount - 1
                     Dim frame As TiffFrame = image__1.Frames(i)
                     ' All resolutions after aligment must be equal
-
                     Dim verticalResolution = frame.VerticalResolution
                     Dim horizontalResolution = frame.HorizontalResolution
-
                     Console.WriteLine("Horizontal and vertical resolutions are equal:" & verticalResolution & ":" & horizontalResolution)
                 Next
             End Using

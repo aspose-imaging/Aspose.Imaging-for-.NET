@@ -35,7 +35,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                 ' Save the results to disk
                 rasterImage.Save(dataDir & Convert.ToString("CroppingByShifts_out.jpg"))
             End Using
+            ' ExEnd:CroppingByShifts
         End Sub
-        ' ExEnd:CroppingByShifts
     End Class
 End Namespace

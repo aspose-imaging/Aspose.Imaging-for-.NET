@@ -11,8 +11,6 @@
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class SimpleResizeImageProportionally
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:SimpleResizeImageProportionally
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -23,14 +21,11 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                     image__1.CacheData()
                 End If
 
-                ' Specifying width and height
+                ' Specifying width and height and Saving result
                 Dim newWidth As Integer = image__1.Width / 2
                 image__1.ResizeWidthProportionally(newWidth)
-
                 Dim newHeight As Integer = image__1.Height / 2
                 image__1.ResizeHeightProportionally(newHeight)
-
-                ' Saving result
                 image__1.Save(dataDir & Convert.ToString("SimpleResizeImageProportionally_out.png"))
             End Using
             ' ExEnd:SimpleResizeImageProportionally

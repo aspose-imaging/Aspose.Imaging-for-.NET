@@ -23,12 +23,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Create an instance of TiffImage and load the file from disc
             using (var multiImage = (TiffImage)Image.Load(dataDir + "SampleTiff1.tiff"))
             {
-                // Initialize a variable to keep track of the frames in the image
+                // Initialize a variable to keep track of the frames in the image, Iterate over the tiff frame collection and Save the image
                 int i = 0;
-                // Iterate over the tiff frame collection
                 foreach (var tiffFrame in multiImage.Frames)
                 {
-                    // Save the frame directly on disc in Jpeg compression
                     tiffFrame.Save(dataDir + i + "_out.tiff", new TiffOptions(TiffExpectedFormat.TiffJpegRgb));
                 }
             }

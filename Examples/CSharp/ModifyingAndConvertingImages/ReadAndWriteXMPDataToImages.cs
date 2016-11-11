@@ -37,10 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Create an instance of XMP-Header
                 XmpHeaderPi xmpHeader = new XmpHeaderPi(Guid.NewGuid().ToString());
 
-                // Create an instance of Xmp-TrailerPi 
+                // Create an instance of Xmp-TrailerPi, XMPmeta class to set different attributes
                 XmpTrailerPi xmpTrailer = new XmpTrailerPi(true);
-
-                // Create an instance of XMPmeta class to set different attributes
                 XmpMeta xmpMeta = new XmpMeta();
                 xmpMeta.AddAttribute("Author", "Mr Smith");
                 xmpMeta.AddAttribute("Description", "The fake metadata value");
@@ -69,12 +67,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 
                 using (var ms = new MemoryStream())
                 {
-                    // Update XMP metadata into image
+                    // Update XMP metadata into image and Save image on the disk or in memory stream
                     image.XmpData = xmpData;
-
-                    // Save image on the disk or in memory stream
                     image.Save(ms);
-
                     ms.Seek(0, System.IO.SeekOrigin.Begin);
 
                     // Load the image from moemory stream or from disk to read/get the metadata

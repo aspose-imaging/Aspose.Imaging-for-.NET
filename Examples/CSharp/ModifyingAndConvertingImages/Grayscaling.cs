@@ -21,17 +21,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an image in an instance of Image
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Cast the image to RasterCachedImage
-                RasterCachedImage rasterCachedImage = (RasterCachedImage)image;
-                // Check if image is cached
+                // Cast the image to RasterCachedImage and Check if image is cached
+                RasterCachedImage rasterCachedImage = (RasterCachedImage)image;               
                 if (!rasterCachedImage.IsCached)
                 {
                     // Cache image if not already cached
                     rasterCachedImage.CacheData();
                 }
-                // Transform image to its grayscale representation
+
+                // Transform image to its grayscale representation and Save the resultant image
                 rasterCachedImage.Grayscale();
-                // Save the resultant image
                 rasterCachedImage.Save(dataDir + "Grayscaling_out.jpg");
             }
             // ExEnd:Grayscaling

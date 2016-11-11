@@ -14,12 +14,10 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             ' ExStart:GetLastModifiedDate
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
-
             Using image__1 As RasterImage = DirectCast(Image.Load(dataDir & Convert.ToString("aspose-logo.jpg")), RasterImage)
                 ' Gets the date from [FileInfo]
                 Dim modifyDate As String = image__1.GetModifyDate(True).ToString()
                 Console.WriteLine("Last modify date using [FileInfo]: {0}", modifyDate)
-
                 ' Gets the date from XMP metadata of [FileInfo] as long as it's not default case
                 modifyDate = image__1.GetModifyDate(False).ToString()
                 Console.WriteLine("Last modify date using info from [FileInfo] and XMP metadata: {0}", modifyDate)

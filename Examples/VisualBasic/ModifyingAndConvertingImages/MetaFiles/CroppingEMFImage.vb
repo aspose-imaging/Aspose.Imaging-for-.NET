@@ -37,7 +37,7 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.MetaF
                     image__1.Save(outputStream, pdfOptions)
                 End Using
             End Using
+            ' ExEnd:CroppingEMFImage
         End Sub
-        ' ExEnd:CroppingEMFImage
     End Class
 End Namespace

@@ -24,13 +24,11 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages.JPEG
                 ' Create an instance of Rectangle class with desired size
                 Dim rectangle As New Rectangle(20, 20, 20, 20)
 
-                ' Perform the crop operation on object of Rectangle class
+                ' Perform the crop operation on object of Rectangle class and Save the results to disk
                 rasterImage.Crop(rectangle)
-
-                ' Save the results to disk
                 rasterImage.Save(dataDir & Convert.ToString("CroppingByRectangle_out.jpg"))
             End Using
+            ' ExEnd:CroppingByRectangle
         End Sub
-        ' ExEnd:CroppingByRectangle
     End Class
 End Namespace

@@ -26,23 +26,19 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Cast object of Image to RasterImage
                 RasterImage rasterImage = (RasterImage)image;
 
-                // Check if RasterImage is cached
+                // Check if RasterImage is cached and Cache RasterImage for better performance
                 if (!rasterImage.IsCached)
-                {
-                    // Cache RasterImage for better performance
+                {                  
                     rasterImage.CacheData();
                 }
 
                 // Adjust the contrast
                 rasterImage.AdjustContrast(10);
 
-                // Create an instance of TiffOptions for the resultant image
+                // Create an instance of TiffOptions for the resultant image, Set various properties for the object of TiffOptions and Save the resultant image to TIFF format
                 TiffOptions tiffOptions = new TiffOptions(TiffExpectedFormat.Default);
-                // Set various properties for the object of TiffOptions
                 tiffOptions.BitsPerSample = new ushort[] { 8, 8, 8 };
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
-
-                // Save the resultant image to TIFF format
                 rasterImage.Save(dataDir + "AdjustContrast_out.tiff", tiffOptions);
             }
             // ExEnd:TiffOptionsConfiguration

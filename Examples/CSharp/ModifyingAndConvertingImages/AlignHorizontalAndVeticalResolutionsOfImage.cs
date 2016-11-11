@@ -16,7 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             // ExStart:AlignHorizontalAndVeticalResolutionsOfImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -24,12 +23,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Load an image and convert the image instance to TiffImage
             using (TiffImage image = (TiffImage)Image.Load(dataDir + "SampleTiff1.tiff"))
             {
-                // Call the align resolution method
+                // Call the align resolution method and Save the results to output path.
                 image.AlignResolutions();
-
-                // Save the results to output path.
                 image.Save(dataDir + "AlignHorizontalAndVeticalResolutionsOfImage_out.tiff");
-
                 int framesCount = image.Frames.Length;
                 for (int i = 0; i < framesCount; i++)
                 {

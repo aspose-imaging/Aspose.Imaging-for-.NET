@@ -13,8 +13,6 @@ Imports Aspose.Imaging.ImageOptions
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class SavingRasterImageToTIFFWithCompression
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' ExStart:SavingRasterImageToTIFFWithCompression
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()

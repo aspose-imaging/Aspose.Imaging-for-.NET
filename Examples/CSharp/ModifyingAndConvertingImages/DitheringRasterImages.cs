@@ -15,8 +15,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:DitheringRasterImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -24,9 +22,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // Create an instance of JpegImage and load an image as of JpegImage
             using (var image = (JpegImage)Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Peform Floyd Steinberg dithering on the current image
+                // Peform Floyd Steinberg dithering on the current image and Save the resultant image
                 image.Dither(DitheringMethod.ThresholdDithering, 4);
-                // Save the resultant image
                 image.Save(dataDir + "SampleImage_out.bmp");
             }
             // ExEnd:DitheringRasterImages

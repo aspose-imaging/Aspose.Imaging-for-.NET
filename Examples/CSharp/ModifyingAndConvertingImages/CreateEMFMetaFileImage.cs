@@ -96,7 +96,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     image.Save(outPath, options);
                 }
             }
-            // ExStart:CreateEMFMetaFileImage
+            // ExEnd:CreateEMFMetaFileImage
         }
     }
 }

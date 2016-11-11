@@ -15,8 +15,6 @@ Imports Aspose.Imaging.Sources
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Public Class AddFramesToTIFFImage
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
-
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
             Dim outputSettings As New TiffOptions(TiffExpectedFormat.[Default])

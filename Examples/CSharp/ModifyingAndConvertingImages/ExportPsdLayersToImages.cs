@@ -16,8 +16,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
             // ExStart:ExportPsdLayersToImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -28,7 +26,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 var psdImage = (PsdImage)image;
                 var pngOptions = new PngOptions();
                 pngOptions.ColorType = PngColorType.TruecolorWithAlpha;
-
                 for (int i = 0; i < psdImage.Layers.Length; i++)
                 {
                     psdImage.Layers[i].Save(dataDir + "layer-" + i +"_out.png", pngOptions);

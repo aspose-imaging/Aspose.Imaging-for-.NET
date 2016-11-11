@@ -24,15 +24,13 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             Cache.CacheType = CacheType.Auto
 
             ' The default cache max value is 0, which means that there is no upper limit
-            Cache.MaxDiskSpaceForCache = 1073741824
-            ' 1 gigabyte
-            Cache.MaxMemoryForCache = 1073741824
-            ' 1 gigabyte
+            Cache.MaxDiskSpaceForCache = 1073741824 ' 1 gigabyte
+            Cache.MaxMemoryForCache = 1073741824    ' 1 gigabyte
+
             ' We do not recommend that you change the following property because it may greatly affect performance
             Cache.ExactReallocateOnly = False
 
-            ' At any time you can check how many bytes are currently allocated for the cache in memory or on disk
-            ' By examining the following properties
+            ' At any time you can check how many bytes are currently allocated for the cache in memory or on disk By examining the following properties
             Dim l1 As Long = Cache.AllocatedDiskBytesCount
             Dim l2 As Long = Cache.AllocatedMemoryBytesCount
 
@@ -44,18 +42,15 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
                 For i As Integer = 0 To pixels.Length - 1
                     pixels(i) = Color.White
                 Next
-
                 image__1.SavePixels(image__1.Bounds, pixels)
 
                 ' After executing the code above 40000 bytes are allocated to memory.
                 Dim diskBytes As Long = Cache.AllocatedDiskBytesCount
                 Dim memoryBytes As Long = Cache.AllocatedMemoryBytesCount
             End Using
-
             ' The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. If you've forgotten to call dispose on an object the cache values will not be 0.
             l1 = Cache.AllocatedDiskBytesCount
             l2 = Cache.AllocatedMemoryBytesCount
-
             ' ExEnd:ControllCacheReallocation
         End Sub
     End Class

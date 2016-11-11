@@ -12,7 +12,6 @@ Imports Aspose.Imaging.ImageOptions
 Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
     Class CompressingTIFFImagesWithLZWAlgorithm
         Public Shared Sub Run()
-            ' To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             ' ExStart:CompressingTIFFImagesWithLZWAlgorithm
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ModifyingAndConvertingImages()
@@ -23,13 +22,11 @@ Namespace Aspose.Imaging.Examples.VisualBasic.ModifyingAndConvertingImages
             ' Create an instance of TiffOptions for the resultant image
             Dim outputSettings As New TiffOptions(TiffExpectedFormat.[Default])
 
-            ' Set BitsPerSample, Compression and Photometric mode
+            ' Set BitsPerSample, Compression, Photometric mode and Set graycale palette
             outputSettings.BitsPerSample = New UShort() {4}
             outputSettings.Compression = TiffCompressions.Lzw
             outputSettings.Photometric = TiffPhotometrics.Palette
-            ' Set graycale palette
             outputSettings.Palette = ColorPaletteHelper.Create4BitGrayscale(False)
-
             image__1.Save(dataDir & Convert.ToString("SampleTiff_out.tiff"), outputSettings)
             ' ExEnd:CompressingTIFFImagesWithLZWAlgorithm
         End Sub
