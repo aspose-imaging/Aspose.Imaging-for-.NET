@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DGN
+namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DNG
 {
-    class ConvertingDGNToJPG
+    class ConvertingDNGToJPG
     {
         public static void Run()
         {
