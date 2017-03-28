@@ -22,4 +22,4 @@ Directory | Description
 + **Download:** [Download Aspose.Imaging for .NET](http://www.aspose.com/downloads/imaging/net)
 + **Documentation:** [Aspose.Imaging for .NET Documentation](https://docs.aspose.com/display/imagingnet/Home)
 + **Forum:** [Aspose.Imaging for .NET Forum](http://www.aspose.com/community/forums/aspose.imaging-product-family/498/showforum.aspx)
-+ **Blog:** [Aspose.Imaging for .NET Blog](hhttps://blog.aspose.com/category/aspose-products/aspose.imaging-product-family/)
++ **Blog:** [Aspose.Imaging for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.imaging-product-family/)
