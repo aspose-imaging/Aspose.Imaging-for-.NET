@@ -38,7 +38,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //CreatingAnImageBySettingPath.Run();
             //CreatingImageUsingStream.Run();
             //DrawImagesUsingCoreFunctionality.Run();
-
+            //Imagetransparency.Run();
             //// =====================================================
             //// =====================================================
             ////            Modifying And Converting Images
