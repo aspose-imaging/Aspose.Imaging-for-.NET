@@ -2,7 +2,7 @@
 
 [![aspose Imaging for net 100 Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://www.aspose.com/blogs/wp-content/uploads/2013/09/aspose-Imaging-for-net_100.png "Aspose.Imaging for .NET logo")](http://www.aspose.com/.net/imaging-component.aspx)Aspose .NET ImageAttach is an open source add-on to be used with Microsoft Dynamics CRM. This add-on provide functionality to add images to a record and view them on the main form. Aspose .NET ImageAttach can be used with CRM on-premises as well as CRM Online.
 
-[![free download icon aspose mp Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://cdn.aspose.com/Images/marketplace/free-download-icon-aspose-mp.png "Free Download - Aspose%20.NET%20ImageAttach")](https://asposenetcrm.codeplex.com/releases "Free Download - Aspose .NET ImageAttach")[![video demo icon aspose mp Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://cdn.aspose.com/Images/marketplace/video-demo-icon-aspose-mp.png "Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM")](http://youtu.be/k_QVup-N3c8 "Video Demo - Aspose .NET ImageAttach")[![open source icon aspose mp Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://cdn.aspose.com/Images/marketplace/open-source-icon-aspose-mp.png "Source Code - Aspose .NET ImageAttach")](https://asposenetcrm.codeplex.com/SourceControl/latest")
+[![video demo icon aspose mp Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://cdn.aspose.com/Images/marketplace/video-demo-icon-aspose-mp.png "Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM")](http://youtu.be/k_QVup-N3c8 "Video Demo - Aspose .NET ImageAttach")
 
 ## Features in this Release
 
@@ -32,7 +32,6 @@ This add on will work with all versions of **Microsoft Dynamics CRM 2013, 2015 a
 
 The addon is provided in the form of a solution. You can download the latest solution from:
 
-*   Download from [CodePlex](https://asposenetcrm.codeplex.com/releases).
 *   Download from [GitHub](https://github.com/asposemarketplace/asposenetcrm/releases).
 *   Download from [BitBucket](https://bitbucket.org/asposemarketplace/aspose-.net-for-dynamics-crm/downloads).
 *   Download from [SourceForge](https://sourceforge.net/projects/asposenetcrm/files/Aspose%20.NET%20ImageAttach/).
@@ -59,7 +58,6 @@ Use the Aspose Configuration Entity to configure your Aspose .NET ImageAttach. T
 *   **LicenseWebResourceName:**
     *   Webresource Name where the License Xml is Stored. (Default=Aspose_License.lic, included in the solution)
 
-![ Add images to a record and view them on the main form with Aspose .NET ImageAttach for Dynamics CRM](http://download-codeplex.sec.s-msft.com/Download?ProjectName=asposenetcrm&DownloadId=1430036 "Configuring Aspose .NET ImageAttach")
 
 ## Using Aspose .NET ImageAttach
 
