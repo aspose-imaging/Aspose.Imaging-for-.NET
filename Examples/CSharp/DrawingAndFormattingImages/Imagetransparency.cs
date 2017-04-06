@@ -17,6 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
         {
             // ExStart:Imagetransparency
             // The path to the documents directory.
+           
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
            string filePath = "Flower.png"; // specify your path
@@ -34,4 +35,4 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             // ExEnd:Imagetransparency
         }
     }
-}
+
