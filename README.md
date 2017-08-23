@@ -21,5 +21,5 @@ Directory | Description
 + **Product Home:** [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net)
 + **Download:** [Download Aspose.Imaging for .NET](http://www.aspose.com/downloads/imaging/net)
 + **Documentation:** [Aspose.Imaging for .NET Documentation](https://docs.aspose.com/display/imagingnet/Home)
-+ **Forum:** [Aspose.Imaging for .NET Forum](http://www.aspose.com/community/forums/aspose.imaging-product-family/498/showforum.aspx)
++ **Forum:** [Aspose.Imaging for .NET Forum](https://www.aspose.com/products/imaging)
 + **Blog:** [Aspose.Imaging for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.imaging-product-family/)
