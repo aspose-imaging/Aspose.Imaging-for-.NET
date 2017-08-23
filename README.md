@@ -2,7 +2,7 @@
 
 [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net) is an advanced image processing API that lets developers create, edit, draw or convert images in their .NET applications. It works independent of other applications and allows saving to Adobe Photoshop® format (PSD) without having Photoshop or any other image editor installed on the machine.
 
-This repository contains [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and Showcase projects for [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and Showcase projects for [Aspose.Imaging for .NET](https://www.aspose.com/products/imaging/net) to help you learn and write your own applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-imaging/Aspose.Imaging-for-.NET/archive/master.zip">
@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net)
-+ **Download:** [Download Aspose.Imaging for .NET](http://www.aspose.com/downloads/imaging/net)
++ **Download:** [Download Aspose.Imaging for .NET](https://downloads.aspose.com/imaging/net)
 + **Documentation:** [Aspose.Imaging for .NET Documentation](https://docs.aspose.com/display/imagingnet/Home)
 + **Forum:** [Aspose.Imaging for .NET Forum](https://www.aspose.com/products/imaging)
 + **Blog:** [Aspose.Imaging for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.imaging-product-family/)
