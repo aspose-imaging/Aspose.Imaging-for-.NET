@@ -10,8 +10,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
 {
       public static void Run()
       {
+      
           //ExStart:SvgImageTester
           string dataDir = RunExamples.GetDataDir_MetaFiles();
+      
+      
       }
       #region Constants
       //Please Update path int constant SourceFolder.

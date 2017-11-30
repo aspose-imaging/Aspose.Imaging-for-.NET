@@ -15,7 +15,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             //ExStart:ColorTypeAndCompressionType 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
-            using (var original = Image.Load("D:/temp/ColorGif.gif"))
+          
+            using (var original = Image.Load(dataDir+"ColorGif.gif"))
             {
                 var jpegOptions = new JpegOptions()
             {

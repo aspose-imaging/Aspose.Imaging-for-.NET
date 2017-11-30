@@ -14,6 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
 
+            
             //ExStart:SupportForODG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();

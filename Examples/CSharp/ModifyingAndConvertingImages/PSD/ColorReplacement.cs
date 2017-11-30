@@ -19,7 +19,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
         public static void Run()
         {
             //ExStart:ColorReplacement
-            String path = @"C:\Aspose Data\photooverlay_5_new\";
+            String path = "F:\\Aspose WPrk\\";
             string dataDir = RunExamples.GetDataDir_PSD();
             using (PsdImage image = (PsdImage)Image.Load(dataDir + "photooverlay_5_new_3.psd"))
             {
