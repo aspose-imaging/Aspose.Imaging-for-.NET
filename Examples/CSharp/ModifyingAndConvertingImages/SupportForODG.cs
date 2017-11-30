@@ -19,7 +19,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             string[] files = new string[2] { "example.odg", "example1.odg" };
-            string folder = @"D:\";
+            string folder = @"F:\\Aspose Work\\";
             MetafileRasterizationOptions rasterizationOptions = new MetafileRasterizationOptions();
             foreach (string file in files)
             {
