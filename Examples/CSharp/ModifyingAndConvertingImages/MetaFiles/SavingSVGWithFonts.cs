@@ -8,7 +8,7 @@ internal class SvgFontTester
      
     #region Constants
        
-        // ExStart:SavingSVGWithFonts
+        //ExStart:SavingSVGWithFonts
     private const string FontFolderName = "fonts";
     private const string OutFolderName = "Out";
     private const string SourceFolder = @"D:\FontTests";
