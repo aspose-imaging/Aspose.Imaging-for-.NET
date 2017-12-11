@@ -18,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            //ExStart:MissingFonts
+                //ExStart:MissingFonts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
             using (Image image = Image.Load("testReplacementNotAvailableFonts.psd", new PsdLoadOptions() { DefaultReplacementFont = "Arial" }))

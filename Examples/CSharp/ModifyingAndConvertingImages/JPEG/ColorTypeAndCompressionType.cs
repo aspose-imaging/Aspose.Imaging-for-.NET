@@ -12,7 +12,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            //ExStart:ColorTypeAndCompressionType 
+             
+             //ExStart:ColorTypeAndCompressionType 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
           
@@ -22,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             {
                 ColorType = JpegCompressionColorMode.Grayscale,
                 CompressionType = JpegCompressionMode.Progressive,
-                //Quality = 90
+          
             };
                 original.Save("D:/temp/result.jpg", jpegOptions);
             }
