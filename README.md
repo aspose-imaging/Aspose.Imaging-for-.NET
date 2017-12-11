@@ -18,7 +18,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Imaging for .NET](http://www.aspose.com/products/imaging/net)
++ **Product Home:** [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net)
 + **Download:** [Download Aspose.Imaging for .NET](https://downloads.aspose.com/imaging/net)
 + **Documentation:** [Aspose.Imaging for .NET Documentation](https://docs.aspose.com/display/imagingnet/Home)
 + **Forum:** [Aspose.Imaging for .NET Forum](https://products.aspose.com/imaging)
