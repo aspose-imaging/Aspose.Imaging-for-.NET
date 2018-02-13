@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net)
-+ **Download:** [Download Aspose.Imaging for .NET](https://downloads.aspose.com/imaging/net)
++ **Download:** [Download Aspose.Imaging for .NET](https://www.nuget.org/packages/Aspose.imaging/)
 + **Documentation:** [Aspose.Imaging for .NET Documentation](https://docs.aspose.com/display/imagingnet/Home)
 + **Forum:** [Aspose.Imaging for .NET Forum](https://products.aspose.com/imaging)
 + **Blog:** [Aspose.Imaging for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.imaging-product-family/)
