@@ -100,8 +100,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConvertWMFToPNG.Run();
             //ConvertWMFToPDF.Run();
             //GetLastModifiedDate.Run();
-
-
+           //SupportTiffDeflate.Run();
+           //ConvertImageWithGrayscale.Run();
             //// =====================================================
             //// =====================================================
             ////                        DICOM
@@ -179,7 +179,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //MergePSDlayers.Run();
             //UncompressedImageUsingFile.Run();
             //UncompressedImageStreamObject.Run();
-
+            //PSDtoPDF.Run();
 
             //// =====================================================
             //// =====================================================

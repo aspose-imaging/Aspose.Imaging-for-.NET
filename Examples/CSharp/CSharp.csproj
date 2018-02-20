@@ -52,10 +52,12 @@
   <ItemGroup>
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
     <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
@@ -119,6 +121,7 @@
     <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.cs" />
     <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadAndWriteXMPDataToImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportToWebP.cs" />
