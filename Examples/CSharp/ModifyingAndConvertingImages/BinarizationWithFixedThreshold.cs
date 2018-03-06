@@ -13,7 +13,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:BinarizationWithFixedThreshold
+            //ExStart:BinarizationWithFixedThreshold
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -32,7 +32,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.BinarizeFixed(100);
                 rasterCachedImage.Save(dataDir + "BinarizationWithFixedThreshold_out.jpg");
             }
-            // ExEnd:BinarizationWithFixedThreshold
+            //ExEnd:BinarizationWithFixedThreshold
         }
     }
 }

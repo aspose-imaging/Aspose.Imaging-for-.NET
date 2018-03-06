@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawingLines
+            //ExStart:DrawingLines
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages() + "SolidLines_out.bmp";
 
@@ -48,7 +48,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     image.Save();
                 }
             }
-            // ExEnd:DrawingLines
+            //ExEnd:DrawingLines
         }
     }
 }

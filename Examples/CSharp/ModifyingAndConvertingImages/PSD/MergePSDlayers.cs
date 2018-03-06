@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:MergePSDlayers
+            //ExStart:MergePSDlayers
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
             string sourceFileName = dataDir + "PsdImage.psd";
@@ -37,7 +37,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                     psdImage.Save(stream, jpgOptions);
                 }
             }
-            // ExEnd:MergePSDlayers
+            //ExEnd:MergePSDlayers
         }
     }
 }

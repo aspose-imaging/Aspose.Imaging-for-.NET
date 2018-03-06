@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:DICOMCroppingByShifts
+            //ExStart:DICOMCroppingByShifts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Crop(1, 1, 1, 1);              
                 image.Save(dataDir + "DICOMCroppingByShifts_out.bmp", new BmpOptions());
             }
-            // ExEnd:DICOMCroppingByShifts
+            //ExEnd:DICOMCroppingByShifts
         }
     }
 }

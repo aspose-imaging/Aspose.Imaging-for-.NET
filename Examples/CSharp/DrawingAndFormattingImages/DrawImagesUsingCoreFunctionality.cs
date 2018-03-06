@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawImagesUsingCoreFunctionality
+            //ExStart:DrawImagesUsingCoreFunctionality
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -40,7 +40,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 rasterImage.SavePixels(rasterImage.Bounds, pixels);
                 rasterImage.Save();
             }
-            // ExStart:DrawImagesUsingCoreFunctionality
+            //ExStart:DrawImagesUsingCoreFunctionality
         }
     }
 }

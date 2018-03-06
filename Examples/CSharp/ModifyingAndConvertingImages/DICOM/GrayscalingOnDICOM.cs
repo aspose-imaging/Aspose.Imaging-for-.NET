@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:GrayscalingOnDICOM
+            //ExStart:GrayscalingOnDICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
            
@@ -27,7 +27,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Grayscale();
                 image.Save(dataDir + "GrayscalingOnDICOM_out.bmp", new BmpOptions());
             }
-            // ExEnd:GrayscalingOnDICOM
+            //ExEnd:GrayscalingOnDICOM
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:AdjustContrastDICOM
+            //ExStart:AdjustContrastDICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -27,7 +27,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.AdjustContrast(50);
                 image.Save(dataDir + "AdjustContrastDICOM_out.bmp", new BmpOptions());
             }
-            // ExEnd:AdjustContrastDICOM
+            //ExEnd:AdjustContrastDICOM
         }
     }
 }

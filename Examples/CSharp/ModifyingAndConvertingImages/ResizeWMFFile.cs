@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ResizeWMFFile
+            //ExStart:ResizeWMFFile
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 
                 // Call the save method, provide output path and PngOptions to convert the WMF file to PNG and save the output
                 image.Save(dataDir + "CreateEMFMetaFileImage_out.png", imageOptions);
-                // ExStart:ResizeWMFFile
+                //ExStart:ResizeWMFFile
             }
         }
     }

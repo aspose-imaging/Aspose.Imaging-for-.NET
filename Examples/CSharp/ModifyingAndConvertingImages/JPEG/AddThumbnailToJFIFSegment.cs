@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:AddThumbnailToJFIFSegment
+            //ExStart:AddThumbnailToJFIFSegment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
             using (MemoryStream stream = new MemoryStream())
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.Jfif.Thumbnail = thumbnailImage;
                 image.Save(dataDir + stream + "_out.jpeg");
             }
-            // ExEnd:AddThumbnailToJFIFSegment
+            //ExEnd:AddThumbnailToJFIFSegment
         }
     }
 }

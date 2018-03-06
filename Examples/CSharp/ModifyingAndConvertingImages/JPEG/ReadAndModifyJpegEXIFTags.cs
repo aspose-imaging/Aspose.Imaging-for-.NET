@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:ReadAndModifyJpegEXIFTags
+            //ExStart:ReadAndModifyJpegEXIFTags
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
@@ -38,7 +38,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                     }
                 }
             }
-            // ExEnd:ReadAndModifyJpegEXIFTags
+            //ExEnd:ReadAndModifyJpegEXIFTags
         }
     }
 }

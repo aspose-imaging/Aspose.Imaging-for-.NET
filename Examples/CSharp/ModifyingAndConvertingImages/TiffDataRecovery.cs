@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:TiffDataRecovery
+            //ExStart:TiffDataRecovery
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             {
                 // Do some work
             }
-            // ExEnd:TiffDataRecovery
+            //ExEnd:TiffDataRecovery
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:WritingAndModifyingEXIFData
+            //ExStart:WritingAndModifyingEXIFData
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
@@ -32,7 +32,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 exif.Flash = ExifFlash.Fired;
                 image.Save(dataDir + "aspose-logo_out.jpg");
             }
-            // ExEnd:WritingAndModifyingEXIFData
+            //ExEnd:WritingAndModifyingEXIFData
         }
     }
 }

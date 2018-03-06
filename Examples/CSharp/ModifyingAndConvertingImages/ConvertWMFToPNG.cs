@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ConvertWMFToPNG
+            //ExStart:ConvertWMFToPNG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call the save method, provide output path and PngOptions to convert the WMF file to PNG and save the output
                 image.Save(dataDir + "ConvertWMFToPNG_out.png", imageOptions);
             }
-            // ExEnd:ConvertWMFToPNG
+            //ExEnd:ConvertWMFToPNG
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            // ExStart:ConvertDjVuToPDF
+            //ExStart:ConvertDjVuToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -28,13 +28,13 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                 exportOptions.PdfDocumentInfo = new PdfDocumentInfo();
                 
                 // Create an instance of IntRange and initialize it with the range of DjVu pages to be exported
-                IntRange range = new IntRange(0, 5); // Export first 5 pages
+                IntRange range = new IntRange(0, 5); //Export first 5 pages
 
                 // Initialize an instance of DjvuMultiPageOptions with range of DjVu pages to be exported and Save the result in PDF format
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions(range);
                 image.Save(dataDir + "ConvertDjVuToPDFFormat_out.pdf", exportOptions);
             }
-            // ExEnd:ConvertDjVuToPDF
+            //ExEnd:ConvertDjVuToPDF
         }
     }
 }

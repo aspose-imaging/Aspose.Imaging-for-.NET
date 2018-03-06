@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            // ExStart:CreatingWebPImage
+            //ExStart:CreatingWebPImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
             {
                 image.Save();
             }
-            // ExEnd:CreatingWebPImage
+            //ExEnd:CreatingWebPImage
         }
     }
 }

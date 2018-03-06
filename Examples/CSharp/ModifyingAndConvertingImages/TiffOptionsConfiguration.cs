@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:TiffOptionsConfiguration           
+            //ExStart:TiffOptionsConfiguration           
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 TiffOptions options = new TiffOptions(TiffExpectedFormat.TiffJpegRgb);
                 image.Save(dataDir + "SampleTiff_out.tiff", options);
             }
-            // ExEnd:TiffOptionsConfiguration
+            //ExEnd:TiffOptionsConfiguration
         }
     }
 }

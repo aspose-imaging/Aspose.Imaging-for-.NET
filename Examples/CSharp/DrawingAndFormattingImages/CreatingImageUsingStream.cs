@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:CreatingImageUsingStream
+            //ExStart:CreatingImageUsingStream
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 // Do some image processing
                 image.Save(dataDir + "CreatingImageUsingStream_out.bmp");
             }
-            // ExEnd:CreatingImageUsingStream
+            //ExEnd:CreatingImageUsingStream
         }
     }
 }

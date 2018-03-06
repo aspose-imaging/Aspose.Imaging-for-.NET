@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ResizeImageWithResizeTypeEnumeration
+            //ExStart:ResizeImageWithResizeTypeEnumeration
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.ResizeHeightProportionally(newHeight, ResizeType.NearestNeighbourResample);
                 image.Save(dataDir + "ResizeImageWithResizeTypeEnumeration_out.png");
             }
-            // ExEnd:ResizeImageWithResizeTypeEnumeration
+            //ExEnd:ResizeImageWithResizeTypeEnumeration
         }
     }
 }

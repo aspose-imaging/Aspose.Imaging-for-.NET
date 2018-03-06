@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
     {
         public static void Run()
         {
-            // ExStart:SpecifyFontFolder
+            //ExStart:SpecifyFontFolder
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_MetaFiles();
 
@@ -47,7 +47,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                 FontSettings.SetFontsFolders(fonts.ToArray(), true);
                 image.Save(dataDir + "Picture1_with_my_fonts_out.png", pngOptions);
             }
-            // ExEnd:SpecifyFontFolder
+            //ExEnd:SpecifyFontFolder
         }     
     }
 }

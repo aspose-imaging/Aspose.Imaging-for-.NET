@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:ApplyFilterOnDICOMImage
+            //ExStart:ApplyFilterOnDICOMImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -28,7 +28,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Filter(image.Bounds, new MedianFilterOptions(8));
                 image.Save(dataDir + "ApplyFilterOnDICOMImage_out.bmp", new BmpOptions());
             }
-            // ExEnd:ApplyFilterOnDICOMImage
+            //ExEnd:ApplyFilterOnDICOMImage
         }
     }
 }

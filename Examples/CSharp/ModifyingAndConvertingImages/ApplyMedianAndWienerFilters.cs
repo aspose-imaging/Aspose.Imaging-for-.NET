@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ApplyMedianAndWienerFilters
+            //ExStart:ApplyMedianAndWienerFilters
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -34,5 +34,5 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "median_test_denoise_out.gif");
             }
         }
-    } // ExEnd:ApplyMedianAndWienerFilters
+    } //ExEnd:ApplyMedianAndWienerFilters
 }

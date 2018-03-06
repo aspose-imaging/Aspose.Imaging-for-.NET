@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:Bradleythreshold
+            //ExStart:Bradleythreshold
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "sample.bmp";
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 objimage.BinarizeBradley(threshold);
                 objimage.Save(dataDir + "binarized_out.png");
             }
-            // ExEnd:Bradleythreshold
+            //ExEnd:Bradleythreshold
         }
     }
 }

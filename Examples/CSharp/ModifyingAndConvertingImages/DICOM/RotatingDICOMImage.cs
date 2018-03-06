@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:RotatingDICOMImage
+            //ExStart:RotatingDICOMImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -25,7 +25,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Rotate(10);
                 image.Save(dataDir + "RotatingDICOMImage_out.bmp", new BmpOptions());
             }
-            // ExEnd:RotatingDICOMImage
+            //ExEnd:RotatingDICOMImage
         }
     }
 }

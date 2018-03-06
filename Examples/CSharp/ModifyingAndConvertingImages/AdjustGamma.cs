@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:AdjustGamma
+            //ExStart:AdjustGamma
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             
@@ -41,7 +41,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
                 rasterImage.Save(dataDir + "AdjustGamma_out.tiff", tiffOptions);
             }
-            // ExEnd:AdjustGamma
+            //ExEnd:AdjustGamma
         }
     }
 }

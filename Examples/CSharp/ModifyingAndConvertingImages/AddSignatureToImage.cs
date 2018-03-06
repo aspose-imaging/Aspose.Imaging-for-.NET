@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:AddSignatureToImage
+            //ExStart:AddSignatureToImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -32,7 +32,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     canvas.Save(dataDir + "AddSignatureToImage_out.png", new PngOptions());
                 }
             }
-            // ExStart:AddSignatureToImage
+            //ExStart:AddSignatureToImage
         }
     }
 }

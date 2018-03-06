@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:DICOMSOtherImageResizingOptions
+            //ExStart:DICOMSOtherImageResizingOptions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
            
@@ -32,7 +32,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image1.ResizeWidthProportionally(150, ResizeType.AdaptiveResample);
                 image1.Save(dataDir + "DICOMSOtherImageResizingOptions1_out.bmp", new BmpOptions());
             }
-            // ExEnd:DICOMSOtherImageResizingOptions
+            //ExEnd:DICOMSOtherImageResizingOptions
         }
     }
 }

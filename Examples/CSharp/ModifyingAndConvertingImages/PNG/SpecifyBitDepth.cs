@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            // ExStart:SpecifyBitDepth
+            //ExStart:SpecifyBitDepth
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -28,7 +28,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 options.BitDepth = 1;
                 png.Save(dataDir + "SpecifyBitDepth_out.jpg", options);
             }
-            // ExEnd:SpecifyBitDepth
+            //ExEnd:SpecifyBitDepth
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
     {
         public static void Run()
         {
-            // ExStart:ExportMetaFileToRasterFormats
+            //ExStart:ExportMetaFileToRasterFormats
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_MetaFiles();
             string outputfile = dataDir + "file_out";
@@ -46,7 +46,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                 image.Save(outputfile + ".tiff", new TiffOptions(TiffExpectedFormat.TiffLzwRgb) { VectorRasterizationOptions = emfRasterizationOptions });
                 image.Save(outputfile + ".webp", new WebPOptions { VectorRasterizationOptions = emfRasterizationOptions });
             }
-            // ExEnd:ExportMetaFileToRasterFormats
+            //ExEnd:ExportMetaFileToRasterFormats
         }       
     }
 }

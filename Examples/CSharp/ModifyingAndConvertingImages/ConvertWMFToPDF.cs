@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ConvertWMFToPDF
+            //ExStart:ConvertWMFToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -35,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call the save method, provide output path and PdfOptions to convert the WMF file to PDF and save the output
                 image.Save(dataDir + "ConvertWMFToPDF_out.pdf", pdfOptions);
             }
-            // ExEnd:ConvertWMFToPDF
+            //ExEnd:ConvertWMFToPDF
         }
     }
 }

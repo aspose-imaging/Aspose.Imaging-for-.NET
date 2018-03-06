@@ -16,14 +16,14 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:ImportImageToPSDLayer
+            //ExStart:ImportImageToPSDLayer
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
             // Load a PSD file as an image and caste it into PsdImage
             using (PsdImage image = (PsdImage)Image.Load(dataDir + "samplePsd.psd"))
             {
-                // Extract a layer from PSDImage
+                //Extract a layer from PSDImage
                 Layer layer = image.Layers[1];
 
                 // Load the image that is needed to be imported into the PSD file.
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 // Save the results to output path.
                 image.Save(dataDir + "ImportImageToPSDLayer_out.psd", new PsdOptions());
             }
-            // ExEnd:ImportImageToPSDLayer
+            //ExEnd:ImportImageToPSDLayer
         }
     }
 }

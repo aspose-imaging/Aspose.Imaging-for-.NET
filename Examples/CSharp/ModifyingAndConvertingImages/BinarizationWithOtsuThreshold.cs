@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:BinarizationWithOtsuThreshold
+            //ExStart:BinarizationWithOtsuThreshold
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.BinarizeOtsu();
                 rasterCachedImage.Save(dataDir + "BinarizationWithOtsuThreshold_out.jpg");
             }
-            // ExEnd:BinarizationWithOtsuThreshold
+            //ExEnd:BinarizationWithOtsuThreshold
         }
     }
 }

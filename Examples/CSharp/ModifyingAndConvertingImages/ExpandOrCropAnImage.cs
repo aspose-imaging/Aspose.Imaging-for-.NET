@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ExpandOrCropAnImage
+            //ExStart:ExpandOrCropAnImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 Rectangle destRect = new Rectangle { X = -200, Y = -200, Width = 300, Height = 300 };
                 rasterImage.Save(dataDir + "Grayscaling_out.jpg", new JpegOptions(), destRect);
             }
-            // ExEnd:ExpandOrCropAnImage
+            //ExEnd:ExpandOrCropAnImage
         }
     }
 }

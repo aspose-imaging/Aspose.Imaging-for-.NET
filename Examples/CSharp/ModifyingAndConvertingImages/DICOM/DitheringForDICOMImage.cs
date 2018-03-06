@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:DitheringForDICOMImage
+            //ExStart:DitheringForDICOMImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
            
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Dither(DitheringMethod.ThresholdDithering, 1);               
                 image.Save(dataDir + "DitheringForDICOMImage_out.bmp", new BmpOptions());
             }
-            // ExEnd:DitheringForDICOMImage
+            //ExEnd:DitheringForDICOMImage
         }
     }
 }

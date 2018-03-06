@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ControllCacheReallocation
+            //ExStart:ControllCacheReallocation
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Cache();
 
@@ -57,7 +57,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. If you've forgotten to call dispose on an object the cache values will not be 0.
             l1 = Cache.AllocatedDiskBytesCount;
             l2 = Cache.AllocatedMemoryBytesCount;
-            // ExEnd:ControllCacheReallocation
+            //ExEnd:ControllCacheReallocation
         }
     }
 }

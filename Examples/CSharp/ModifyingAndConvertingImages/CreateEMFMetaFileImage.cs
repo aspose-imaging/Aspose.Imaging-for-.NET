@@ -18,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:CreateEMFMetaFileImage
+            //ExStart:CreateEMFMetaFileImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -96,7 +96,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     image.Save(outPath, options);
                 }
             }
-            // ExEnd:CreateEMFMetaFileImage
+            //ExEnd:CreateEMFMetaFileImage
         }
     }
 }

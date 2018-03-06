@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            // ExStart:SettingResolution
+            //ExStart:SettingResolution
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -48,7 +48,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 options.ResolutionSettings = new ResolutionSetting(72, 96);
                 png.Save(dataDir + "SettingResolution_output.png", options);
             }
-            // ExEnd:SettingResolution
+            //ExEnd:SettingResolution
         }
     }
 }

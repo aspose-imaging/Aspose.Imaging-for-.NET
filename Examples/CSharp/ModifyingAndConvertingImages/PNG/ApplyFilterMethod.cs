@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {            
-            // ExStart:ApplyFilterMethod
+            //ExStart:ApplyFilterMethod
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 options.FilterType = PngFilterType.Paeth;
                 png.Save(dataDir + "ApplyFilterMethod_out.jpg", options);
             }
-            // ExEnd:ApplyFilterMethod
+            //ExEnd:ApplyFilterMethod
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ExportTextAsShape
+            //ExStart:ExportTextAsShape
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (Image image = Image.Load(dataDir + "Picture1.emf"))
@@ -35,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     TextAsShapes = false
                 });
             }
-            // ExEnd:ExportTextAsShape
+            //ExEnd:ExportTextAsShape
         }
     }
 }

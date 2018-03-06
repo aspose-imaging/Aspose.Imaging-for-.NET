@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            // ExStart:CompressingFiles
+            //ExStart:CompressingFiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
  
@@ -30,7 +30,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                     image.Save(i + "_out.png", options);
                 }
             }
-            // ExEnd:CompressingFiles
+            //ExEnd:CompressingFiles
         }
     }
 }

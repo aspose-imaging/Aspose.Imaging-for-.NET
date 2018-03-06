@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:CreatingTIFFImageWithCompression
+            //ExStart:CreatingTIFFImageWithCompression
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "SavingRasterImageToTIFFWithCompression_out.tiff";
 
@@ -46,7 +46,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Save resultant image
                 tiffImage.Save(dataDir);
             }
-            // ExEnd:CreatingTIFFImageWithCompression
+            //ExEnd:CreatingTIFFImageWithCompression
         }
     }
 }

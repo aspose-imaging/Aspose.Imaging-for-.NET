@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            // ExStart:ChangeBackgroundColor
+            //ExStart:ChangeBackgroundColor
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
  
@@ -43,7 +43,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 if (rasterImg != null)
                     rasterImg.Save(dataDir + "ChangeBackgroundColor_out.jpg");
             }
-            // ExEnd:ChangeBackgroundColor
+            //ExEnd:ChangeBackgroundColor
         }
     }
 }

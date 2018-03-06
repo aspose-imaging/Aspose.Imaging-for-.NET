@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:GetLastModifiedDate
+            //ExStart:GetLastModifiedDate
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 modifyDate = image.GetModifyDate(false).ToString();
                 Console.WriteLine("Last modify date using info from [FileInfo] and XMP metadata: {0}", modifyDate);
             }
-            // ExEnd:GetLastModifiedDate
+            //ExEnd:GetLastModifiedDate
         }
     }
 }

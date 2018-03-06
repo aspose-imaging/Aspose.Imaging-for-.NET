@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ConvertWMFMetaFileToSVG
+            //ExStart:ConvertWMFMetaFileToSVG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -30,7 +30,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call save method to convert WMF to SVG format by passing output file name and SvgOptions class instance.
                 image.Save(dataDir + "ConvertWMFMetaFileToSVG_out.svg", new SvgOptions { VectorRasterizationOptions = options });
             }
-            // ExEnd:ConvertWMFMetaFileToSVG
+            //ExEnd:ConvertWMFMetaFileToSVG
         }
     }
 }

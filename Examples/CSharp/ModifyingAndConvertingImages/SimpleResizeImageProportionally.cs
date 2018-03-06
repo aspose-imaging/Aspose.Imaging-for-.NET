@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:SimpleResizeImageProportionally
+            //ExStart:SimpleResizeImageProportionally
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -30,7 +30,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.ResizeHeightProportionally(newHeight);
                 image.Save(dataDir + "SimpleResizeImageProportionally_out.png");
             }
-            // ExEnd:SimpleResizeImageProportionally
+            //ExEnd:SimpleResizeImageProportionally
         }
     }
 }

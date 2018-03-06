@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ColorConversionUsingICCProfiles
+            //ExStart:ColorConversionUsingICCProfiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.CmykColorProfile = cmykprofile;
                 Color[] colors = image.LoadPixels(new Rectangle(0, 0, image.Width, image.Height));
             }
-            // ExStart:ColorConversionUsingICCProfiles
+            //ExStart:ColorConversionUsingICCProfiles
         }
     }
 }

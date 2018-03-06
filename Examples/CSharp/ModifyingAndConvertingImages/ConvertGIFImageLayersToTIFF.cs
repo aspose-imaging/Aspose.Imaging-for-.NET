@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ConvertGIFImageLayersToTIFF
+            //ExStart:ConvertGIFImageLayersToTIFF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     gifBlock.Save(dataDir + "asposelogo"  + i + "_out.tif", objTiff);
                 }
             }
-            // ExEnd:ConvertGIFImageLayersToTIFF
+            //ExEnd:ConvertGIFImageLayersToTIFF
         }
     }
 }

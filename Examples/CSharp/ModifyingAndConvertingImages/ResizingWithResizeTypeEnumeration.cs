@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ResizingWithResizeTypeEnumeration
+            //ExStart:ResizingWithResizeTypeEnumeration
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
@@ -20,7 +20,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Resize(300, 300, ResizeType.LanczosResample);
                 image.Save(dataDir + "SimpleResizing_out.jpg");
             }
-            // ExEnd:ResizingWithResizeTypeEnumeration
+            //ExEnd:ResizingWithResizeTypeEnumeration
         }
     }
 }

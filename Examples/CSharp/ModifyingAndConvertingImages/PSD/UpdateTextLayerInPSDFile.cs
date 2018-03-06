@@ -18,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:UpdateTextLayerInPSDFile
+            //ExStart:UpdateTextLayerInPSDFile
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
             try
@@ -38,7 +38,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             {
                 Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
             }
-            // ExEnd:UpdateTextLayerInPSDFile
+            //ExEnd:UpdateTextLayerInPSDFile
         }
     }
 }

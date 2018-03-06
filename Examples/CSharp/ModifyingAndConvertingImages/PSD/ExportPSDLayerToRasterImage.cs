@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:ExportPSDLayerToRasterImage
+            //ExStart:ExportPSDLayerToRasterImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -37,7 +37,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                     psdImage.Layers[i].Save(string.Format("layer_out{0}.png", i + 1), pngOptions);
                 }
             }
-            // ExEnd:ExportPSDLayerToRasterImage
+            //ExEnd:ExportPSDLayerToRasterImage
         }
     }
 }

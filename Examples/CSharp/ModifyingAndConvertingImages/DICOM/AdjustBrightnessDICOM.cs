@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:AdjustBrightnessDICOM
+            //ExStart:AdjustBrightnessDICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.AdjustBrightness(50);
                 image.Save(dataDir + "AdjustBrightnessDICOM_out.bmp", new BmpOptions());
             }
-            // ExEnd:AdjustBrightnessDICOM
+            //ExEnd:AdjustBrightnessDICOM
         }
     }
 }

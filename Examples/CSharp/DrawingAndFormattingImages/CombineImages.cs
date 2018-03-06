@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:CombineImages
+            //ExStart:CombineImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -35,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 graphics.DrawImage(Image.Load(dataDir + "File1.bmp"), 0, 300, 600, 300);
                 image.Save();
             }
-            // ExEnd:CombineImages
+            //ExEnd:CombineImages
         }
     }
 }

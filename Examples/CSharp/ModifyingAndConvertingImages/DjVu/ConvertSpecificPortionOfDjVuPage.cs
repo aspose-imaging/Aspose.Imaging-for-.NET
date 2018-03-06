@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            // ExStart:ConvertSpecificPortionOfDjVuPage
+            //ExStart:ConvertSpecificPortionOfDjVuPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -35,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions(exportPageIndex, exportArea);
                 image.Save(dataDir + "ConvertSpecificPortionOfDjVuPage_out.djvu", exportOptions);
             }
-            // ExEnd:ConvertSpecificPortionOfDjVuPage
+            //ExEnd:ConvertSpecificPortionOfDjVuPage
         }
     }
 }

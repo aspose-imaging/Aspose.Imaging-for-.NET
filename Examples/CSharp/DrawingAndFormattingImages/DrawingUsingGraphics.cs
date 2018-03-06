@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawingUsingGraphics
+            //ExStart:DrawingUsingGraphics
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages() + "SampleImage_out.bmp";
 
@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 }
                 image.Save();
             }
-            // ExEnd:DrawingUsingGraphics
+            //ExEnd:DrawingUsingGraphics
         }
     }
 }

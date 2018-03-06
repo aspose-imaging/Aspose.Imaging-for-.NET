@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:CreateIndexedPSDFiles
+            //ExStart:CreateIndexedPSDFiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -40,7 +40,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 graphics.DrawEllipse(new Pen(Color.Red, 6), new Rectangle(0, 0, 400, 400));
                 psd.Save(dataDir + "CreateIndexedPSDFiles_out.psd");
             }
-            // ExEnd:CreateIndexedPSDFiles
+            //ExEnd:CreateIndexedPSDFiles
         }
     }
 }

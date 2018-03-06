@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            // ExStart:ConvertDjVuToTIFF
+            //ExStart:ConvertDjVuToTIFF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -30,7 +30,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions();
                 image.Save(dataDir + "ConvertDjVuToTIFFFormat_out.tiff", exportOptions);
             }
-            // ExEnd:ConvertDjVuToTIFF
+            //ExEnd:ConvertDjVuToTIFF
         }
     }
 }

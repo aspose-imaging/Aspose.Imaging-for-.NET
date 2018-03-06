@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:CompressingTIFFImagesWithLZWAlgorithm
+            //ExStart:CompressingTIFFImagesWithLZWAlgorithm
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             outputSettings.Photometric = TiffPhotometrics.Palette;
             outputSettings.Palette = ColorPaletteHelper.Create4BitGrayscale(false);
             image.Save(dataDir + "SampleTiff_out.tiff", outputSettings);
-            // ExEnd:CompressingTIFFImagesWithLZWAlgorithm
+            //ExEnd:CompressingTIFFImagesWithLZWAlgorithm
         }
     }
 }

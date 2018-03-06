@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            // ExStart:ConvertGIFFImageFrame
+            //ExStart:ConvertGIFFImageFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -63,7 +63,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
                     webp.Save(dataDir + "ConvertGIFFImageFrame_out.webp");
                 }
             }
-            // ExEnd:ConvertGIFFImageFrame
+            //ExEnd:ConvertGIFFImageFrame
         }
     }
 }

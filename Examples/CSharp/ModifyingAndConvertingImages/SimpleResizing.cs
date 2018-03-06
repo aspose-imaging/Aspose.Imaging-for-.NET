@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
 
-            // ExStart:SimpleResizing
+            //ExStart:SimpleResizing
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
@@ -22,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Resize(300, 300);
                 image.Save(dataDir + "SimpleResizing_out.jpg");
             }
-            // ExEnd:SimpleResizing
+            //ExEnd:SimpleResizing
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:AutoCorrectOrientationOfJPEGImages
+            //ExStart:AutoCorrectOrientationOfJPEGImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
@@ -25,7 +25,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.AutoRotate();               
                 image.Save(dataDir + "aspose-logo_out.jpg");
             }
-            // ExEnd:AutoCorrectOrientationOfJPEGImages
+            //ExEnd:AutoCorrectOrientationOfJPEGImages
         }       
     }
 }

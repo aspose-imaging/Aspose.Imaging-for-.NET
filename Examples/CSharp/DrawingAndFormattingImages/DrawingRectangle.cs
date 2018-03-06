@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawingRectangle
+            //ExStart:DrawingRectangle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages() + "SampleRectangle_out.bmp";
 
@@ -40,7 +40,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     image.Save();
                 }
             }
-            // ExEnd:DrawingRectangle
+            //ExEnd:DrawingRectangle
         }
     }
 }

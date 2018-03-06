@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:SavingEachFrameInOtherRasterImageFormat
+            //ExStart:SavingEachFrameInOtherRasterImageFormat
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     tiffFrame.Save(dataDir + i + "_out.png", new PngOptions());
                 }
             }
-            // ExEnd:SavingEachFrameInOtherRasterImageFormat
+            //ExEnd:SavingEachFrameInOtherRasterImageFormat
         }
     }
 }

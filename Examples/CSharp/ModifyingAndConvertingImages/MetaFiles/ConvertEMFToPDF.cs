@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
     {
         public static void Run()
         {
-            // ExStart:ConvertEMFToPDF
+            //ExStart:ConvertEMFToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_MetaFiles();
 
@@ -45,7 +45,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     image.Save(outputStream, pdfOptions);
                 }
             }
-            // ExEnd:ConvertEMFToPDF
+            //ExEnd:ConvertEMFToPDF
         }
     }
 }

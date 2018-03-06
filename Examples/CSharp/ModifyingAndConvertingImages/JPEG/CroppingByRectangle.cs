@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:CroppingByRectangle
+            //ExStart:CroppingByRectangle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 rasterImage.Crop(rectangle);
                 rasterImage.Save(dataDir + "CroppingByRectangle_out.jpg");
             }
-            // ExEnd:CroppingByRectangle
+            //ExEnd:CroppingByRectangle
         }        
     }
 }

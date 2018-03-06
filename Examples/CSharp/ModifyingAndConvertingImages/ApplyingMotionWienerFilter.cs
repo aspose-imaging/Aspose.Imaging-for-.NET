@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ApplyingMotionWienerFilter
+            //ExStart:ApplyingMotionWienerFilter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterImage.Filter(image.Bounds, options);
                 image.Save(dataDir + "ApplyingMotionWienerFilter_out.gif");
             }
-            // ExEnd:ApplyingMotionWienerFilter
+            //ExEnd:ApplyingMotionWienerFilter
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:DitheringRasterImages
+            //ExStart:DitheringRasterImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Dither(DitheringMethod.ThresholdDithering, 4);
                 image.Save(dataDir + "SampleImage_out.bmp");
             }
-            // ExEnd:DitheringRasterImages
+            //ExEnd:DitheringRasterImages
         }
     }
 }

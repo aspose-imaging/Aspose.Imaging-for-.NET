@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            // ExStart:ExportWebPToOtherImageFormats
+            //ExStart:ExportWebPToOtherImageFormats
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -24,7 +24,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
                 // Save the image in WebP format.
                 image.Save(dataDir + "ExportWebPToOtherImageFormats_out.bmp", new BmpOptions());
             }
-            // ExEnd:ExportWebPToOtherImageFormats
+            //ExEnd:ExportWebPToOtherImageFormats
         }
     }
 }

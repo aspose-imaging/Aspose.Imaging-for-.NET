@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            // ExStart:SpecifyTransparencyforPNGImagesUsingRasterImage
+            //ExStart:SpecifyTransparencyforPNGImagesUsingRasterImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 image.HasBackgroundColor = true;
                 image.Save(dataDir + "SpecifyTransparencyforPNGImagesUsingRasterImage_out.jpg", new PngOptions());
             }
-            // ExEnd:SpecifyTransparencyforPNGImages
+            //ExEnd:SpecifyTransparencyforPNGImages
         }
     }
 }

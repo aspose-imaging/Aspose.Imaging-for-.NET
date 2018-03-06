@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ConvertWMFToWebp
+            //ExStart:ConvertWMFToWebp
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -42,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call the save method, provide output path and WebPOptions to convert the WMF file to Webp and save the output
                 image.Save(dataDir + "ConvertWMFToWebp_out.webp", imageOptions);
             }
-            // ExEnd:ConvertWMFToWebp
+            //ExEnd:ConvertWMFToWebp
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ReadAndWriteXMPDataToImages
+            //ExStart:ReadAndWriteXMPDataToImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();           
 
@@ -85,6 +85,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 }
             }
         }
-        // ExEnd:ReadAndWriteXMPDataToImages
+        //ExEnd:ReadAndWriteXMPDataToImages
     }
 }

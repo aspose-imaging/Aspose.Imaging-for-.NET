@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:UncompressedImageStreamObject
+            //ExStart:UncompressedImageStreamObject
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -38,7 +38,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                     // Perform graphics operations.
                 }
             }
-            // ExEnd:UncompressedImageStreamObject
+            //ExEnd:UncompressedImageStreamObject
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:AddWatermarkToImage
+            //ExStart:AddWatermarkToImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Draw a String using the SolidBrush object and Font, at specific Point and Save the image with changes.
                 graphics.DrawString("Aspose.Imaging for .Net", font, brush, new PointF(image.Width / 2, image.Height / 2));
                 image.Save(dataDir + "AddWatermarkToImage_out.bmp");
-                // ExStart:AddWatermarkToImage
+                //ExStart:AddWatermarkToImage
 
                 // Display Status.
                 Console.WriteLine("Watermark added successfully.");

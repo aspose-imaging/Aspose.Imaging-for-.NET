@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ApplyGaussWienerFilter
+            //ExStart:ApplyGaussWienerFilter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -36,7 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterImage.Filter(image.Bounds, options);
                 image.Save(dataDir + "ApplyGaussWienerFilter_out.gif");
             }
-            // ExEnd:ApplyGaussWienerFilter
+            //ExEnd:ApplyGaussWienerFilter
         }
     }
 }

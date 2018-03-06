@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:CreateThumbnailsFromPSDFiles
+            //ExStart:CreateThumbnailsFromPSDFiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -41,7 +41,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                     }
                 }
             }
-            // ExEnd:CreateThumbnailsFromPSDFiles
+            //ExEnd:CreateThumbnailsFromPSDFiles
         }
     }
 }

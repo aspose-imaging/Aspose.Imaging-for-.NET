@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:DetectFlattenedPSD
+            //ExStart:DetectFlattenedPSD
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -25,7 +25,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 // Do processing, Get the true value if PSD is flatten and false in case the PSD is not flatten.
                 Console.WriteLine(image.IsFlatten);
             }
-            // ExEnd:DetectFlattenedPSD
+            //ExEnd:DetectFlattenedPSD
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:ExtractTIFFFramesToBMPImageFormat
+            //ExStart:ExtractTIFFFramesToBMPImageFormat
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -51,7 +51,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     frameCounter++;
                 }
             }
-            // ExEnd:ExtractTIFFFramesToBMPImageFormat
+            //ExEnd:ExtractTIFFFramesToBMPImageFormat
         }
     }
 }

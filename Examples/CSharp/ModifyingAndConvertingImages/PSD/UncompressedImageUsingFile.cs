@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            // ExStart:UncompressedImageUsingFile
+            //ExStart:UncompressedImageUsingFile
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -33,7 +33,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 Graphics graphics = new Graphics(psdImage);
                 // Perform graphics operations.
             }
-            // ExEnd:UncompressedImageUsingFile
+            //ExEnd:UncompressedImageUsingFile
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // ExStart:RotatingImageOnSpecificAngle
+            //ExStart:RotatingImageOnSpecificAngle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
           
@@ -29,7 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "RotatingImageOnSpecificAngle_out.jpg");
             }
 
-            // ExEnd:RotatingImageOnSpecificAngle
+            //ExEnd:RotatingImageOnSpecificAngle
         }
     }
 }

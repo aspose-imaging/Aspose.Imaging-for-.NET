@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // ExStart:AdjustGammaDICOM
+            //ExStart:AdjustGammaDICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -27,7 +27,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.AdjustGamma(50);
                 image.Save(dataDir + "AdjustGammaDICOM_out.bmp", new BmpOptions());
             }
-            // ExEnd:AdjustGammaDICOM
+            //ExEnd:AdjustGammaDICOM
         }
     }
 }

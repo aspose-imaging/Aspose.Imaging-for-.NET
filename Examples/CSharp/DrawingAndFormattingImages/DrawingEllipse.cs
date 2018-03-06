@@ -17,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawingEllipse
+            //ExStart:DrawingEllipse
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -45,7 +45,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 }
                 stream.Close();
             }
-            // ExEnd:DrawingEllipse
+            //ExEnd:DrawingEllipse
         }
     }
 }

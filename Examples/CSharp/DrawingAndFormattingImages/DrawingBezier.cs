@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:DrawingBezier
+            //ExStart:DrawingBezier
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
  
@@ -51,7 +51,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     image.Save();
                 }
             }
-            // ExEnd:DrawingBezier
+            //ExEnd:DrawingBezier
         }
     }
 }

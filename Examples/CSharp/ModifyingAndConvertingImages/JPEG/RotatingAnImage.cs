@@ -12,7 +12,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:RotatingAnImage
+            //ExStart:RotatingAnImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
@@ -23,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.RotateFlip(RotateFlipType.Rotate270FlipNone);
                 image.Save(dataDir + "RotatingAnImage_out.jpg");
             }
-            // ExEnd:RotatingAnImage
+            //ExEnd:RotatingAnImage
         }       
     }
 }

@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
 
-            // ExStart:Grayscaling
+            //ExStart:Grayscaling
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
            
@@ -33,7 +33,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.Grayscale();
                 rasterCachedImage.Save(dataDir + "Grayscaling_out.jpg");
             }
-            // ExEnd:Grayscaling
+            //ExEnd:Grayscaling
         }
     }
 }

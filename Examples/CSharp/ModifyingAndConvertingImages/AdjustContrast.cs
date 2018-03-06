@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         public static void Run()
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-            // ExStart:AdjustBrightness
+            //ExStart:AdjustBrightness
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -41,7 +41,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
                 rasterImage.Save(dataDir + "AdjustContrast_out.tiff", tiffOptions);
             }
-            // ExEnd:TiffOptionsConfiguration
+            //ExEnd:TiffOptionsConfiguration
         }
     }
 }
