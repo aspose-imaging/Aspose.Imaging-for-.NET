@@ -57,6 +57,7 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
