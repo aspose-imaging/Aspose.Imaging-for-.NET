@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System.IO;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -19,9 +20,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             //ExStart:GrayscalingOnDICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
-           
-            // Load an existing image.
-            using (DicomImage image = new DicomImage(dataDir + "image.dcm"))
+
+
+            using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
+            using (DicomImage image = new DicomImage(fileStream))
             {
                 // Transform image to its grayscale representation and Save the resultant image.
                 image.Grayscale();

@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System.IO;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -19,15 +20,18 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             //ExStart:DICOMSOtherImageResizingOptions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
-           
-            // Load an existing image.
-            using (DicomImage image = new DicomImage(dataDir + "image.dcm"))
+
+
+            using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
+            using (DicomImage image = new DicomImage(fileStream))
             {
                 image.ResizeHeightProportionally(100, ResizeType.AdaptiveResample);
                 image.Save(dataDir + "DICOMSOtherImageResizingOptions_out.bmp", new BmpOptions());
             }
 
-            using (DicomImage image1 = new DicomImage(dataDir + "image.dcm"))
+
+            using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
+            using (DicomImage image1 = new DicomImage(fileStream))
             {
                 image1.ResizeWidthProportionally(150, ResizeType.AdaptiveResample);
                 image1.Save(dataDir + "DICOMSOtherImageResizingOptions1_out.bmp", new BmpOptions());

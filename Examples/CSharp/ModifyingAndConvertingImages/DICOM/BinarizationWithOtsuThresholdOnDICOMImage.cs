@@ -1,6 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
-
+using System.IO;
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
 when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
@@ -20,8 +20,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
-            // Load an existing image.
-            using (DicomImage image = new DicomImage(dataDir + "image.dcm"))
+            using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
+            using (DicomImage image = new DicomImage(fileStream))
             {
                 // Binarize image with Otsu Thresholding and Save the resultant image.
                 image.BinarizeOtsu();

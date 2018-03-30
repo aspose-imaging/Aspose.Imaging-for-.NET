@@ -37,9 +37,9 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.16.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Imaging, Version=18.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Imaging.18.3.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,6 +58,8 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
@@ -121,6 +123,9 @@
     <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.cs" />
     <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadAndWriteXMPDataToImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RGBColorSytem.cs" />
+    <Compile Include="ModifyingAndConvertingImages\StreamHelper.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportBMPHeader.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
