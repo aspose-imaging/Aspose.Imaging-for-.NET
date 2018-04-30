@@ -14,7 +14,7 @@ namespace CSharp.ModifyingAndConvertingImages
         public static void Run()
         {
 
-            //ExStart:BMPToPD
+            //ExStart:BMPToPDF
 
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (BmpImage image = (BmpImage)Image.Load(dataDir))
