@@ -7,8 +7,10 @@ namespace CSharp.ModifyingAndConvertingImages.PSD
     class SupportLayerForPSD
     {
         public static void Run() {
-            //ExStart:SupportLayerForPSD
-            string sourceFileName = "dropShadow.psd";
+
+			string dataDir = RunExamples.GetDataDir_PSD();
+			//ExStart:SupportLayerForPSD
+			string sourceFileName = "dropShadow.psd";
             string output = "dropShadow.png";
 
             using (

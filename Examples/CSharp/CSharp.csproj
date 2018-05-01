@@ -37,9 +37,9 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=18.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Imaging.18.3.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.18.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,6 +52,9 @@
   <ItemGroup>
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
     <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
@@ -61,6 +64,7 @@
     <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportLayerForPSD.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
@@ -127,6 +131,7 @@
     <Compile Include="ModifyingAndConvertingImages\RGBColorSytem.cs" />
     <Compile Include="ModifyingAndConvertingImages\StreamHelper.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportBMPHeader.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportForEPSFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
@@ -188,7 +193,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Aspose\Imaging\FileFormats\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

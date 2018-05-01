@@ -9,6 +9,9 @@ using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages;
+using CSharp.ModifyingAndConvertingImages;
+using CSharp.DrawingAndFormattingImages;
+using CSharp.ModifyingAndConvertingImages.PSD;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -19,193 +22,197 @@ namespace Aspose.Imaging.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            // Uncomment the one you want to try out
+			// Uncomment the one you want to try out
 
-            //// =====================================================
-            //// =====================================================
-            ////            Drawing And Formatting Images
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			////            Drawing And Formatting Images
+			//// =====================================================
+			//// =====================================================
 
-            //DrawingUsingGraphics.Run();
-            //DrawingUsingGraphicsPath.Run();
-            //DrawingRectangle.Run();
-            //DrawingArc.Run();
-            //DrawingEllipse.Run();
-            //DrawingBezier.Run();
-            //CombineImages.Run();
-            //DrawingLines.Run();
-            //CreatingAnImageBySettingPath.Run();
-            //CreatingImageUsingStream.Run();
-            //DrawImagesUsingCoreFunctionality.Run();
-            //Imagetransparency.Run();
-            //// =====================================================
-            //// =====================================================
-            ////            Modifying And Converting Images
-            //// =====================================================
-            //// =====================================================
+			//DrawingUsingGraphics.Run();
+			//DrawingUsingGraphicsPath.Run();
+			//DrawingRectangle.Run();
+			//DrawingArc.Run();
+			//DrawingEllipse.Run();
+			//DrawingBezier.Run();
+			//CombineImages.Run();
+			//DrawingLines.Run();
+			//CreatingAnImageBySettingPath.Run();
+			//CreatingImageUsingStream.Run();
+			//DrawImagesUsingCoreFunctionality.Run();
+			//Imagetransparency.Run();
+			//InterruptMonitorSupport.Run();
+			//// =====================================================
+			//// =====================================================
+			////            Modifying And Converting Images
+			//// =====================================================
+			//// =====================================================
 
-            //AddWatermarkToImage.Run();
-            //AddFramesToTIFFImage.Run();
-            //AdjustBrightness.Run();
-            //AdjustContrast.Run();
-            //AdjustGamma.Run();
-            //ConvertEMFToWMF.Run();
-            //AlignHorizontalAndVeticalResolutionsOfImage.Run();
-            //ApplyGaussWienerFilter.Run();
-            //ApplyGaussWienerFilterForColoredImage.Run();
-            //ApplyingMotionWienerFilter.Run();
-            //ApplyMedianAndWienerFilters.Run();
-            //BinarizationWithFixedThreshold.Run();
-            //BinarizationWithOtsuThreshold.Run();
-            //BlurAnImage.Run();
-            //Bradleythreshold.Run();
-            //ConvertingSVGToRasterImages.Run();
-            //CompressingTIFFImagesWithAdobeDeflateCompression.Run();
-            //CompressingTIFFImagesWithLZWAlgorithm.Run();
-            //ConcatTIFFImages.Run();
-            //ConcatenatingTIFFImagesfromStream.Run();
-            //ConcatenateTiffImagesHavingSeveralFrames.Run();
-            //ConvertGIFImageLayersToTIFF.Run();
-            //CreatingTIFFImageWithCompression.Run();
-            //CreateWMFMetaFileImage.Run();
-            //ConvertWMFMetaFileToSVG.Run();
-            //DitheringRasterImages.Run();
-            //ExpandOrCropAnImage.Run();
-            //ExtractTIFFFramesToBMPImageFormat.Run();
-            //ExportImageToDifferentFormats.Run();
-            //ExportImageToPSD.Run();
-            //ExportPsdLayersToImages.Run();
-            //Grayscaling.Run();
-            //ReadAndWriteXMPDataToImages.Run();
-            //ResizeImageWithResizeTypeEnumeration.Run();
-            //ResizingWithResizeTypeEnumeration.Run();
-            //RotatingImageOnSpecificAngle.Run();
-            //SavingEachFrameInOtherRasterImageFormat.Run();
-            //SavingRasterImageToTIFFWithCompression.Run();
-            //SimpleResizeImageProportionally.Run();
-            //SimpleResizing.Run();
-            //SplittingTiffFrames.Run();
-            //TiffDataRecovery.Run();
-            //TiffOptionsConfiguration.Run();
-            //ControllCacheReallocation.Run();
-            //AddDiagonalWatermarkToImage.Run();
-            //ColorConversionUsingICCProfiles.Run();
-            //ColorConversionUsingDefaultProfiles.Run();
-            //AddSignatureToImage.Run();
-            //ExportTextAsShape.Run();
-            //CreateEMFMetaFileImage.Run();
-            //ResizeWMFFile.Run();
-            //ConvertWMFToWebp.Run();
-            //ConvertWMFToPNG.Run();
-            //ConvertWMFToPDF.Run();
-            //GetLastModifiedDate.Run();
-           //SupportTiffDeflate.Run();
-           //ConvertImageWithGrayscale.Run();
-            //// =====================================================
-            //// =====================================================
-            ////                        DICOM
-            //// =====================================================
-            //// =====================================================
+			//AddWatermarkToImage.Run();
+			//AddFramesToTIFFImage.Run();
+			//AdjustBrightness.Run();
+			//AdjustContrast.Run();
+			//AdjustGamma.Run();
+			//PNGtoPDF.Run();
+			//BMPToPDF.Run();
+			//SupportForEPSFormat.Run();
+			//ConvertEMFToWMF.Run();
+			//AlignHorizontalAndVeticalResolutionsOfImage.Run();
+			//ApplyGaussWienerFilter.Run();
+			//ApplyGaussWienerFilterForColoredImage.Run();
+			//ApplyingMotionWienerFilter.Run();
+			//ApplyMedianAndWienerFilters.Run();
+			//BinarizationWithFixedThreshold.Run();
+			//BinarizationWithOtsuThreshold.Run();
+			//BlurAnImage.Run();
+			//Bradleythreshold.Run();
+			//ConvertingSVGToRasterImages.Run();
+			//CompressingTIFFImagesWithAdobeDeflateCompression.Run();
+			//CompressingTIFFImagesWithLZWAlgorithm.Run();
+			//ConcatTIFFImages.Run();
+			//ConcatenatingTIFFImagesfromStream.Run();
+			//ConcatenateTiffImagesHavingSeveralFrames.Run();
+			//ConvertGIFImageLayersToTIFF.Run();
+			//CreatingTIFFImageWithCompression.Run();
+			//CreateWMFMetaFileImage.Run();
+			//ConvertWMFMetaFileToSVG.Run();
+			//DitheringRasterImages.Run();
+			//ExpandOrCropAnImage.Run();
+			//ExtractTIFFFramesToBMPImageFormat.Run();
+			//ExportImageToDifferentFormats.Run();
+			//ExportImageToPSD.Run();
+			//ExportPsdLayersToImages.Run();
+			//Grayscaling.Run();
+			//ReadAndWriteXMPDataToImages.Run();
+			//ResizeImageWithResizeTypeEnumeration.Run();
+			//ResizingWithResizeTypeEnumeration.Run();
+			//RotatingImageOnSpecificAngle.Run();
+			//SavingEachFrameInOtherRasterImageFormat.Run();
+			//SavingRasterImageToTIFFWithCompression.Run();
+			//SimpleResizeImageProportionally.Run();
+			//SimpleResizing.Run();
+			//SplittingTiffFrames.Run();
+			//TiffDataRecovery.Run();
+			//TiffOptionsConfiguration.Run();
+			//ControllCacheReallocation.Run();
+			//AddDiagonalWatermarkToImage.Run();
+			//ColorConversionUsingICCProfiles.Run();
+			//ColorConversionUsingDefaultProfiles.Run();
+			//AddSignatureToImage.Run();
+			//ExportTextAsShape.Run();
+			//CreateEMFMetaFileImage.Run();
+			//ResizeWMFFile.Run();
+			//ConvertWMFToWebp.Run();
+			//ConvertWMFToPNG.Run();
+			//ConvertWMFToPDF.Run();
+			//GetLastModifiedDate.Run();
+			//SupportTiffDeflate.Run();
+			//ConvertImageWithGrayscale.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        DICOM
+			//// =====================================================
+			//// =====================================================
 
-            //AdjustBrightnessDICOM.Run();
-            //AdjustContrastDICOM.Run();
-            //AdjustGammaDICOM.Run();
-            //ApplyFilterOnDICOMImage.Run();
-            //BinarizationWithFixedThresholdOnDICOMImage.Run();
-            //BinarizationWithOtsuThresholdOnDICOMImage.Run();
-            //BinarizationWithBradleysAdaptiveThreshold.Run();
-            //DICOMSimpleResizing.Run();
-            //DitheringForDICOMImage.Run();
-            //DICOMSOtherImageResizingOptions.Run();
-            //FlipDICOMImage.Run();
-            //GrayscalingOnDICOM.Run();
-            //RotatingDICOMImage.Run();
+			//AdjustBrightnessDICOM.Run();
+			//AdjustContrastDICOM.Run();
+			//AdjustGammaDICOM.Run();
+			//ApplyFilterOnDICOMImage.Run();
+			//BinarizationWithFixedThresholdOnDICOMImage.Run();
+			//BinarizationWithOtsuThresholdOnDICOMImage.Run();
+			//BinarizationWithBradleysAdaptiveThreshold.Run();
+			//DICOMSimpleResizing.Run();
+			//DitheringForDICOMImage.Run();
+			//DICOMSOtherImageResizingOptions.Run();
+			//FlipDICOMImage.Run();
+			//GrayscalingOnDICOM.Run();
+			//RotatingDICOMImage.Run();
 
-            //// =====================================================
-            //// =====================================================
-            ////                        JPEG
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			////                        JPEG
+			//// =====================================================
+			//// =====================================================
 
-            //AddThumbnailToEXIFSegment.Run();
-            //AddThumbnailToJFIFSegment.Run();
-            //AutoCorrectOrientationOfJPEGImages.Run();
-            //CroppingByRectangle.Run();
-            //CroppingByShifts.Run();
-            //ReadAllEXIFTags.Run();
-            //ReadAndModifyJpegEXIFTags.Run();
-            //ReadJpegEXIFTags.Run();
-            //ReadSpecificEXIFTagsInformation.Run();
-            //RotatingAnImage.Run();
-            //WritingAndModifyingEXIFData.Run();
+			//AddThumbnailToEXIFSegment.Run();
+			//AddThumbnailToJFIFSegment.Run();
+			//AutoCorrectOrientationOfJPEGImages.Run();
+			//CroppingByRectangle.Run();
+			//CroppingByShifts.Run();
+			//ReadAllEXIFTags.Run();
+			//ReadAndModifyJpegEXIFTags.Run();
+			//ReadJpegEXIFTags.Run();
+			//ReadSpecificEXIFTagsInformation.Run();
+			//RotatingAnImage.Run();
+			//WritingAndModifyingEXIFData.Run();
 
 
-            //// =====================================================
-            //// =====================================================
-            ////                    META FILES
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			////                    META FILES
+			//// =====================================================
+			//// =====================================================
 
-            //ConvertEMFToPDF.Run();
-            //CroppingByRectangleEMFImage.Run();
-            //CroppingEMFImage.Run();
-           
-            //// =====================================================
-            //// =====================================================
-            ////                        PNG
-            //// =====================================================
-            //// =====================================================
+			//ConvertEMFToPDF.Run();
+			//CroppingByRectangleEMFImage.Run();
+			//CroppingEMFImage.Run();
 
-            //ApplyFilterMethod.Run();
-            //ChangeBackgroundColor.Run();
-            //CompressingFiles.Run();
-            //SettingResolution.Run();
-            //SpecifyBitDepth.Run();
-            //SpecifyTransparency.Run();
-            //SpecifyTransparencyUsingRasterImage.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        PNG
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            ////                        PSD
-            //// =====================================================
-            //// =====================================================
+			//ApplyFilterMethod.Run();
+			//ChangeBackgroundColor.Run();
+			//CompressingFiles.Run();
+			//SettingResolution.Run();
+			//SpecifyBitDepth.Run();
+			//SpecifyTransparency.Run();
+			//SpecifyTransparencyUsingRasterImage.Run();
 
-            //CreateIndexedPSDFiles.Run();
-            //CreateThumbnailsFromPSDFiles.Run();
-            //DetectFlattenedPSD.Run();
-            //ExportPSDLayerToRasterImage.Run();
-            //UpdateTextLayerInPSDFile.Run();
-            //MergePSDlayers.Run();
-            //UncompressedImageUsingFile.Run();
-            //UncompressedImageStreamObject.Run();
-            //PSDtoPDF.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        PSD
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            ////                        WebPImage
-            //// =====================================================
-            //// =====================================================
+			//CreateIndexedPSDFiles.Run();
+			//CreateThumbnailsFromPSDFiles.Run();
+			//DetectFlattenedPSD.Run();
+			//ExportPSDLayerToRasterImage.Run();
+			//UpdateTextLayerInPSDFile.Run();
+			//MergePSDlayers.Run();
+			//UncompressedImageUsingFile.Run();
+			//UncompressedImageStreamObject.Run();
+			//PSDtoPDF.Run();
+			//SupportLayerForPSD.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        WebPImage
+			//// =====================================================
+			//// =====================================================
 
-            //ConvertGIFFImageFrame.Run();
-            //CreatingWebPImage.Run();
-            //ExportToWebP.Run();
-            //ExportWebPToOtherImageFormats.Run();
-            //ExtractFrameFromWebPImage.Run();
+			//ConvertGIFFImageFrame.Run();
+			//CreatingWebPImage.Run();
+			//ExportToWebP.Run();
+			//ExportWebPToOtherImageFormats.Run();
+			//ExtractFrameFromWebPImage.Run();
 
-            //// =====================================================
-            //// =====================================================
-            ////                           DjVu
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			////                           DjVu
+			//// =====================================================
+			//// =====================================================
 
-            //ConvertDjVuToTIFF.Run();
-            //ConvertRangeOfDjVuPages.Run();
-            //ConvertRangeOfDjVuPagesToSeparateImages.Run();
-            //ConvertSpecificPortionOfDjVuPage.Run();
-            //ConvertDjVuToPDF.Run();
+			//ConvertDjVuToTIFF.Run();
+			//ConvertRangeOfDjVuPages.Run();
+			//ConvertRangeOfDjVuPagesToSeparateImages.Run();
+			//ConvertSpecificPortionOfDjVuPage.Run();
+			//ConvertDjVuToPDF.Run();
 
-            Console.WriteLine("Press any key to continue...");
+			Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
 
