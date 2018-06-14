@@ -37,9 +37,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.18.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Imaging, Version=18.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.18.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +53,7 @@
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
     <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />

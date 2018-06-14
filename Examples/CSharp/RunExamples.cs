@@ -56,6 +56,8 @@ namespace Aspose.Imaging.Examples.CSharp
 			//AdjustGamma.Run();
 			//PNGtoPDF.Run();
 			//BMPToPDF.Run();
+			//ReadingPixelVaules.Run();
+			//RasterImageToPDF.Run();
 			//SupportForEPSFormat.Run();
 			//ConvertEMFToWMF.Run();
 			//AlignHorizontalAndVeticalResolutionsOfImage.Run();
@@ -157,7 +159,7 @@ namespace Aspose.Imaging.Examples.CSharp
 			//ConvertEMFToPDF.Run();
 			//CroppingByRectangleEMFImage.Run();
 			//CroppingEMFImage.Run();
-
+			//SupportForReplacingMissingFonts.Run();
 			//// =====================================================
 			//// =====================================================
 			////                        PNG
