@@ -49,10 +49,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apply License\MeteredLicensing.cs" />
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="DrawingAndFormattingImages\ForceFontCache.cs" />
+    <Compile Include="DrawingAndFormattingImages\Imagetransparency.cs" />
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
+    <Compile Include="DrawingAndFormattingImages\MissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportFor2-7BitsJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLossless.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLosslessUsingRGBProfile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertingEMFToWMF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\MetaFilesAsSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEmfGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFPlustoFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFtoFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
@@ -61,6 +77,11 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\ColorReplacement.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\ExtractICCProfileIgnoreICC.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\GrayScaleSupportForAlpha.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\ICCProfileExtraction.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\LockImageLayers.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
@@ -129,10 +150,14 @@
     <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadAndWriteXMPDataToImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\RGBColorSytem.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SavingSVGWithFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\StreamHelper.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportBMPHeader.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportForEPSFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportForODG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportToWebP.cs" />
@@ -188,6 +213,7 @@
     <Compile Include="DrawingAndFormattingImages\DrawingLines.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingRectangle.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
