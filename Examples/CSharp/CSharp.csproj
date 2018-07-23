@@ -58,6 +58,10 @@
     <Compile Include="DrawingAndFormattingImages\MissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ColorTypeAndCompressionType.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportFor2-7BitsJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLossless.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLosslessUsingRGBProfile.cs" />
@@ -86,6 +90,9 @@
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportLayerForPSD.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ReplaceMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
