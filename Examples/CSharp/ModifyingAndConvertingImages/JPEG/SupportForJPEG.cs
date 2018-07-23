@@ -6,15 +6,19 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using Aspose.Imaging.FileFormats.Jpeg;
+using Aspose.Imaging.FileFormats.Png;
+using Aspose.Imaging.ImageOptions;
+
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
 {
-    class SupportForJPEG
+    class SupportForJPEGBITS
     {
         public static void Run()
         {
-            // ExStart:SupportFor2-7BitsJPEG
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_JPEG();
+			// ExStart:SupportForJPEGBITS
+			// The path to the documents directory.
+			string dataDir = RunExamples.GetDataDir_JPEG();
             int bpp = 2; // Set 2 bits per sample to see the difference in size and quality
 
             // The origin PNG with 8 bits per sample
@@ -38,8 +42,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 jpegImage.Save(outputPngFileName, new PngOptions());
             }
             }
-        // ExEnd:SupportFor2-7BitsJPEG
-        }       
-    }
+		// ExEnd:SupportForJPEGBITS
+	}
+}
 
 

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.IO;
-using ImageOptions;
-using Imaging.FileFormats.Svg;
+using Aspose.Imaging.ImageOptions;
+using Aspose.Imaging.FileFormats.Svg;
+using Aspose.Imaging;
 
 internal class SvgFontTester
 {

@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Aspose.Imaging.Examples.Export;
-using Aspose.Imaging.Examples.Files;
-using Aspose.Imaging.Examples.Images;
-using Aspose.Imaging.Examples.Shapes;
 
 namespace Aspose.Imaging.Examples
 {
-    class Utils
+	class Utils
     {
         public static string GetDataDir(Type t)
         {

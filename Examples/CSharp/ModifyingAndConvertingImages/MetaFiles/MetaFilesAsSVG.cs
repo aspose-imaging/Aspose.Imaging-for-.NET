@@ -1,12 +1,11 @@
 ﻿using System.IO;
-using Aspose.Svg;
-using ImageOptions;
-using Imaging.FileFormats.Svg;
-
+using Aspose.Imaging.ImageOptions;
+using Aspose.Imaging.FileFormats.Svg;
+using System;
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
 {
-  class SvgImageTester
+	class SvgImageTester
 {
       public static void Run()
       {
@@ -118,8 +117,8 @@ throw new Exception(string.Format("Expected file name: '{0}', current: '{1}'", e
  
 #endregion
  
-       private class SvgCallbackImageTest : SvgResourceKeeperCallback
-{
+       private class SvgCallbackImageTest : FileFormats.Svg.SvgResourceKeeperCallback
+		{
     #region Fields
  
 /// <summary>

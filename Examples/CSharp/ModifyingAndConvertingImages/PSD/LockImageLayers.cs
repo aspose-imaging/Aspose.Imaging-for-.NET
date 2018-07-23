@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.FileFormats.Psd.Layers;
+using Aspose.Imaging.FileFormats.Psd.Layers.LayerResources;
 using Aspose.Imaging.ImageOptions;
 
 /*
