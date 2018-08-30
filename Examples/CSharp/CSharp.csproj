@@ -37,8 +37,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=18.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.18.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=18.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.18.8.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -80,6 +80,7 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ColorReplacement.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ExtractICCProfileIgnoreICC.cs" />
