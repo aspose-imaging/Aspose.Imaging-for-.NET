@@ -37,8 +37,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=18.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.18.8.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=18.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.18.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -74,6 +74,7 @@
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFPlustoFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFtoFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MultipleImagesToTIFF.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
     <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
@@ -165,6 +166,7 @@
     <Compile Include="ModifyingAndConvertingImages\SupportForODG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />

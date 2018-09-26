@@ -167,40 +167,40 @@ namespace Aspose.Imaging.Examples.CSharp
             SaveEmfGraphics.Run();
 
             ///SVG----------
-            ConvOfOtherFormatsToSVG.Run();
+            //ConvOfOtherFormatsToSVG.Run();
+			//SVGToEMFConversion.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        PNG
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            ////                        PNG
-            //// =====================================================
-            //// =====================================================
+			//ApplyFilterMethod.Run();
+			//ChangeBackgroundColor.Run();
+			//CompressingFiles.Run();
+			//SettingResolution.Run();
+			//SpecifyBitDepth.Run();
+			//SpecifyTransparency.Run();
+			//SpecifyTransparencyUsingRasterImage.Run();
 
-            //ApplyFilterMethod.Run();
-            //ChangeBackgroundColor.Run();
-            //CompressingFiles.Run();
-            //SettingResolution.Run();
-            //SpecifyBitDepth.Run();
-            //SpecifyTransparency.Run();
-            //SpecifyTransparencyUsingRasterImage.Run();
+			//// =====================================================
+			//// =====================================================
+			////                        PSD
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            ////                        PSD
-            //// =====================================================
-            //// =====================================================
+			//CreateIndexedPSDFiles.Run();
+			//CreateThumbnailsFromPSDFiles.Run();
+			//DetectFlattenedPSD.Run();
+			//ExportPSDLayerToRasterImage.Run();
+			//UpdateTextLayerInPSDFile.Run();
+			//MergePSDlayers.Run();
+			//UncompressedImageUsingFile.Run();
+			//UncompressedImageStreamObject.Run();
+			//PSDtoPDF.Run();
+			//SupportLayerForPSD.Run();
 
-            //CreateIndexedPSDFiles.Run();
-            //CreateThumbnailsFromPSDFiles.Run();
-            //DetectFlattenedPSD.Run();
-            //ExportPSDLayerToRasterImage.Run();
-            //UpdateTextLayerInPSDFile.Run();
-            //MergePSDlayers.Run();
-            //UncompressedImageUsingFile.Run();
-            //UncompressedImageStreamObject.Run();
-            //PSDtoPDF.Run();
-            //SupportLayerForPSD.Run();
-
-            ICCProfileExtraction.Run();
+			ICCProfileExtraction.Run();
             ExtractICCProfileIgnoreICC.Run();
             LockImageLayers.Run();
 
