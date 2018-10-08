@@ -12,7 +12,7 @@ using Aspose.Imaging.ImageOptions;
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
 {
-    class SupportForJPEG
+    class SupportForJPEGLSFormat
     {
         public static void Run()
         {

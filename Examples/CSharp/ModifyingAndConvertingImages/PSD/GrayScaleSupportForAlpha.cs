@@ -1,6 +1,8 @@
 ﻿using Aspose.Imaging.FileFormats.Bmp;
+using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.FileFormats.Psd.Resources;
+using Aspose.Imaging.ImageOptions;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -21,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             string dataDir = RunExamples.GetDataDir_PSD();
 
             // Load a PSD in an instance of PsdImage
-            using (Image image = Image.Load(filePath))
+            using (Image image = Image.Load(dataDir+"File.psd"))
             {
                 // Cast image object to PSD image
                 PsdImage psdImage = (PsdImage)image;
@@ -29,7 +31,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 // Create an instance of PngOptions class
                 PngOptions pngOptions = new PngOptions();
                 pngOptions.ColorType = PngColorType.TruecolorWithAlpha;
-                image.Save("result.png", pngOptions);
+                image.Save(dataDir+"result.png", pngOptions);
             }
             // ExEnd:GrayScaleSupportForAlpha
         }

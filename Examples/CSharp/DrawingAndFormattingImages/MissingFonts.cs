@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.FileFormats.Psd.Layers;
+using Aspose.Imaging.ImageLoadOptions;
 using Aspose.Imaging.ImageOptions;
 
 /*
@@ -24,7 +25,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             using (Image image = Image.Load("testReplacementNotAvailableFonts.psd", new PsdLoadOptions() { DefaultReplacementFont = "Arial" }))
             {
                 PsdImage psdImage = (PsdImage)image;
-                psdImage.Save(dataDir+"result.png", new PngOptions() { ColorType = PngColorType.TruecolorWithAlpha });
+                psdImage.Save(dataDir+"result.png", new PngOptions() { ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha });
             }
             //ExEnd:MissingFonts
         }

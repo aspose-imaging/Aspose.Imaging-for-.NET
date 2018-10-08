@@ -1,4 +1,6 @@
-﻿using Aspose.Imaging.ImageOptions;
+﻿using System;
+using Aspose.Imaging.FileFormats.Png;
+using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
 
 /*
@@ -22,17 +24,20 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
 
            string filePath = "Flower.png"; // specify your path
            using (PngImage image = (PngImage)Image.Load(filePath))
-{
-          float opacity = image.ImageOpacity; // opacity = 0,470798
-          Console.WriteLine(opacity);
-         if (opacity == 0)
-{
-// The image is fully transparent.
-}
-}
-        
+           {
+              float opacity = image.ImageOpacity; // opacity = 0,470798
+              Console.WriteLine(opacity);
+             if (opacity == 0)
+                {
+                // The image is fully transparent.
+                }
+
             }
-            // ExEnd:Imagetransparency
+
+
         }
+        // ExEnd:Imagetransparency
+
+    }
     }
 

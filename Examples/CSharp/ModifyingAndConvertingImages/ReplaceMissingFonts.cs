@@ -6,6 +6,10 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using Aspose.Imaging.FileFormats.Psd;
+using Aspose.Imaging.ImageLoadOptions;
+using Aspose.Imaging.ImageOptions;
+
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class ReplaceMissingFonts
@@ -20,7 +24,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
           using (Image image = Image.Load("testReplacementNotAvailableFonts.psd", new PsdLoadOptions() { DefaultReplacementFont = "Arial" }))
      {
            PsdImage psdImage = (PsdImage)image;
-           psdImage.Save("result.png", new PngOptions() { ColorType = PngColorType.TruecolorWithAlpha });
+                psdImage.Save("result.png", new PngOptions() { ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha });
 
           }
             }
