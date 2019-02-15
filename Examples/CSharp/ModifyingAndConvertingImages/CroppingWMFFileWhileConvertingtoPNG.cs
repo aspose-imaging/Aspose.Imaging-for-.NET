@@ -17,15 +17,16 @@ namespace CSharp.ModifyingAndConvertingImages
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             // Load an existing WMF image
-            using (Image image = Image.Load(dataDir + "input.wmf"))
+            using (WmfImage image = (WmfImage)Image.Load(dataDir + "File.wmf"))
             {
-
+                image.Crop(new Rectangle(300, 200, 200, 200));
+                
                 // Create an instance of EmfRasterizationOptions class and set different properties
                 Aspose.Imaging.ImageOptions.EmfRasterizationOptions emfRasterization = new Aspose.Imaging.ImageOptions.EmfRasterizationOptions
                 {
                     BackgroundColor = Color.WhiteSmoke,
-                    PageWidth = 2000,
-                    PageHeight = 2000
+                    PageWidth = 1000,
+                    PageHeight = 1000
                 };
                 
 
