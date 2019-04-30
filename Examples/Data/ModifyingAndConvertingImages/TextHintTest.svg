@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg id="test" width="250" height="150"  xmlns="http://www.w3.org/2000/svg">
+    <g >
+      <text id="myText" 
+            x="80" 
+            y="80" 
+            font-family="Verdana" 
+            font-size="24" 
+            fill="black">TextHint test</text>
+    </g>
+</svg>
