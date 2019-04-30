@@ -37,8 +37,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=18.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.18.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=19.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.19.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,7 +48,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
+ <ItemGroup>
     <Compile Include="Apply License\MeteredLicensing.cs" />
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
@@ -56,7 +56,12 @@
     <Compile Include="DrawingAndFormattingImages\Imagetransparency.cs" />
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
     <Compile Include="DrawingAndFormattingImages\MissingFonts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CroppingWMFfileWhileConvertingtoPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
@@ -68,6 +73,7 @@
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertingEMFToWMF.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\MetaFilesAsSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEmfGraphics.cs" />
@@ -79,7 +85,6 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
     <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
-    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
@@ -89,6 +94,7 @@
     <Compile Include="ModifyingAndConvertingImages\PSD\ICCProfileExtraction.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\LockImageLayers.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SetFontsFolder.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportLayerForPSD.cs" />
@@ -164,7 +170,11 @@
     <Compile Include="ModifyingAndConvertingImages\SupportBMPHeader.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportForEPSFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportForODG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfSmoothingMode.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfTextRenderingHint.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfDIB.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\ConvertWMFToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
