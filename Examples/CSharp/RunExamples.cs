@@ -14,7 +14,7 @@ using CSharp.DrawingAndFormattingImages;
 using CSharp.ModifyingAndConvertingImages.PSD;
 using CSharp.ModifyingAndConvertingImages.SVG;
 using CSharp.ModifyingAndConvertingImages.CMX;
-
+using CSharp.ModifyingAndConvertingImages.CDR;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -116,6 +116,11 @@ namespace Aspose.Imaging.Examples.CSharp
             //GetLastModifiedDate.Run();
             //SupportTiffDeflate.Run();
             //ConvertImageWithGrayscale.Run();
+            //ManualImageMasking.Run();
+            //AutoImageMasking.Run();
+            //SupportOfDIB.Run();
+            //SupportOfTextRenderingHint.Run();
+           // SupportOfSmoothingMode.Run();
             //// =====================================================
             //// =====================================================
             ////                        DICOM
@@ -172,6 +177,7 @@ namespace Aspose.Imaging.Examples.CSharp
             ///SVG----------
             //ConvOfOtherFormatsToSVG.Run();
             //SVGToEMFConversion.Run();
+            //ConvertWMFToSVG.Run();
             //// =====================================================
             //// =====================================================
             ////                        PNG
@@ -238,6 +244,13 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             //CMXToPNGConversion.Run();
+            
+            //// =====================================================
+            //// =====================================================
+            ////                           CDR
+            //// =====================================================
+            //// =====================================================
+            //SupportOfCDR.Run();
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
@@ -314,6 +327,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_CMX()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CMX/");
+        }
+        
+        public static String GetDataDir_CDR()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "CDR/");
         }
 
         public static string GetDataDir_Data()
