@@ -22,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             string[] files = new string[2] { "example.odg", "example1.odg" };
             string folder = @"F:\\Aspose Work\\";
-            MetafileRasterizationOptions rasterizationOptions = new MetafileRasterizationOptions();
+            OdgRasterizationOptions rasterizationOptions = new OdgRasterizationOptions();
             foreach (string file in files)
             {
                 string fileName = System.IO.Path.Combine(folder, file);
