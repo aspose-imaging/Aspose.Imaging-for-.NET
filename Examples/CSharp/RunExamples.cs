@@ -15,6 +15,7 @@ using CSharp.ModifyingAndConvertingImages.PSD;
 using CSharp.ModifyingAndConvertingImages.SVG;
 using CSharp.ModifyingAndConvertingImages.CMX;
 using CSharp.ModifyingAndConvertingImages.CDR;
+using CSharp.ModifyingAndConvertingImages.MetaFiles;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
