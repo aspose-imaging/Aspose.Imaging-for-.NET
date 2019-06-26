@@ -20,7 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages.MetaFiles
 			FontSettings.DefaultFontName = "Comic Sans MS";
 
 			string[] files = new string[] { "missing-font.emf", "missing-font.odg", "missing-font.svg", "missing-font.wmf" };
-			VectorRasterizationOptions[] options = new VectorRasterizationOptions[] { new EmfRasterizationOptions(), new MetafileRasterizationOptions(), new SvgRasterizationOptions(), new WmfRasterizationOptions() };
+			VectorRasterizationOptions[] options = new VectorRasterizationOptions[] { new EmfRasterizationOptions(), new OdgRasterizationOptions(), new SvgRasterizationOptions(), new WmfRasterizationOptions() };
 
 			for (int i = 0; i < files.Length; i++)
 			{
