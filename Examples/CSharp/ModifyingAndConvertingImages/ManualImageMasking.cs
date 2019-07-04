@@ -1,10 +1,10 @@
 ﻿using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Png;
-using Aspose.Imaging.ImageMasking;
-using Aspose.Imaging.ImageMasking.Options;
-using Aspose.Imaging.ImageMasking.Result;
 using Aspose.Imaging.ImageOptions;
+using Aspose.Imaging.Masking;
+using Aspose.Imaging.Masking.Options;
+using Aspose.Imaging.Masking.Result;
 using Aspose.Imaging.Shapes;
 using Aspose.Imaging.Sources;
 using System;

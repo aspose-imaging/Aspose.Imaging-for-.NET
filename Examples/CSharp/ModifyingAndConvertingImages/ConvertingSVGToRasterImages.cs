@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ApplyingMotionWienerFilter
+            //ExStart:ConvertingSVGToRasterImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 PngOptions pngOptions = new PngOptions();
                 image.Save(dataDir + "ConvertingSVGToRasterImages_out.png", pngOptions);
             }
-            //ExEnd:ApplyingMotionWienerFilter
+            //ExEnd:ConvertingSVGToRasterImages
         }
     }
 }
