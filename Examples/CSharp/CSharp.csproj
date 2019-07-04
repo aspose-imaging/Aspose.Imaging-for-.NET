@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharp</RootNamespace>
     <AssemblyName>CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,13 +33,19 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=19.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.19.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=19.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.19.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,10 +57,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
- <ItemGroup>
+  <ItemGroup>
     <Compile Include="Apply License\MeteredLicensing.cs" />
     <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnEMF.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnSVG.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnWMF.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawVectorImageToRasterImage.cs" />
     <Compile Include="DrawingAndFormattingImages\ForceFontCache.cs" />
     <Compile Include="DrawingAndFormattingImages\Imagetransparency.cs" />
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
@@ -63,12 +74,16 @@
     <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
     <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CropEMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CroppingWMFfileWhileConvertingtoPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CropWMFFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
     <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\ColorTypeAndCompressionType.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ConvertTIFFToJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportFor2-7BitsJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLossless.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLosslessUsingRGBProfile.cs" />
@@ -89,7 +104,10 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\RenderingOfRotatedTextLayerByTransformMatrix.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfColorFillLayer.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ColorReplacement.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\ExtractICCProfileIgnoreICC.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\GrayScaleSupportForAlpha.cs" />
@@ -100,6 +118,10 @@
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportLayerForPSD.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfGdFlResource.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfGradientFillLayer.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfSoCoResource.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfVmskResource.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReplaceMissingFonts.cs" />
@@ -178,6 +200,7 @@
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvertWMFToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SVGToBMPConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
@@ -228,6 +251,7 @@
     <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphicsPath.cs" />
     <Compile Include="ModifyingAndConvertingImages\DitheringRasterImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\OpenWebPFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingArc.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingBezier.cs" />
