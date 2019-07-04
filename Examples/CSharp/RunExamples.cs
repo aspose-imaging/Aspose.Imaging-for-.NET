@@ -16,6 +16,11 @@ using CSharp.ModifyingAndConvertingImages.SVG;
 using CSharp.ModifyingAndConvertingImages.CMX;
 using CSharp.ModifyingAndConvertingImages.CDR;
 using CSharp.ModifyingAndConvertingImages.MetaFiles;
+using CSharp.ModifyingAndConvertingImages.JPEG;
+using CSharp.ModifyingAndConvertingImages.DjVu;
+using CSharp.ModifyingAndConvertingImages.PNG;
+using CSharp.ModifyingAndConvertingImages.WebPImages;
+
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -46,6 +51,10 @@ namespace Aspose.Imaging.Examples.CSharp
             //DrawImagesUsingCoreFunctionality.Run();
             //Imagetransparency.Run();
             //InterruptMonitorSupport.Run();
+            //DrawRasterImageOnWMF.Run();
+            //DrawRasterImageOnEMF.Run();
+            //DrawRasterImageOnSVG.Run();
+            //DrawVectorImageToRasterImage.Run();
             //// =====================================================
             //// =====================================================
             ////            Modifying And Converting Images
@@ -122,6 +131,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //SupportOfDIB.Run();
             //SupportOfTextRenderingHint.Run();
            // SupportOfSmoothingMode.Run();
+            // CropWMFFile.Run();
+            //CropEMFFile.Run();
             //// =====================================================
             //// =====================================================
             ////                        DICOM
@@ -159,7 +170,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //ReadSpecificEXIFTagsInformation.Run();
             //RotatingAnImage.Run();
             //WritingAndModifyingEXIFData.Run();
-
+            //ConvertTIFFToJPEG.Run();
 
             //// =====================================================
             //// =====================================================
@@ -179,6 +190,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConvOfOtherFormatsToSVG.Run();
             //SVGToEMFConversion.Run();
             //ConvertWMFToSVG.Run();
+            //SVGToBMPConversion.Run();
             //// =====================================================
             //// =====================================================
             ////                        PNG
@@ -192,7 +204,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //SpecifyBitDepth.Run();
             //SpecifyTransparency.Run();
             //SpecifyTransparencyUsingRasterImage.Run();
-
+            //ReadLargePNGFile.Run();
             //// =====================================================
             //// =====================================================
             ////                        PSD
@@ -210,7 +222,12 @@ namespace Aspose.Imaging.Examples.CSharp
             //PSDtoPDF.Run();
             //SupportLayerForPSD.Run();
             //SetFontsFolder.Run();
-
+            //SupportOfSoCoResource.Run();
+            //SupportOfGdFlResource.Run();
+            // SupportOfVmskResource.Run();
+            //SupportOfColorFillLayer.Run();
+            //SupportOfGradientFillLayer.Run();
+            //RenderingOfRotatedTextLayerByTransformMatrix.Run();
             //ICCProfileExtraction.Run();
             //         ExtractICCProfileIgnoreICC.Run();
             //         LockImageLayers.Run();
@@ -226,7 +243,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //ExportToWebP.Run();
             //ExportWebPToOtherImageFormats.Run();
             //ExtractFrameFromWebPImage.Run();
-
+            //OpenWebPFile.Run();
             //// =====================================================
             //// =====================================================
             ////                           DjVu
@@ -238,7 +255,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConvertRangeOfDjVuPagesToSeparateImages.Run();
             //ConvertSpecificPortionOfDjVuPage.Run();
             //ConvertDjVuToPDF.Run();
-
+            // ParallelDJVUImagesProcessingUsingMultithreading.Run();
             //// =====================================================
             //// =====================================================
             ////                           CMX
