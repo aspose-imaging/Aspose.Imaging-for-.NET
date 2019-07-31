@@ -1,0 +1,35 @@
+﻿//-----------------------------------------------------------------------------------------------------------
+// <copyright file="SupportOfDPISettingsInPdfOptions.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="31.07.2019 12:51:44">
+//     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------------------------------------------
+
+using Aspose.Imaging;
+using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.ImageOptions;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharp.ModifyingAndConvertingImages
+{
+    class SupportOfDPISettingsInPdfOptions
+    {
+        public static void Run()
+        {
+            string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
+
+            string fileName = "SampleTiff1.tiff";
+            string inputFileName = Path.Combine(dataDir, fileName);
+            string outFileName = inputFileName + ".pdf";
+            using (Image image = Image.Load(inputFileName))
+            {
+                PdfOptions pdfOptions = new PdfOptions { PageSize = new SizeF(612, 792) };
+                image.Save(outFileName, pdfOptions);
+            }
+        }        
+    }
+}

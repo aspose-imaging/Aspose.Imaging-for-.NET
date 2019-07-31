@@ -20,7 +20,8 @@ using CSharp.ModifyingAndConvertingImages.JPEG;
 using CSharp.ModifyingAndConvertingImages.DjVu;
 using CSharp.ModifyingAndConvertingImages.PNG;
 using CSharp.ModifyingAndConvertingImages.WebPImages;
-
+using CSharp.ModifyingAndConvertingImages.OTG;
+using CSharp.ModifyingAndConvertingImages.MemoryStrategies;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -133,6 +134,16 @@ namespace Aspose.Imaging.Examples.CSharp
            // SupportOfSmoothingMode.Run();
             // CropWMFFile.Run();
             //CropEMFFile.Run();
+            //SupportOfDPISettingsInPdfOptions.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////                        Memory Strategies
+            //// =====================================================
+            //// =====================================================
+
+            OptimizationStrategyInRotate.Run();
+
             //// =====================================================
             //// =====================================================
             ////                        DICOM
@@ -270,6 +281,13 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //SupportOfCDR.Run();
 
+            //// =====================================================
+            //// =====================================================
+            ////                           OTG
+            //// =====================================================
+            //// =====================================================
+            //SupportOfOTG.Run();
+
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
@@ -350,6 +368,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_CDR()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CDR/");
+        }
+
+        public static String GetDataDir_OTG()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "OTG/");
         }
 
         public static string GetDataDir_Data()
