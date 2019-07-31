@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.FileFormats.Wmf;
 using Aspose.Imaging.ImageOptions;
 using System;
 using System.Collections.Generic;

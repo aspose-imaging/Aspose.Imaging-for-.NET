@@ -27,7 +27,7 @@ namespace CSharp.ModifyingAndConvertingImages.DjVu
                 taskNum =>
                 {
                     var inputFile = dataDir + fileName;
-                    var outputFile = dataDir + $"{fileName}_task{taskNum}.png";
+                    var outputFile = dataDir + string.Format("{0}_task{1}.png", fileName, taskNum);
                     return Task.Run(
                 () =>
                             {
