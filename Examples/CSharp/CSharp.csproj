@@ -94,6 +94,7 @@
     <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDithering.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInFilters.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInResize.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInRotate.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertingEMFToWMF.cs" />

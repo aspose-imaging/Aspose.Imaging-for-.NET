@@ -146,6 +146,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //OptimizationStrategyInFilters.Run();
             //OptimizationStrategyInDithering.Run();
             //OptimizationStrategyInResize.Run();
+            OptimizationStrategyInJPEG.Run();
 
             //// =====================================================
             //// =====================================================
