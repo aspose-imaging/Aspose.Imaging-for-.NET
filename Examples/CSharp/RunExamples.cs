@@ -146,7 +146,12 @@ namespace Aspose.Imaging.Examples.CSharp
             //OptimizationStrategyInFilters.Run();
             //OptimizationStrategyInDithering.Run();
             //OptimizationStrategyInResize.Run();
-            OptimizationStrategyInJPEG.Run();
+            //OptimizationStrategyInJPEG.Run();
+
+            //////////////
+            //DocumentConvertionProgress.Run();
+
+
 
             //// =====================================================
             //// =====================================================
@@ -154,7 +159,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            Deskew.Run();
+            //Deskew.Run();
 
             //// =====================================================
             //// =====================================================
@@ -214,6 +219,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //SVGToEMFConversion.Run();
             //ConvertWMFToSVG.Run();
             //SVGToBMPConversion.Run();
+            SvgNativeResize.Run();
             //// =====================================================
             //// =====================================================
             ////                        PNG

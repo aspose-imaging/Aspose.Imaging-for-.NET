@@ -39,9 +39,9 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=19.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Imaging, Version=19.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Aspose\Aspose.Imaging for .NET\Bin\net4.0\Aspose.Imaging.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Aspose\Aspose.Imaging for .NET\Bin\net2.0\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -80,6 +80,7 @@
     <Compile Include="ModifyingAndConvertingImages\Deskew.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DocumentConvertionProgress.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
     <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
@@ -208,6 +209,7 @@
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvertWMFToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SvgNativeResize.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToBMPConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
