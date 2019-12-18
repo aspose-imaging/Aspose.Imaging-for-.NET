@@ -94,8 +94,10 @@
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDithering.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDJVU.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInFilters.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInJPEG2000.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInResize.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInRotate.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertingEMFToWMF.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFtoFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\MultipleImagesToTIFF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfFODG.cs" />
     <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfOTG.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />

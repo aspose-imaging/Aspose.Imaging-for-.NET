@@ -147,7 +147,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //OptimizationStrategyInDithering.Run();
             //OptimizationStrategyInResize.Run();
             //OptimizationStrategyInJPEG.Run();
-
+            //OptimizationStrategyInDJVU.Run();
+            //OptimizationStrategyInJPEG2000.Run();
             //////////////
             //DocumentConvertionProgress.Run();
 
@@ -219,7 +220,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //SVGToEMFConversion.Run();
             //ConvertWMFToSVG.Run();
             //SVGToBMPConversion.Run();
-            SvgNativeResize.Run();
+            //SvgNativeResize.Run();
             //// =====================================================
             //// =====================================================
             ////                        PNG
@@ -285,6 +286,14 @@ namespace Aspose.Imaging.Examples.CSharp
             //ConvertSpecificPortionOfDjVuPage.Run();
             //ConvertDjVuToPDF.Run();
             // ParallelDJVUImagesProcessingUsingMultithreading.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////                           Fodg
+            //// =====================================================
+            //// =====================================================
+
+            //SupportOfFODG.Run();
             //// =====================================================
             //// =====================================================
             ////                           CMX
