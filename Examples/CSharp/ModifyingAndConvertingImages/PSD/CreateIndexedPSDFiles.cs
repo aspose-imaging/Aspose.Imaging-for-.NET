@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
     {
         public static void Run()
         {
-            //ExStart:CreateIndexedPSDFiles
+            Console.WriteLine("Running example CreateIndexedPSDFiles");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
@@ -40,7 +41,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
                 graphics.DrawEllipse(new Pen(Color.Red, 6), new Rectangle(0, 0, 400, 400));
                 psd.Save(dataDir + "CreateIndexedPSDFiles_out.psd");
             }
-            //ExEnd:CreateIndexedPSDFiles
+
+            Console.WriteLine("Finished example CreateIndexedPSDFiles");
         }
     }
 }

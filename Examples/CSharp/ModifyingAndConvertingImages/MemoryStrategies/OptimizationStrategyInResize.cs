@@ -19,11 +19,12 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
     {
         public static void Run()
         {
+            Console.WriteLine("Running example OptimizationStrategyInResize");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "SampleTiff1.tiff";
             string output = "SampleTiff1.out.tiff";
-            string inputFileName = Path.Combine(dataDir, fileName);
+            string inputFileName = Path.Combine(dataDir, fileName);            
 
             // Setting a memory limit of 50 megabytes for target loaded image
             using (var image = Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
@@ -32,6 +33,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 image.Resize(300, 200, ResizeType.LanczosResample);
                 image.Save(Path.Combine(dataDir, output));
             }
+
+            Console.WriteLine("Finished example OptimizationStrategyInResize");
         }
     }
 }

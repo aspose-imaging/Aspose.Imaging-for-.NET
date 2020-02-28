@@ -15,20 +15,20 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:SupportTiffDeflate
+            Console.WriteLine("Running example SupportTiffDeflate");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             string sourceFileName = "FromRasterImageEthalon.psd";
             string outputfile = "result.tiff";
 
             //Export png with alpha channel to tiff
-            using (Image image = Image.Load(dataDir + "Alpha.png"))
+            using (Image image = Image.Load(dataDir + "sample.png"))
             {
                 TiffOptions options = new TiffOptions(TiffExpectedFormat.TiffDeflateRgba);
                 image.Save(outputfile, options);
 
             }
 
-            //ExEnd:SupportTiffDeflate 
+            Console.WriteLine("Finished example SupportTiffDeflate");
         }
     }
 }

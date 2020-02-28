@@ -17,27 +17,24 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            // ExStart:Imagetransparency
+            Console.WriteLine("Running example Imagetransparency");
             // The path to the documents directory.
-           
-            string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
-           string filePath = "Flower.png"; // specify your path
-           using (PngImage image = (PngImage)Image.Load(filePath))
-           {
-              float opacity = image.ImageOpacity; // opacity = 0,470798
-              Console.WriteLine(opacity);
-             if (opacity == 0)
+            string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
+
+            string filePath = System.IO.Path.Combine(dataDir, "sample.png"); // specify your path
+            using (PngImage image = (PngImage)Image.Load(filePath))
+            {
+                float opacity = image.ImageOpacity; // opacity = 0,470798
+                Console.WriteLine(opacity);
+                if (opacity == 0)
                 {
-                // The image is fully transparent.
+                    // The image is fully transparent.
                 }
 
             }
 
-
+            Console.WriteLine("Finished example Imagetransparency");
         }
-        // ExEnd:Imagetransparency
-
     }
-    }
-
+}

@@ -25,38 +25,26 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
         {
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
+            Console.WriteLine("Running example OptimizationStrategyInJPEG2000");
 
-            // Setting a memory limit of 10 megabytes for target loaded image
+            // Setting a memory limit of 100 megabytes for target loaded image
             // JP2 codec
-            using (Image image = Image.Load(Path.Combine(dataDir, "inputFile.jp2"), new LoadOptions() { BufferSizeHint = 10 }))
+            using (Image image = Image.Load(Path.Combine(dataDir, "inputFile.jp2"), new LoadOptions() { BufferSizeHint = 100 }))
             {
                 image.Save(Path.Combine(dataDir,"outputFile.jp2"));
-            }
-
-            // J2K codec
-            using (Image image = Image.Load(Path.Combine(dataDir,"inputFile.j2k"), new LoadOptions() { BufferSizeHint = 10 }))
-            {
-                image.Save(Path.Combine(dataDir, "outputFile.j2k"));
-            }
+            }            
 
             // Setting a memory limit of 10 megabytes for target created image
             // JP2 codec
             ImageOptionsBase createOptions = new Jpeg2000Options { Codec = Jpeg2000Codec.Jp2 };
-            createOptions.BufferSizeHint = 10;
+            createOptions.BufferSizeHint = 100;
             createOptions.Source = new FileCreateSource(Path.Combine(dataDir,"createdFile.jp2"), false);
             using (var image = Image.Create(createOptions, 1000, 1000))
             {
                 image.Save(); // save to same location
             }
 
-            // J2K codec
-            createOptions = new Jpeg2000Options { Codec = Jpeg2000Codec.J2K };
-            createOptions.BufferSizeHint = 10;
-            createOptions.Source = new FileCreateSource(Path.Combine(dataDir, "createdFile.j2k"), false);
-            using (var image = Image.Create(createOptions, 1000, 1000))
-            {
-                image.Save(); // save to same location
-            }
+            Console.WriteLine("Finished example OptimizationStrategyInJPEG2000");
         }
     }
 }

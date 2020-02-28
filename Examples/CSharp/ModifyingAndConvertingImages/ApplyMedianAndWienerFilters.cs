@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.ImageFilters.FilterOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ApplyMedianAndWienerFilters
+            Console.WriteLine("Running example ApplyMedianAndWienerFilters");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -33,6 +34,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterImage.Filter(image.Bounds, options);
                 image.Save(dataDir + "median_test_denoise_out.gif");
             }
+
+            Console.WriteLine("Finished example ApplyMedianAndWienerFilters");
         }
-    } //ExEnd:ApplyMedianAndWienerFilters
+    }
 }

@@ -1,6 +1,7 @@
 using Aspose.Imaging.FileFormats.Djvu;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            //ExStart:ConvertDjVuToTIFF
+            Console.WriteLine("Running example ConvertDjVuToTIFF");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -30,7 +31,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions();
                 image.Save(dataDir + "ConvertDjVuToTIFFFormat_out.tiff", exportOptions);
             }
-            //ExEnd:ConvertDjVuToTIFF
+
+            Console.WriteLine("Finished example ConvertDjVuToTIFF");
         }
     }
 }

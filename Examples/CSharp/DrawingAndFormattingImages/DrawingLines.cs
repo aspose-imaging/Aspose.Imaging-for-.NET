@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:DrawingLines
+            Console.WriteLine("Running example DrawingLines");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages() + "SolidLines_out.bmp";
 
@@ -48,7 +49,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     image.Save();
                 }
             }
-            //ExEnd:DrawingLines
+
+            Console.WriteLine("Finished example DrawingLines");
         }
     }
 }

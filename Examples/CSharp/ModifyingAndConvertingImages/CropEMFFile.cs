@@ -10,13 +10,12 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class CropEMFFile
     {
-        public static void Run() {
-
-            //ExStart:CropEMFFile
+        public static void Run()
+        {
+            Console.WriteLine("Running example CropEMFFile");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-
 
             using (EmfImage image = Image.Load(dataDir + "test.emf") as EmfImage)
             {
@@ -25,8 +24,8 @@ namespace CSharp.ModifyingAndConvertingImages
                 Console.WriteLine(image.Height);
                 image.Save(dataDir + "test.emf_crop.emf");
             }
-            //ExEnd:CropEMFFile
 
+            Console.WriteLine("Finished example CropEMFFile");
         }
 
     }

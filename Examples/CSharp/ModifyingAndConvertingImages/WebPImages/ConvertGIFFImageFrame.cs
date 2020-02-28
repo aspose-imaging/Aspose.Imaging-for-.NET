@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Gif;
 using Aspose.Imaging.FileFormats.Gif.Blocks;
 using Aspose.Imaging.FileFormats.Webp;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            //ExStart:ConvertGIFFImageFrame
+            Console.WriteLine("Running example ConvertGIFFImageFrame");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -63,7 +64,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
                     webp.Save(dataDir + "ConvertGIFFImageFrame_out.webp");
                 }
             }
-            //ExEnd:ConvertGIFFImageFrame
+
+            Console.WriteLine("Finished example ConvertGIFFImageFrame");
         }
     }
 }

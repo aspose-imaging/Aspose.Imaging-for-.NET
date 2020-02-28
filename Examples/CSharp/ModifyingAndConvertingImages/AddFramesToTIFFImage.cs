@@ -3,6 +3,7 @@ using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -18,6 +19,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
+            Console.WriteLine("Running example AddFramesToTIFFImage");
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
 
             // The path to the documents directory.
@@ -57,6 +59,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 }
                 tiffImage.Save(path);
             }
+
+            Console.WriteLine("Finished example AddFramesToTIFFImage");
         }
     }
 }

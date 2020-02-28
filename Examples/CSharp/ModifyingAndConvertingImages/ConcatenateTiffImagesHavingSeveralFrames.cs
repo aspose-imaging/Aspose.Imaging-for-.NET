@@ -18,6 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
+            Console.WriteLine("Running example ConcatenateTiffImagesHavingSeveralFrames");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -69,6 +70,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                         image.Dispose();
                     }
                 }
+
+                Console.WriteLine("Finished example ConcatenateTiffImagesHavingSeveralFrames");
             }
             catch (Exception ex)
             {

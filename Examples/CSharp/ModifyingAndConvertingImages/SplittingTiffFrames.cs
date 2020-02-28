@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:SplittingTiffFrames
+            Console.WriteLine("Running example SplittingTiffFrames");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -30,7 +31,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     tiffFrame.Save(dataDir + i + "_out.tiff", new TiffOptions(TiffExpectedFormat.TiffJpegRgb));
                 }
             }
-            //ExEnd:SplittingTiffFrames
+
+            Console.WriteLine("Finished example SplittingTiffFrames");
         }
     }
 }

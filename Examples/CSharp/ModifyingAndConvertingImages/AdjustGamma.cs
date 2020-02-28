@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:AdjustGamma
+            Console.WriteLine("Running example AdjustGamma");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             
@@ -41,7 +42,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
                 rasterImage.Save(dataDir + "AdjustGamma_out.tiff", tiffOptions);
             }
-            //ExEnd:AdjustGamma
+
+            Console.WriteLine("Finished example AdjustGamma");
         }
     }
 }

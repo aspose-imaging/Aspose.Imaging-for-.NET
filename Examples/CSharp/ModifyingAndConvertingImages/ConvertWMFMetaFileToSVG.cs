@@ -1,4 +1,5 @@
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertWMFMetaFileToSVG
+            Console.WriteLine("Running example ConvertWMFMetaFileToSVG");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -23,14 +24,15 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             using (Image image = Image.Load(dataDir + "input.wmf"))
             {
                 // Create an instance of EmfRasterizationOptions class.
-                EmfRasterizationOptions options = new EmfRasterizationOptions();
+                WmfRasterizationOptions options = new WmfRasterizationOptions();
                 options.PageWidth = image.Width;
                 options.PageHeight = image.Height;
 
                 // Call save method to convert WMF to SVG format by passing output file name and SvgOptions class instance.
                 image.Save(dataDir + "ConvertWMFMetaFileToSVG_out.svg", new SvgOptions { VectorRasterizationOptions = options });
             }
-            //ExEnd:ConvertWMFMetaFileToSVG
+
+            Console.WriteLine("Finished example ConvertWMFMetaFileToSVG");
         }
     }
 }

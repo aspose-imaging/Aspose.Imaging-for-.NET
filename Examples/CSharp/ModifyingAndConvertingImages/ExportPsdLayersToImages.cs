@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ExportPsdLayersToImages
+            Console.WriteLine("Running example ExportImageToPSD");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
          
@@ -31,7 +32,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     psdImage.Layers[i].Save(dataDir + "layer-" + i +"_out.png", pngOptions);
                 }
             }
-            //ExEnd:ExportPsdLayersToImages
+
+            Console.WriteLine("Finished example ExportImageToPSD");
         }
     }
 }

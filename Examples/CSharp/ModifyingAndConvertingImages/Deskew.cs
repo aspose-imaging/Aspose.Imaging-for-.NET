@@ -19,6 +19,7 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
+            Console.WriteLine("Running example Deskew");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "skewed.png";
@@ -32,6 +33,7 @@ namespace CSharp.ModifyingAndConvertingImages
                 image.Save(Path.Combine(dataDir, output));
             }
 
+            Console.WriteLine("Finished example Deskew");
         }
     }
 }

@@ -19,8 +19,7 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-
-            //ExStart:AutoImageMasking
+            Console.WriteLine("Running example AutoImageMasking");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -50,10 +49,7 @@ namespace CSharp.ModifyingAndConvertingImages
                 }
             }
 
-
-
-            //ExEnd:AutoImageMasking
-
+            Console.WriteLine("Finished example AutoImageMasking");
         }
 
         //ExStart:FillInputPoints

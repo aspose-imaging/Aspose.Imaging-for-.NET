@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.Brushes;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:AddDiagonalWatermarkToImage
+            Console.WriteLine("Running example AddDiagonalWatermarkToImage");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -55,7 +56,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 graphics.DrawString(theString, font, brush, 0, 0, format);
                 image.Save(dataDir + "AddDiagonalWatermarkToImage_out.jpg");
             }
-            //ExStart:AddDiagonalWatermarkToImage
+
+            Console.WriteLine("Finished example AddDiagonalWatermarkToImage");
         }
     }
 }

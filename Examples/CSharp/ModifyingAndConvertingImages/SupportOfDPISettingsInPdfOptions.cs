@@ -20,6 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
+            Console.WriteLine("Running example SupportOfDPISettingsInPdfOptions");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "SampleTiff1.tiff";
@@ -30,6 +31,8 @@ namespace CSharp.ModifyingAndConvertingImages
                 PdfOptions pdfOptions = new PdfOptions { PageSize = new SizeF(612, 792) };
                 image.Save(outFileName, pdfOptions);
             }
+
+            Console.WriteLine("Finished example SupportOfDPISettingsInPdfOptions");
         }        
     }
 }

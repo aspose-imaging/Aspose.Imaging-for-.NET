@@ -2,6 +2,7 @@
 using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -25,6 +26,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                 "Picture1.emf"
             };
 
+            Console.WriteLine("Running example ConvertEMFToPDF");
+
             foreach (string filePath in filePaths)
             {
                 string outPath = dataDir + filePath + "_out.pdf";
@@ -45,6 +48,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     image.Save(outputStream, pdfOptions);
                 }
             }
+
+            Console.WriteLine("Finished example ConvertEMFToPDF");
             //ExEnd:ConvertEMFToPDF
         }
     }

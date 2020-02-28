@@ -19,11 +19,14 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
     {
         public static void Run()
         {
+            Console.WriteLine("Running example OptimizationStrategyInDithering");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "SampleTiff1.tiff";
             string output = "SampleTiff1.out.tiff";
             string inputFileName = Path.Combine(dataDir, fileName);
+
+            Console.WriteLine("Memory optimization in Dithering started..");
 
             // Setting a memory limit of 50 megabytes for target loaded image
             using (RasterImage image = (RasterImage)Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
@@ -33,6 +36,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
 
                 image.Save(Path.Combine(dataDir, output));
             }
+
+            Console.WriteLine("Finished example OptimizationStrategyInDithering");
         }
     }
 }

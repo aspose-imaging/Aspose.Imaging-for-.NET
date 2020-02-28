@@ -6,15 +6,15 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class Grayscaling
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-
-            //ExStart:Grayscaling
+            Console.WriteLine("Running example Grayscaling");
+            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
            
@@ -33,7 +33,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.Grayscale();
                 rasterCachedImage.Save(dataDir + "Grayscaling_out.jpg");
             }
-            //ExEnd:Grayscaling
+
+            Console.WriteLine("Finished example Grayscaling");
         }
     }
 }

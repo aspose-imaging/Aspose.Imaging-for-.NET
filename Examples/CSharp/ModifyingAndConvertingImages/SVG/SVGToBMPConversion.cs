@@ -10,10 +10,11 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
 {
     class SVGToBMPConversion
     {
-        public static void Run() {
+        public static void Run()
+        {
 
-            //ExStart:SVGToBMPConversion
-            
+            Console.WriteLine("Running example SVGToBMPConversion");
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
@@ -32,7 +33,7 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                 image.Save(dataDir + "test.svg_out.bmp", options);
             }
 
-            //ExEnd:SVGToBMPConversion
+            Console.WriteLine("Finished example SVGToBMPConversion");
         }
     }
 }

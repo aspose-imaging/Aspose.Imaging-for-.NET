@@ -13,7 +13,7 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertImageWithGrayscale
+            Console.WriteLine("Running example ConvertImageWithGrayscale");
 
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -28,11 +28,11 @@ namespace CSharp.ModifyingAndConvertingImages
 
             string[] sourceFileNames = new string[]
            {
-              "Rgb.jpg",
-              "Rgb.jpg",
-              "Rgb.jpg",
-              "Rgb.jpg",
-              "Rgb.jpg",
+              "Grayscale.jpg",
+              "Grayscale.jpg",
+              "Grayscale.jpg",
+              "Grayscale.jpg",
+              "Grayscale.jpg",
             };
 
             JpegOptions options = new JpegOptions();
@@ -47,7 +47,8 @@ namespace CSharp.ModifyingAndConvertingImages
                     image.Save(dataDir + fileName, options);
                 }
             }
-            //ExEnd:ConvertImageWithGrayscale
+
+            Console.WriteLine("Finished example ConvertImageWithGrayscale");
         }
 
     }

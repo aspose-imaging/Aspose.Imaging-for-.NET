@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageFilters.FilterOptions;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 
 /*
@@ -22,6 +23,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
+            Console.WriteLine("Running example ApplyFilterDicom");
+
             using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
             {
@@ -29,6 +32,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Filter(image.Bounds, new MedianFilterOptions(8));
                 image.Save(dataDir + "ApplyFilterOnDICOMImage_out.bmp", new BmpOptions());
             }
+
+            Console.WriteLine("Finished example ApplyFilterDicom");
             //ExEnd:ApplyFilterOnDICOMImage
         }
     }

@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 
 /*
@@ -21,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
-
+            Console.WriteLine("Running example DICOMSOtherImageResizingOptions");
             using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
             {
@@ -36,6 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image1.ResizeWidthProportionally(150, ResizeType.AdaptiveResample);
                 image1.Save(dataDir + "DICOMSOtherImageResizingOptions1_out.bmp", new BmpOptions());
             }
+
+            Console.WriteLine("Finished example DICOMSOtherImageResizingOptions");
             //ExEnd:DICOMSOtherImageResizingOptions
         }
     }

@@ -1,5 +1,6 @@
 using System.IO;
 using Aspose.Imaging.FileFormats.Tiff;
+using System;
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
@@ -7,6 +8,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
+            Console.WriteLine("Running example ConcatenatingTIFFImagesfromStream");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -34,6 +36,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 fileStream.Close();
                 fileStream1.Close();
             }
+
+            Console.WriteLine("Finished example ConcatenatingTIFFImagesfromStream");
         }
     }
 }

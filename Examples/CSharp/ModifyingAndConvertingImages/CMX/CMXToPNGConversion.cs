@@ -12,8 +12,7 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
     {
         public static void Run()
         {
-
-            //ExStart:CMXToPNGConversion
+            Console.WriteLine("Running example CMXToPNGConversion");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CMX();
 
@@ -45,7 +44,7 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
                 }
             }
 
-            //ExEnd:CMXToPNGConversion
+            Console.WriteLine("Finished example CMXToPNGConversion");
         }
     }
 

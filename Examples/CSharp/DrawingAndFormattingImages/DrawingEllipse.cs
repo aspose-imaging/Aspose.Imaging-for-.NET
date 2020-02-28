@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:DrawingEllipse
+            Console.WriteLine("Running example DrawingEllipse");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -45,7 +46,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 }
                 stream.Close();
             }
-            //ExEnd:DrawingEllipse
+
+            Console.WriteLine("Finished example DrawingEllipse");
         }
     }
 }

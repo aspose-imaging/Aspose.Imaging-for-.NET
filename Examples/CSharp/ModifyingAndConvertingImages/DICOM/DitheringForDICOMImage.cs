@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 
 /*
@@ -20,7 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
-
+            Console.WriteLine("Running example DitheringForDICOMImage");
             using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
             {
@@ -28,6 +29,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.Dither(DitheringMethod.ThresholdDithering, 1);               
                 image.Save(dataDir + "DitheringForDICOMImage_out.bmp", new BmpOptions());
             }
+
+            Console.WriteLine("Finished example DitheringForDICOMImage");
             //ExEnd:DitheringForDICOMImage
         }
     }

@@ -10,9 +10,10 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class SupportOfDIB
     {
-        public static void Run() {
+        public static void Run()
+        {
 
-            //ExStart:SupportOfDIB
+            Console.WriteLine("Running example SupportOfDIB");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -23,8 +24,8 @@ namespace CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "sample.png", new PngOptions());
 
             }
-            //ExEnd:SupportOfDIB
 
+            Console.WriteLine("Finished example SupportOfDIB");
         }
     }
 }

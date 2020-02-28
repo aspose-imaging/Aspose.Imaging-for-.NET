@@ -16,25 +16,19 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class SupportOfSmoothingMode
     {
-        public static void Run() {
-
-            //ExStart:SupportOfSmoothingMode
-
+        public static void Run()
+        {
+            Console.WriteLine("Running example SupportOfSmoothingMode");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
 
-         string[] files = new string[] {
-         "SmoothingTest.cdr",
-         "SmoothingTest.cmx",
-         "SmoothingTest.emf",
-         "SmoothingTest.wmf",
-         "SmoothingTest.odg",
-         "SmoothingTest.svg"
-        };
-            SmoothingMode[] smoothingModes = new SmoothingMode[] {
-                 SmoothingMode.AntiAlias, SmoothingMode.None
-                };
+            string[] files = new string[]
+                                 {
+                                     "SmoothingTest.cdr", "SmoothingTest.cmx", "SmoothingTest.emf", "SmoothingTest.wmf",
+                                     "SmoothingTest.odg", "SmoothingTest.svg"
+                                 };
+            SmoothingMode[] smoothingModes = new SmoothingMode[] { SmoothingMode.AntiAlias, SmoothingMode.None };
             foreach (string fileName in files)
             {
                 using (Image image = Image.Load(dataDir + fileName))
@@ -68,21 +62,21 @@ namespace CSharp.ModifyingAndConvertingImages
                     {
                         throw new Exception("This is image is not supported in this example");
                     }
+
                     vectorRasterizationOptions.PageSize = image.Size;
                     foreach (SmoothingMode smoothingMode in smoothingModes)
                     {
-                       
-                        string outputFileName = dataDir + "SM/image_" + smoothingMode + "_" + fileName + ".png";
+
+                        string outputFileName = dataDir + "image_" + smoothingMode + "_" + fileName + ".png";
                         vectorRasterizationOptions.SmoothingMode = smoothingMode;
-                        image.Save(outputFileName, new PngOptions()
-                        {
-                            VectorRasterizationOptions = vectorRasterizationOptions
-                        });
+                        image.Save(
+                            outputFileName,
+                            new PngOptions() { VectorRasterizationOptions = vectorRasterizationOptions });
                     }
                 }
             }
 
-            //ExEnd:SupportOfSmoothingMode
+            Console.WriteLine("Finished example SupportOfSmoothingMode");
 
         }
     }

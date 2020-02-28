@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Svg;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertingSVGToRasterImages
+            Console.WriteLine("Running example ConvertingSVGToRasterImages");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 PngOptions pngOptions = new PngOptions();
                 image.Save(dataDir + "ConvertingSVGToRasterImages_out.png", pngOptions);
             }
-            //ExEnd:ConvertingSVGToRasterImages
+
+            Console.WriteLine("Finished example ConvertingSVGToRasterImages");
         }
     }
 }

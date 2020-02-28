@@ -1,5 +1,6 @@
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:DrawImagesUsingCoreFunctionality
+            Console.WriteLine("Running example DrawImagesUsingCoreFunctionality");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -40,7 +41,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 rasterImage.SavePixels(rasterImage.Bounds, pixels);
                 rasterImage.Save();
             }
-            //ExStart:DrawImagesUsingCoreFunctionality
+
+            Console.WriteLine("Finished example DrawImagesUsingCoreFunctionality");
         }
     }
 }

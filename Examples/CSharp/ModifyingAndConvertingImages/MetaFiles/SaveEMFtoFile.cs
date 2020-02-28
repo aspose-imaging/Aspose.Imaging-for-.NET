@@ -2,6 +2,7 @@
 using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
@@ -15,11 +16,14 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
             string dataDir = RunExamples.GetDataDir_MetaFiles();
 
             var path = dataDir+"TestEmfBezier.emf";
+            Console.WriteLine("Running example SaveEMFtoFile");
 
             using (var image = (MetaImage)Image.Load(path))
             {
                 image.Save(path + ".emf", new EmfOptions());
             }
+
+            Console.WriteLine("Finished example SaveEMFtoFile");
             //ExEnd:SaveEMFtoFile
         }
     }

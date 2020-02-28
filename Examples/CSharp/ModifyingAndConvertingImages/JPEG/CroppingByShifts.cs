@@ -6,6 +6,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
 {
     class CroppingByShifts
@@ -16,6 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
+            Console.WriteLine("Running example CroppingByShifts");
             // Load an existing image into an instance of RasterImage class
             using (RasterImage rasterImage = (RasterImage)Image.Load(dataDir + "aspose-logo.jpg"))
             {
@@ -35,6 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 rasterImage.Crop(leftShift, rightShift, topShift, bottomShift);
                 rasterImage.Save(dataDir + "CroppingByShifts_out.jpg");
             }
+
+            Console.WriteLine("Running example CroppingByShifts");
             //ExEnd:CroppingByShifts
         }        
     }

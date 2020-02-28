@@ -2,6 +2,7 @@
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ExtractTIFFFramesToBMPImageFormat
+            Console.WriteLine("Running example ExtractTIFFFramesToBMPImageFormat");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -51,7 +52,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     frameCounter++;
                 }
             }
-            //ExEnd:ExtractTIFFFramesToBMPImageFormat
+
+            Console.WriteLine("Finished example ExtractTIFFFramesToBMPImageFormat");
         }
     }
 }

@@ -6,13 +6,14 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
 {
     class ChangeBackgroundColor
     {
         public static void Run()
         {
-            //ExStart:ChangeBackgroundColor
+            Console.WriteLine("Running example ChangeBackgroundColor");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
  
@@ -43,7 +44,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 if (rasterImg != null)
                     rasterImg.Save(dataDir + "ChangeBackgroundColor_out.jpg");
             }
-            //ExEnd:ChangeBackgroundColor
+
+            Console.WriteLine("Finished example ChangeBackgroundColor");
         }
     }
 }

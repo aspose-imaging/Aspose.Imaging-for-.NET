@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:CreatingImageUsingStream
+            Console.WriteLine("Running example CreatingImageUsingStream");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -36,7 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 // Do some image processing
                 image.Save(dataDir + "CreatingImageUsingStream_out.bmp");
             }
-            //ExEnd:CreatingImageUsingStream
+
+            Console.WriteLine("Finished example CreatingImageUsingStream");
         }
     }
 }

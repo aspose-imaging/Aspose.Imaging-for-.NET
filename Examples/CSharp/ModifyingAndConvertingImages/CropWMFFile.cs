@@ -10,9 +10,10 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class CropWMFFile
     {
-        public static void Run() {
+        public static void Run()
+        {
 
-            //ExStart:CropWMFFile
+            Console.WriteLine("Running example CropWMFFile");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -25,8 +26,8 @@ namespace CSharp.ModifyingAndConvertingImages
                 Console.WriteLine(image.Height);
                 image.Save(dataDir + "test.wmf_crop.wmf");
             }
-            //ExEnd:CropWMFFile
 
+            Console.WriteLine("Finished example CropWMFFile");
         }
     }
 }

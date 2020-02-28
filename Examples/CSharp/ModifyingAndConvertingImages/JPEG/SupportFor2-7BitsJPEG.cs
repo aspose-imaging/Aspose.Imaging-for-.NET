@@ -9,6 +9,7 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 using Aspose.Imaging.FileFormats.Jpeg;
 using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
 {
@@ -16,13 +17,14 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            // ExStart:SupportFor2-7BitsJPEG
+            Console.WriteLine("Running example SupportForJPEG");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
             int bpp = 2; // Set 2 bits per sample to see the difference in size and quality
 
             // The origin PNG with 8 bits per sample
-            string originPngFileName = "lena24b.png";
+            string originPngFileName = System.IO.Path.Combine(dataDir, "lena_16g_lin.png");
+            ;
 
             // The output JPEG-LS with 2 bits per sample.
             string outputJpegFileName = "lena24b " + bpp + "-bit Gold.jls";
@@ -41,9 +43,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             {
                 jpegImage.Save(outputPngFileName, new PngOptions());
             }
-            }
-        // ExEnd:SupportFor2-7BitsJPEG
-        }       
+
+            Console.WriteLine("Finished example SupportForJPEG");
+        }
     }
+}
 
 

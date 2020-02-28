@@ -20,6 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
     {
         public static void Run()
         {
+            Console.WriteLine("Running example SupportOfOTG");
             string dataDir = RunExamples.GetDataDir_OTG();
             string fileName = "VariousObjectsMultiPage.otg";
             string inputFileName = Path.Combine(dataDir, fileName);
@@ -35,6 +36,8 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
                     image.Save(Path.Combine(dataDir, "output" + fileExt), item);
                 }
             }
+
+            Console.WriteLine("Finished example SupportOfOTG");
         }
     }
 }

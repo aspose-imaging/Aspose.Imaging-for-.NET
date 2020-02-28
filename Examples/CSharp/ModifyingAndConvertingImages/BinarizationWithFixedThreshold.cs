@@ -7,13 +7,14 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 */
 
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class BinarizationWithFixedThreshold
     {
         public static void Run()
         {
-            //ExStart:BinarizationWithFixedThreshold
+            Console.WriteLine("Running example BinarizationWithFixedThreshold");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -32,7 +33,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.BinarizeFixed(100);
                 rasterCachedImage.Save(dataDir + "BinarizationWithFixedThreshold_out.jpg");
             }
-            //ExEnd:BinarizationWithFixedThreshold
+
+            Console.WriteLine("Finished example BinarizationWithFixedThreshold");
         }
     }
 }

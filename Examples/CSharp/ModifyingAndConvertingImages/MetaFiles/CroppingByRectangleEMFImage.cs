@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -28,6 +29,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
             PdfOptions pdfOptions = new PdfOptions();
             pdfOptions.VectorRasterizationOptions = emfRasterizationOptions;
 
+            Console.WriteLine("Running example CroppingByRectangleEMFImage");
             // Load an existing image into an instance of EMF class
             using (EmfImage image = (EmfImage)Image.Load(dataDir + "Picture1.emf"))
             {
@@ -40,6 +42,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     image.Save(outputStream, pdfOptions);
                 }
             }
+
+            Console.WriteLine("Finished example CroppingByRectangleEMFImage");
             //ExEnd:CroppingByRectangleEMFImage
         }
     }

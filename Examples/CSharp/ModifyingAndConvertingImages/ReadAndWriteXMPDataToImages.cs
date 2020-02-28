@@ -21,9 +21,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ReadAndWriteXMPDataToImages
+            Console.WriteLine("Running example ReadAndWriteXMPDataToImages");
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();           
+            string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             // Specify the size of image by defining a Rectangle 
             Rectangle rect = new Rectangle(0, 0, 100, 200);
@@ -44,10 +44,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 xmpMeta.AddAttribute("Description", "The fake metadata value");
 
                 // Create an instance of XmpPacketWrapper that contains all metadata
-                XmpPacketWrapper xmpData = new XmpPacketWrapper(xmpHeader,xmpTrailer, xmpMeta);
+                XmpPacketWrapper xmpData = new XmpPacketWrapper(xmpHeader, xmpTrailer, xmpMeta);
 
                 // Create an instacne of Photoshop package and set photoshop attributes
-                PhotoshopPackage photoshopPackage =  new PhotoshopPackage();
+                PhotoshopPackage photoshopPackage = new PhotoshopPackage();
                 photoshopPackage.SetCity("London");
                 photoshopPackage.SetCountry("England");
                 photoshopPackage.SetColorMode(ColorMode.Rgb);
@@ -84,7 +84,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     }
                 }
             }
+
+            Console.WriteLine("Finished example ReadAndWriteXMPDataToImages");
         }
-        //ExEnd:ReadAndWriteXMPDataToImages
     }
 }

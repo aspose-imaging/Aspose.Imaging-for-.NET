@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertWMFToWebp
+            Console.WriteLine("Running example ConvertWMFToWebp");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +26,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 double k = (image.Width * 1.00) / image.Height;
 
                 // Create an instance of EmfRasterizationOptions class and set different properties
-                EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions
+                WmfRasterizationOptions emfRasterization = new WmfRasterizationOptions
                 {
                     BackgroundColor = Color.WhiteSmoke,
                     PageWidth = 400,
@@ -42,7 +42,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call the save method, provide output path and WebPOptions to convert the WMF file to Webp and save the output
                 image.Save(dataDir + "ConvertWMFToWebp_out.webp", imageOptions);
             }
-            //ExEnd:ConvertWMFToWebp
+
+            Console.WriteLine("Finished example ConvertWMFToWebp");
         }
     }
 }

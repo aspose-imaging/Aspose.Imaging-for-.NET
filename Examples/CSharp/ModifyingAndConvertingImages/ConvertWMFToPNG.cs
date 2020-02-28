@@ -10,9 +10,10 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class ConvertWMFToPNG
     {
-        public static void Run() {
+        public static void Run()
+        {
 
-            //ExStart:ConvertWMFToPNG
+            Console.WriteLine("Running example ConvertWMFToPNG");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -27,16 +28,11 @@ namespace CSharp.ModifyingAndConvertingImages
                 rasterizationOptions.PageWidth = image.Width;
                 rasterizationOptions.PageHeight = image.Height;
 
-                image.Save(outputFileNamePng, new PngOptions()
-                {
-                    VectorRasterizationOptions = rasterizationOptions
-                });
-              
+                image.Save(outputFileNamePng, new PngOptions() { VectorRasterizationOptions = rasterizationOptions });
+
             }
-            //ExEnd:ConvertWMFToPNG
 
-
+            Console.WriteLine("Finished example ConvertWMFToPNG");
         }
-
     }
 }

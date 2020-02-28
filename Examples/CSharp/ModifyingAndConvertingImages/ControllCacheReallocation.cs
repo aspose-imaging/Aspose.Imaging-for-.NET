@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ControllCacheReallocation
+            Console.WriteLine("Running example ControllCacheReallocation");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Cache();
 
@@ -57,7 +58,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. If you've forgotten to call dispose on an object the cache values will not be 0.
             l1 = Cache.AllocatedDiskBytesCount;
             l2 = Cache.AllocatedMemoryBytesCount;
-            //ExEnd:ControllCacheReallocation
+
+            Console.WriteLine("Finished example ControllCacheReallocation");
         }
     }
 }

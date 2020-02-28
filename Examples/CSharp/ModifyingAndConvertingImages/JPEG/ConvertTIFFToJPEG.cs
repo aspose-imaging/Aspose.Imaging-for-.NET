@@ -16,6 +16,7 @@ namespace CSharp.ModifyingAndConvertingImages.JPEG
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
+            Console.WriteLine("Running example ConvertTIFFToJPEG");
 
             using (Aspose.Imaging.FileFormats.Tiff.TiffImage tiffImage = (Aspose.Imaging.FileFormats.Tiff.TiffImage)Image.Load(dataDir + "source2.tif"))
             {
@@ -51,6 +52,8 @@ namespace CSharp.ModifyingAndConvertingImages.JPEG
                     tiffFrame.Save(dataDir + fileName, saveOptions);
                 }
             }
+
+            Console.WriteLine("Finished example ConvertTIFFToJPEG");
 
             //ExEnd:ConvertTIFFToJPEG
 

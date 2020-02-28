@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertWMFToPDF
+            Console.WriteLine("Running example ConvertWMFToPDF");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -23,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             using (Image image = Image.Load(dataDir + "input.wmf"))
             {
                 // Create an instance of EmfRasterizationOptions class and set different properties
-                EmfRasterizationOptions emfRasterizationOptions = new EmfRasterizationOptions();
+                WmfRasterizationOptions emfRasterizationOptions = new WmfRasterizationOptions();
                 emfRasterizationOptions.BackgroundColor = Color.WhiteSmoke;
                 emfRasterizationOptions.PageWidth = image.Width;
                 emfRasterizationOptions.PageHeight = image.Height;
@@ -35,7 +35,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Call the save method, provide output path and PdfOptions to convert the WMF file to PDF and save the output
                 image.Save(dataDir + "ConvertWMFToPDF_out.pdf", pdfOptions);
             }
-            //ExEnd:ConvertWMFToPDF
+
+            Console.WriteLine("Finished example ConvertWMFToPDF");
         }
     }
 }

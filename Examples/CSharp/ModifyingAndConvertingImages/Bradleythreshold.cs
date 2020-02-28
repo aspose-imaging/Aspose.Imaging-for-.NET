@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.FileFormats.Bmp;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:Bradleythreshold
+            Console.WriteLine("Running example Bradleythreshold");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "sample.bmp";
 
@@ -26,7 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 objimage.BinarizeBradley(threshold);
                 objimage.Save(dataDir + "binarized_out.png");
             }
-            //ExEnd:Bradleythreshold
+
+            Console.WriteLine("Finished example Bradleythreshold");
         }
     }
 }

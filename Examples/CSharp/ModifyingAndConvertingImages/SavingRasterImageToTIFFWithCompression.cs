@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:SavingRasterImageToTIFFWithCompression
+            Console.WriteLine("Running example SavingRasterImageToTIFFWithCompression");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             
@@ -43,7 +44,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     tiffImage.Save(dataDir + "SavingRasterImage_out.tiff", options);
                 }
             }
-            //ExEnd:SavingRasterImageToTIFFWithCompression
+
+            Console.WriteLine("Finished example SavingRasterImageToTIFFWithCompression");
         }
     }
 }

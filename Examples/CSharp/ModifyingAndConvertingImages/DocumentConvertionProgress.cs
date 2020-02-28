@@ -27,6 +27,7 @@ namespace CSharp.ModifyingAndConvertingImages
             string output = "aspose-logo.out.jpg";
             string inputFileName = Path.Combine(dataDir, fileName);
 
+            Console.WriteLine("Running example DocumentConvertionProgress");
 
             // Example of use of separate operation progress event handlers for load/export operations
             using (var image = Image.Load(inputFileName, new LoadOptions { ProgressEventHandler = ProgressCallback }))
@@ -41,6 +42,8 @@ namespace CSharp.ModifyingAndConvertingImages
                             ProgressEventHandler = ExportProgressCallback
                         });                
             }
+
+            Console.WriteLine("Finished example DocumentConvertionProgress");
         }
 
         internal static void ProgressCallback(Aspose.Imaging.ProgressManagement.ProgressEventHandlerInfo info)

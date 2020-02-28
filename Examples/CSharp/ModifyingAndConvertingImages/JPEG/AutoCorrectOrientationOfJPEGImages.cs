@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.FileFormats.Jpeg;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             //ExStart:AutoCorrectOrientationOfJPEGImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
-
+            Console.WriteLine("Running example AutoCorrectOrientationOfJPEGImages");
             // Load a Jpeg image from file path location or stream
             using (JpegImage image = (JpegImage)Image.Load(dataDir + "aspose-logo.jpg"))
             {
@@ -25,6 +26,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.AutoRotate();               
                 image.Save(dataDir + "aspose-logo_out.jpg");
             }
+
+            Console.WriteLine("Finished example AutoCorrectOrientationOfJPEGImages");
             //ExEnd:AutoCorrectOrientationOfJPEGImages
         }       
     }

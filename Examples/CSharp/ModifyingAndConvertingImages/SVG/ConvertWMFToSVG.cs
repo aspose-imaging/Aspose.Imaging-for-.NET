@@ -12,15 +12,14 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
     {
 
         public static void Run()
-        {
-
-            //ExStart:ConvertWMFToSVG
+        {            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
             string inputFileName = dataDir + "thistlegirl_wmfsample.wmf";
             string outputFileNameSvg = dataDir + "thistlegirl_wmfsample.svg";
 
+            Console.WriteLine("Running example ConvertWMFToSVG");
 
             using (Image image = Image.Load(inputFileName))
             {
@@ -35,9 +34,8 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                 });
 
             }
-            //ExEnd:ConvertWMFToSVG
 
-
+            Console.WriteLine("Finished example ConvertWMFToSVG");
         }
     }
 }

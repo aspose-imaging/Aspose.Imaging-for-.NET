@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:SavingEachFrameInOtherRasterImageFormat
+            Console.WriteLine("Running example SavingEachFrameInOtherRasterImageFormat");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +32,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     tiffFrame.Save(dataDir + i + "_out.png", new PngOptions());
                 }
             }
-            //ExEnd:SavingEachFrameInOtherRasterImageFormat
+
+            Console.WriteLine("Finished example SavingEachFrameInOtherRasterImageFormat");
         }
     }
 }

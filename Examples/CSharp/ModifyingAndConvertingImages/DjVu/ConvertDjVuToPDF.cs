@@ -1,6 +1,7 @@
 using Aspose.Imaging.FileFormats.Djvu;
 using Aspose.Imaging.FileFormats.Pdf;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            //ExStart:ConvertDjVuToPDF
+            Console.WriteLine("Running example ConvertDjVuToPDF");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -34,7 +35,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions(range);
                 image.Save(dataDir + "ConvertDjVuToPDFFormat_out.pdf", exportOptions);
             }
-            //ExEnd:ConvertDjVuToPDF
+
+            Console.WriteLine("Finished example ConvertDjVuToPDF");
         }
     }
 }

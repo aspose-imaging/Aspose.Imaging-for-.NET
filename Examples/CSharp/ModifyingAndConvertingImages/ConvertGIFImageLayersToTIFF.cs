@@ -2,6 +2,7 @@
 using Aspose.Imaging.FileFormats.Gif.Blocks;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,7 +18,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConvertGIFImageLayersToTIFF
+            Console.WriteLine("Running example ConvertGIFImageLayersToTIFF");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -42,7 +43,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     gifBlock.Save(dataDir + "asposelogo"  + i + "_out.tif", objTiff);
                 }
             }
-            //ExEnd:ConvertGIFImageLayersToTIFF
+
+            Console.WriteLine("Finished example ConvertGIFImageLayersToTIFF");
         }
     }
 }

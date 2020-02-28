@@ -15,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ResizeWMFFile
+            Console.WriteLine("Running example ResizeWMFFile");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -27,7 +27,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 double k = (image.Width * 1.00) / image.Height;
 
                 // Create an instance of EmfRasterizationOptions class and set different properties
-                EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions
+                WmfRasterizationOptions emfRasterization = new WmfRasterizationOptions
                 {
                     BackgroundColor = Color.WhiteSmoke,
                     PageWidth = 100,
@@ -44,6 +44,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "CreateEMFMetaFileImage_out.png", imageOptions);
                 //ExStart:ResizeWMFFile
             }
+
+            Console.WriteLine("Finished example ResizeWMFFile");
         }
     }
 }

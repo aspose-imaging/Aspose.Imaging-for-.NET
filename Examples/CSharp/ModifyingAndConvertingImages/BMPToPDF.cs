@@ -13,19 +13,17 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-
-            //ExStart:BMPToPDF
-
+            Console.WriteLine("Running example BMPToPDF");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-            using (BmpImage image = (BmpImage)Image.Load(dataDir))
+            using (BmpImage image = (BmpImage)Image.Load(System.IO.Path.Combine(dataDir,"sample.bmp")))
             {
                 Aspose.Imaging.ImageOptions.PdfOptions exportOptions = new PdfOptions();
                 exportOptions.PdfDocumentInfo = new Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo();
 
-                image.Save(dataDir, exportOptions);
+                image.Save(System.IO.Path.Combine(dataDir, "sample_out.pdf"), exportOptions);
             }
 
-        }
-        //ExEnd:BMPToPDF
+            Console.WriteLine("Finished example BMPToPDF");
+        }        
     }
 }

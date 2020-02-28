@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Webp;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,17 +16,17 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            //ExStart:ExtractFrameFromWebPImage
+            Console.WriteLine("Running example ExtractFrameFromWebPImage");            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
             // Load an existing WebP image into the instance of WebPImage class.
             using (WebPImage image = new WebPImage(dataDir + "asposelogo.webp"))
             {
-                if (image.Blocks.Length > 2)
+                if (image.Pages.Length > 2)
                 {
                     // Access a particular frame from WebP image and cast it to Raster Image
-                    RasterImage block = (image.Blocks[2] as RasterImage);
+                    RasterImage block = (image.Pages[2] as RasterImage);
 
                     if (block != null)
                     {
@@ -34,7 +35,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
                     }
                 }
             }
-            //ExEnd:ExtractFrameFromWebPImage
+
+            Console.WriteLine("Finished example ExtractFrameFromWebPImage");            
         }
     }
 }

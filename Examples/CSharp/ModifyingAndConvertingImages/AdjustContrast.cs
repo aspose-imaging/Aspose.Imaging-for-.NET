@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,8 +16,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
-            //ExStart:AdjustBrightness
+            Console.WriteLine("Running example AdjustContrast");
+            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -41,7 +42,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
                 rasterImage.Save(dataDir + "AdjustContrast_out.tiff", tiffOptions);
             }
-            //ExEnd:TiffOptionsConfiguration
+
+            Console.WriteLine("Finished example AdjustContrast");
         }
     }
 }

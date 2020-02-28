@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.Imaging.Exif;
 using Aspose.Imaging.FileFormats.Jpeg;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -19,6 +20,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             //ExStart:AddThumbnailToEXIFSegment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
+            Console.WriteLine("Running example AddThumbnailToEXIFSegment");
             using (MemoryStream stream = new MemoryStream())
             {
                 JpegImage thumbnailImage = new JpegImage(100, 100);
@@ -27,6 +29,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.ExifData.Thumbnail = thumbnailImage;
                 image.Save(dataDir + stream + "_out.jpg");
             }
+
+            Console.WriteLine("Finished example AddThumbnailToEXIFSegment");
             //ExEnd:AddThumbnailToEXIFSegmentk
         }
     }

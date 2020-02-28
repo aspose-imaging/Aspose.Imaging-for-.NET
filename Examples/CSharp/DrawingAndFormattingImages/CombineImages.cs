@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:CombineImages
+            Console.WriteLine("Running example CombineImages");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
@@ -35,7 +36,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 graphics.DrawImage(Image.Load(dataDir + "File1.bmp"), 0, 300, 600, 300);
                 image.Save();
             }
-            //ExEnd:CombineImages
+
+            Console.WriteLine("Finished example CombineImages");
         }
     }
 }

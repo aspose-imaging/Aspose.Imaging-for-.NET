@@ -20,6 +20,8 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
     {
         public static void Run()
         {
+            Console.WriteLine("Running example SvgNativeResize");
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();            
 
@@ -32,7 +34,9 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                                                      {
                                                          VectorRasterizationOptions = new SvgRasterizationOptions()
                                                      });                
-            }            
+            }
+
+            Console.WriteLine("Finished example SvgNativeResize");
         }
     }
 }

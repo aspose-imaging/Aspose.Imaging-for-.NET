@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:AlignHorizontalAndVeticalResolutionsOfImage
+            Console.WriteLine("Running example AlignHorizontalAndVeticalResolutionsOfImage");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,10 +31,13 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 {
                     TiffFrame frame = image.Frames[i];
                     // All resolutions after aligment must be equal
-                    Console.WriteLine("Horizontal and vertical resolutions are equal:" + ((int)frame.VerticalResolution == (int)frame.HorizontalResolution));
+                    Console.WriteLine(
+                        "Horizontal and vertical resolutions are equal:"
+                        + ((int)frame.VerticalResolution == (int)frame.HorizontalResolution));
                 }
             }
-            //ExEnd:AlignHorizontalAndVeticalResolutionsOfImage
+
+            Console.WriteLine("Finished example AlignHorizontalAndVeticalResolutionsOfImage");
         }
     }
 }

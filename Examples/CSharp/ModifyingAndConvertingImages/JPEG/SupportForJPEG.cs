@@ -22,7 +22,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             int bpp = 2; // Set 2 bits per sample to see the difference in size and quality
 
             // The origin PNG with 8 bits per sample
-            string originPngFileName = "lena24b.png";
+            string originPngFileName = System.IO.Path.Combine(dataDir, "lena_16g_lin.png");
 
             // The output JPEG-LS with 2 bits per sample.
             string outputJpegFileName = "lena24b " + bpp + "-bit Gold.jls";

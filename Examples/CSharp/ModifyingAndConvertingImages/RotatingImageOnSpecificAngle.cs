@@ -6,13 +6,14 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class RotatingImageOnSpecificAngle
     {
         public static void Run()
         {
-            //ExStart:RotatingImageOnSpecificAngle
+            Console.WriteLine("Running example RotatingImageOnSpecificAngle");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
           
@@ -29,7 +30,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "RotatingImageOnSpecificAngle_out.jpg");
             }
 
-            //ExEnd:RotatingImageOnSpecificAngle
+            Console.WriteLine("Finished example RotatingImageOnSpecificAngle");
         }
     }
 }

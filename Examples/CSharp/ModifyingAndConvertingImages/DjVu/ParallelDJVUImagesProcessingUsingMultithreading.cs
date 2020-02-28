@@ -13,10 +13,9 @@ namespace CSharp.ModifyingAndConvertingImages.DjVu
 {
     class ParallelDJVUImagesProcessingUsingMultithreading
     {
-
-        public static void Run() {
-
-            //ExStart:ParallelDJVUImagesProcessingUsingMultithreading
+        public static void Run()
+        {
+            Console.WriteLine("Running example ParallelDJVUImagesProcessingUsingMultithreading");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
@@ -25,25 +24,24 @@ namespace CSharp.ModifyingAndConvertingImages.DjVu
             int numThreads = 20;
             var tasks = Enumerable.Range(1, numThreads).Select(
                 taskNum =>
-                {
-                    var inputFile = dataDir + fileName;
-                    var outputFile = dataDir + string.Format("{0}_task{1}.png", fileName, taskNum);
-                    return Task.Run(
-                () =>
-                            {
-                                using (FileStream fs = File.OpenRead(inputFile))
+                    {
+                        var inputFile = dataDir + fileName;
+                        var outputFile = dataDir + string.Format("{0}_task{1}.png", fileName, taskNum);
+                        return Task.Run(
+                            () =>
                                 {
-                                    using (Image image = Image.Load(fs))
+                                    using (FileStream fs = File.OpenRead(inputFile))
                                     {
-                                        image.Save(outputFile, new PngOptions());
+                                        using (Image image = Image.Load(fs))
+                                        {
+                                            image.Save(outputFile, new PngOptions());
+                                        }
                                     }
-                                }
-                            });
-                });
+                                });
+                    });
             Task.WaitAll(tasks.ToArray());
 
-            //ExEnd:ParallelDJVUImagesProcessingUsingMultithreading
-
+            Console.WriteLine("Running example ParallelDJVUImagesProcessingUsingMultithreading");
         }
     }
 }

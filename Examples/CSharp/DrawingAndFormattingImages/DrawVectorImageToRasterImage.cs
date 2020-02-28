@@ -12,9 +12,9 @@ namespace CSharp.DrawingAndFormattingImages
 {
     class DrawVectorImageToRasterImage
     {
-        public static void Run() {
-
-            //ExStart:DrawVectorImageToRasterImage
+        public static void Run()
+        {
+            Console.WriteLine("Running example DrawVectorImageToRasterImage");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
@@ -37,7 +37,8 @@ namespace CSharp.DrawingAndFormattingImages
                     using (RasterImage imageToDraw = (RasterImage)Image.Load(drawnImageStream))
                     {
                         // Drawing on the existing Svg image.
-                        Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D graphics = new Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D(svgImage);
+                        Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D graphics =
+                            new Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D(svgImage);
 
                         // Scale down the entire drawn image by 2 times and draw it to the center of the drawing surface.
                         int width = imageToDraw.Width / 2;
@@ -55,7 +56,8 @@ namespace CSharp.DrawingAndFormattingImages
                     }
                 }
             }
-            //ExEnd:DrawVectorImageToRasterImage
+
+            Console.WriteLine("Finished example DrawVectorImageToRasterImage");
         }
     }
 }

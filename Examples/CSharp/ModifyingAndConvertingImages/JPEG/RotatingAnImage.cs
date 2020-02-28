@@ -6,6 +6,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
 {
     class RotatingAnImage
@@ -16,6 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
+            Console.WriteLine("Running example RotatingAnImage");
             // Loading and Rotating Image
             using (var image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
@@ -23,6 +25,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.RotateFlip(RotateFlipType.Rotate270FlipNone);
                 image.Save(dataDir + "RotatingAnImage_out.jpg");
             }
+
+            Console.WriteLine("Finished example RotatingAnImage");
             //ExEnd:RotatingAnImage
         }       
     }

@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -20,6 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
+            Console.WriteLine("Running example BinarizationWithOtsuThresholdOnDICOMImage");
             using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
             {
@@ -27,6 +29,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
                 image.BinarizeOtsu();
                 image.Save(dataDir + "BinarizationWithOtsuThresholdOnDICOMImage_out.bmp", new BmpOptions());
             }
+
+            Console.WriteLine("Finished example BinarizationWithOtsuThresholdOnDICOMImage");
             //ExEnd:BinarizationWithOtsuThresholdOnDICOMImage
         }
     }

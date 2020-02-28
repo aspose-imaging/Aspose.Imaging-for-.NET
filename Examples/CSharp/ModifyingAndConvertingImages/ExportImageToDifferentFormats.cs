@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ExportImageToDifferentFormats
+            Console.WriteLine("Running example ExportImageToDifferentFormats");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -29,9 +29,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "_output.png", new PngOptions());
                 image.Save(dataDir + "_output.tiff", new TiffOptions(TiffExpectedFormat.Default));
             }
-            //ExStart:ExportImageToDifferentFormats
-            // Display Status.
-            Console.WriteLine("Conversion performed successfully.");
+
+            Console.WriteLine("Finished example ExportImageToDifferentFormats");
         }
     }
 }

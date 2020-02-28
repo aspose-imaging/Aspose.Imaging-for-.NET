@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 
 
@@ -21,14 +22,18 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
             string inputFile = dataDir + "image.dcm";
-            using (var fileStream = new FileStream(dataDir+"file.dcm", FileMode.Open, FileAccess.Read))
+
+            Console.WriteLine("Running example BinarizationWithBradleysAdaptiveThreshold");
+            using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
-                {
-                    // Binarize image with bradley's adaptive threshold and Save the resultant image.
-                    image.BinarizeBradley(10);
-                    image.Save(dataDir + "BinarizationWithBradleysAdaptiveThreshold_out.bmp", new BmpOptions());
-                }
-                //ExEnd:BinarizationWithOtsuThresholdOnDICOMImage
+            {
+                // Binarize image with bradley's adaptive threshold and Save the resultant image.
+                image.BinarizeBradley(10);
+                image.Save(dataDir + "BinarizationWithBradleysAdaptiveThreshold_out.bmp", new BmpOptions());
             }
-        }
+
+            Console.WriteLine("Finished example BinarizationWithBradleysAdaptiveThreshold");
+            //ExEnd:BinarizationWithOtsuThresholdOnDICOMImage
+       }
     }
+}

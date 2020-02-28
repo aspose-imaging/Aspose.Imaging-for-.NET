@@ -6,13 +6,15 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
+
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class BinarizationWithOtsuThreshold
     {
         public static void Run()
         {
-            //ExStart:BinarizationWithOtsuThreshold
+            Console.WriteLine("Running example BinarizationWithOtsuThreshold");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +33,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 rasterCachedImage.BinarizeOtsu();
                 rasterCachedImage.Save(dataDir + "BinarizationWithOtsuThreshold_out.jpg");
             }
-            //ExEnd:BinarizationWithOtsuThreshold
+
+            Console.WriteLine("Finished example BinarizationWithOtsuThreshold");
         }
     }
 }

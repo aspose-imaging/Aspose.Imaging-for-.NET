@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            //ExStart:SpecifyTransparency
+            Console.WriteLine("Running example SpecifyTransparency");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -45,7 +46,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 png.HasTransparentColor = true;
                 png.Save(dataDir + "SpecifyTransparencyforPNGImages_out.jpg");
             }
-            //ExEnd:SpecifyTransparency
+
+            Console.WriteLine("Finished example SpecifyTransparency");
         }
     }
 }

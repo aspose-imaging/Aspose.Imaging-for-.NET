@@ -6,13 +6,14 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class SimpleResizeImageProportionally
     {
         public static void Run()
         {
-            //ExStart:SimpleResizeImageProportionally
+            Console.WriteLine("Running example SimpleResizeImageProportionally");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -30,7 +31,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.ResizeHeightProportionally(newHeight);
                 image.Save(dataDir + "SimpleResizeImageProportionally_out.png");
             }
-            //ExEnd:SimpleResizeImageProportionally
+
+            Console.WriteLine("Finished example SimpleResizeImageProportionally");
         }
     }
 }

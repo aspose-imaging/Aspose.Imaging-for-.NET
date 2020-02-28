@@ -17,12 +17,14 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class ManualImageMasking
     {
-        public static void Run() {
+        public static void Run()
+        {
 
             //ExStart:ManualImageMasking
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
+            Console.WriteLine("Running example ManualImageMasking");
             string sourceFileName = dataDir + "Colored by Faith_small.psd";
             string outputFileName = dataDir + "Colored by Faith_small_manual.png";
             GraphicsPath manualMask = new GraphicsPath();
@@ -33,29 +35,35 @@ namespace CSharp.ModifyingAndConvertingImages
             GraphicsPath subPath = new GraphicsPath();
             Figure secondFigure = new Figure();
             secondFigure.AddShape(
-             new PolygonShape(new PointF[] {
-                new PointF(310, 100), new PointF(350, 200), new PointF(250, 200)
-             }, true));
+                new PolygonShape(
+                    new PointF[] { new PointF(310, 100), new PointF(350, 200), new PointF(250, 200) },
+                    true));
             secondFigure.AddShape(new PieShape(new RectangleF(10, 10, 80, 80), 30, 120));
             subPath.AddFigure(secondFigure);
             manualMask.AddPath(subPath);
             using (RasterImage image = (RasterImage)Image.Load(sourceFileName))
             {
                 MaskingOptions maskingOptions = new MaskingOptions()
-                {
-                    Method = SegmentationMethod.Manual,
-                    Args = new ManualMaskingArgs
-                    {
-                        Mask = manualMask
-                    },
-                    Decompose = false,
-                    ExportOptions =
-                  new PngOptions()
-                  {
-                      ColorType = PngColorType.TruecolorWithAlpha,
-                      Source = new StreamSource(new MemoryStream())
-                  },
-                };
+                                                    {
+                                                        Method = SegmentationMethod.Manual,
+                                                        Args =
+                                                            new ManualMaskingArgs
+                                                                {
+                                                                    Mask = manualMask
+                                                                },
+                                                        Decompose = false,
+                                                        ExportOptions =
+                                                            new PngOptions()
+                                                                {
+                                                                    ColorType =
+                                                                        PngColorType
+                                                                            .TruecolorWithAlpha,
+                                                                    Source =
+                                                                        new StreamSource(
+                                                                            new
+                                                                                MemoryStream())
+                                                                },
+                                                    };
                 MaskingResult[] maskingResults = new ImageMasking(image).Decompose(maskingOptions);
                 using (Image resultImage = maskingResults[1].GetImage())
                 {
@@ -63,9 +71,7 @@ namespace CSharp.ModifyingAndConvertingImages
                 }
             }
 
-        }
-        //ExEnd:ManualImageMasking
-
-
+            Console.WriteLine("Finished example ManualImageMasking");
+        }        
     }
 }

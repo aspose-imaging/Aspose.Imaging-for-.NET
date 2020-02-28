@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            //ExStart:ExportWebPToOtherImageFormats
+            Console.WriteLine("Running example ExportWebPToOtherImageFormats");            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -24,7 +25,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
                 // Save the image in WebP format.
                 image.Save(dataDir + "ExportWebPToOtherImageFormats_out.bmp", new BmpOptions());
             }
-            //ExEnd:ExportWebPToOtherImageFormats
+
+            Console.WriteLine("Finished example ExportWebPToOtherImageFormats");            
         }
     }
 }

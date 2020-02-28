@@ -16,6 +16,7 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
+            Console.WriteLine("Running example ConvOfOtherFormatsToSVG");
             using (Image image = Image.Load(dataDir+"mysvg.svg"))
             {
                 using (FileStream fs = new FileStream(dataDir+"yoursvg.svg", FileMode.Create, FileAccess.ReadWrite))
@@ -23,6 +24,8 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                     image.Save(fs);
                 }
             }
+
+            Console.WriteLine("Finished example ConvOfOtherFormatsToSVG");
             //ExEnd:ConvOfOtherFormatsToSVG
         }
     }

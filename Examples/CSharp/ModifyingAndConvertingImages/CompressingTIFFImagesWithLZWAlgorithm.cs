@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:CompressingTIFFImagesWithLZWAlgorithm
+            Console.WriteLine("Running example CompressingTIFFImagesWithLZWAlgorithm");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -31,7 +32,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             outputSettings.Photometric = TiffPhotometrics.Palette;
             outputSettings.Palette = ColorPaletteHelper.Create4BitGrayscale(false);
             image.Save(dataDir + "SampleTiff_out.tiff", outputSettings);
-            //ExEnd:CompressingTIFFImagesWithLZWAlgorithm
+            Console.WriteLine("Finished example CompressingTIFFImagesWithLZWAlgorithm");
         }
     }
 }

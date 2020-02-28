@@ -1,6 +1,7 @@
 ﻿using Aspose.Imaging.Exif;
 using Aspose.Imaging.Exif.Enums;
 using Aspose.Imaging.FileFormats.Jpeg;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -20,6 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
+            Console.WriteLine("Running example WritingAndModifyingEXIFData");
             // Load an image using the factory method Load exposed by Image class
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
@@ -32,6 +34,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 exif.Flash = ExifFlash.Fired;
                 image.Save(dataDir + "aspose-logo_out.jpg");
             }
+
+            Console.WriteLine("Finished example WritingAndModifyingEXIFData");
             //ExEnd:WritingAndModifyingEXIFData
         }
     }

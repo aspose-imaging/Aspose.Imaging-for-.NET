@@ -16,12 +16,9 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class SupportOfTextRenderingHint
     {
-
         public static void Run()
         {
-
-            //ExStart:SupportOfTextRenderingHint
-
+            Console.WriteLine("Running example SupportOfTextRenderingHint");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             string[] files = new string[] {
@@ -73,7 +70,7 @@ namespace CSharp.ModifyingAndConvertingImages
                     foreach (TextRenderingHint textRenderingHint in textRenderingHints)
                     {
 
-                        string outputFileName = dataDir + "TRH/image_" + textRenderingHint + "_" + fileName + ".png";
+                        string outputFileName = dataDir + "image_" + textRenderingHint + "_" + fileName + ".png";
                         vectorRasterizationOptions.TextRenderingHint = textRenderingHint;
                         image.Save(outputFileName, new PngOptions()
                         {
@@ -82,7 +79,8 @@ namespace CSharp.ModifyingAndConvertingImages
                     }
                 }
             }
-            //ExEnd:SupportOfTextRenderingHint
+
+            Console.WriteLine("Finished example SupportOfTextRenderingHint");
 
         }
     }

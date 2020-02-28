@@ -12,9 +12,9 @@ namespace CSharp.DrawingAndFormattingImages
     class DrawRasterImageOnEMF
     {
 
-        public static void Run() {
-
-            //ExStart:DrawRasterImageOnEMF
+        public static void Run()
+        {
+            Console.WriteLine("Running example DrawRasterImageOnEMF");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
@@ -43,7 +43,7 @@ namespace CSharp.DrawingAndFormattingImages
                 }
             }
 
-            //ExEnd:DrawRasterImageOnEMF
+            Console.WriteLine("Finished example DrawRasterImageOnEMF");
         }
     }
 }

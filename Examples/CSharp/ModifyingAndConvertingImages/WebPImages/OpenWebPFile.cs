@@ -12,10 +12,9 @@ namespace CSharp.ModifyingAndConvertingImages.WebPImages
 {
     class OpenWebPFile
     {
-
-        public static void Run() {
-
-            //ExStart:OpenWebPFile
+        public static void Run()
+        {
+            Console.WriteLine("Running example OpenWebPFile");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -37,7 +36,7 @@ namespace CSharp.ModifyingAndConvertingImages.WebPImages
                 }
             }
 
-            //ExEnd:OpenWebPFile
+            Console.WriteLine("Finished example OpenWebPFile");
 
         }
     }

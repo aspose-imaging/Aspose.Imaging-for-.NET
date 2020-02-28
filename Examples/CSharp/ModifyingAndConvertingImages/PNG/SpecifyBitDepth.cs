@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            //ExStart:SpecifyBitDepth
+            Console.WriteLine("Running example SpecifyBitDepth");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -28,7 +29,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 options.BitDepth = 1;
                 png.Save(dataDir + "SpecifyBitDepth_out.jpg", options);
             }
-            //ExEnd:SpecifyBitDepth
+
+            Console.WriteLine("Finished example SpecifyBitDepth");
         }
     }
 }

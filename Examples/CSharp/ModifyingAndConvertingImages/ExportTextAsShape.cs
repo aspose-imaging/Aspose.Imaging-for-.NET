@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ExportTextAsShape
+            Console.WriteLine("Running example ExportTextAsShape");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (Image image = Image.Load(dataDir + "Picture1.emf"))
@@ -35,7 +36,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     TextAsShapes = false
                 });
             }
-            //ExEnd:ExportTextAsShape
+
+            Console.WriteLine("Finished example ExportTextAsShape");
         }
     }
 }

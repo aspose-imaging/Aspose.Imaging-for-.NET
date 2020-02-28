@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:AddSignatureToImage
+            Console.WriteLine("Running example AddSignatureToImage");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -32,7 +33,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     canvas.Save(dataDir + "AddSignatureToImage_out.png", new PngOptions());
                 }
             }
-            //ExStart:AddSignatureToImage
+
+            Console.WriteLine("Finished example AddSignatureToImage");
         }
     }
 }

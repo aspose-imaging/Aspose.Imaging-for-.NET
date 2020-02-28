@@ -11,10 +11,9 @@ namespace CSharp.DrawingAndFormattingImages
 {
     class DrawRasterImageOnWMF
     {
-
-        public static void Run() {
-
-            //ExStart:DrawRasterImageOnWMF
+        public static void Run()
+        {
+            Console.WriteLine("Running example DrawRasterImageOnWMF");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
@@ -43,6 +42,7 @@ namespace CSharp.DrawingAndFormattingImages
                 }
             }
 
+            Console.WriteLine("Finished example DrawRasterImageOnWMF");
         }
     }
 }

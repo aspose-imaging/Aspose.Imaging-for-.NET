@@ -20,7 +20,7 @@ namespace CSharp.DrawingAndFormattingImages
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
             ImageOptionsBase saveOptions = new PngOptions();
             InterruptMonitor monitor = new InterruptMonitor();
-            SaveImageWorker worker = new SaveImageWorker(dataDir + "big.jpg", dataDir + "big_out.png", saveOptions, monitor);
+            SaveImageWorker worker = new SaveImageWorker(dataDir + "aspose-logo_tn.jpg", dataDir + "big_out.png", saveOptions, monitor);
 
             Thread thread = new Thread(new ThreadStart(worker.ThreadProc));
 

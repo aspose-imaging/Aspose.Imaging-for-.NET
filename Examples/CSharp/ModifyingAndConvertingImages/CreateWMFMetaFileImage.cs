@@ -1,6 +1,7 @@
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.FileFormats.Wmf;
 using Aspose.Imaging.FileFormats.Wmf.Graphics;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -17,8 +18,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // WmfRecorderGraphics2D class provides you the frame or canvas to draw shapes on it.  Create an instance of WmfRecorderGraphics2D class. The constructor takes in 2 parameters:  1. Instance of Imaging Rectangle class 2. An integer value for inches
-            //ExStart:CreateWMFMetaFileImage
+            Console.WriteLine("Running example CreateWMFMetaFileImage");
+
+            // WmfRecorderGraphics2D class provides you the frame or canvas to draw shapes on it.  Create an instance of WmfRecorderGraphics2D class. The constructor takes in 2 parameters:  1. Instance of Imaging Rectangle class 2. An integer value for inches            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             WmfRecorderGraphics2D graphics = new WmfRecorderGraphics2D(new Rectangle(0, 0, 100, 100), 96);
@@ -91,7 +93,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             {
                 image.Save(dataDir + "CreateWMFMetaFileImage.wmf");
             }
-            //ExEnd:CreateWMFMetaFileImage
+
+            Console.WriteLine("Finished example CreateWMFMetaFileImage");
         }
     }
 }

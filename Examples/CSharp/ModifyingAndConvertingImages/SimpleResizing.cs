@@ -6,6 +6,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class SimpleResizing
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         {
             // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
 
-            //ExStart:SimpleResizing
+            Console.WriteLine("Running example SimpleResizing");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
@@ -22,7 +23,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Resize(300, 300);
                 image.Save(dataDir + "SimpleResizing_out.jpg");
             }
-            //ExEnd:SimpleResizing
+
+            Console.WriteLine("Finished example SimpleResizing");
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
     {
         public static void Run()
         {
-            //ExStart:DrawingBezier
+            Console.WriteLine("Running example DrawingBezier");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
  
@@ -51,7 +52,8 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                     image.Save();
                 }
             }
-            //ExEnd:DrawingBezier
+
+            Console.WriteLine("Finished example DrawingBezier");
         }
     }
 }

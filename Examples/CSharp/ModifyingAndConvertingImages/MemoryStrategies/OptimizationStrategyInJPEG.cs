@@ -21,12 +21,13 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
     {
         public static void Run()
         {
+            Console.WriteLine("Running example OptimizationStrategyInJPEG");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "aspose-logo.jpg";
             string output = "aspose-logo.out.jpg";
             string inputFileName = Path.Combine(dataDir, fileName);
-
+            Console.WriteLine("Memory optimization in JPEG format started..");
 
             using (Image image = Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
             {
@@ -47,6 +48,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                     JpegLsPreset = null
                 });
             }
+
+            Console.WriteLine("Finished example OptimizationStrategyInJPEG");
         }
     }
 }

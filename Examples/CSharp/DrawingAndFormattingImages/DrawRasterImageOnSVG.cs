@@ -10,10 +10,9 @@ namespace CSharp.DrawingAndFormattingImages
 {
     class DrawRasterImageOnSVG
     {
-
-        public static void Run() {
-
-            //ExStart:DrawRasterImageOnSVG
+        public static void Run()
+        {
+            Console.WriteLine("Running example DrawRasterImageOnSVG");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
@@ -25,7 +24,8 @@ namespace CSharp.DrawingAndFormattingImages
                 using (SvgImage canvasImage = (SvgImage)Image.Load(dataDir + "asposenet_220_src02.svg"))
                 {
                     // Drawing on an existing Svg image.
-                    Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D graphics = new Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D(canvasImage);
+                    Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D graphics =
+                        new Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D(canvasImage);
 
                     // Draw a rectagular part of the raster image within the specified bounds of the vector image (drawing surface).
                     // Note that because the source size is equal to the destination one, the drawn image is not stretched.
@@ -41,6 +41,8 @@ namespace CSharp.DrawingAndFormattingImages
                     }
                 }
             }
+
+            Console.WriteLine("Finished example DrawRasterImageOnSVG");
         }
     }
 }

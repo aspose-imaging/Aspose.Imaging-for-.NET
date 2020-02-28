@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,8 +15,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     class ApplyFilterMethod
     {
         public static void Run()
-        {            
-            //ExStart:ApplyFilterMethod
+        {
+            Console.WriteLine("Running example ApplyFilterMethod");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 
@@ -26,7 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 options.FilterType = PngFilterType.Paeth;
                 png.Save(dataDir + "ApplyFilterMethod_out.jpg", options);
             }
-            //ExEnd:ApplyFilterMethod
+
+            Console.WriteLine("Finished example ApplyFilterMethod");
         }
     }
 }

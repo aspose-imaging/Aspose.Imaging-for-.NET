@@ -20,12 +20,13 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
     {
         public static void Run()
         {
+            Console.WriteLine("Running example OptimizationStrategyInFilters");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "SampleTiff1.tiff";
             string output = "SampleTiff1.out.tiff";
             string inputFileName = Path.Combine(dataDir, fileName);
-
+            Console.WriteLine("Memory optimization in Filters started..");
             using (RasterImage rasterImage = (RasterImage)Image.Load(
                 inputFileName,
                 new LoadOptions { BufferSizeHint = 50 }))
@@ -34,6 +35,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 rasterImage.Filter(rasterImage.Bounds, filterOptions);
                 rasterImage.Save(Path.Combine(dataDir, output));
             }
+
+            Console.WriteLine("Finished example OptimizationStrategyInFilters");
         }
     }
 }

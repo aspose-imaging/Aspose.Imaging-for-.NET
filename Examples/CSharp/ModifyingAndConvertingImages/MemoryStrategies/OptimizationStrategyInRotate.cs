@@ -19,11 +19,12 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
     {
         public static void Run()
         {
+            Console.WriteLine("Running example OptimizationStrategyInRotate");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string fileName = "SampleTiff1.tiff";
-            string inputFileName = Path.Combine(dataDir, fileName);            
-
+            string inputFileName = Path.Combine(dataDir, fileName);
+            Console.WriteLine("Memory optimization in Rotate started..");
             using (var image = Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
             {
                 // perform RotateFlip operation
@@ -31,6 +32,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 // perform Rotate operation
                 ((RasterImage)image).Rotate(60); // rotate 60 degrees clockwise
             }
+
+            Console.WriteLine("Finished example OptimizationStrategyInRotate");
         }   
     }
 }

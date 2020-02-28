@@ -20,6 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
     {
         public static void Run()
         {
+            Console.WriteLine("Running example SupportOfFODG");
             string dataDir = RunExamples.GetDataDir_OTG();
             string fileName = "sample.fodg";
             string inputFileName = Path.Combine(dataDir, fileName);
@@ -34,6 +35,8 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
                                 new OdgRasterizationOptions() { PageSize = image.Size }
                         });
             }
+
+            Console.WriteLine("Finished example SupportOfFODG");
         }
     }
 }

@@ -3,6 +3,7 @@ using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Emf.Graphics;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
@@ -14,6 +15,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
             //ExStart:SaveEmfGraphics
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_MetaFiles();
+
+            Console.WriteLine("Running example SaveEmfGraphics");
 
             EmfRecorderGraphics2D graphics = new EmfRecorderGraphics2D(
               new Rectangle(0, 0, 5000, 5000),
@@ -34,6 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     image.Save(path, new EmfOptions());
                 }
             }
+
+            Console.WriteLine("Finished example SaveEmfGraphics");
             //ExEnd:SaveEmfGraphics
         }
     }

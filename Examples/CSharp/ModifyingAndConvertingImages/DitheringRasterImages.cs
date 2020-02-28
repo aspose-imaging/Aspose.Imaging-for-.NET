@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.FileFormats.Jpeg;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:DitheringRasterImages
+            Console.WriteLine("Running example DitheringRasterImages");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Dither(DitheringMethod.ThresholdDithering, 4);
                 image.Save(dataDir + "SampleImage_out.bmp");
             }
-            //ExEnd:DitheringRasterImages
+
+            Console.WriteLine("Finished example DitheringRasterImages");
         }
     }
 }

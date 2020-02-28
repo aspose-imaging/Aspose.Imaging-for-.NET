@@ -3,6 +3,7 @@ using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.FileFormats.Eps;
 using Aspose.Imaging.FileFormats.Eps.Consts;
 using Aspose.Imaging.Examples.CSharp;
+using System;
 
 namespace CSharp.ModifyingAndConvertingImages
 {
@@ -10,10 +11,10 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:SupportForEPSFormat
+            Console.WriteLine("Running example SupportForEPSFormat");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            using (EpsImage epsImage = Image.Load(dataDir+"anyEpsFile.eps") as EpsImage)
+            using (EpsImage epsImage = Image.Load(dataDir + "sample.eps") as EpsImage)
             {
                 // check if EPS image has any raster preview to proceed (for now only raster preview is supported)
                 if (epsImage.HasRasterPreview)
@@ -47,16 +48,14 @@ namespace CSharp.ModifyingAndConvertingImages
                         {
                             // process WMF preview if it's present
                         }
-                        }
+                    }
 
                     // export EPS image to PNG (by default, best available quality preview is used for export)
-                    epsImage.Save(dataDir+"anyEpsFile.png", new PngOptions());
+                    epsImage.Save(dataDir + "anyEpsFile.png", new PngOptions());
                 }
             }
 
-            //ExEnd:SupportForEPSFormat
-
+            Console.WriteLine("Finished example SupportForEPSFormat");
         }
-
     }
 }

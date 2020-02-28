@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using Aspose.Imaging.FileFormats.Jpeg;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -18,6 +19,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             //ExStart:AddThumbnailToJFIFSegment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
+            Console.WriteLine("Running example AddThumbnailToJFIFSegment");
             using (MemoryStream stream = new MemoryStream())
             {
                 JpegImage thumbnailImage = new JpegImage(100, 100);
@@ -26,6 +28,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 image.Jfif.Thumbnail = thumbnailImage;
                 image.Save(dataDir + stream + "_out.jpeg");
             }
+
+            Console.WriteLine("Finished example AddThumbnailToJFIFSegment");
             //ExEnd:AddThumbnailToJFIFSegment
         }
     }

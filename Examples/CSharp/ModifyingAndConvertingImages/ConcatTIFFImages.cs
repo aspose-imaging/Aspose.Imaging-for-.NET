@@ -16,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ConcatTIFFImages
+            Console.WriteLine("Running example ConcatTIFFImages");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -35,9 +35,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     image.Save(dataDir + "ConcatTIFFImages_out.tiff");
                 }
             }
-            //ExEnd:ConcatTIFFImages
-            // Display Status.
-            Console.WriteLine("Concatenation of TIF files done successfully.");
+
+            Console.WriteLine("Finished example ConcatTIFFImages");
         }
     }
 }

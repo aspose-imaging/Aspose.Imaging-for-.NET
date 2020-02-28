@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
+using System;
 using System.IO;
 
 /*
@@ -20,13 +21,15 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DICOM
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
-
+            Console.WriteLine("Running example RotatingDICOMImage");
             using (var fileStream = new FileStream(dataDir + "file.dcm", FileMode.Open, FileAccess.Read))
             using (DicomImage image = new DicomImage(fileStream))
             {               
                 image.Rotate(10);
                 image.Save(dataDir + "RotatingDICOMImage_out.bmp", new BmpOptions());
             }
+
+            Console.WriteLine("Finished example RotatingDICOMImage");
             //ExEnd:RotatingDICOMImage
         }
     }

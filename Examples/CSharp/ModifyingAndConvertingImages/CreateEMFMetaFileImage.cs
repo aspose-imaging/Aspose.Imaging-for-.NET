@@ -3,6 +3,7 @@ using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Emf.Emf.Consts;
 using Aspose.Imaging.FileFormats.Emf.Graphics;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -18,7 +19,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:CreateEMFMetaFileImage
+            Console.WriteLine("Running example CreateEMFMetaFileImage");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -96,7 +97,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                     image.Save(outPath, options);
                 }
             }
-            //ExEnd:CreateEMFMetaFileImage
+
+            Console.WriteLine("Finished example CreateEMFMetaFileImage");
         }
     }
 }

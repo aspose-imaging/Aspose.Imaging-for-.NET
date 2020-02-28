@@ -1,4 +1,5 @@
 ﻿using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -14,7 +15,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
     {
         public static void Run()
         {
-            //ExStart:CompressingFiles
+            Console.WriteLine("Running example CompressingFiles");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
  
@@ -30,7 +31,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                     image.Save(i + "_out.png", options);
                 }
             }
-            //ExEnd:CompressingFiles
+
+            Console.WriteLine("Finished example CompressingFiles");
         }
     }
 }

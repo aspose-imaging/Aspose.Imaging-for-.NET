@@ -1,5 +1,6 @@
 ﻿using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
     {
         public static void Run()
         {
-            //ExStart:CreatingWebPImage
+            Console.WriteLine("Running example CreatingWebPImage");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
@@ -29,7 +30,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
             {
                 image.Save();
             }
-            //ExEnd:CreatingWebPImage
+
+            Console.WriteLine("Finished example CreatingWebPImage");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
     {
         public static void Run() {
 
-            //ExStart:SupportOfCDR
+            Console.WriteLine("Running example SupportOfCDR");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CDR();
 
@@ -25,9 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
                 }
             }
 
-
-            //ExEnd:SupportOfCDR
-
+            Console.WriteLine("Finished example SupportOfCDR");
         }
     }
 }

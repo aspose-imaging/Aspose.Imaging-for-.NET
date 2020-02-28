@@ -21,6 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
+            Console.WriteLine("Running example ReadAllEXIFTags");
             using (JpegImage image = (JpegImage)Image.Load(dataDir + "aspose-logo.jpg"))
             {
                 JpegExifData exifData = image.ExifData;
@@ -31,6 +32,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                     Console.WriteLine(property.Name + ":" + property.GetValue(exifData, null));
                 }
             }
+
+            Console.WriteLine("Finished example ReadAllEXIFTags");
             //ExEnd:ReadAllEXIFTags
         }
     }

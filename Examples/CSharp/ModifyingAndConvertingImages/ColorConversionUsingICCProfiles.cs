@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.Imaging.FileFormats.Jpeg;
 using Aspose.Imaging.Sources;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -16,7 +17,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            //ExStart:ColorConversionUsingICCProfiles
+            Console.WriteLine("Running example ColorConversionUsingICCProfiles");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -29,7 +30,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.CmykColorProfile = cmykprofile;
                 Color[] colors = image.LoadPixels(new Rectangle(0, 0, image.Width, image.Height));
             }
-            //ExStart:ColorConversionUsingICCProfiles
+
+            Console.WriteLine("Finished example ColorConversionUsingICCProfiles");
         }
     }
 }

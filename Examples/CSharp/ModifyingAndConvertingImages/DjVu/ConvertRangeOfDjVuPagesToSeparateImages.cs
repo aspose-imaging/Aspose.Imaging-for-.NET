@@ -1,5 +1,6 @@
 using Aspose.Imaging.FileFormats.Djvu;
 using Aspose.Imaging.ImageOptions;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
@@ -15,7 +16,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            //ExStart:ConvertRangeOfDjVuPagesToSeparateImages
+            Console.WriteLine("Running example ConvertRangeOfDjVuPagesToSeparateImages");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
@@ -36,7 +37,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
                     image.Save(dataDir + string.Format("{0}_out.bmp", counter++), exportOptions);
                 }
             }
-            //ExEnd:ConvertRangeOfDjVuPagesToSeparateImages
+
+            Console.WriteLine("Finished example ConvertRangeOfDjVuPagesToSeparateImages");
         }
     }
 }

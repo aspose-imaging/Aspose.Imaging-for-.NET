@@ -6,13 +6,14 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
+using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 {
     class TiffDataRecovery
     {
         public static void Run()
         {
-            //ExStart:TiffDataRecovery
+            Console.WriteLine("Running example TiffDataRecovery");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -26,7 +27,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             {
                 // Do some work
             }
-            //ExEnd:TiffDataRecovery
+
+            Console.WriteLine("Finished example TiffDataRecovery");
         }
     }
 }
