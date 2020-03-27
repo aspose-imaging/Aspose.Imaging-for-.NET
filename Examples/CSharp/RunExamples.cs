@@ -23,6 +23,8 @@ using CSharp.ModifyingAndConvertingImages.WebPImages;
 using CSharp.ModifyingAndConvertingImages.OTG;
 using CSharp.ModifyingAndConvertingImages.MemoryStrategies;
 using CSharp.ModifyingAndConvertingImages.Multipage;
+using CSharp.ModifyingAndConvertingImages.Tiff;
+using CSharp.ModifyingAndConvertingImages.DICOM;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -280,7 +282,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running modifying and converting images tests:");
-
+            ExportTiffBatchMode.Run();
+            ExportToDicom.Run();
             CroppingWMFFileWhileConvertingtoPNG.Run();
             ConvertingSVGToRasterImages.Run();
             AddWatermarkToImage.Run();
@@ -486,6 +489,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_OTG()
         {
             return Path.GetFullPath(GetDataDir_Data() + "OTG/");
+        }
+
+        public static String GetDataDir_Tiff()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Tiff/");
         }
 
         public static string GetDataDir_Data()
