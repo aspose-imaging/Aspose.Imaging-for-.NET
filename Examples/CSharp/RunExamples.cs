@@ -320,7 +320,6 @@ namespace Aspose.Imaging.Examples.CSharp
             ExtractTIFFFramesToBMPImageFormat.Run();
             ExportImageToDifferentFormats.Run();
             ExportImageToPSD.Run();
-            ExportPsdLayersToImages.Run();
             Grayscaling.Run();
             ReadAndWriteXMPDataToImages.Run();
             ResizeImageWithResizeTypeEnumeration.Run();

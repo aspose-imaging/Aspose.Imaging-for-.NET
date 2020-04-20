@@ -24,12 +24,12 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             // Create an instance of PsdOptions and set it's properties
             var createOptions = new PsdOptions();
             createOptions.Source = new FileCreateSource(dataDir + "Newsample_out.psd", false);
-            createOptions.ColorMode = ColorModes.Indexed;
+            createOptions.ColorMode = ColorModes.Rgb;
             createOptions.Version = 5;
 
             // Create a new color patelle having RGB colors, Set Palette property & compression method
             Color[] palette = { Color.Red, Color.Green, Color.Blue };
-            createOptions.Palette = new PsdColorPalette(palette);
+            //createOptions.Palette = new PsdColorPalette(palette);
             createOptions.CompressionMethod = CompressionMethod.RLE;
 
             // Create a new PSD with PsdOptions created previously

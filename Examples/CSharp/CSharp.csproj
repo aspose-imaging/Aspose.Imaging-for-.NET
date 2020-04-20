@@ -42,7 +42,7 @@
     <Reference Include="Aspose.Imaging, Version=20.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Imaging.20.3.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
-    </Reference>
+    </Reference>    
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
@@ -65,10 +65,8 @@
     <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnSVG.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnWMF.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawVectorImageToRasterImage.cs" />
-    <Compile Include="DrawingAndFormattingImages\ForceFontCache.cs" />
     <Compile Include="DrawingAndFormattingImages\Imagetransparency.cs" />
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
-    <Compile Include="DrawingAndFormattingImages\MissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
@@ -120,25 +118,9 @@
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\RenderingOfRotatedTextLayerByTransformMatrix.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfColorFillLayer.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\ColorReplacement.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\ExtractICCProfileIgnoreICC.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\GrayScaleSupportForAlpha.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\ICCProfileExtraction.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\LockImageLayers.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\PSDtoPDF.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SetFontsFolder.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSmallCap.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportLayerForPSD.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfGdFlResource.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfGradientFillLayer.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfSoCoResource.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportOfVmskResource.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
-    <Compile Include="ModifyingAndConvertingImages\ReplaceMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
@@ -163,7 +145,6 @@
     <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.cs" />
     <Compile Include="ModifyingAndConvertingImages\AddWatermarkToImage.cs" />
-    <Compile Include="ModifyingAndConvertingImages\ExportPsdLayersToImages.cs" />
     <Compile Include="DrawingAndFormattingImages\CreatingAnImageBySettingPath.cs" />
     <Compile Include="DrawingAndFormattingImages\CreatingImageUsingStream.cs" />
     <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImage.cs" />
@@ -186,15 +167,7 @@
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ExportMetaFileToRasterFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingEMFImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertEMFToPDF.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageStreamObject.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\UncompressedImageUsingFile.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\MergePSDlayers.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\ExportPSDLayerToRasterImage.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\CreateThumbnailsFromPSDFiles.cs" />
     <Compile Include="ModifyingAndConvertingImages\PSD\CreateIndexedPSDFiles.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\DetectFlattenedPSD.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\UpdateTextLayerInPSDFile.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\ImportImageToPSDLayer.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertGIFImageLayersToTIFF.cs" />
     <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\BlurAnImage.cs" />
