@@ -11,7 +11,6 @@ using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD;
 using Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages;
 using CSharp.ModifyingAndConvertingImages;
 using CSharp.DrawingAndFormattingImages;
-using CSharp.ModifyingAndConvertingImages.PSD;
 using CSharp.ModifyingAndConvertingImages.SVG;
 using CSharp.ModifyingAndConvertingImages.CMX;
 using CSharp.ModifyingAndConvertingImages.CDR;
@@ -25,6 +24,7 @@ using CSharp.ModifyingAndConvertingImages.MemoryStrategies;
 using CSharp.ModifyingAndConvertingImages.Multipage;
 using CSharp.ModifyingAndConvertingImages.Tiff;
 using CSharp.ModifyingAndConvertingImages.DICOM;
+using CSharp.ModifyingAndConvertingImages.Html5Canvas;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -258,7 +258,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running memory strategies tests:");
-
+            
+            OptimizationStrategyInWebP.Run();
             OptimizationStrategyInRotate.Run();
             OptimizationStrategyInFilters.Run();
             OptimizationStrategyInDithering.Run();
@@ -282,6 +283,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running modifying and converting images tests:");
+            ExportToHtml5Canvas.Run();
+            CompressedVectorFormats.Run();
             ExportTiffBatchMode.Run();
             ExportToDicom.Run();
             CroppingWMFFileWhileConvertingtoPNG.Run();

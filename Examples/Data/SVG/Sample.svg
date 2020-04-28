@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 457.3 440" style="enable-background:new 0 0 457.3 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#172751;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#60C29E;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#DCDEE0;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="381,132 304.8,176 304.8,264 228.6,308 228.6,396 304.8,352 304.8,440 381,396 381,308 457.3,264 
+			457.3,176 381,220 		"/>
+		<polygon class="st0" points="381,44 304.8,88 381,132 		"/>
+		<polygon class="st0" points="228.6,132 152.4,176 152.4,264 228.6,220 		"/>
+		<polygon class="st0" points="152.4,352 152.4,440 228.6,396 		"/>
+	</g>
+	<g>
+		<polygon class="st1" points="76.2,308 76.2,396 152.4,440 152.4,352 228.6,396 228.6,308 152.4,264 152.4,176 76.2,132 76.2,220 
+			0,176 0,264 		"/>
+		<polygon class="st1" points="76.2,132 152.4,88 76.2,44 		"/>
+		<polygon class="st1" points="304.8,440 304.8,352 228.6,396 		"/>
+		<polygon class="st1" points="304.8,176 228.6,132 228.6,220 304.8,264 		"/>
+	</g>
+	<g>
+		<polygon class="st2" points="381,132 304.8,88 381,44 304.8,0 228.6,44 152.4,0 76.2,44 152.4,88 76.2,132 152.4,176 228.6,132 
+			304.8,176 		"/>
+		<polygon class="st2" points="228.6,220 152.4,264 228.6,308 304.8,264 		"/>
+		<polygon class="st2" points="0,176 76.2,220 76.2,132 		"/>
+		<polygon class="st2" points="381,132 381,220 457.3,176 		"/>
+	</g>
+</g>
+</svg>
