@@ -42,7 +42,7 @@
     <Reference Include="Aspose.Imaging, Version=20.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Imaging.20.3.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
-    </Reference>    
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
@@ -117,8 +117,6 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\CMYKPSDToCMYKTiff.cs" />
-    <Compile Include="ModifyingAndConvertingImages\PSD\SupportForSubscript.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
