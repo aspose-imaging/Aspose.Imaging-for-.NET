@@ -25,7 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             Console.WriteLine("Running example ManualImageMasking");
-            string sourceFileName = dataDir + "Colored by Faith_small.psd";
+            string sourceFileName = dataDir + "Colored by Faith_small.png";
             string outputFileName = dataDir + "Colored by Faith_small_manual.png";
             GraphicsPath manualMask = new GraphicsPath();
             Figure firstFigure = new Figure();

@@ -23,7 +23,7 @@ namespace CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            string sourceFileName = dataDir + "Colored by Faith_small.psd";
+            string sourceFileName = dataDir + "Colored by Faith_small.png";
             string inputPointsFileName = dataDir + "Colored by Faith_small.dat";
             AutoMaskingArgs maskingArgs = new AutoMaskingArgs();
             FillInputPoints(inputPointsFileName, maskingArgs);
