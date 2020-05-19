@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Aspose.Imaging.Live.Demos.UI.Config;
 
-namespace Aspose.Imaging.Live.Demos.UI.Config
+namespace Aspose.Imaging.Live.Demos.UI
 {
     public partial class SiteMaster : BaseMasterPage
     {

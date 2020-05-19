@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<res name="ApplicationTitle">Aspose.GIS Live Demos</res>
-	<res name="ApplicationTitle2">Free App Solutions for GIS files nanipulation </res>
+	<res name="ApplicationTitle">Aspose.Imaging Live Demos</res>
+	<res name="ApplicationTitle2">Free App Solutions for Imaging files nanipulation </res>
 
 	<res name="HomePageTitle">Home</res>
 	<res name="DownloadFileLinkTitle">Download your file</res>
@@ -13,7 +13,7 @@
 	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
 	<res name="btnConvertNow">CONVERT NOW</res>
 	<res name="AsposeImaging">Aspose.Imaging</res>
-	
+	<res name="ImagingConversionDesc">Convert your Image files to Photoshop, Raster, PDF and other formats</res>
 	<res name="PageNotFound">404 Page not found</res>
 	<res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
 	<res name="btnBackHome">Back to Home</res>
@@ -85,6 +85,43 @@
 	<res name="WatermarkFeature2">Add Watermark from Anywhere</res>
 	<res name="WatermarkFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
 	<res name="WatermarkFeature3">Watermark Quality</res>
+	<res name="ReverseSearch">Reverse</res>
+	<res name="ReverseSearchDesc">Find similar images on a web site</res>
+	<res name="ImagingReverseDesc">Find similar images on a web site</res>
+	<res name="ReverseSearchInputTextMessage">Please enter web site URL or Image Search Id</res>
+	<res name="btnReverseSearchStart">Start</res>
+	<res name="ReverseSearch4">Reverse image search</res>
+	<res name="FastEasyReverseSearchHeader">Fast and Easy Reverse Image Search</res>
+	<res name="FastEasyReverseSearchDescription">Upload your file, input image lookup Web site Url or lookup search context identifier to reuse and click on “Start” button.</res>
+	<res name="AnywhereReverseSearchHeader">Perform Reverse Image Search from Anywhere</res>
+	<res name="QualityReverseSearchHeader">Reverse Image Search Quality</res>
+	<res name="ReverseSearchStartPageTitle">Reverse Image Search</res>
+	<res name="ReverseSearchStartSubPageTitle">Search images on selected web site</res>
+	<res name="ReverseSearchUrlOrIdTextPlaceholder">Input image lookup Web site Url or lookup search context identifier to reuse</res>
+	<res name="ReverseSearchSupportedImages">Supported images: {0}</res>
+	<res name="ReverseSearchValidationExpression">.jpg|.jpeg|.gif|.png|.j2k|.bmp|.tiff|.emf|.wmf</res>
+	<res name="ReverseSearchNewImage">Search new image</res>
+	<res name="ReverseSearchProcessingImages">Processing images on web site</res>
+	<res name="ReverseSearchInProgress">is in progress</res>
+	<res name="ReverseSearchSaveId">Please, save the Image search Id</res>
+	<res name="ReverseSearchUseId">and use it for access to image search page then image search will be created</res>
+	<res name="ReverseSearchSendNotification">Send the Image search is ready notification</res>
+	<res name="ReverseSearchFileName">File name:</res>
+	<res name="ReverseSearchImagesNotFound">Images not found</res>
+	<res name="ReverseSearchOnSite">on {0}</res>
+	<res name="ReverseSearchResult">result</res>
+	<res name="ReverseSearchResults">results</res>
+	<res name="ReverseSearchTotalImagesCount">from {0} images</res>
+	<res name="DontSaveImagesDisclaimer">We do not save your search images</res>
+	<res name="ReverseSearchSearchingImages">Searching images on web site</res>
+	<res name="SelectorDropFileMessage">Drop or upload your file</res>
+	<res name="HowtoReverseSearchTitle">How to perform a Reverse Image Search on a web site</res>
+	<res name="HowtoReverseSearch1">Click inside the file drop area to select and upload a search image file or drag &amp; drop your file there.</res>
+	<res name="HowtoReverseSearch2">Enter an image lookup website for the first search or enter a search context identifier for next searches on the same site.</res>
+	<res name="HowtoReverseSearch3">Click the &#34;Start&#34; button to start a reverse search.</res>
+	<res name="HowtoReverseSearch4">Save a search context identifier to access the image Search results later.</res>
+	<res name="HowtoReverseSearch5">Once a search is started, an indicator showing its progress appears on the page. You may either wait until the search is complete, or enter your email address to receive a notification of completion later, and close the page.</res>
+	<res name="HowtoReverseSearch6">Note that the Image Search Results will be deleted from our servers after 24 hours and the results page will not be accessible after this time period.</res>
 </resources>
 
 

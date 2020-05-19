@@ -7,9 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aspose.Imaging.Live.Demos.UI.Config
-
-{
+namespace Aspose.Imaging.Live.Demos.UI {
     
     
     public partial class SiteMaster {

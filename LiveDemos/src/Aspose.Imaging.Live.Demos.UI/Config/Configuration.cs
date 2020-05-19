@@ -12,8 +12,8 @@ namespace Aspose.Imaging.Live.Demos.UI.Config
 	{		
 		private static string _appName = ConfigurationManager.AppSettings["AppName"].ToString();
 		private static string _asposeImagingLiveDemosPath = ConfigurationManager.AppSettings["AsposeImagingLiveDemosPath"].ToString();
-		private static string _resourceFileSessionName = ConfigurationManager.AppSettings["ResourceFileSessionName"];	      
-		
+		private static string _resourceFileSessionName = ConfigurationManager.AppSettings["ResourceFileSessionName"];
+		private static string _asposeReverseSearchApiURL = ConfigurationManager.AppSettings["AsposeReverseSearchAPIBasePath"].ToString();
 		private static string _productsAsposeImagingAssetURL = ConfigurationManager.AppSettings["ProductsAsposeImagingAssetURL"];
 		private static string _fileDownloadLink = ConfigurationManager.AppSettings["FileDownloadLink"];
 		
@@ -37,7 +37,10 @@ namespace Aspose.Imaging.Live.Demos.UI.Config
 				return sourceFilespath;
 			}
 		}
-
+		public static string AsposeReverseSearchApiURL
+		{
+			get { return _asposeReverseSearchApiURL; }
+		}
 		/// <summary>
 		/// Get Working Directory
 		/// </summary>

@@ -79,6 +79,25 @@ namespace Aspose.Imaging.Live.Demos.UI
 				new { controller = "Common", action = "UploadFile" }
 
 			);
+
+			routes.MapPageRoute(
+				"AsposeNewAppReverseSearchRoute",
+				"imaging/reverse/{SearchId}",
+				"~/ReverseImageSearchApp/ReverseSearchStart.aspx"
+			);
+
+			routes.MapPageRoute(
+				"AsposeAppReverseSearchRoute",
+				"imaging/reverse",
+				"~/ReverseImageSearchApp/ReverseSearchStart.aspx", false,
+				new RouteValueDictionary { { "SearchId", "new" } }
+			);
+
+			routes.MapPageRoute(
+				"AsposeAppReverseSearchResultsRoute",
+				"imaging/reverse/{SearchId}/results",
+				"~/ReverseImageSearchApp/ReverseSearchResults.aspx"
+			);
 		}
 
 		private void MapProductToolPageRoute(RouteCollection routes, string routeName, string routeUrl, string physicalFile, string productRegex)
