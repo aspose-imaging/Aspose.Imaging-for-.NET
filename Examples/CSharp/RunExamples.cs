@@ -25,6 +25,7 @@ using CSharp.ModifyingAndConvertingImages.Multipage;
 using CSharp.ModifyingAndConvertingImages.Tiff;
 using CSharp.ModifyingAndConvertingImages.DICOM;
 using CSharp.ModifyingAndConvertingImages.Html5Canvas;
+using CSharp.ModifyingAndConvertingImages.Gif;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -258,7 +259,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running memory strategies tests:");
-            
+
+            OptimizationStrategyInDicom.Run();
             OptimizationStrategyInWebP.Run();
             OptimizationStrategyInRotate.Run();
             OptimizationStrategyInFilters.Run();
@@ -283,6 +285,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running modifying and converting images tests:");
+            SupportOfFullFrameGif.Run();
+            SupportExtractingPathsFromTiff.Run();
             ExportToHtml5Canvas.Run();
             CompressedVectorFormats.Run();
             ExportTiffBatchMode.Run();

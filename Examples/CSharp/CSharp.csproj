@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=20.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.20.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=20.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.20.5.0\lib\net40\Aspose.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -83,6 +83,7 @@
     <Compile Include="ModifyingAndConvertingImages\DocumentConvertionProgress.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Gif\SupportOfFullFrameGif.cs" />
     <Compile Include="ModifyingAndConvertingImages\Html5Canvas\ExportToHtml5Canvas.cs" />
     <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\ColorTypeAndCompressionType.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDicom.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDithering.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDJVU.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInFilters.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
     <Compile Include="ModifyingAndConvertingImages\Tiff\ExportTiffBatchMode.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\SupportExtractingPathsFromTiff.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportToWebP.cs" />
