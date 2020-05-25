@@ -1,0 +1,67 @@
+﻿
+@model  LandingPageModel
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid header1 header2 minify-header appfamily-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Image Processing Solution for any Platform </h1>
+				<h2>A combination of image manipulation APIs & prebuilt cross-platform Apps to meet all of the modern image processing requirements.</h2>
+			</div>
+			<div class="col-md-4 tc">
+				<img class=" col-xs-12" src="../img/aspose_imaging-brand.png" alt="Aspose.Imaging" width="320" />
+			</div>
+			<!--/col6 -->
+		</div>
+		<!--/row -->
+	</div>
+	<!--/container -->
+</div>
+<div class="container-fluid productfamilypage bg-white pdb-5">
+	<div class="row">
+		<div class="container tc">
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<h3>@string.Format(@Model.Resources["AsposeProductFamilyInclude"], @Model.Resources["AsposeImaging"]) </h3>
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+
+
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_conversion-app.png" alt="Aspose.Imaging for .NET" />
+					</div>
+					<a href="/imaging/conversion"><span class="spanclass">@Model.Resources["AsposeImaging"] @Model.Resources["AsposeProductFor"]<em>@Model.Resources["Conversionh4"]</em></span><em>Easily convert Images to PDF, PSD and Raster image formats without leaving your favorite browser.</em></a>
+				</div>
+
+			</div>
+
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_watermark-app.png" alt="Aspose.Imaging for .NET" />
+					</div>
+					<a href="/imaging/watermark"><span class="spanclass">@Model.Resources["AsposeImaging"] @Model.Resources["AsposeProductFor"]<em>Watermark</em></span><em>Just upload your image files to add watermark from any browser. No installation or additional tools required.</em></a>
+				</div>
+
+			</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_reverse-app.png" alt="Aspose.Imaging for .NET" />
+					</div>
+					<a href="/imaging/reverse"><span class="spanclass">Aspose.Imaging<em>Reverse</em></span><em>Perform reverse image search to find particular image on specified website from anywhere.</em></a>
+				</div>
+
+			</div>
+			
+			
+
+		</div>
+	</div>
+</div>
+<div class="spacer">&nbsp;</div>
