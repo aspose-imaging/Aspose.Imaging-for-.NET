@@ -26,6 +26,7 @@ using CSharp.ModifyingAndConvertingImages.Tiff;
 using CSharp.ModifyingAndConvertingImages.DICOM;
 using CSharp.ModifyingAndConvertingImages.Html5Canvas;
 using CSharp.ModifyingAndConvertingImages.Gif;
+using CSharp.ModifyingAndConvertingImages.APNG;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -285,6 +286,10 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running modifying and converting images tests:");
+            ExportAPNGToGif.Run();
+            CreateAnimationFromMultipageImage.Run();
+            CreateAPNGAnimationFromSinglePageImage.Run();
+            CreateAPNGAnimationFromGraphics.Run();
             SupportOfFullFrameGif.Run();
             SupportExtractingPathsFromTiff.Run();
             ExportToHtml5Canvas.Run();
@@ -467,6 +472,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_PSD()
         {
             return Path.GetFullPath(GetDataDir_Data() + "PSD/");
+        }
+
+        public static String GetDataDir_APNG()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "APNG/");
         }
 
         public static String GetDataDir_SVG()
