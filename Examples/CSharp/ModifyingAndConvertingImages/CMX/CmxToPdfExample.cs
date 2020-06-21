@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------------------------------------------
-// <copyright file="CdrToPngExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 17:35:44">
+// <copyright file="CmxToPdfExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 18:52:19">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------------------------------------------
@@ -14,37 +14,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.ModifyingAndConvertingImages.CDR
+namespace CSharp.ModifyingAndConvertingImages.CMX
 {
-    class CdrToPngExample
+    class CmxToPdfExample
     {
         public static void Run()
         {
-            Console.WriteLine("Running example CdrToPngExample");
+            Console.WriteLine("Running example CmxToPdfExample");
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_CDR();
+            string dataDir = RunExamples.GetDataDir_CMX();
 
-            string inputFileName = dataDir + "SimpleShapes.cdr";
+            string inputFile = Path.Combine(dataDir, "MultiPage.cmx");
 
-            using (Aspose.Imaging.FileFormats.Cdr.CdrImage image = (Aspose.Imaging.FileFormats.Cdr.CdrImage)Image.Load(
-                inputFileName)
-            )
+            using (Aspose.Imaging.FileFormats.Cmx.CmxImage image =
+                (Aspose.Imaging.FileFormats.Cmx.CmxImage)Image.Load(inputFile))
             {
-                PngOptions options = new Aspose.Imaging.ImageOptions.PngOptions();
-
-                options.ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha;
+                Aspose.Imaging.ImageOptions.PdfOptions options = new PdfOptions();
+                options.PdfDocumentInfo = new Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo();
 
                 // Set rasterization options for fileformat
                 options.VectorRasterizationOptions = (Aspose.Imaging.ImageOptions.VectorRasterizationOptions)image.GetDefaultOptions(new object[] { Color.White, image.Width, image.Height });
                 options.VectorRasterizationOptions.TextRenderingHint = TextRenderingHint.SingleBitPerPixel;
                 options.VectorRasterizationOptions.SmoothingMode = SmoothingMode.None;
 
-                image.Save(dataDir + "SimpleShapes.png", options);
+                image.Save(dataDir + "MultiPage.pdf", options);
             }
 
-            File.Delete(dataDir + "SimpleShapes.png");
+            File.Delete(dataDir + "MultiPage.pdf");
 
-            Console.WriteLine("Finished example CdrToPngExample");
+            Console.WriteLine("Finished example CmxToPdfExample");
         }
     }
 }

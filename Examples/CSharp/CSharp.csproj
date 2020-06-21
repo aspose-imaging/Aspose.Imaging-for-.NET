@@ -75,6 +75,7 @@
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPsdMultipageExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CMX\CmxToPdfExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\CompressedVectorFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="ModifyingAndConvertingImages\CroppingWMFfileWhileConvertingtoPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\CropWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\Deskew.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DicomToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\ExportToDicom.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
@@ -251,6 +253,8 @@
     <Compile Include="ModifyingAndConvertingImages\DitheringRasterImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\OpenWebPFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToGifExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToPdfExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingArc.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingBezier.cs" />

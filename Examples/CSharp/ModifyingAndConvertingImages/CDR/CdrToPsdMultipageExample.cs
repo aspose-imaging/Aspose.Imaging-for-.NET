@@ -8,6 +8,7 @@ using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,8 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
 
                 image.Save(dataDir + "MultiPageOut.psd", options);
             }
+
+            File.Delete(dataDir + "MultiPageOut.psd");
 
             Console.WriteLine("Finished example CdrToPsdMultipageExample");
         }

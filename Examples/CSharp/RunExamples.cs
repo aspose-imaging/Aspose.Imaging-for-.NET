@@ -54,7 +54,7 @@ namespace Aspose.Imaging.Examples.CSharp
             Console.WriteLine(
                 "Please select the features you want to test: \n0 - test all features of Aspose.Imaging, \n1 - Test drawing and formatting images, \n2 - Test modifying and converting images, \n3 - Test of memory strategies\n4 - Test additional Aspose.Imaging features, \n5 - Test file formats");
             Console.WriteLine("=====================================================");
-
+            
             string key = Console.ReadLine();
 
             int keyNumber = 0;                        
@@ -70,6 +70,7 @@ namespace Aspose.Imaging.Examples.CSharp
                 throw new ArgumentException("Please enter your choise as number between [0..5]");
             }
 
+            SupportOfCDR.Run();
             SelectionType selectedValue = (SelectionType)keyNumber;
             
             if ((selectedValue & SelectionType.DrawingAndFormattingImages) == SelectionType.DrawingAndFormattingImages)
@@ -112,7 +113,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //                        DICOM
             // =====================================================
             // =====================================================
-
+            DicomToPngExample.Run();
             AdjustBrightnessDICOM.Run();
             AdjustContrastDICOM.Run();
             AdjustGammaDICOM.Run();
@@ -203,6 +204,8 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            WebPToPdfExample.Run();
+            WebPToGifExample.Run();
             ConvertGIFFImageFrame.Run();
             CreatingWebPImage.Run();
             ExportToWebP.Run();
@@ -234,6 +237,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //                           CMX
             // =====================================================
             // =====================================================
+            CmxToPdfExample.Run();
             CMXToPNGConversion.Run();
 
             // =====================================================
@@ -242,6 +246,8 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
             SupportOfCDR.Run();
+            CdrToPsdMultipageExample.Run();
+            CdrToPngExample.Run();
 
             // =====================================================
             // =====================================================
