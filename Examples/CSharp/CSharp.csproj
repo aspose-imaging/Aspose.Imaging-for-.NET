@@ -72,6 +72,8 @@
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
     <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPngExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPsdMultipageExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
     <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\CompressedVectorFormats.cs" />
