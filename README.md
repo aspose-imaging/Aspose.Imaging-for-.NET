@@ -41,13 +41,13 @@ For the detailed notes, please visit [Aspose.Imaging for .NET 20.6 - Release not
 
 ## Read & Write Image Formats
 
-**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG
-**Metafiles:** EMF, WMF
+**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG\
+**Metafiles:** EMF, WMF\
 **Other:** WEBP, SVG
 
 ## Save Images As
 
-**Fixed:** PDF
+**Fixed:** PDF\
 **Photoshop:** PSD
 
 ## Read Image Formats
