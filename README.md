@@ -62,7 +62,7 @@ Html5 Canvas
 
 ## Platform Independence
 
-Aspose.Imaging for .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, as well as Linux x64. The supported platforms include .NET Framework version 2.0 or higher, and .NET Compact Framework 3.5.
+Aspose.Imaging for .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, as well as Linux x64. The supported platforms include .NET Framework version 2.0 or higher.
 
 ## Getting Started with Aspose.Imaging for .NET
 
