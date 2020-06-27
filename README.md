@@ -1,4 +1,4 @@
-## Aspose.Imaging for .NET
+# Aspose.Imaging for .NET
 
 [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) is a library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also Aspose. Imaging library supports drawing and work with graphic primitives. Image export and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
 
@@ -9,6 +9,8 @@ This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https:/
      <img src="http://i.imgur.com/hwNhrGZ.png" />
   </a>
 </p>
+
+This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and Showcase projects for [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) to help you learn and write your own applications.
 
 Directory | Description
 --------- | -----------
