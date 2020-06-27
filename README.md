@@ -2,7 +2,7 @@
 
 [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) is a library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also Aspose. Imaging library supports drawing and work with graphic primitives. Image export and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
 
-This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and [Showcase projects](https://docs.aspose.com/display/imagingnet/Showcases) for [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) to help you learn and write your own applications.
+This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and Showcase projects for [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) to help you learn and write your own applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-imaging/Aspose.Imaging-for-.NET/archive/master.zip">
@@ -44,20 +44,20 @@ For the detailed notes, please visit [Aspose.Imaging for .NET 20.6 - Release not
 
 ## Load & Save Image Formats
 
-**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG, DICOM
-**Metafiles:** EMF, WMF
-**Compressed metafiles:** EMZ, WMZ
-**Other:** WebP, Svg, Svgz (compressed Svg)
-**Animation:** Apng
+**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG, DICOM\
+**Metafiles:** EMF, WMF\
+**Compressed metafiles:** EMZ, WMZ\
+**Other:** WebP, Svg, Svgz (compressed Svg)\
+**Animation:** Apng\
 
 ## Save Image formats
-PDF
-**Photoshop:** PSD
-Html5 Canvas
+PDF\
+**Photoshop:** PSD\
+Html5 Canvas\
 
 ## Load Image Formats
 
-**Various:**     DjVu, DNG, ODG, EPS(raster preview only), CMX, CDR, DIB, OTG, FODG
+**Various:**     DjVu, DNG, ODG, EPS(raster preview only), CMX, CDR, DIB, OTG, FODG\
 
 
 ## Platform Independence
