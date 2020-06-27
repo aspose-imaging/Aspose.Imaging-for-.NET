@@ -48,16 +48,16 @@ For the detailed notes, please visit [Aspose.Imaging for .NET 20.6 - Release not
 **Metafiles:** EMF, WMF\
 **Compressed metafiles:** EMZ, WMZ\
 **Other:** WebP, Svg, Svgz (compressed Svg)\
-**Animation:** Apng\
+**Animation:** Apng
 
 ## Save Image formats
 PDF\
 **Photoshop:** PSD\
-Html5 Canvas\
+Html5 Canvas
 
 ## Load Image Formats
 
-**Various:**     DjVu, DNG, ODG, EPS(raster preview only), CMX, CDR, DIB, OTG, FODG\
+**Various:**     DjVu, DNG, ODG, EPS(raster preview only), CMX, CDR, DIB, OTG, FODG
 
 
 ## Platform Independence
