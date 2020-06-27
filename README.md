@@ -1,8 +1,8 @@
 ## Aspose.Imaging for .NET
 
-[Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) is an advanced image processing API that lets developers create, edit, draw or convert images in their .NET applications. It works independent of other applications and allows saving to Adobe Photoshop® format (PSD) without having Photoshop or any other image editor installed on the machine.
+[Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) is a library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also Aspose. Imaging library supports drawing and work with graphic primitives. Image export and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
 
-This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and Showcase projects for [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) to help you learn and write your own applications.
+This repository contains [Demos](Demos), [Examples](Examples), [Plugins](https://docs.aspose.com/display/imagingnet/Plugins) and [Showcase projects](https://docs.aspose.com/display/imagingnet/Showcases) for [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) to help you learn and write your own applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-imaging/Aspose.Imaging-for-.NET/archive/master.zip">
@@ -25,13 +25,14 @@ Aspose.Imaging for .NET offers robust image compression and high processing spee
 
 ## Imaging API Features
 
-- Draw raster images with graphics.
-- Draw vector images.
-- Converting images to various formats.
+- [Draw raster images with graphics](https://docs.aspose.com/display/imagingnet/Drawing+Images+using+Graphics).
+- [Draw vector images](https://docs.aspose.com/display/imagingnet/Drawing+Vector+Images).
+- [Converting images to various formats](https://docs.aspose.com/display/imagingnet/Converting+Images).
 - [Apply masking](https://docs.aspose.com/display/imagingnet/Applying+Masking+to+Images) as well as [Median & Wiener](https://docs.aspose.com/display/imagingnet/Applying+Median+and+Wiener+Filters) filters.
-- Crop, rotate & resize images via API.
-- De-skew & transform images.
-- Set image properties.
+- [Crop, rotate & resize images via API](https://docs.aspose.com/display/imagingnet/Crop%2C+Rotate+and+Resize+Images).
+- [De-skew & transform images](https://docs.aspose.com/display/imagingnet/Deskew+image).
+- [Set image properties](https://docs.aspose.com/display/imagingnet/Setting+Properties+on+Images).
+- [Working with multipage image formats](https://docs.aspose.com/display/imagingnet/Working+with+multipage+image+formats).
 
 ## Compact Framework Off Notice
 
@@ -39,24 +40,27 @@ Please note, since 20.6 release of Aspose.Imaging support of .NET Compact Framew
 
 For the detailed notes, please visit [Aspose.Imaging for .NET 20.6 - Release notes](https://docs.aspose.com/display/imagingnet/Aspose.Imaging+for+.NET+20.6+-+Release+notes).
 
-## Read & Write Image Formats
+## Load & Save Image Formats
 
-**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG
+**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG, DICOM
 **Metafiles:** EMF, WMF
-**Other:** WEBP, SVG
+**Compressed metafiles:** EMZ, WMZ
+**Other:** WebP, Svg, Svgz (compressed Svg)
+**Animation:** Apng
 
-## Save Images As
-
-**Fixed:** PDF
+## Save Image formats
+PDF
 **Photoshop:** PSD
+Html5 Canvas
 
-## Read Image Formats
+## Load Image Formats
 
-**Various:** DICOM, DjVu, DNG, ODG, CMX, CDR, DIB, OTG, FODG, EPS (raster preview only)
+**Various:**     DjVu, DNG, ODG, EPS(raster preview only), CMX, CDR, DIB, OTG, FODG
+
 
 ## Platform Independence
 
-Aspose.Imaging for .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, Windows Embedded (CE 6.0 R2), as well as Linux x64. The supported platforms include .NET Framework version 2.0 or higher, and .NET Compact Framework 3.5.
+Aspose.Imaging for .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, as well as Linux x64. The supported platforms include .NET Framework version 2.0 or higher, and .NET Compact Framework 3.5.
 
 ## Getting Started with Aspose.Imaging for .NET
 
@@ -74,20 +78,37 @@ using (Image image = Image.Load(dir + "template.jpg"))
 }
 ```
 
-## Recover a Broken TIFF
+## Create png image, manipulate it and save - C#
 
-You can programmatically recover a damaged TIFF file with the help of Aspose.Imaging for .NET API as demonstrated below.
+Using Aspose.Imaging for .NET you can easily create images with specified parameters, manipulate them and save.
 
 ```csharp
-// create an instance of LoadOptions and set LoadOptions properties
-var loadOptions = new LoadOptions();
-loadOptions.DataRecoveryMode = DataRecoveryMode.ConsistentRecover;
-loadOptions.DataBackgroundColor = Color.Red;
+// Image width and height
+int width = 500;
+int height = 300;
 
-// create an instance of Image and load a damaged image by passing the instance of LoadOptions
-using (var image = Image.Load(dir + "template.tiff", loadOptions))
-{
-    // do processing
+// Where created image to store
+string path = @"C:/createdImage.png";
+// Create options
+PngOptions options = new PngOptions() { Source = new FileCreateSource(path, false) };
+using (PngImage image = (PngImage)Image.Create(options, width, height))
+{          
+     // Create and initialize an instance of Graphics class 
+     // and Clear Graphics surface
+     Graphics graphic = new Graphics(image);
+     graphic.Clear(Color.Green);
+     // Draw line on image
+     graphic.DrawLine(new Pen(Color.Blue), 9, 9, 90, 90);        
+
+     // Resize image
+     int newWidth = 400;
+     image.ResizeWidthProportionally(newWidth, ResizeType.LanczosResample);  
+
+     // Crop the image to specified area
+    Aspose.Imaging.Rectangle area = new Aspose.Imaging.Rectangle(10,10,200,200);    
+    image.Crop(area);
+   
+    image.Save();
 }
 ```
 
