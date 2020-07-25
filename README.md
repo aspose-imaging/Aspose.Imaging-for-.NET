@@ -36,11 +36,7 @@ Aspose.Imaging for .NET offers robust image compression and high processing spee
 - [Set image properties](https://docs.aspose.com/display/imagingnet/Setting+Properties+on+Images).
 - [Working with multipage image formats](https://docs.aspose.com/display/imagingnet/Working+with+multipage+image+formats).
 
-## Compact Framework Off Notice
-
-Please note, since 20.6 release of Aspose.Imaging support of .NET Compact Framework has been removed.
-
-For the detailed notes, please visit [Aspose.Imaging for .NET 20.6 - Release notes](https://docs.aspose.com/display/imagingnet/Aspose.Imaging+for+.NET+20.6+-+Release+notes).
+For the detailed notes, please visit [Aspose.Imaging for .NET 20.7 - Release notes](https://docs.aspose.com/display/imagingnet/Aspose.Imaging+for+.NET+20.7+-+Release+notes).
 
 ## Load & Save Image Formats
 
