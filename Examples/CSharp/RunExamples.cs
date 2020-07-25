@@ -290,14 +290,14 @@ namespace Aspose.Imaging.Examples.CSharp
             ////            Modifying And Converting Images
             //// =====================================================
             //// =====================================================
-
             Console.WriteLine("Running modifying and converting images tests:");
+            ConvertTo1BitPng.Run();
             ExportAPNGToGif.Run();
             CreateAnimationFromMultipageImage.Run();
+            SupportExtractingPathsFromTiff.Run();
             CreateAPNGAnimationFromSinglePageImage.Run();
             CreateAPNGAnimationFromGraphics.Run();
             SupportOfFullFrameGif.Run();
-            SupportExtractingPathsFromTiff.Run();
             ExportToHtml5Canvas.Run();
             CompressedVectorFormats.Run();
             ExportTiffBatchMode.Run();

@@ -5,6 +5,7 @@
 //-----------------------------------------------------------------------------------------------------------
 
 using Aspose.Imaging;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.VectorPaths;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
@@ -24,37 +25,78 @@ namespace CSharp.ModifyingAndConvertingImages.Tiff
         public static void Run()
         {
             Console.WriteLine("Running example SupportExtractingPathsFromTiff");
-            var filePath = Path.GetTempFileName() + ".tif";
-            var pathResources = new List<PathResource> { new PathResource { BlockId = 2000, Name = "Name", Records = new List<VectorPathRecord>() } };
 
-            using (var image = new TiffImage(new TiffFrame(new TiffOptions(TiffExpectedFormat.Default), 10, 10)))
+            var filePath = RunExamples.GetDataDir_Tiff();
+            using (var image = (TiffImage)Image.Load(Path.Combine(filePath, "Sample.tif")))
             {
-                image.ActiveFrame.PathResources = pathResources;
-                image.Save(filePath);
+                foreach (var path in image.ActiveFrame.PathResources)
+                {
+                    Console.WriteLine(path.Name);
+                }
+
+                image.Save(Path.Combine(filePath, "SampleWithPaths.psd"), new PsdOptions());
             }
 
-            using (var image = (TiffImage)Image.Load(filePath))
+            // Create Clipping Path manually
+            using (var image = (TiffImage)Image.Load(Path.Combine(filePath, "Sample.tif")))
             {
-                var actual = image.ActiveFrame.PathResources;
-                if (pathResources.Count != actual.Count)
-                {
-                    Console.WriteLine("Resources count not equal");
-                }
+                image.ActiveFrame.PathResources = new List<PathResource>
+                                                      {
+                                                          new PathResource
+                                                              {
+                                                                  BlockId =
+                                                                      2000, // Block Id according to Photoshop specification
+                                                                  Name = "My Clipping Path", // Path name
+                                                                  Records = CreateRecords(
+                                                                      0.2f,
+                                                                      0.2f,
+                                                                      0.8f,
+                                                                      0.2f,
+                                                                      0.8f,
+                                                                      0.8f,
+                                                                      0.2f,
+                                                                      0.8f) // Create path records using coordinates
+                                                              }
+                                                      };
 
-                if (pathResources[0].BlockId != actual[0].BlockId)
-                {
-                    Console.WriteLine("BlockId not equal");
-                }
-
-                if (!pathResources[0].Name.Equals(actual[0].Name))
-                {
-                    Console.WriteLine("Resource name not equal");
-                }
+                image.Save(Path.Combine(filePath, "ImageWithPath.tif"));
             }
 
-            File.Delete(filePath);
+            File.Delete(Path.Combine(filePath, "SampleWithPaths.psd"));
+            File.Delete(Path.Combine(filePath, "ImageWithPath.tif"));
 
             Console.WriteLine("Finished example SupportExtractingPathsFromTiff");
+        }
+
+        private static List<VectorPathRecord> CreateRecords(params float[] coordinates)
+        {
+            var records = CreateBezierRecords(coordinates);                                  // Create Bezier records using coordinates
+
+            records.Insert(0, new LengthRecord                                               // LengthRecord required by Photoshop specification
+                                  {
+                                      IsOpen = false,                                                              // Lets create closed path
+                                      RecordCount = (ushort)records.Count                                          // Record count in the path
+                                  });
+
+            return records;
+        }
+
+        private static List<VectorPathRecord> CreateBezierRecords(float[] coordinates)
+        {
+            return CoordinatesToPoints(coordinates)
+                .Select(CreateBezierRecord)
+                .ToList();
+        }
+
+        private static IEnumerable<PointF> CoordinatesToPoints(float[] coordinates)
+        {
+            for (var index = 0; index < coordinates.Length; index += 2)
+                yield return new PointF(coordinates[index], coordinates[index + 1]);
+        }
+
+        private static VectorPathRecord CreateBezierRecord(PointF point)
+        {
+            return new BezierKnotRecord { PathPoints = new[] { point, point, point } };
         }
     }
 }
