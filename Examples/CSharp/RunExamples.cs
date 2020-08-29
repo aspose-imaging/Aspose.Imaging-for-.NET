@@ -27,6 +27,7 @@ using CSharp.ModifyingAndConvertingImages.DICOM;
 using CSharp.ModifyingAndConvertingImages.Html5Canvas;
 using CSharp.ModifyingAndConvertingImages.Gif;
 using CSharp.ModifyingAndConvertingImages.APNG;
+using CSharp.ModifyingAndConvertingImages.EPS;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -70,7 +71,6 @@ namespace Aspose.Imaging.Examples.CSharp
                 throw new ArgumentException("Please enter your choise as number between [0..5]");
             }
 
-            SupportOfCDR.Run();
             SelectionType selectedValue = (SelectionType)keyNumber;
             
             if ((selectedValue & SelectionType.DrawingAndFormattingImages) == SelectionType.DrawingAndFormattingImages)
@@ -291,6 +291,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ExportEps.Run();
             CreateGraphicsPathFromPathTiffResourcesAndViceVersa.Run();
             ConvertTo1BitPng.Run();
             ExportAPNGToGif.Run();
@@ -444,6 +445,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_PNG()
         {
             return Path.GetFullPath(GetDataDir_Data() + "PNG/");
+        }
+
+        public static String GetDataDir_EPS()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Eps/");
         }
 
         public static String GetDataDir_DrawingAndFormattingImages()

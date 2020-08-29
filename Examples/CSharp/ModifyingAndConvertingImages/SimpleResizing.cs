@@ -24,6 +24,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "SimpleResizing_out.jpg");
             }
 
+            using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
+            {
+                image.Resize(200, 200, ResizeType.CatmullRom);
+            }
+
             Console.WriteLine("Finished example SimpleResizing");
         }
     }
