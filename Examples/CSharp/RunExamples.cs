@@ -291,6 +291,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            CreateGraphicsPathFromPathTiffResourcesAndViceVersa.Run();
             ConvertTo1BitPng.Run();
             ExportAPNGToGif.Run();
             CreateAnimationFromMultipageImage.Run();
