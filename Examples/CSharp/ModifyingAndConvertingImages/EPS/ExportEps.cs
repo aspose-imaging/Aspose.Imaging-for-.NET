@@ -56,8 +56,6 @@ namespace CSharp.ModifyingAndConvertingImages.EPS
                 image.Save(Path.Combine(dataDir, "Sample2.tiff"), options);
             }
 
-            Console.Read();
-
             File.Delete(Path.Combine(dataDir, "Sample.pdf"));
             File.Delete(Path.Combine(dataDir, "Sample1.tiff"));
             File.Delete(Path.Combine(dataDir, "Sample2.tiff"));
