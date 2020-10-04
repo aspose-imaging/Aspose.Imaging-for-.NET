@@ -205,6 +205,7 @@
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToBMPConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
+    <Compile Include="ModifyingAndConvertingImages\TGA\ConvertToTGA.cs" />
     <Compile Include="ModifyingAndConvertingImages\Tiff\CreateGraphicsPathFromPathTiffResourcesAndViceVersa.cs" />
     <Compile Include="ModifyingAndConvertingImages\Tiff\ExportTiffBatchMode.cs" />
     <Compile Include="ModifyingAndConvertingImages\Tiff\SupportExtractingPathsFromTiff.cs" />

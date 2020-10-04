@@ -28,6 +28,7 @@ using CSharp.ModifyingAndConvertingImages.Html5Canvas;
 using CSharp.ModifyingAndConvertingImages.Gif;
 using CSharp.ModifyingAndConvertingImages.APNG;
 using CSharp.ModifyingAndConvertingImages.EPS;
+using CSharp.ModifyingAndConvertingImages.TGA;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -108,6 +109,15 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
+
+            // =====================================================
+            // =====================================================
+            //                        TGA
+            // =====================================================
+            // =====================================================
+
+            ConvertToTGA.Run();
+
             // =====================================================
             // =====================================================
             //                        DICOM
@@ -461,6 +471,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_DICOM()
         {
             return Path.GetFullPath(GetDataDir_Data() + "DICOM/");
+        }
+
+        public static String GetDataDir_TGA()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "TGA/");
         }
 
         public static String GetDataDir_JPEG()
