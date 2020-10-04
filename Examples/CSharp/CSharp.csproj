@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=20.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.20.8.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=20.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.20.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -83,6 +83,7 @@
     <Compile Include="ModifyingAndConvertingImages\CroppingWMFfileWhileConvertingtoPNG.cs" />
     <Compile Include="ModifyingAndConvertingImages\CropWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\Deskew.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DicomCompression.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\DicomToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\ExportToDicom.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />

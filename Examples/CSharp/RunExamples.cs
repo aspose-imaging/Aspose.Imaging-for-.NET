@@ -113,6 +113,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //                        DICOM
             // =====================================================
             // =====================================================
+            DicomCompression.Run();
             DicomToPngExample.Run();
             AdjustBrightnessDICOM.Run();
             AdjustContrastDICOM.Run();
