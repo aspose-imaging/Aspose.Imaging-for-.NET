@@ -243,11 +243,14 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
 
             SupportOfFODG.Run();
+
             // =====================================================
             // =====================================================
             //                           CMX
             // =====================================================
             // =====================================================
+
+            CmxToTiffExample.Run();
             CmxToPdfExample.Run();
             CMXToPNGConversion.Run();
 
@@ -256,6 +259,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //                           CDR
             // =====================================================
             // =====================================================
+
+            CdrToPdfExmple.Run();
             SupportOfCDR.Run();
             CdrToPsdMultipageExample.Run();
             CdrToPngExample.Run();
@@ -265,6 +270,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //                           OTG
             // =====================================================
             // =====================================================
+
             SupportOfOTG.Run();
         }
 
