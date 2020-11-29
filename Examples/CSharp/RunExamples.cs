@@ -29,6 +29,7 @@ using CSharp.ModifyingAndConvertingImages.Gif;
 using CSharp.ModifyingAndConvertingImages.APNG;
 using CSharp.ModifyingAndConvertingImages.EPS;
 using CSharp.ModifyingAndConvertingImages.TGA;
+using CSharp.ModifyingAndConvertingImages.Remove_background;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -435,7 +436,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
 
             Console.WriteLine("Running additional features tests:");
-
+            GraphCutAutoMasking.Run();
             Deskew.Run();
 
             DocumentConvertionProgress.Run();

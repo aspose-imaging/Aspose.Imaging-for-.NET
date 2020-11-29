@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=20.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.20.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=20.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.20.11.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -136,6 +136,7 @@
     <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Remove background\GraphCutAutoMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
