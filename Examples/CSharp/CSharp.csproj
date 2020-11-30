@@ -94,6 +94,7 @@
     <Compile Include="ModifyingAndConvertingImages\EPS\ExportEps.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Gif\CreateGifUsingAddPage.cs" />
     <Compile Include="ModifyingAndConvertingImages\Gif\SupportOfFullFrameGif.cs" />
     <Compile Include="ModifyingAndConvertingImages\Html5Canvas\ExportToHtml5Canvas.cs" />
     <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />

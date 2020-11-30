@@ -309,6 +309,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            CreateGifUsingAddPage.Run();
             ExportEps.Run();
             CreateGraphicsPathFromPathTiffResourcesAndViceVersa.Run();
             ConvertTo1BitPng.Run();
