@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Imaging) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Imaging) ![GitHub](https://img.shields.io/github/license/aspose-imaging/Aspose.Imaging-for-.NET)
+
 # .NET API for Image Processing
 
 [Aspose.Imaging for .NET](https://products.aspose.com/imaging/net) is a library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also Aspose. Imaging library supports drawing and work with graphic primitives. Image export and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
