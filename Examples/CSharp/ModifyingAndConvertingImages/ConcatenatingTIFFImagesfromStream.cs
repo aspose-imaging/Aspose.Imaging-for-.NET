@@ -14,7 +14,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 
             // Create instances of FileStream and initialize with Tiff images
             FileStream fileStream = new FileStream(dataDir + "TestDemo.tif", FileMode.Open);
-            FileStream fileStream1 = new FileStream(dataDir + "sample.tif", FileMode.Open);
+            FileStream fileStream1 = new FileStream(dataDir + "sample1.tif", FileMode.Open);
 
             // Create an instance of TiffImage and load the destination image from filestream
             using (TiffImage image = (TiffImage) Image.Load(fileStream))

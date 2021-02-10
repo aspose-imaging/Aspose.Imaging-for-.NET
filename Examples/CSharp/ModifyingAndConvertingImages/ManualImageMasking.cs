@@ -64,7 +64,7 @@ namespace CSharp.ModifyingAndConvertingImages
                                                                                 MemoryStream())
                                                                 },
                                                     };
-                MaskingResult[] maskingResults = new ImageMasking(image).Decompose(maskingOptions);
+                MaskingResult maskingResults = new ImageMasking(image).Decompose(maskingOptions);
                 using (Image resultImage = maskingResults[1].GetImage())
                 {
                     resultImage.Save(outputFileName);

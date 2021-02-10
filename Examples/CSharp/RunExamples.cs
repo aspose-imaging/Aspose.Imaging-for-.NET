@@ -30,6 +30,7 @@ using CSharp.ModifyingAndConvertingImages.APNG;
 using CSharp.ModifyingAndConvertingImages.EPS;
 using CSharp.ModifyingAndConvertingImages.TGA;
 using CSharp.ModifyingAndConvertingImages.Remove_background;
+using CSharp.ModifyingAndConvertingImages.Bmp;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -57,7 +58,7 @@ namespace Aspose.Imaging.Examples.CSharp
             Console.WriteLine(
                 "Please select the features you want to test: \n0 - test all features of Aspose.Imaging, \n1 - Test drawing and formatting images, \n2 - Test modifying and converting images, \n3 - Test of memory strategies\n4 - Test additional Aspose.Imaging features, \n5 - Test file formats");
             Console.WriteLine("=====================================================");
-            
+
             string key = Console.ReadLine();
 
             int keyNumber = 0;                        
@@ -66,6 +67,8 @@ namespace Aspose.Imaging.Examples.CSharp
             {
                 keyNumber = (int)Math.Pow(2, keyNumber);
             }
+
+            
 
             if (!int.TryParse(key, out keyNumber)
                 || (!typeof(SelectionType).IsEnumDefined(keyNumber - 1 >= 0 ? keyNumber = (int)Math.Pow(2, keyNumber - 1) : keyNumber = (int)SelectionType.All)))
@@ -309,6 +312,8 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            BmpRLE4.Run();
+            MultipageFromImages.Run();
             CreateGifUsingAddPage.Run();
             ExportEps.Run();
             CreateGraphicsPathFromPathTiffResourcesAndViceVersa.Run();
@@ -516,6 +521,11 @@ namespace Aspose.Imaging.Examples.CSharp
             return Path.GetFullPath(GetDataDir_Data() + "APNG/");
         }
 
+        public static String GetDataDir_Bmp()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Bmp/");
+        }
+
         public static String GetDataDir_SVG()
         {
             return Path.GetFullPath(GetDataDir_Data() + "SVG/");
@@ -547,6 +557,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_Tiff()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Tiff/");
+        }
+
+        public static String GetDataDir_Multipage()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Multipage/");
         }
 
         public static string GetDataDir_Data()

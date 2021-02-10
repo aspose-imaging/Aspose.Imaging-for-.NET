@@ -42,11 +42,14 @@ namespace CSharp.ModifyingAndConvertingImages
                       Source = new StreamSource(new MemoryStream())
                   },
                 };
-                MaskingResult[] maskingResults = new ImageMasking(image).Decompose(maskingOptions);
-                using (Image resultImage = maskingResults[1].GetImage())
+                using (MaskingResult maskingResults = new ImageMasking(image).Decompose(maskingOptions))
                 {
-                    resultImage.Save(outputFileName);
+                    using (Image resultImage = maskingResults[1].GetImage())
+                    {
+                        resultImage.Save(outputFileName);
+                    }
                 }
+                
             }
 
             Console.WriteLine("Finished example AutoImageMasking");

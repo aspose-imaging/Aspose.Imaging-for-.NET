@@ -31,7 +31,7 @@ namespace CSharp.ModifyingAndConvertingImages.Remove_background
 
             string inputFile = Path.Combine(dataDir, "input.jpg");
 
-            MaskingResult[] results;
+            MaskingResult results;
             using (RasterImage image = (RasterImage)Image.Load(inputFile))
             {
                 // To use Graph Cut with auto calculated strokes, AutoMaskingGraphCutOptions is used.
@@ -53,16 +53,16 @@ namespace CSharp.ModifyingAndConvertingImages.Remove_background
                 };
 
                 results = new ImageMasking(image).Decompose(options);
+
+                using (RasterImage resultImage = (RasterImage)results[1].GetImage())
+                {
+                    resultImage.Save(dataDir + "output.png", new PngOptions() { ColorType = PngColorType.TruecolorWithAlpha });
+                }
+
+                File.Delete(dataDir + "output.png");
+
+                Console.WriteLine("Finished example GraphCutAutoMasking");
             }
-
-            using (RasterImage resultImage = (RasterImage)results[1].GetImage())
-            {
-                resultImage.Save(dataDir + "output.png", new PngOptions() { ColorType = PngColorType.TruecolorWithAlpha });
-            }
-
-            File.Delete(dataDir + "output.png");
-
-            Console.WriteLine("Finished example GraphCutAutoMasking");
         }
     }
 }

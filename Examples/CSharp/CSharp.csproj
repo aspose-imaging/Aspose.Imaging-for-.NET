@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=20.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.20.11.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=21.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.21.2.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -72,6 +72,7 @@
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
     <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Bmp\BmpRLE4.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPdfExmple.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPsdMultipageExample.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFtoFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
     <Compile Include="ModifyingAndConvertingImages\Multipage\CommonMultipageImageExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Multipage\MultipageFromImages.cs" />
     <Compile Include="ModifyingAndConvertingImages\MultipleImagesToTIFF.cs" />
     <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfFODG.cs" />
     <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfOTG.cs" />

@@ -27,7 +27,11 @@ namespace CSharp.ModifyingAndConvertingImages.Html5Canvas
             {
                 image.Save(
                     System.IO.Path.Combine(dataDir, "Sample.html"),
-                    new Html5CanvasOptions { VectorRasterizationOptions = new SvgRasterizationOptions() });
+                    new Html5CanvasOptions
+                        {
+                            VectorRasterizationOptions =
+                                new SvgRasterizationOptions() { PageWidth = 100, PageHeight = 100 }
+                        });
             }
 
             Console.WriteLine("Finished example ExportToHtml5Canvas");
