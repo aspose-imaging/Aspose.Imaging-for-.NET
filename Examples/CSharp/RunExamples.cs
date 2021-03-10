@@ -113,7 +113,7 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
-
+            
             // =====================================================
             // =====================================================
             //                        TGA
@@ -325,6 +325,7 @@ namespace Aspose.Imaging.Examples.CSharp
             CreateAPNGAnimationFromGraphics.Run();
             SupportOfFullFrameGif.Run();
             ExportToHtml5Canvas.Run();
+            SetDPIInExportedPdf.Run();
             CompressedVectorFormats.Run();
             ExportTiffBatchMode.Run();
             ExportToDicom.Run();
