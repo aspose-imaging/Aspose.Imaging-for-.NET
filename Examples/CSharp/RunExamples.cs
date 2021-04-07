@@ -276,6 +276,7 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
 
             SupportOfOTG.Run();
+            DefaultFontUsageImprove.Run();
         }
 
         private static void RunTestMemoryStrategies()

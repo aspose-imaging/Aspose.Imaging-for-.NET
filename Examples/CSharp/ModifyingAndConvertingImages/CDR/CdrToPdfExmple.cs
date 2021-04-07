@@ -19,7 +19,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
     class CdrToPdfExmple
     {
         private static VectorRasterizationOptions[] CreatePageOptions<TOptions>(VectorMultipageImage image) where TOptions : VectorRasterizationOptions
-        {
+        { 
             // Create page rasterization options for each page in the image
             return image.Pages.Select(x => x.Size).Select(CreatePageOptions<TOptions>).ToArray();
         }
