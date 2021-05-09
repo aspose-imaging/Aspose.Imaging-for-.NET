@@ -31,6 +31,7 @@ using CSharp.ModifyingAndConvertingImages.EPS;
 using CSharp.ModifyingAndConvertingImages.TGA;
 using CSharp.ModifyingAndConvertingImages.Remove_background;
 using CSharp.ModifyingAndConvertingImages.Bmp;
+using CSharp.ModifyingAndConvertingImages.Dxf;
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -113,7 +114,14 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
-            
+
+            // =====================================================
+            // =====================================================
+            //                        DXF
+            // =====================================================
+            // =====================================================
+
+            ExportToDxf.Run();
             // =====================================================
             // =====================================================
             //                        TGA
