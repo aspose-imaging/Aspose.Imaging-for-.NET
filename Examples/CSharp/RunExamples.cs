@@ -117,6 +117,14 @@ namespace Aspose.Imaging.Examples.CSharp
 
             // =====================================================
             // =====================================================
+            //                        Gif
+            // =====================================================
+            // =====================================================
+
+            SupportGifFrameDurationAndNumberOfCycles.Run();
+
+            // =====================================================
+            // =====================================================
             //                        Apng
             // =====================================================
             // =====================================================
@@ -537,6 +545,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_APNG()
         {
             return Path.GetFullPath(GetDataDir_Data() + "APNG/");
+        }
+
+        public static String GetDataDir_GIF()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "GIF/");
         }
 
         public static String GetDataDir_Bmp()
