@@ -114,7 +114,7 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
-
+            
             // =====================================================
             // =====================================================
             //                        Gif
@@ -288,6 +288,7 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            PantoneGoeCoatedPalette.Run();
             CdrToPdfExmple.Run();
             SupportOfCDR.Run();
             CdrToPsdMultipageExample.Run();
@@ -438,6 +439,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             Console.WriteLine("Running drawing and formatting images tests:");
 
+            GraphicsMeasureString.Run();
             DrawingUsingGraphics.Run();
             DrawingUsingGraphicsPath.Run();
             DrawingRectangle.Run();

@@ -6,7 +6,7 @@
 
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
-using Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.VectorPaths;
+using Aspose.Imaging.FileFormats.Core.VectorPaths;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.FileFormats.Tiff.PathResources;

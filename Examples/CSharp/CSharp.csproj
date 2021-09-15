@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=21.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.21.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=21.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.21.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrawingAndFormattingImages\GraphicsMeasureString.cs" />
     <Compile Include="ModifyingAndConvertingImages\APNG\CreateAnimationFromMultipageImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\APNG\CreateAPNGAnimationFromGraphics.cs" />
     <Compile Include="ModifyingAndConvertingImages\APNG\CreateAPNGAnimationFromSinglePageImage.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPdfExmple.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPsdMultipageExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\PantoneGoeCoatedPalette.cs" />
     <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
     <Compile Include="ModifyingAndConvertingImages\CMX\CmxToPdfExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
