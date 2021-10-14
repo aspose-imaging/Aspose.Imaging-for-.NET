@@ -113,8 +113,7 @@ namespace Aspose.Imaging.Examples.CSharp
         /// </summary>
         private static void RunTestFileFormats()
         {
-            Console.WriteLine("Running file formats tests:");
-            
+            Console.WriteLine("Running file formats tests:");            
             // =====================================================
             // =====================================================
             //                        Gif
@@ -144,7 +143,14 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            // =====================================================
+            // =====================================================
+            //                        TIFF
+            // =====================================================
+            // =====================================================
             ConvertToTGA.Run();
+
+            SupportOfGetOriginalOptions.Run();
 
             // =====================================================
             // =====================================================
@@ -338,6 +344,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ImageScopedFonts.Run();
             BmpRLE4.Run();
             MultipageFromImages.Run();
             CreateGifUsingAddPage.Run();
