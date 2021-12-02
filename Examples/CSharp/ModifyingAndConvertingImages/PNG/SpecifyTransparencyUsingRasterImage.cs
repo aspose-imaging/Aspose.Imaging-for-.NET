@@ -35,7 +35,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 image.TransparentColor = Color.Black;
                 image.HasTransparentColor = true;
                 image.HasBackgroundColor = true;
-                image.Save(dataDir + "SpecifyTransparencyforPNGImagesUsingRasterImage_out.jpg", new PngOptions());
+                image.Save(dataDir + "SpecifyTransparencyforPNGImagesUsingRasterImage_out.png", new PngOptions());
             }
 
             Console.WriteLine("Running example SpecifyTransparencyUsingRasterImage");

@@ -27,7 +27,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 PngOptions options = new PngOptions();
                 options.ColorType = PngColorType.Grayscale;
                 options.BitDepth = 1;
-                png.Save(dataDir + "SpecifyBitDepth_out.jpg", options);
+                png.Save(dataDir + "SpecifyBitDepth_out.png", options);
             }
 
             Console.WriteLine("Finished example SpecifyBitDepth");

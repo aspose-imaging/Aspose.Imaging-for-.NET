@@ -25,7 +25,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PNG
                 // Create an instance of PngOptions, Set the PNG filter method and Save changes to the disc
                 PngOptions options = new PngOptions();
                 options.FilterType = PngFilterType.Paeth;
-                png.Save(dataDir + "ApplyFilterMethod_out.jpg", options);
+                png.Save(dataDir + "ApplyFilterMethod_out.png", options);
             }
 
             Console.WriteLine("Finished example ApplyFilterMethod");

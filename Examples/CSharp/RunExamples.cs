@@ -344,6 +344,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            FileExtensionAwareSave.Run();
             ImageScopedFonts.Run();
             BmpRLE4.Run();
             MultipageFromImages.Run();
