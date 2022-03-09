@@ -344,6 +344,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ApsToPsd.Run();
             PixelPerfectTextAlignment.Run();
             FileExtensionAwareSave.Run();
             ImageScopedFonts.Run();
