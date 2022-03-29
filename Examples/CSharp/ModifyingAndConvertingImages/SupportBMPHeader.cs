@@ -15,7 +15,7 @@ namespace CSharp.ModifyingAndConvertingImages
         string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
         string sourceFile = @"D:\source.bmp";
 
-        string resultFile = @"D:\result.png";
+        string resultFile = @"D:\result.png"; 
 
         using (Image image = Image.Load(sourceFile))
         {
