@@ -157,6 +157,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //                        DICOM
             // =====================================================
             // =====================================================
+            SupportStoringXmpTags.Run();
             DicomCompression.Run();
             DicomToPngExample.Run();
             AdjustBrightnessDICOM.Run();
