@@ -91,7 +91,7 @@ using (PngImage image = (PngImage)Image.Create(options, width, height))
     Aspose.Imaging.Rectangle area = new Aspose.Imaging.Rectangle(10,10,200,200);    
     image.Crop(area);
    
-    image.Save();
+    image.Save(); 
 }
 ```
 
