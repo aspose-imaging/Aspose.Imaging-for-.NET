@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=22.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.22.4.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=22.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.22.5.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -221,6 +221,7 @@
     <Compile Include="ModifyingAndConvertingImages\SVG\SvgNativeResize.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToBMPConversion.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.cs" />
     <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
     <Compile Include="ModifyingAndConvertingImages\TGA\ConvertToTGA.cs" />
     <Compile Include="ModifyingAndConvertingImages\Tiff\CreateGraphicsPathFromPathTiffResourcesAndViceVersa.cs" />
