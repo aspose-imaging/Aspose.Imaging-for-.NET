@@ -39,8 +39,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=22.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.22.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=22.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.22.8.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -110,6 +110,7 @@
     <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\ColorTypeAndCompressionType.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\ConvertTIFFToJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\JpegSavedQualityEstimation.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportFor2-7BitsJPEG.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLossless.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLosslessUsingRGBProfile.cs" />
