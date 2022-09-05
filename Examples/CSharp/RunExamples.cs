@@ -32,6 +32,8 @@ using CSharp.ModifyingAndConvertingImages.TGA;
 using CSharp.ModifyingAndConvertingImages.Remove_background;
 using CSharp.ModifyingAndConvertingImages.Bmp;
 using CSharp.ModifyingAndConvertingImages.Dxf;
+using CSharp.ModifyingAndConvertingImages.ICO;
+
 namespace Aspose.Imaging.Examples.CSharp
 {
     class RunExamples
@@ -345,6 +347,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
             UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.Run();
             ApsToPsd.Run();
@@ -598,6 +601,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_OTG()
         {
             return Path.GetFullPath(GetDataDir_Data() + "OTG/");
+        }
+
+        public static String GetDataDir_ICO()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "ICO/");
         }
 
         public static String GetDataDir_Tiff()
