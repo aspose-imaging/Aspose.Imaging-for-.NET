@@ -347,6 +347,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            Support16BitChannel64BitPng.Run();
             ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
             UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.Run();
