@@ -33,6 +33,7 @@ using CSharp.ModifyingAndConvertingImages.Remove_background;
 using CSharp.ModifyingAndConvertingImages.Bmp;
 using CSharp.ModifyingAndConvertingImages.Dxf;
 using CSharp.ModifyingAndConvertingImages.ICO;
+using CSharp.ModifyingAndConvertingImages.Fonts;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -347,6 +348,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            SpecifyFont.Run();
             Support16BitChannel64BitPng.Run();
             ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
@@ -607,6 +609,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_ICO()
         {
             return Path.GetFullPath(GetDataDir_Data() + "ICO/");
+        }
+
+        public static String GetDataDir_Fonts()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Fonts/");
         }
 
         public static String GetDataDir_Tiff()
