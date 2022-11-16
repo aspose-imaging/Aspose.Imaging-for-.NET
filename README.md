@@ -29,10 +29,10 @@ Directory | Description
 
 ## Load & Save Image Formats
 
-**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG, DICOM\
+**Raster Formats:** JPEG2000, JPEG, BMP, TIFF, GIF, PNG, DICOM, TGA, ICO\
 **Metafiles:** EMF, WMF\
 **Compressed metafiles:** EMZ, WMZ\
-**Other:** WebP, Svg, Svgz (compressed Svg)\
+**Other:** WebP, Svg, Svgz (compressed Svg), DXF\
 **Animation:** Apng
 
 ## Save Images As
