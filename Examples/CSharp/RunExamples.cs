@@ -34,6 +34,7 @@ using CSharp.ModifyingAndConvertingImages.Bmp;
 using CSharp.ModifyingAndConvertingImages.Dxf;
 using CSharp.ModifyingAndConvertingImages.ICO;
 using CSharp.ModifyingAndConvertingImages.Fonts;
+using CSharp.Plugins;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -348,6 +349,14 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            KeepTransparencyWhenIndexingPngImage.Run();
+            ResizePlugin.Run();
+            MergePlugin.Run();
+            ImageAlbumPlugin.Run();
+            CropPlugin.Run();
+            ConversionPlugin.Run();
+            CommonExample.Run();
+
             SpecifyFont.Run();
             Support16BitChannel64BitPng.Run();
             ConvertICOToTiff.Run();

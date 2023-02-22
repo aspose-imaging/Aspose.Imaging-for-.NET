@@ -13,6 +13,21 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,8 +54,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=22.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.22.12.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=23.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.23.2.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -150,6 +165,7 @@
     <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ConvertTo1BitPng.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\KeepTransparencyWhenIndexingPngImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\Support16BitChannel64BitPng.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
@@ -284,6 +300,12 @@
     <Compile Include="ModifyingAndConvertingImages\WebPImages\OpenWebPFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToGifExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToPdfExample.cs" />
+    <Compile Include="Plugins\CommonExample.cs" />
+    <Compile Include="Plugins\ConversionPlugin.cs" />
+    <Compile Include="Plugins\CropPlugin.cs" />
+    <Compile Include="Plugins\ImageAlbumPlugin.cs" />
+    <Compile Include="Plugins\MergePlugin.cs" />
+    <Compile Include="Plugins\ResizePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingArc.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingBezier.cs" />
@@ -299,6 +321,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Aspose\Imaging\FileFormats\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
