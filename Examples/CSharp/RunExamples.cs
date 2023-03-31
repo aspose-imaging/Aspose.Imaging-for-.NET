@@ -35,6 +35,7 @@ using CSharp.ModifyingAndConvertingImages.Dxf;
 using CSharp.ModifyingAndConvertingImages.ICO;
 using CSharp.ModifyingAndConvertingImages.Fonts;
 using CSharp.Plugins;
+using CSharp.ModifyingAndConvertingImages.BigTiff;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -333,7 +334,7 @@ namespace Aspose.Imaging.Examples.CSharp
             OptimizationStrategyInResize.Run();
             OptimizationStrategyInJPEG.Run();
             OptimizationStrategyInDJVU.Run();
-            OptimizationStrategyInJPEG2000.Run();
+            //OptimizationStrategyInJPEG2000.Run();
             OptimizationStrategyInTiff.Run();
             //////////////
         }
@@ -349,6 +350,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            BigTiffLoadExample.Run();
             KeepTransparencyWhenIndexingPngImage.Run();
             ResizePlugin.Run();
             MergePlugin.Run();
