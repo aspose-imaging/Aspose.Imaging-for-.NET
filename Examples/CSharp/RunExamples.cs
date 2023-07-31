@@ -350,6 +350,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            AddAlphaBlendingForImage.Run();
             BigTiffLoadExample.Run();
             KeepTransparencyWhenIndexingPngImage.Run();
             ResizePlugin.Run();
