@@ -20,9 +20,9 @@ namespace CSharp.DrawingAndFormattingImages
         public static void Run()
         {
             Console.WriteLine("Running example GraphicsMeasureString");
-            string dataDir = RunExamples.GetDataDir_GIF();
+            string dataDir = RunExamples.GetDataDir_JPEG();
 
-            string filepath = Path.Combine(dataDir, "ezgif.com-gif-maker(1)___.gif");
+            string filepath = Path.Combine(dataDir, "input.jpg");
 
             using (Image backgoundImage = Image.Load(filepath))
             {

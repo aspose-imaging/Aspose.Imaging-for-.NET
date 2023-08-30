@@ -36,6 +36,7 @@ using CSharp.ModifyingAndConvertingImages.ICO;
 using CSharp.ModifyingAndConvertingImages.Fonts;
 using CSharp.Plugins;
 using CSharp.ModifyingAndConvertingImages.BigTiff;
+using CSharp.ModifyingAndConvertingImages;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -218,11 +219,11 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            ConvOfOtherFormatsToSVG.Run();
+            //ConvOfOtherFormatsToSVG.Run();
             SVGToEMFConversion.Run();
-            ConvertWMFToSVG.Run();
-            SVGToBMPConversion.Run();
-            SvgNativeResize.Run();
+            //ConvertWMFToSVG.Run();
+            //SVGToBMPConversion.Run();
+            //SvgNativeResize.Run();
 
             // =====================================================
             // =====================================================
@@ -350,6 +351,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            MagicWandTool.Run();
             AddAlphaBlendingForImage.Run();
             BigTiffLoadExample.Run();
             KeepTransparencyWhenIndexingPngImage.Run();
@@ -365,8 +367,8 @@ namespace Aspose.Imaging.Examples.CSharp
             ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
             UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.Run();
-            ApsToPsd.Run();
-            PixelPerfectTextAlignment.Run();
+            //ApsToPsd.Run();
+            //PixelPerfectTextAlignment.Run();
             FileExtensionAwareSave.Run();
             ImageScopedFonts.Run();
             BmpRLE4.Run();
@@ -470,7 +472,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             Console.WriteLine("Running drawing and formatting images tests:");
 
-            GraphicsMeasureString.Run();
+            //GraphicsMeasureString.Run();
             DrawingUsingGraphics.Run();
             DrawingUsingGraphicsPath.Run();
             DrawingRectangle.Run();
@@ -485,8 +487,8 @@ namespace Aspose.Imaging.Examples.CSharp
             Imagetransparency.Run();            
             DrawRasterImageOnWMF.Run();
             DrawRasterImageOnEMF.Run();
-            DrawRasterImageOnSVG.Run();
-            DrawVectorImageToRasterImage.Run();            
+            //DrawRasterImageOnSVG.Run();
+            //DrawVectorImageToRasterImage.Run();            
         }
 
         /// <summary>

@@ -54,8 +54,8 @@
     <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Imaging, Version=23.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.23.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=23.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.23.8.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -135,6 +135,7 @@
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MagicWandTool.cs" />
     <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDicom.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDithering.cs" />
