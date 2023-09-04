@@ -119,13 +119,13 @@ namespace Aspose.Imaging.Examples.CSharp
         /// </summary>
         private static void RunTestFileFormats()
         {
-            Console.WriteLine("Running file formats tests:");            
+            Console.WriteLine("Running file formats tests:");
             // =====================================================
             // =====================================================
             //                        Gif
             // =====================================================
             // =====================================================
-
+            ConvertWMFToSVG.Run();
             SupportGifFrameDurationAndNumberOfCycles.Run();
 
             // =====================================================
@@ -219,11 +219,11 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //ConvOfOtherFormatsToSVG.Run();
+            ConvOfOtherFormatsToSVG.Run();
             SVGToEMFConversion.Run();
-            //ConvertWMFToSVG.Run();
-            //SVGToBMPConversion.Run();
-            //SvgNativeResize.Run();
+            ConvertWMFToSVG.Run();
+            SVGToBMPConversion.Run();
+            SvgNativeResize.Run();
 
             // =====================================================
             // =====================================================
@@ -367,8 +367,8 @@ namespace Aspose.Imaging.Examples.CSharp
             ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
             UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.Run();
-            //ApsToPsd.Run();
-            //PixelPerfectTextAlignment.Run();
+            ApsToPsd.Run();
+            PixelPerfectTextAlignment.Run();
             FileExtensionAwareSave.Run();
             ImageScopedFonts.Run();
             BmpRLE4.Run();
@@ -472,7 +472,7 @@ namespace Aspose.Imaging.Examples.CSharp
 
             Console.WriteLine("Running drawing and formatting images tests:");
 
-            //GraphicsMeasureString.Run();
+            GraphicsMeasureString.Run();
             DrawingUsingGraphics.Run();
             DrawingUsingGraphicsPath.Run();
             DrawingRectangle.Run();
@@ -643,6 +643,12 @@ namespace Aspose.Imaging.Examples.CSharp
         public static string GetDataDir_Data()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+
+            if (parent.Name.Equals("bin"))
+            {
+                parent = parent.Parent;
+            }
+
             string startDirectory = null;
             if (parent != null)
             {
