@@ -351,6 +351,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            RemoveWatermarkFilter.Run();
             MagicWandTool.Run();
             AddAlphaBlendingForImage.Run();
             BigTiffLoadExample.Run();
