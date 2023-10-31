@@ -4,6 +4,8 @@ using Aspose.Imaging.FileFormats.Eps;
 using Aspose.Imaging.FileFormats.Eps.Consts;
 using Aspose.Imaging.Examples.CSharp;
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace CSharp.ModifyingAndConvertingImages
 {
@@ -14,46 +16,20 @@ namespace CSharp.ModifyingAndConvertingImages
             Console.WriteLine("Running example SupportForEPSFormat");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            using (EpsImage epsImage = Image.Load(dataDir + "sample.eps") as EpsImage)
+            var epsPreviewFiles = new List<string>();
+
+            using (var image = Image.Load(dataDir + "sample.eps") as EpsImage)
             {
-                // check if EPS image has any raster preview to proceed (for now only raster preview is supported)
-                if (epsImage.HasRasterPreview)
+                foreach (var preview in image.GetPreviewImages())
                 {
-                    if (epsImage.PhotoshopThumbnail != null)
-                    {
-                        // process Photoshop thumbnail if it's present
-                    }
+                    var previewPath = Path.Combine(dataDir, "output." + preview.FileFormat.ToString().ToLower());
+                    preview.Save(previewPath);
 
-                    if (epsImage.EpsType == EpsType.Interchange)
-                    {
-                        // Get EPS Interchange subformat instance
-                        EpsInterchangeImage epsInterchangeImage = epsImage as EpsInterchangeImage;
-
-                        if (epsInterchangeImage.RasterPreview != null)
-                        {
-                            // process black-and-white Interchange raster preview if it's present
-                        }
-                    }
-                    else
-                    {
-                        // Get EPS Binary subformat instance
-                        EpsBinaryImage epsBinaryImage = epsImage as EpsBinaryImage;
-
-                        if (epsBinaryImage.TiffPreview != null)
-                        {
-                            // process TIFF preview if it's present
-                        }
-
-                        if (epsBinaryImage.WmfPreview != null)
-                        {
-                            // process WMF preview if it's present
-                        }
-                    }
-
-                    // export EPS image to PNG (by default, best available quality preview is used for export)
-                    epsImage.Save(dataDir + "anyEpsFile.png", new PngOptions());
+                    epsPreviewFiles.Add(previewPath);
                 }
             }
+
+            epsPreviewFiles.ForEach(File.Delete);            
 
             Console.WriteLine("Finished example SupportForEPSFormat");
         }

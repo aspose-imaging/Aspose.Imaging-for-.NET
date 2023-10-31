@@ -27,38 +27,16 @@ namespace CSharp.ModifyingAndConvertingImages.EPS
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_EPS();
 
-            using (var image = (EpsImage)Image.Load(Path.Combine(dataDir, "Sample.eps")))
+            Stream tiffPreviewStream = null;
+            using (var image = Image.Load(Path.Combine(dataDir, "Sample.eps")) as EpsImage)
             {
-                var options = new PdfOptions
-                                  {
-                                      PdfCoreOptions = new PdfCoreOptions
-                                                           {
-                                                               PdfCompliance =
-                                                                   PdfComplianceVersion
-                                                                       .PdfA1b // Set required PDF compliance
-                                                           }
-                                  };
-
-                image.PreviewToExport = EpsPreviewFormat.PostScriptRendering;
-                image.Save(Path.Combine(dataDir, "Sample.pdf"), options);
-            }
-
-            using (var image = (EpsBinaryImage)Image.Load(Path.Combine(dataDir,"Sample.eps")))
-            {
-                // Tiff image export options
-                var options = new TiffOptions(TiffExpectedFormat.TiffJpegRgb);
-
-                // The first way:
-                image.TiffPreview.Save(Path.Combine(dataDir,"Sample1.tiff"), options);
-
-                // The second way:
-                image.PreviewToExport = EpsPreviewFormat.TIFF;
-                image.Save(Path.Combine(dataDir, "Sample2.tiff"), options);
-            }
-
-            File.Delete(Path.Combine(dataDir, "Sample.pdf"));
-            File.Delete(Path.Combine(dataDir, "Sample1.tiff"));
-            File.Delete(Path.Combine(dataDir, "Sample2.tiff"));
+                var tiffPreview = image.GetPreviewImage(EpsPreviewFormat.TIFF);
+                if (tiffPreview != null)
+                {
+                    tiffPreviewStream = new MemoryStream();
+                    tiffPreview.Save(tiffPreviewStream);
+                }
+            }            
 
             Console.WriteLine("Finished example ExportEps");
         }
