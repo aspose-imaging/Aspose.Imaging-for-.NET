@@ -120,6 +120,7 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
+            
             // =====================================================
             // =====================================================
             //                        Gif
@@ -306,6 +307,7 @@ namespace Aspose.Imaging.Examples.CSharp
             SupportOfCDR.Run();
             CdrToPsdMultipageExample.Run();
             CdrToPngExample.Run();
+            SupportTextStylesItalicUnderline.Run();
 
             // =====================================================
             // =====================================================
