@@ -353,9 +353,10 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
-            RemoveWatermarkFilter.Run();
-            MagicWandTool.Run();
+            RemoveBackgroundVectors.Run();
             AddAlphaBlendingForImage.Run();
+            RemoveWatermarkFilter.Run();
+            MagicWandTool.Run();            
             BigTiffLoadExample.Run();
             KeepTransparencyWhenIndexingPngImage.Run();
             ResizePlugin.Run();
@@ -612,7 +613,12 @@ namespace Aspose.Imaging.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "CMX/");
         }
-        
+
+        public static String GetDataDir_RemoveBacground()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "RemoveBackground/");
+        }
+
         public static String GetDataDir_CDR()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CDR/");
