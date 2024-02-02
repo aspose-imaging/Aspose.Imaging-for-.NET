@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=23.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.23.12.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=24.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.24.2.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -136,6 +136,7 @@
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
     <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\KernelFilters.cs" />
     <Compile Include="ModifyingAndConvertingImages\MagicWandTool.cs" />
     <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
     <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDicom.cs" />
