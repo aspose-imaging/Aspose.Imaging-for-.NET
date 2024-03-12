@@ -372,7 +372,7 @@ namespace Aspose.Imaging.Examples.CSharp
             ConvertICOToTiff.Run();
             JpegSavedQualityEstimation.Run();
             UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.Run();
-            ApsToPsd.Run();
+            //ApsToPsd.Run();
             PixelPerfectTextAlignment.Run();
             FileExtensionAwareSave.Run();
             ImageScopedFonts.Run();
