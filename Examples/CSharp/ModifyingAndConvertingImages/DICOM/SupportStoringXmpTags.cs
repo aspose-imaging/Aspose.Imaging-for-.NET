@@ -6,6 +6,7 @@ using Aspose.Imaging.Xmp;
 using Aspose.Imaging.Xmp.Schemas.Dicom;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -49,8 +50,8 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
                 
                 using (DicomImage imageSaved = (DicomImage)Image.Load(outputFile))
                 {
-                    List<string> originalDicomInfo = image.FileInfo.DicomInfo;
-                    List<string> imageSavedDicomInfo = imageSaved.FileInfo.DicomInfo;
+                    ReadOnlyCollection<string> originalDicomInfo = image.FileInfo.DicomInfo;
+                    ReadOnlyCollection<string> imageSavedDicomInfo = imageSaved.FileInfo.DicomInfo;
                     int tagsCountDiff = Math.Abs(imageSavedDicomInfo.Count - originalDicomInfo.Count);
                 }
 

@@ -353,6 +353,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ModifyDicomTags.Run();
             KernelFilters.Run();
             RemoveBackgroundVectors.Run();
             AddAlphaBlendingForImage.Run();
