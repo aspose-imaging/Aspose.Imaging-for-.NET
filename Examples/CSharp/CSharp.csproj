@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=24.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.24.5.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=24.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.24.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -111,6 +111,7 @@
     <Compile Include="ModifyingAndConvertingImages\DICOM\DicomToPngExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\ExportToDicom.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\ModifyDicomTags.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\RemoveAndSaveWithMetadata.cs" />
     <Compile Include="ModifyingAndConvertingImages\DICOM\SupportStoringXmpTags.cs" />
     <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />
     <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
