@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=24.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.24.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=24.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.24.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,6 +88,7 @@
     <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
     <Compile Include="ModifyingAndConvertingImages\APNG\GetOriginalOptions.cs" />
     <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AVIF\LoadAvif.cs" />
     <Compile Include="ModifyingAndConvertingImages\BigTiff\BigTiffLoadExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
     <Compile Include="ModifyingAndConvertingImages\Bmp\BmpRLE4.cs" />

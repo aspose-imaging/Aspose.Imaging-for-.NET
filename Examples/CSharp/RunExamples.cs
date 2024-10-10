@@ -37,6 +37,7 @@ using CSharp.ModifyingAndConvertingImages.Fonts;
 using CSharp.Plugins;
 using CSharp.ModifyingAndConvertingImages.BigTiff;
 using CSharp.ModifyingAndConvertingImages;
+using CSharp.ModifyingAndConvertingImages.AVIF;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -353,6 +354,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            LoadAvif.Run();
             SupportDicomYBR422.Run();
             RemoveAndSaveWithMetadata.Run();
             ModifyDicomTags.Run();
@@ -548,6 +550,11 @@ namespace Aspose.Imaging.Examples.CSharp
         public static String GetDataDir_DrawingAndFormattingImages()
         {
             return Path.GetFullPath(GetDataDir_Data() + "DrawingAndFormattingImages/");
+        }
+
+        public static String GetDataDir_AVIF()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AVIF/");
         }
 
         public static String GetDataDir_DICOM()
