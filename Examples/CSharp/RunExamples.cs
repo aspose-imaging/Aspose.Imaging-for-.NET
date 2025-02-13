@@ -265,7 +265,7 @@ namespace Aspose.Imaging.Examples.CSharp
             ExportToWebP.Run();
             ExportWebPToOtherImageFormats.Run();
             ExtractFrameFromWebPImage.Run();
-            OpenWebPFile.Run();
+            //OpenWebPFile.Run();
             // =====================================================
             // =====================================================
             //                           DjVu
