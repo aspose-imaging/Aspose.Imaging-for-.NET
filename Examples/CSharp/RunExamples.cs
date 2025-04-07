@@ -354,6 +354,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            AutoAdjustImageBrightness.Run();
             UnifyUsageOfCommonOperations.Run();
             LoadAvif.Run();
             SupportDicomYBR422.Run();
