@@ -36,7 +36,7 @@ namespace CSharp.ModifyingAndConvertingImages
             using (var img = Image.Load(Path.Combine(inputPath, fileName), loadOptions))
             {
                 Aspose.Imaging.ImageOptions.VectorRasterizationOptions vectorRasterizationOptions =
-                    (Aspose.Imaging.ImageOptions.VectorRasterizationOptions)img.GetDefaultOptions(new object[] { Color.White, img.Width, img.Height });
+                    img.GetDefaultOptions(new object[] { Color.White, img.Width, img.Height }).VectorRasterizationOptions;
                 vectorRasterizationOptions.TextRenderingHint = Aspose.Imaging.TextRenderingHint.SingleBitPerPixel;
                 vectorRasterizationOptions.SmoothingMode = Aspose.Imaging.SmoothingMode.None;
 

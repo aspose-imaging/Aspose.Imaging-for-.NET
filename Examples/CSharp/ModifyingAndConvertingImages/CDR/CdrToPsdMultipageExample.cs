@@ -39,7 +39,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
                 options.MultiPageOptions.MergeLayers = true;
 
                 // Set rasterization options for fileformat
-                options.VectorRasterizationOptions = (Aspose.Imaging.ImageOptions.VectorRasterizationOptions)image.GetDefaultOptions(new object[] { Color.White, image.Width, image.Height });
+                options.VectorRasterizationOptions = image.GetDefaultOptions(new object[] { Color.White, image.Width, image.Height }).VectorRasterizationOptions;
                 options.VectorRasterizationOptions.TextRenderingHint = TextRenderingHint.SingleBitPerPixel;
                 options.VectorRasterizationOptions.SmoothingMode = SmoothingMode.None;
 

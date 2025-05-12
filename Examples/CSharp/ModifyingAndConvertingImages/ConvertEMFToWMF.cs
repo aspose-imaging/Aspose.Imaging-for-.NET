@@ -21,15 +21,17 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             using (Image image = Image.Load(dataDir + "Picture1.emf"))
             {
                 // Call the Save method of Image class & Pass instance of WmfOptions class to Save method.
+                var ops = image.GetDefaultOptions(null);
+                var emfRasterization = ops.VectorRasterizationOptions as EmfRasterizationOptions;
 
-                EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions();
+                //EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions();
                 emfRasterization.BackgroundColor = Color.Yellow;
                 emfRasterization.PageWidth = 100;
                 emfRasterization.PageHeight = 100;
                 emfRasterization.BorderX = 5;
                 emfRasterization.BorderY = 10;
-
-                image.Save(dataDir + "ConvertEMFToWMF_out.wmf", emfRasterization);
+                
+                image.Save(dataDir + "ConvertEMFToWMF_out.wmf", ops);
             }
         }
     }

@@ -156,7 +156,7 @@ namespace Aspose.Imaging.Live.Demos.UI.Models
 				case "tiff":
 					return new Aspose.Imaging.ImageOptions.TiffOptions(Imaging.FileFormats.Tiff.Enums.TiffExpectedFormat.Default);
 				case "emf":
-					return new Aspose.Imaging.ImageOptions.EmfRasterizationOptions();
+					return new Aspose.Imaging.ImageOptions.EmfOptions();
 
 			}
 			return null;
