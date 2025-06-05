@@ -236,6 +236,7 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            PngCompressionLevelExample.Run();
             ApplyFilterMethod.Run();
             ChangeBackgroundColor.Run();
             CompressingFiles.Run();
@@ -306,7 +307,7 @@ namespace Aspose.Imaging.Examples.CSharp
             PantoneGoeCoatedPalette.Run();
             CdrToPdfExmple.Run();
             SupportOfCDR.Run();
-            CdrToPsdMultipageExample.Run();
+            //CdrToPsdMultipageExample.Run();
             CdrToPngExample.Run();
             SupportTextStylesItalicUnderline.Run();
 

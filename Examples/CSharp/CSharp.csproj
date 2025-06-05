@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=25.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.25.5.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=25.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.25.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -176,6 +176,7 @@
     <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ConvertTo1BitPng.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\KeepTransparencyWhenIndexingPngImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\PngCompressionLevelExample.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\PNG\Support16BitChannel64BitPng.cs" />
     <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
