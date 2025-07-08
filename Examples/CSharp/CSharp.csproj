@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=25.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.25.6.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=25.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.25.7.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -249,6 +249,7 @@
     <Compile Include="ModifyingAndConvertingImages\SupportOfTextRenderingHint.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportOfDIB.cs" />
     <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\CommonGraphicsEngineForSvgEmfWmf.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvertWMFToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
     <Compile Include="ModifyingAndConvertingImages\SVG\SvgNativeResize.cs" />

@@ -221,6 +221,7 @@ namespace Aspose.Imaging.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            CommonGraphicsEngineForSvgEmfWmf.Run();
             ConvOfOtherFormatsToSVG.Run();
             SVGToEMFConversion.Run();
             ConvertWMFToSVG.Run();
