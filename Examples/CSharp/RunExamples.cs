@@ -356,6 +356,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            SupportOfDigitalSignature.Run();
             AutoAdjustImageBrightness.Run();
             UnifyUsageOfCommonOperations.Run();
             LoadAvif.Run();
