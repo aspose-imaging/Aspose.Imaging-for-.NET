@@ -32,7 +32,7 @@ namespace CSharp.ModifyingAndConvertingImages
 
             string filePath = Path.Combine(dataDir, @"00020.png");
             string password = "123456";
-            using (var image = (RasterImage)Image.Load(filePath))
+            using (var image = (RasterImage)Aspose.Imaging.Image.Load(filePath))
             {
                 image.EmbedDigitalSignature(password);
 

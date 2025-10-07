@@ -356,6 +356,7 @@ namespace Aspose.Imaging.Examples.CSharp
             //// =====================================================
             //// =====================================================
             Console.WriteLine("Running modifying and converting images tests:");
+            ExtendExifMetadataForRasterImage.Run();
             SupportOfDigitalSignature.Run();
             AutoAdjustImageBrightness.Run();
             UnifyUsageOfCommonOperations.Run();

@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=25.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.25.9.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=25.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.25.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -123,6 +123,7 @@
     <Compile Include="ModifyingAndConvertingImages\EPS\ExportEps.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
     <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExtendExifMetadataForRasterImage.cs" />
     <Compile Include="ModifyingAndConvertingImages\FileExtensionAwareSave.cs" />
     <Compile Include="ModifyingAndConvertingImages\Fonts\SpecifyFont.cs" />
     <Compile Include="ModifyingAndConvertingImages\Gif\CreateGifUsingAddPage.cs" />
