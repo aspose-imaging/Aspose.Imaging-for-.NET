@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -13,8 +13,8 @@ namespace CSharp.ModifyingAndConvertingImages.ICO
     class ConvertICOToTiff
     {
         public static void Run()
-        {            
-            // The path to the documents directory.
+        {
+            // Path to the data directory.
             string dataDir = RunExamples.GetDataDir_ICO();
             Console.WriteLine("Running example ConvertICOToTiff");
 
@@ -25,7 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages.ICO
 
             File.Delete(dataDir + "result.tiff");
 
-            Console.WriteLine("Finished example ConvertICOToTiff");            
+            Console.WriteLine("Finished example ConvertICOToTiff");
         }
     }
 }

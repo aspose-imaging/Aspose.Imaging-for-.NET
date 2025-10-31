@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.ImageOptions;
@@ -21,16 +21,16 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
 
             string inputFileName = dataDir + "SimpleShapes.cdr";
 
-            //Export vector image to PSD format keeping vector shapes
+            // Export vector image to PSD format while keeping vector shapes.
 
-            //Aspose.Imaging allows to export vector image formats such as CDR, EMF, EPS, ODG, SVG, WMF to the PSD format, 
-            //while keeping vector properties of the original, utilizing PSD Shapes, Paths //and Vector Masks.
-            //Currently, export of not very complex shapes is supported, whithout texture brushes or open shapes with stroke, 
-            //which will be improved in the upcoming releases.
-            //Example
+            // Aspose.Imaging allows exporting vector image formats such as CDR, EMF, EPS, ODG, SVG, and WMF
+            // to the PSD format while preserving the original's vector properties using PSD shapes,
+            // paths, and vector masks.
 
-            //Export from the CDR format to the PSD format preserving vector 
-            //properties is as simple as the following snippet:
+            // Currently, export of moderately complex shapes is supported, without texture brushes or
+            // open shapes with stroke. This functionality will be improved in upcoming releases.
+
+            // Example: export from the CDR format to the PSD format preserving vector properties.
 
             using (Image image = Image.Load(inputFileName))
             {

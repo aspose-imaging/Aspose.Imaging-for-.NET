@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -10,18 +10,19 @@ namespace CSharp.ModifyingAndConvertingImages
 {
     class SupportBMPHeader
     {
-        public static void Run() { 
-        //ExStart:SupportBMPHeader
-        string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-        string sourceFile = @"D:\source.bmp";
-
-        string resultFile = @"D:\result.png"; 
-
-        using (Image image = Image.Load(sourceFile))
+        public static void Run()
         {
-            image.Save(resultFile, new PngOptions());
-       }
-        //ExEnd:SupportBMPHeader
+            //ExStart: Support BMP Header
+            string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
+            string sourceFile = @"D:\source.bmp";
+
+            string resultFile = @"D:\result.png";
+
+            using (Image image = Image.Load(sourceFile))
+            {
+                image.Save(resultFile, new PngOptions());
+            }
+            //ExEnd: Support BMP Header
         }
     }
 }

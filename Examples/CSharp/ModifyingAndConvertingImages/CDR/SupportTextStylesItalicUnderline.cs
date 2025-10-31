@@ -1,10 +1,6 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp.ModifyingAndConvertingImages.CDR
 {
@@ -12,7 +8,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
     {
         public static void Run()
         {
-            Console.WriteLine("Running example SupportTextStylesItalicUnderline");
+            Console.WriteLine("Running example: SupportTextStylesItalicUnderline");
 
             FontSettings.SetFontsFolder(RunExamples.GetDataDir_Fonts());
 
@@ -24,9 +20,9 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
             using (var image = Image.Load(inputFileName))
             {
                 image.Save(inputFileName + ".jpg");
-            }            
+            }
 
-            Console.WriteLine("Finished example SupportTextStylesItalicUnderline");
+            Console.WriteLine("Finished example: SupportTextStylesItalicUnderline");
         }
     }
 }

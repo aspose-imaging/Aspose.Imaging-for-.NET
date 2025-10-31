@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Svg;
 using System;
@@ -17,24 +17,24 @@ namespace CSharp.DrawingAndFormattingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
-            // Load the image to be drawn
+            // Load the raster image to be drawn.
             using (RasterImage imageToDraw = (RasterImage)Image.Load(dataDir + "asposenet_220_src01.png"))
             {
-                // Load the image for drawing on it (drawing surface)
+                // Load the SVG image that will serve as the drawing surface.
                 using (SvgImage canvasImage = (SvgImage)Image.Load(dataDir + "asposenet_220_src02.svg"))
                 {
-                    // Drawing on an existing Svg image.
+                    // Drawing on an existing SVG image.
                     Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D graphics =
                         new Aspose.Imaging.FileFormats.Svg.Graphics.SvgGraphics2D(canvasImage);
 
-                    // Draw a rectagular part of the raster image within the specified bounds of the vector image (drawing surface).
-                    // Note that because the source size is equal to the destination one, the drawn image is not stretched.
+                    // Draw a rectangular part of the raster image within the specified bounds of the vector image (drawing surface).
+                    // Note that because the source size is equal to the destination size, the drawn image is not stretched.
                     graphics.DrawImage(
                         new Rectangle(0, 0, imageToDraw.Width, imageToDraw.Height),
                         new Rectangle(67, 67, imageToDraw.Width, imageToDraw.Height),
                         imageToDraw);
 
-                    // Save the result image
+                    // Save the result image.
                     using (SvgImage resultImage = graphics.EndRecording())
                     {
                         resultImage.Save(dataDir + "asposenet_220_src02.DrawImage.svg");

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Cdr;
 using Aspose.Imaging.FileFormats.Cmx;
@@ -64,7 +64,7 @@ namespace CSharp.ModifyingAndConvertingImages
                     }
                     else
                     {
-                        throw new Exception("This is image is not supported in this example");
+                        throw new Exception("This image is not supported in this example");
                     }
                     vectorRasterizationOptions.PageSize = image.Size;
                     foreach (TextRenderingHint textRenderingHint in textRenderingHints)

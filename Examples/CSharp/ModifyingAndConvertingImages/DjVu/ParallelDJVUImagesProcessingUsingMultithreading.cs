@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -15,33 +15,33 @@ namespace CSharp.ModifyingAndConvertingImages.DjVu
     {
         public static void Run()
         {
-            Console.WriteLine("Running example ParallelDJVUImagesProcessingUsingMultithreading");
+            Console.WriteLine("Running example: ParallelDJVUImagesProcessingUsingMultithreading");
 
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
             string fileName = "Sample.djvu";
 
             int numThreads = 20;
             var tasks = Enumerable.Range(1, numThreads).Select(
                 taskNum =>
-                    {
-                        var inputFile = dataDir + fileName;
-                        var outputFile = dataDir + string.Format("{0}_task{1}.png", fileName, taskNum);
-                        return Task.Run(
-                            () =>
+                {
+                    var inputFile = dataDir + fileName;
+                    var outputFile = dataDir + string.Format("{0}_task{1}.png", fileName, taskNum);
+                    return Task.Run(
+                        () =>
+                        {
+                            using (FileStream fs = File.OpenRead(inputFile))
+                            {
+                                using (Image image = Image.Load(fs))
                                 {
-                                    using (FileStream fs = File.OpenRead(inputFile))
-                                    {
-                                        using (Image image = Image.Load(fs))
-                                        {
-                                            image.Save(outputFile, new PngOptions());
-                                        }
-                                    }
-                                });
-                    });
+                                    image.Save(outputFile, new PngOptions());
+                                }
+                            }
+                        });
+                });
             Task.WaitAll(tasks.ToArray());
 
-            Console.WriteLine("Running example ParallelDJVUImagesProcessingUsingMultithreading");
+            Console.WriteLine("Finished example: ParallelDJVUImagesProcessingUsingMultithreading");
         }
     }
 }

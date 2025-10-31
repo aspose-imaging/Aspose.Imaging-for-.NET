@@ -1,14 +1,12 @@
-﻿using Aspose.Imaging.FileFormats.Tiff;
+using Aspose.Imaging;
+using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the automatic package restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information.
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, install it, and then add its reference to this project. For any issues, questions, or suggestions, please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
@@ -30,11 +28,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             options.ResolutionUnit = TiffResolutionUnits.Inch;
             options.PlanarConfiguration = TiffPlanarConfigs.Contiguous;
 
-            // Set the Compression to AdobeDeflate
+            // Set the compression to AdobeDeflate
             options.Compression = TiffCompressions.AdobeDeflate;
             
             // Or Deflate                        
-            // Options.Compression = TiffCompressions.Deflate;
+            // options.Compression = TiffCompressions.Deflate;
 
             // Create a new TiffImage with specific size and TiffOptions settings
             using (TiffImage tiffImage = new TiffImage(new TiffFrame(options, 100, 100)))
@@ -44,7 +42,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 {
                     tiffImage.ActiveFrame.SetPixel(i, i, Color.Red);
                 }
-                // Save resultant image
+                // Save the resulting image
                 tiffImage.Save(dataDir);
             }
 

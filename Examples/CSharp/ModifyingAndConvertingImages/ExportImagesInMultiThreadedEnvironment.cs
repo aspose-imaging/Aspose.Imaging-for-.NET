@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,10 +9,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx."
+            // To get proper output, please apply a valid Aspose.Imaging license. You can purchase a full license or obtain a 30‑day temporary license from https://releases.aspose.com/.
 
             // ExStart: ExportImagesInMultiThreadedEnvironment
-            
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
@@ -20,23 +20,22 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
 
             try
             {
-                // Path & name of existing image.
+                // Path and name of the existing image.
                 imageDataPath = dataDir + "sample.bmp";
 
-                // Create the stream of the existing image file.   
+                // Create the stream of the existing image file.
                 using (System.IO.FileStream fileStream = System.IO.File.Create(imageDataPath))
                 {
-
-                    // Create an instance of BMP image option class.
+                    // Create an instance of the BMP image options class.
                     using (Aspose.Imaging.ImageOptions.BmpOptions bmpOptions = new Aspose.Imaging.ImageOptions.BmpOptions())
                     {
                         bmpOptions.BitsPerPixel = 32;
 
-                        // Set the source property of the imaging option class object.
+                        // Set the source property of the imaging options class object.
                         bmpOptions.Source = new Aspose.Imaging.Sources.StreamSource(fileStream);
 
-                        // DO PROCESSING. 
-                        // Following is the sample processing on the image. Un-comment to use it.
+                        // DO PROCESSING.
+                        // The following is sample processing on the image. Uncomment to use it.
                         //using (RasterImage image = (RasterImage)Image.Create(bmpOptions, 10, 10))
                         //{
                         //    Color[] pixels = new Color[4];
@@ -52,10 +51,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             }
             finally
             {
-                // Delete the file. This statement is in the final block because in any case this statement should execute to make it sure that resource is properly disposed off.
+                // Delete the file. This statement is in the finally block because it should always execute to ensure that the resource is properly disposed.
                 System.IO.File.Delete(imageDataPath);
             }
-
 
             // ExEnd: ExportImagesInMultiThreadedEnvironment
         }

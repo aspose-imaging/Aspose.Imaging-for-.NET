@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -10,19 +10,19 @@ namespace CSharp.ModifyingAndConvertingImages.PNG
 {
     class ReadLargePNGFile
     {
-        public static void Run() {
+        public static void Run()
+        {
+            // ExStart:ReadLargePNGFile
 
-            //ExStart:ReadLargePNGFile
-
-           // Aspose.Imaging.MemoryManagement.Configuration.BufferSizeHint = 50;
-            // The path to the documents directory.
+            // Aspose.Imaging.MemoryManagement.Configuration.BufferSizeHint = 50;
+            // The path to the document directory.
             string dataDir = RunExamples.GetDataDir_PNG();
             using (var image = Image.Load(dataDir + "halfGigImage.png"))
             {
-
                 image.Save(dataDir + "halfGigImage.jpg", new Aspose.Imaging.ImageOptions.JpegOptions());
             }
-            //ExEnd:ReadLargePNGFile
+
+            // ExEnd:ReadLargePNGFile
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.MagicWand.ImageMasks;
 using Aspose.Imaging.MagicWand;
 using Aspose.Imaging;
@@ -21,7 +21,7 @@ namespace CSharp.ModifyingAndConvertingImages
         {
             string dataDir = RunExamples.GetDataDir_PNG();
 
-            Console.WriteLine("Running example RemoveWatermarkFilter");            
+            Console.WriteLine("Running example RemoveWatermarkFilter");
 
             using (var image = Image.Load(Path.Combine(dataDir, @"ball.png")))
             {

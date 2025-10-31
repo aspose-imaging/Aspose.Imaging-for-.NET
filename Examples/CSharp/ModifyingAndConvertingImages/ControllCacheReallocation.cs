@@ -1,14 +1,14 @@
-﻿using System.IO;
+using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API references 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it and then add its reference to this project. For any issues, questions, or suggestions 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
@@ -21,7 +21,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Cache();
 
-            // By default the cache folder is set to the local temp directory.  You can specify a different cache folder from the default this way:
+            // By default the cache folder is set to the local temp directory. You can specify a different cache folder from the default this way:
             Cache.CacheFolder = dataDir;
 
             // Auto mode is flexible and efficient
@@ -34,7 +34,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // We do not recommend that you change the following property because it may greatly affect performance
             Cache.ExactReallocateOnly = false;
 
-            // At any time you can check how many bytes are currently allocated for the cache in memory or on disk By examining the following properties
+            // At any time you can check how many bytes are currently allocated for the cache in memory or on disk by examining the following properties:
             long l1 = Cache.AllocatedDiskBytesCount;
             long l2 = Cache.AllocatedMemoryBytesCount;
             GifOptions options = new GifOptions();
@@ -55,7 +55,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 long memoryBytes = Cache.AllocatedMemoryBytesCount;
             }
 
-            // The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. If you've forgotten to call dispose on an object the cache values will not be 0.
+            // The allocation properties may be used to check whether all Aspose.Imaging objects were properly disposed. 
+            // If you've forgotten to call Dispose on an object, the cache values will not be 0.
             l1 = Cache.AllocatedDiskBytesCount;
             l2 = Cache.AllocatedMemoryBytesCount;
 

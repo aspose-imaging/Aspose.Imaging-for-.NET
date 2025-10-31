@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -36,10 +36,10 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                     image.Save(
                         outputFileName,
                         new EmfOptions
-                            {
-                                VectorRasterizationOptions =
-                                    new SvgRasterizationOptions { PageSize = image.Size }
-                            });
+                        {
+                            VectorRasterizationOptions =
+                                new SvgRasterizationOptions { PageSize = image.Size }
+                        });
                 }
             }
 

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="DicomCompression.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="04.10.2020 16:58:17">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -22,7 +22,8 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
+            // To get proper output, please apply a valid Aspose.Imaging license. You can purchase a full license
+            // or obtain a 30‑day temporary license from https://www.aspose.com/purchase/default.aspx.
 
             Console.WriteLine("Running example DicomCompression");
             // The path to the documents directory.
@@ -36,10 +37,10 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
             using (var inputImage = Image.Load(inputFile))
             {
                 var options = new DicomOptions
-                                  {
-                                      ColorType = ColorType.Rgb24Bit,
-                                      Compression = new Compression { Type = CompressionType.None }
-                                  };
+                {
+                    ColorType = ColorType.Rgb24Bit,
+                    Compression = new Compression { Type = CompressionType.None }
+                };
 
                 inputImage.Save(output1, options);
             }
@@ -47,10 +48,10 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
             using (var inputImage = Image.Load(inputFile))
             {
                 var options = new DicomOptions
-                                  {
-                                      ColorType = ColorType.Rgb24Bit,
-                                      Compression = new Compression { Type = CompressionType.Jpeg }
-                                  };
+                {
+                    ColorType = ColorType.Rgb24Bit,
+                    Compression = new Compression { Type = CompressionType.Jpeg }
+                };
 
                 inputImage.Save(output2, options);
             }
@@ -58,18 +59,18 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
             using (var inputImage = Image.Load(inputFile))
             {
                 var options = new DicomOptions
-                                  {
-                                      ColorType = ColorType.Rgb24Bit,
-                                      Compression = new Compression
-                                                        {
-                                                            Type = CompressionType.Jpeg2000,
-                                                            Jpeg2000 = new Jpeg2000Options
-                                                                           {
-                                                                               Codec = Jpeg2000Codec.Jp2,
-                                                                               Irreversible = false
-                                                                           }
-                                                        }
-                                  };
+                {
+                    ColorType = ColorType.Rgb24Bit,
+                    Compression = new Compression
+                    {
+                        Type = CompressionType.Jpeg2000,
+                        Jpeg2000 = new Jpeg2000Options
+                        {
+                            Codec = Jpeg2000Codec.Jp2,
+                            Irreversible = false
+                        }
+                    }
+                };
 
                 inputImage.Save(output3, options);
             }
@@ -77,10 +78,10 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
             using (var inputImage = Image.Load(inputFile))
             {
                 var options = new DicomOptions
-                                  {
-                                      ColorType = ColorType.Rgb24Bit,
-                                      Compression = new Compression { Type = CompressionType.Rle }
-                                  };
+                {
+                    ColorType = ColorType.Rgb24Bit,
+                    Compression = new Compression { Type = CompressionType.Rle }
+                };
 
                 inputImage.Save(output4, options);
             }

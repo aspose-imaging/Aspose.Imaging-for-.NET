@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -17,17 +17,17 @@ namespace CSharp.Plugins
 
         public static void Run()
         {
-            Console.WriteLine("Running example Conversion Plugin");
+            Console.WriteLine("Running the Conversion Plugin example");
             Run1();
-            Console.WriteLine("Finished example Conversion Plugin");
+            Console.WriteLine("Finished the Conversion Plugin example");
         }
 
         //------------------------------------------------------------------------
-        //  Conversion plug-in use sample
+        //  Conversion plug‑in usage sample
         //------------------------------------------------------------------------
         static void Run1()
         {
-            // Conversion plug-in licensed use example
+            // Conversion plug‑in licensed‑use example
             License license = new License();
             try
             {
@@ -35,6 +35,7 @@ namespace CSharp.Plugins
             }
             catch
             {
+                // Ignored: license file may be missing in trial mode
             }
 
             string OutputDirectory = templatesFolder;

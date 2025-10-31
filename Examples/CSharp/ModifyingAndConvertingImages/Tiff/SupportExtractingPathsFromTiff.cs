@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportExtractingPathsFromTiff.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.05.2020 11:18:58">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -37,15 +37,14 @@ namespace CSharp.ModifyingAndConvertingImages.Tiff
                 image.Save(Path.Combine(filePath, "SampleWithPaths.psd"), new PsdOptions());
             }
 
-            // Create Clipping Path manually
+            // Create a clipping path manually
             using (var image = (TiffImage)Image.Load(Path.Combine(filePath, "Sample.tif")))
             {
                 image.ActiveFrame.PathResources = new List<PathResource>
                                                       {
                                                           new PathResource
                                                               {
-                                                                  BlockId =
-                                                                      2000, // Block Id according to Photoshop specification
+                                                                  BlockId = 2000, // Block ID according to the Photoshop specification
                                                                   Name = "My Clipping Path", // Path name
                                                                   Records = CreateRecords(
                                                                       0.2f,
@@ -55,7 +54,7 @@ namespace CSharp.ModifyingAndConvertingImages.Tiff
                                                                       0.8f,
                                                                       0.8f,
                                                                       0.2f,
-                                                                      0.8f) // Create path records using coordinates
+                                                                      0.8f) // Create path records using the coordinates
                                                               }
                                                       };
 
@@ -70,12 +69,12 @@ namespace CSharp.ModifyingAndConvertingImages.Tiff
 
         private static List<VectorPathRecord> CreateRecords(params float[] coordinates)
         {
-            var records = CreateBezierRecords(coordinates);                                  // Create Bezier records using coordinates
+            var records = CreateBezierRecords(coordinates); // Create Bezier records using coordinates
 
-            records.Insert(0, new LengthRecord                                               // LengthRecord required by Photoshop specification
+            records.Insert(0, new LengthRecord // LengthRecord required by the Photoshop specification
                                   {
-                                      IsOpen = false,                                                              // Lets create closed path
-                                      RecordCount = (ushort)records.Count                                          // Record count in the path
+                                      IsOpen = false, // Let's create a closed path
+                                      RecordCount = (ushort)records.Count // Record count in the path
                                   });
 
             return records;

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -9,10 +9,10 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
 {
     class SupportOfCDR
     {
-        public static void Run() {
-
+        public static void Run()
+        {
             Console.WriteLine("Running example SupportOfCDR");
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CDR();
 
             string inputFileName = dataDir + "test.cdr";
@@ -21,7 +21,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
             {
                 if (expectedFileFormat != image.FileFormat)
                 {
-                    throw new Exception("Image FileFormat is not {expectedFileFormat}");
+                    throw new Exception($"Image FileFormat is not {expectedFileFormat}");
                 }
             }
 

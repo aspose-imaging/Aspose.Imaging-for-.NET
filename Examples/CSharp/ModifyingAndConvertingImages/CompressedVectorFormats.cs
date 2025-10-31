@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CompressedVectorFormats.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="29.04.2020 2:22:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>

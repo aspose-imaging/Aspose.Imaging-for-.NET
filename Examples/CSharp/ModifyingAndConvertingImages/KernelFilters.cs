@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging;
 using System;
 using System.Collections.Generic;
@@ -18,8 +18,8 @@ namespace CSharp.ModifyingAndConvertingImages
         {
             Console.WriteLine("Running example KernelFilters");
 
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_PNG();            
+            // Path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_PNG();
 
             const int Size = 5;
             const double Sigma = 1.5, Angle = 45;
@@ -28,30 +28,30 @@ namespace CSharp.ModifyingAndConvertingImages
             Complex[,] customComplex = ConvolutionFilter.ToComplex(customKernel);
             var kernelFilters = new FilterOptionsBase[]
             {
-    // convolution filters
-    new ConvolutionFilterOptions(ConvolutionFilter.Emboss3x3),
-    new ConvolutionFilterOptions(ConvolutionFilter.Emboss5x5),
-    new ConvolutionFilterOptions(ConvolutionFilter.Sharpen3x3),
-    new ConvolutionFilterOptions(ConvolutionFilter.GetBlurBox(Size)),
-    new ConvolutionFilterOptions(ConvolutionFilter.GetGaussian(Size, Sigma)),
-    new ConvolutionFilterOptions(customKernel),
-    new GaussianBlurFilterOptions(Size, Sigma),
-    new SharpenFilterOptions(Size, Sigma),
-    new MedianFilterOptions(Size),
-    // deconvolution filters
-    new DeconvolutionFilterOptions(ConvolutionFilter.GetGaussian(Size, Sigma)),
-    new DeconvolutionFilterOptions(customKernel),
-    new DeconvolutionFilterOptions(customComplex),
-    new GaussWienerFilterOptions(Size, Sigma),
-    new MotionWienerFilterOptions(Size, Sigma, Angle),
+                // Convolution filters
+                new ConvolutionFilterOptions(ConvolutionFilter.Emboss3x3),
+                new ConvolutionFilterOptions(ConvolutionFilter.Emboss5x5),
+                new ConvolutionFilterOptions(ConvolutionFilter.Sharpen3x3),
+                new ConvolutionFilterOptions(ConvolutionFilter.GetBlurBox(Size)),
+                new ConvolutionFilterOptions(ConvolutionFilter.GetGaussian(Size, Sigma)),
+                new ConvolutionFilterOptions(customKernel),
+                new GaussianBlurFilterOptions(Size, Sigma),
+                new SharpenFilterOptions(Size, Sigma),
+                new MedianFilterOptions(Size),
+                // Deconvolution filters
+                new DeconvolutionFilterOptions(ConvolutionFilter.GetGaussian(Size, Sigma)),
+                new DeconvolutionFilterOptions(customKernel),
+                new DeconvolutionFilterOptions(customComplex),
+                new GaussWienerFilterOptions(Size, Sigma),
+                new MotionWienerFilterOptions(Size, Sigma, Angle),
             };
 
             //var templatesFolder = @"c:\Users\USER\Downloads\templates\";
             //var dataDir = templatesFolder;
             var inputPaths = new[]
             {
-    Path.Combine(dataDir, "template.png"),    
-};
+                Path.Combine(dataDir, "template.png"),
+            };
 
             var outputs = new List<string>();
             foreach (var inputPath in inputPaths)

@@ -13,34 +13,34 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
         public static void Run()
         {
             Console.WriteLine("Running example CMXToPNGConversion");
-            // The path to the documents directory.
+            // The path to the directory that contains the input files.
             string dataDir = RunExamples.GetDataDir_CMX();
 
             string[] fileNames = new string[] {
-             "Rectangle.cmx",
-             "Rectangle+Fill.cmx",
-             "Ellipse.cmx",
-             "Ellipse+fill.cmx",
-             "brushes.cmx",
-             "outlines.cmx",
-             "order.cmx",
-             "many_images.cmx",
+                "Rectangle.cmx",
+                "Rectangle+Fill.cmx",
+                "Ellipse.cmx",
+                "Ellipse+fill.cmx",
+                "brushes.cmx",
+                "outlines.cmx",
+                "order.cmx",
+                "many_images.cmx",
             };
             foreach (string fileName in fileNames)
             {
                 using (Image image = Image.Load(dataDir + fileName))
                 {
                     image.Save(
-                     dataDir + fileName + ".docpage.png",
-                     new PngOptions
-                     {
-                         VectorRasterizationOptions =
-                       new CmxRasterizationOptions()
-                       {
-                           Positioning = PositioningTypes.DefinedByDocument,
-                           SmoothingMode = SmoothingMode.AntiAlias
-                       }
-                     });
+                        dataDir + fileName + ".docpage.png",
+                        new PngOptions
+                        {
+                            VectorRasterizationOptions =
+                                new CmxRasterizationOptions()
+                                {
+                                    Positioning = PositioningTypes.DefinedByDocument,
+                                    SmoothingMode = SmoothingMode.AntiAlias
+                                }
+                        });
                 }
             }
 
@@ -49,4 +49,3 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
     }
 
 }
-

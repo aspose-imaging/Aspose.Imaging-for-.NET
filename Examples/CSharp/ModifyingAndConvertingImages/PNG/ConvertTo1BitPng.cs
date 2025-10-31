@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="ConvertTo1BitPng.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.07.2020 3:07:14">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -30,10 +30,10 @@ namespace CSharp.ModifyingAndConvertingImages.PNG
 
             ExportImage(
                 Path.Combine(filePath, inputFilePath),
-                    Path.Combine(filePath, outputFilePath),
-                    FileFormat.Png,
-                    0,
-                    null);
+                Path.Combine(filePath, outputFilePath),
+                FileFormat.Png,
+                0,
+                null);
 
             Console.WriteLine("Finished example ConvertTo1BitPng");
         }
@@ -51,9 +51,9 @@ namespace CSharp.ModifyingAndConvertingImages.PNG
             {
                 if (!image.IsCached)
                 {
-                    // !!! The caching call was in the customer example.
-                    // We strongly recommend that you do not use caching in this case,
-                    // since this leads to a noticeable decrease in performance in this case (in memory optimization strategy).
+                    // !!! The caching call was present in the original customer example.
+                    // We strongly recommend avoiding caching here because it can noticeably decrease performance
+                    // (due to the in‑memory optimization strategy).
                     image.CacheData();
                 }
 

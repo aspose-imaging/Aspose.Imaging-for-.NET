@@ -1,14 +1,11 @@
-﻿using Aspose.Imaging.CoreExceptions;
+using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information.
+If you do not wish to use NuGet, you can manually download the Aspose.Imaging for .NET API from https://releases.aspose.com/, install it, and then add its reference to this project. For any issues, questions, or suggestions, please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
@@ -21,14 +18,14 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_MetaFiles();
             string outputfile = dataDir + "file_out";
-         
-            // Create EmfRasterizationOption class instance and set properties
+
+            // Create an EmfRasterizationOptions instance and set its properties.
             EmfRasterizationOptions emfRasterizationOptions = new EmfRasterizationOptions();
             emfRasterizationOptions.BackgroundColor = Color.PapayaWhip;
             emfRasterizationOptions.PageWidth = 300;
             emfRasterizationOptions.PageHeight = 300;
 
-            // Load an existing EMF file as iamge and convert it to EmfImage class object
+            // Load an existing EMF file as an image and convert it to an EmfImage object.
             using (var image = (EmfImage)Image.Load(dataDir + "Picture1.emf"))
             {
                 if (!image.Header.EmfHeader.Valid)
@@ -36,7 +33,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                     throw new ImageLoadException(string.Format("The file {0} is not valid", dataDir + "Picture1.emf"));
                 }
 
-                // Convert EMF to BMP, GIF, JPEG, J2K, PNG, PSD, TIFF and WebP
+                // Convert EMF to BMP, GIF, JPEG, J2K, PNG, PSD, TIFF, and WebP.
                 image.Save(outputfile + ".bmp", new BmpOptions { VectorRasterizationOptions = emfRasterizationOptions });
                 image.Save(outputfile + ".gif", new GifOptions { VectorRasterizationOptions = emfRasterizationOptions });
                 image.Save(outputfile + ".jpeg", new JpegOptions { VectorRasterizationOptions = emfRasterizationOptions });
@@ -47,6 +44,6 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                 image.Save(outputfile + ".webp", new WebPOptions { VectorRasterizationOptions = emfRasterizationOptions });
             }
             //ExEnd:ExportMetaFileToRasterFormats
-        }       
+        }
     }
 }

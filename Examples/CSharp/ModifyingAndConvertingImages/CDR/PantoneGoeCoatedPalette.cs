@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="PantoneGoeCoatedPalette.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="15.09.2021 22:47:29">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -29,13 +29,13 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
 
             using (var image = (CdrImage)Image.Load(inputFileName))
             {
-                image.Save(Path.Combine(dataDir,"result.png") , new PngOptions()
-                                        {
-                                            VectorRasterizationOptions = new CdrRasterizationOptions
-                                                                             {
-                                                                                 Positioning = PositioningTypes.Relative
-                                                                             }
-                                        });
+                image.Save(Path.Combine(dataDir, "result.png"), new PngOptions()
+                {
+                    VectorRasterizationOptions = new CdrRasterizationOptions
+                    {
+                        Positioning = PositioningTypes.Relative
+                    }
+                });
             }
 
             File.Delete(dataDir + "result.png");

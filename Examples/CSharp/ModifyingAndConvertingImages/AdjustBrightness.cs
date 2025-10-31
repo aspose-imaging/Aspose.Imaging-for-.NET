@@ -1,13 +1,10 @@
-﻿using System;
+using System;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information.
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, install it, and then add its reference to this project. For any issues, questions, or suggestions, please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
@@ -26,7 +23,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Cast object of Image to RasterImage
                 RasterImage rasterImage = (RasterImage)image__1;
 
-                // Check if RasterImage is cached and Cache RasterImage for better performance
+                // Check if RasterImage is cached and cache RasterImage for better performance
                 if (!rasterImage.IsCached)
                 {                   
                     rasterImage.CacheData();
@@ -35,9 +32,9 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                 // Adjust the brightness
                 rasterImage.AdjustBrightness(70);
 
-                // Create an instance of TiffOptions for the resultant image, Set various properties for the object of TiffOptions and Save the resultant image
+                // Create an instance of TiffOptions for the resultant image, set various properties for the object of TiffOptions, and save the resultant image
                 TiffOptions tiffOptions = new TiffOptions(TiffExpectedFormat.Default);
-                tiffOptions.BitsPerSample = new ushort[] {8,8,8};
+                tiffOptions.BitsPerSample = new ushort[] { 8, 8, 8 };
                 tiffOptions.Photometric = TiffPhotometrics.Rgb;
                 rasterImage.Save(dataDir + Convert.ToString("AdjustBrightness_out.tiff"), tiffOptions);
             }
@@ -46,4 +43,3 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         }
     }
 }
-

@@ -1,16 +1,16 @@
+using System;
 using System.IO;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
-using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
@@ -20,7 +20,8 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
         public static void Run()
         {
             Console.WriteLine("Running example AddFramesToTIFFImage");
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
+            // To get proper output, please apply a valid Aspose.Imaging license. You can purchase a full license 
+            // or get a 30‑day temporary license from https://releases.aspose.com/.
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -43,10 +44,10 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
                         TiffFrame frame = tiffImage.ActiveFrame;
                         if (index > 0)
                         {
-                            frame = new TiffFrame(new TiffOptions(outputSettings) /*ensure options are cloned for each frame*/,
+                            frame = new TiffFrame(new TiffOptions(outputSettings) /* ensure options are cloned for each frame */,
                                 newWidth, newHeight);
-                            // If there is a TIFF image loaded you need to enumerate the frames and perform the following
-                            // Frame = TiffFrame.CreateFrameFrom(sourceFrame, outputSettings);
+                            // If there is a TIFF image loaded, you need to enumerate the frames and perform the following:
+                            // frame = TiffFrame.CreateFrameFrom(sourceFrame, outputSettings);
                         }
 
                         frame.SavePixels(frame.Bounds, ri.LoadPixels(ri.Bounds));

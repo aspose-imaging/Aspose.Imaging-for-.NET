@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="DicomToPngExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 19:13:33">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -20,7 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            Console.WriteLine("Running example DicomToPngExample");
+            Console.WriteLine("Running the DicomToPngExample example");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
@@ -34,10 +34,9 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
                 image.Save(dataDir + @"MultiframePage1.png", options);
             }
 
-
             File.Delete(dataDir + "MultiframePage1.png");
 
-            Console.WriteLine("Finished example DicomToPngExample");
+            Console.WriteLine("Finished the DicomToPngExample example");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateAPNGAnimationFromSinglePageImage.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:16:55">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -25,23 +25,22 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
         {
             Console.WriteLine("Running example CreateAPNGAnimationFromSinglePageImage");
 
-            const int AnimationDuration = 1000; // 1 s
-            const int FrameDuration = 70; // 70 ms
+            const int AnimationDuration = 1000; // 1 s
+            const int FrameDuration = 70; // 70 ms
 
             string dataDir = RunExamples.GetDataDir_APNG();
             string fileName = "not_animated.png";
             string inputFilePath = Path.Combine(dataDir, fileName);
             string outputFilePath = Path.Combine(dataDir, "raster_animation.png");
 
-            
             using (RasterImage sourceImage = (RasterImage)Image.Load(inputFilePath))
             {
                 ApngOptions createOptions = new ApngOptions
-                                                {
-                                                    Source = new FileCreateSource(outputFilePath, false),
-                                                    DefaultFrameTime = (uint)FrameDuration,
-                                                    ColorType = PngColorType.TruecolorWithAlpha,
-                                                };
+                {
+                    Source = new FileCreateSource(outputFilePath, false),
+                    DefaultFrameTime = (uint)FrameDuration,
+                    ColorType = PngColorType.TruecolorWithAlpha,
+                };
 
                 using (ApngImage apngImage = (ApngImage)Image.Create(
                     createOptions,
@@ -53,10 +52,10 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
 
                     apngImage.RemoveAllFrames();
 
-                    // add first frame
+                    // Add the first frame.
                     apngImage.AddFrame(sourceImage, FrameDuration);
 
-                    // add intermediate frames
+                    // Add intermediate frames.
                     for (int frameIndex = 1; frameIndex < numOfFrames - 1; ++frameIndex)
                     {
                         apngImage.AddFrame(sourceImage, FrameDuration);
@@ -65,7 +64,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
                         lastFrame.AdjustGamma(gamma);
                     }
 
-                    // add last frame
+                    // Add the last frame.
                     apngImage.AddFrame(sourceImage, FrameDuration);
 
                     apngImage.Save();

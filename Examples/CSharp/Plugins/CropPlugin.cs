@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -27,7 +27,7 @@ namespace CSharp.Plugins
         //-----------------------------------------------------------------
         static void Run2()
         {
-            // Valid crop licesing usage example
+            // Valid crop licensing usage example
             License license = new License();
             try
             {

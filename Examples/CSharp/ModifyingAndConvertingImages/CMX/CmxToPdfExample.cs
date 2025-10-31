@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CmxToPdfExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 18:52:19">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -21,7 +21,7 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
         public static void Run()
         {
             Console.WriteLine("Running example CmxToPdfExample");
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CMX();
 
             string inputFile = Path.Combine(dataDir, "MultiPage.cmx");
@@ -32,7 +32,7 @@ namespace CSharp.ModifyingAndConvertingImages.CMX
                 Aspose.Imaging.ImageOptions.PdfOptions options = new PdfOptions();
                 options.PdfDocumentInfo = new Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo();
 
-                // Set rasterization options for fileformat
+                // Set rasterization options for the file format.
                 options.VectorRasterizationOptions = image.GetDefaultOptions(new object[] { Color.White, image.Width, image.Height }).VectorRasterizationOptions;
                 options.VectorRasterizationOptions.TextRenderingHint = TextRenderingHint.SingleBitPerPixel;
                 options.VectorRasterizationOptions.SmoothingMode = SmoothingMode.None;

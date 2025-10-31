@@ -1,6 +1,6 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInDithering.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 13:59:14">
-//     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
+//     Copyright (c) 2001-2012 Aspise Pty Ltd. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------------------------------------------
 
@@ -26,12 +26,12 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
             string output = "SampleTiff1.out.tiff";
             string inputFileName = Path.Combine(dataDir, fileName);
 
-            Console.WriteLine("Memory optimization in Dithering started..");
+            Console.WriteLine("Memory optimization in dithering started.");
 
-            // Setting a memory limit of 50 megabytes for target loaded image
+            // Setting a memory limit of 50 megabytes for the target loaded image
             using (RasterImage image = (RasterImage)Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
             {
-                // perform dithering operation
+                // Perform a dithering operation
                 image.Dither(DitheringMethod.FloydSteinbergDithering, 1);
 
                 image.Save(Path.Combine(dataDir, output));

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
@@ -20,7 +20,11 @@ namespace CSharp.DrawingAndFormattingImages
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
             ImageOptionsBase saveOptions = new PngOptions();
             InterruptMonitor monitor = new InterruptMonitor();
-            SaveImageWorker worker = new SaveImageWorker(dataDir + "aspose-logo_tn.jpg", dataDir + "big_out.png", saveOptions, monitor);
+            SaveImageWorker worker = new SaveImageWorker(
+                dataDir + "aspose-logo_tn.jpg",
+                dataDir + "big_out.png",
+                saveOptions,
+                monitor);
 
             Thread thread = new Thread(new ThreadStart(worker.ThreadProc));
 
@@ -28,14 +32,14 @@ namespace CSharp.DrawingAndFormattingImages
             {
                 thread.Start();
 
-                // The timeout should be less than the time required for full image conversion (without interruption).
+                // The timeout should be less than the time required for a full image conversion (without interruption).
                 Thread.Sleep(3000);
 
                 // Interrupt the process
                 monitor.Interrupt();
                 Console.WriteLine("Interrupting the save thread #{0} at {1}", thread.ManagedThreadId, System.DateTime.Now);
 
-                // Wait for interruption...
+                // Wait for the interruption...
                 thread.Join();
             }
             finally
@@ -86,7 +90,7 @@ namespace CSharp.DrawingAndFormattingImages
             }
 
             /// <summary>
-            /// Tries to convert image from one format to another. Handles interruption.
+            /// Attempts to convert the image from one format to another and handles interruption.
             /// </summary>
             public void ThreadProc()
             {

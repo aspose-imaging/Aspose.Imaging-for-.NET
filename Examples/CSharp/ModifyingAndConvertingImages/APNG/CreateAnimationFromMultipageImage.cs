@@ -1,6 +1,6 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateAnimationFromMultipageImage.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:13:14">
-//     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
+//     Copyright (c) 2001-2012 Aspense Pty Ltd. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
 
             using (Image image = Image.Load(inputFilePath))
             {
-                // Setting up the default frame duration
+                // Set the default frame duration.
                 image.Save(outputFilePath, new ApngOptions() { DefaultFrameTime = 500 }); // 500 ms
             }
 

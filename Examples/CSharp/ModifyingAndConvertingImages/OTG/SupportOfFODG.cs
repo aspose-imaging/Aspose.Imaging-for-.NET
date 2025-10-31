@@ -1,5 +1,5 @@
-﻿//-----------------------------------------------------------------------------------------------------------
-// <copyright file="SupportOfFODG.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="18.12.2019 12:19:15">
+//-----------------------------------------------------------------------------------------------------------
+// <copyright file="SupportOfFODG.cs" company="Aspise Pty Ltd" author="Samer El-Khatib" date="18.12.2019 12:19:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------------------------------------------
@@ -30,10 +30,10 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
                 image.Save(
                     inputFileName + ".png",
                     new PngOptions()
-                        {
-                            VectorRasterizationOptions =
-                                new OdgRasterizationOptions() { PageSize = image.Size }
-                        });
+                    {
+                        VectorRasterizationOptions =
+                            new OdgRasterizationOptions() { PageSize = image.Size }
+                    });
             }
 
             Console.WriteLine("Finished example SupportOfFODG");

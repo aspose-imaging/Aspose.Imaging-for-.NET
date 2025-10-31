@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="DefaultFontUsageImprove.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="06.04.2021 12:45:24">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -20,7 +20,7 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
     {
         public static void Run()
         {
-            Console.WriteLine("Running example DefaultFontUsageImprove");
+            Console.WriteLine("Running the DefaultFontUsageImprove example");
             string dataDir = RunExamples.GetDataDir_OTG();
 
             string currentFolder = dataDir;
@@ -32,9 +32,9 @@ namespace CSharp.ModifyingAndConvertingImages.OTG
                 "Courier New",
                 Path.Combine(dataDir, "courier.png"));
 
-            //File.Delete(System.IO.Path.Combine(dataDir, "output.bmp"));
+            // File.Delete(System.IO.Path.Combine(dataDir, "output.bmp"));
 
-            Console.WriteLine("Finished example DefaultFontUsageImprove");
+            Console.WriteLine("Finished the DefaultFontUsageImprove example");
         }
 
         private static void ExportToPng(string filePath, string defaultFontName, string outfileName)

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Cdr;
 using Aspose.Imaging.FileFormats.Cmx;
@@ -21,7 +21,6 @@ namespace CSharp.ModifyingAndConvertingImages
             Console.WriteLine("Running example SupportOfSmoothingMode");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-
 
             string[] files = new string[]
                                  {
@@ -60,7 +59,7 @@ namespace CSharp.ModifyingAndConvertingImages
                     }
                     else
                     {
-                        throw new Exception("This is image is not supported in this example");
+                        throw new Exception("This image is not supported in this example");
                     }
 
                     vectorRasterizationOptions.PageSize = image.Size;

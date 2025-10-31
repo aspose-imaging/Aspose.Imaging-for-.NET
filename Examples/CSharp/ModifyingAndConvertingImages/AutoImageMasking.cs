@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.ImageOptions;
@@ -35,12 +35,11 @@ namespace CSharp.ModifyingAndConvertingImages
                     Method = SegmentationMethod.GraphCut,
                     Args = maskingArgs,
                     Decompose = false,
-                    ExportOptions =
-                  new PngOptions()
-                  {
-                      ColorType = PngColorType.TruecolorWithAlpha,
-                      Source = new StreamSource(new MemoryStream())
-                  },
+                    ExportOptions = new PngOptions()
+                    {
+                        ColorType = PngColorType.TruecolorWithAlpha,
+                        Source = new StreamSource(new MemoryStream())
+                    },
                 };
                 using (MaskingResult maskingResults = new ImageMasking(image).Decompose(maskingOptions))
                 {
@@ -49,7 +48,7 @@ namespace CSharp.ModifyingAndConvertingImages
                         resultImage.Save(outputFileName);
                     }
                 }
-                
+
             }
 
             Console.WriteLine("Finished example AutoImageMasking");
@@ -58,30 +57,30 @@ namespace CSharp.ModifyingAndConvertingImages
         //ExStart:FillInputPoints
         private static void FillInputPoints(string filePath, AutoMaskingArgs autoMaskingArgs)
         {
-            //BinaryFormatter serializer = new BinaryFormatter();
-            //using (Stream stream = File.OpenRead(filePath))
-            //{
-            //    bool hasObjectRectangles = (bool)serializer.Deserialize(stream);
-            //    bool hasObjectPoints = (bool)serializer.Deserialize(stream);
-            //    autoMaskingArgs.ObjectsRectangles = null;
-            //    autoMaskingArgs.ObjectsPoints = null;
+            // BinaryFormatter serializer = new BinaryFormatter();
+            // using (Stream stream = File.OpenRead(filePath))
+            // {
+            //     bool hasObjectRectangles = (bool)serializer.Deserialize(stream);
+            //     bool hasObjectPoints = (bool)serializer.Deserialize(stream);
+            //     autoMaskingArgs.ObjectsRectangles = null;
+            //     autoMaskingArgs.ObjectsPoints = null;
 
-            //    if (hasObjectRectangles)
-            //    {
-            //        autoMaskingArgs.ObjectsRectangles = ((System.Drawing.Rectangle[])serializer.Deserialize(stream))
-            //            .Select(rect => new Aspose.Imaging.Rectangle(rect.X, rect.Y, rect.Width, rect.Height))
-            //            .ToArray();
-            //    }
+            //     if (hasObjectRectangles)
+            //     {
+            //         autoMaskingArgs.ObjectsRectangles = ((System.Drawing.Rectangle[])serializer.Deserialize(stream))
+            //             .Select(rect => new Aspose.Imaging.Rectangle(rect.X, rect.Y, rect.Width, rect.Height))
+            //             .ToArray();
+            //     }
 
-            //    if (hasObjectPoints)
-            //    {
-            //        autoMaskingArgs.ObjectsPoints = ((System.Drawing.Point[][])serializer.Deserialize(stream))
-            //            .Select(pointArray => pointArray
-            //                .Select(point => new Aspose.Imaging.Point(point.X, point.Y))
-            //                .ToArray())
-            //            .ToArray();
-            //    }
-            //}
+            //     if (hasObjectPoints)
+            //     {
+            //         autoMaskingArgs.ObjectsPoints = ((System.Drawing.Point[][])serializer.Deserialize(stream))
+            //             .Select(pointArray => pointArray
+            //                 .Select(point => new Aspose.Imaging.Point(point.X, point.Y))
+            //                 .ToArray())
+            //             .ToArray();
+            //     }
+            // }
         }
         //ExEnd:FillInputPoints
     }

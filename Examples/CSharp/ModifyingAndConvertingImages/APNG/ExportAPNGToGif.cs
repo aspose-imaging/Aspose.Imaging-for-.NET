@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportAPNGToGif.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:02:20">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -28,7 +28,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
 
             using (Image image = Image.Load(inputFilePath))
             {
-                // Export to the other animated format
+                // Export to the other animated format.
                 image.Save(outputFilePath, new GifOptions());
             }
 

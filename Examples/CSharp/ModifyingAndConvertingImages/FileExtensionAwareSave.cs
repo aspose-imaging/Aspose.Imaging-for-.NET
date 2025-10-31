@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -19,12 +19,13 @@ namespace CSharp.ModifyingAndConvertingImages
             string outputPath = dataDir + "output.png";
 
             Console.WriteLine("Running example FileExtensionAwareSave");
-            // Loading and Rotating Image
+            // Loading and saving the image.
             using (var image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
                 image.Save(outputPath);
             }
 
+            // Delete the temporary file.
             File.Delete(outputPath);
 
             Console.WriteLine("Finished example FileExtensionAwareSave");

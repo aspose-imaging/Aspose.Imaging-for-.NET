@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.Exif;
 using Aspose.Imaging.ImageOptions;
@@ -15,16 +15,16 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
     {
         public static void Run()
         {
-            Console.WriteLine("Running example RemoveAndSaveWithMetadata");
+            Console.WriteLine("Running example: RemoveAndSaveWithMetadata");
 
-            // The path to the documents directory.
+            // The path to the data directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
             ExportWithMetadata(dataDir + "file.dcm", dataDir + "output.dcm", new DicomOptions());
-            
+
             File.Delete(dataDir + "output.dcm");
 
-            Console.WriteLine("Finished example RemoveAndSaveWithMetadata");
+            Console.WriteLine("Finished example: RemoveAndSaveWithMetadata");
         }
 
         public static void ExportWithMetadata(string inputPath, string outputPath, ImageOptionsBase exportOptions)

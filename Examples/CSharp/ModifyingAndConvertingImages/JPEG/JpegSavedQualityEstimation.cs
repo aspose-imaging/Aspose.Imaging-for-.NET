@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Jpeg;
 using System;
@@ -13,7 +13,7 @@ namespace CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            //ExStart:AddThumbnailToEXIFSegment
+            // ExStart:AddThumbnailToEXIFSegment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
             Console.WriteLine("Running example JpegSavedQualityEstimation");
@@ -23,7 +23,7 @@ namespace CSharp.ModifyingAndConvertingImages.JPEG
             }
 
             Console.WriteLine("Finished example JpegSavedQualityEstimation");
-            //ExEnd:AddThumbnailToEXIFSegmentk
+            // ExEnd:AddThumbnailToEXIFSegment
         }
     }
 }

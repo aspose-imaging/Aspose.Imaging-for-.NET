@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.Exif;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging;
@@ -17,7 +17,7 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
         {
             Console.WriteLine("Running example SupportDicomYBR422");
 
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DICOM();
 
             var inputPath = Path.Combine(dataDir, @"input.dcm");
@@ -29,6 +29,6 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
             File.Delete(inputPath + ".png");
 
             Console.WriteLine("Finished example SupportDicomYBR422");
-        }        
+        }
     }
 }

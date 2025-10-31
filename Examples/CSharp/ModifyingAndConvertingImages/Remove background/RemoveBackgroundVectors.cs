@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CSharp.ModifyingAndConvertingImages.Remove_background
         {
             Console.WriteLine("Running example RemoveBackgroundVectors");
 
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_RemoveBacground();
 
             var fileNames = new string[] { "golfer.emf" };

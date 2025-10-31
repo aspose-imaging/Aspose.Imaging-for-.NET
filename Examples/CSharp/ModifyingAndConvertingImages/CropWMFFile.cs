@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Wmf;
 using System;
@@ -12,13 +12,12 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-
             Console.WriteLine("Running example CropWMFFile");
 
-            // The path to the documents directory.
+            // Path to the data directory that contains the source files.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-
+            // Load the WMF image, crop it, and save the result.
             using (WmfImage image = Image.Load(dataDir + "test.wmf") as WmfImage)
             {
                 image.Crop(new Rectangle(10, 10, 100, 150));

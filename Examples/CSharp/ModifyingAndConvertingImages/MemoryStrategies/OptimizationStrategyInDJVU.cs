@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInDJVU.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="18.12.2019 16:13:57">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -25,7 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
 
             Console.WriteLine("Running example OptimizationStrategyInDJVU");
 
-            using (DjvuImage image = (DjvuImage)Image.Load(Path.Combine(dataDir,"test.djvu"), new LoadOptions { BufferSizeHint = 50 }))
+            using (DjvuImage image = (DjvuImage)Image.Load(Path.Combine(dataDir, "test.djvu"), new LoadOptions { BufferSizeHint = 50 }))
             {
                 int pageNumber = 2;
                 for (int pageNum = 0; pageNum < pageNumber; pageNum++)

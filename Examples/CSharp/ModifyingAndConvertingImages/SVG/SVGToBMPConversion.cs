@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -12,28 +12,25 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
     {
         public static void Run()
         {
-
-            Console.WriteLine("Running example SVGToBMPConversion");
+            Console.WriteLine("Running example: SVGToBMPConversion");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
             using (Image image = Image.Load(dataDir + "test.svg"))
             {
-
                 BmpOptions options = new BmpOptions();
                 SvgRasterizationOptions svgOptions = new SvgRasterizationOptions();
 
                 svgOptions.PageWidth = 100;
                 svgOptions.PageHeight = 200;
 
-
                 options.VectorRasterizationOptions = svgOptions;
 
                 image.Save(dataDir + "test.svg_out.bmp", options);
             }
 
-            Console.WriteLine("Finished example SVGToBMPConversion");
+            Console.WriteLine("Finished example: SVGToBMPConversion");
         }
     }
 }

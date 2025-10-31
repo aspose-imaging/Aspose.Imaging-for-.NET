@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.OpenDocument;
 using Aspose.Imaging.FileFormats.Tiff;
@@ -43,7 +43,6 @@ namespace CSharp.ModifyingAndConvertingImages
                         PageSize = image.Size,
                         TextRenderingHint = TextRenderingHint.SingleBitPerPixel,
                         SmoothingMode = SmoothingMode.None
-
                     }
                 });
 

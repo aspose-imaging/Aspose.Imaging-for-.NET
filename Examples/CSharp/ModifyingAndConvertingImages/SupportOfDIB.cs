@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -12,17 +12,14 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-
             Console.WriteLine("Running example SupportOfDIB");
-            // The path to the documents directory.
+            // Path to the data directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             using (Image image = Image.Load(dataDir + "sample.dib"))
             {
-
                 Console.WriteLine(image.FileFormat); // Output is "Bmp"
                 image.Save(dataDir + "sample.png", new PngOptions());
-
             }
 
             Console.WriteLine("Finished example SupportOfDIB");

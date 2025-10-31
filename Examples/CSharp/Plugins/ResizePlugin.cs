@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +8,9 @@ using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Aspose.Imaging.Sources;
 using Aspose.Imaging.FileFormats.Png;
-
 
 namespace CSharp.Plugins
 {
@@ -37,13 +26,12 @@ namespace CSharp.Plugins
             Console.WriteLine("Finished example Resize Plugin");
         }
 
-
         //------------------------------------------------------------------------------
-        // Resize plug-in license use examples
+        // Resize plug‑in license usage examples
         //------------------------------------------------------------------------------
         static void Run3()
         {
-            // Valid resize license use example
+            // Valid resize license usage example
             License license = new License();
             try
             {
@@ -68,7 +56,7 @@ namespace CSharp.Plugins
                 File.Delete(filePath);
             }
 
-            // Unlicensed use of flip rotate with resize license
+            // Unlicensed use of flip/rotate with a resize license
             using (Image image = Image.Load(Path.Combine(templatesFolder, "template.png")))
             {
                 var filePath = Path.Combine(OutputDirectory, "trial_tiger0.jpg");

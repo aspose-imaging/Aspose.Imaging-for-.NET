@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportGifFrameDurationAndNumberOfCycles.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="05.07.2021 18:43:38">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
