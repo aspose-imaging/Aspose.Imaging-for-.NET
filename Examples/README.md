@@ -4,5 +4,5 @@ This repository contains C# Example Projects for [Aspose.Imaging for .NET](https
 
 ## How to use the Examples?
 
-Visit [Aspose Documentation and Developer Guide](https://docs.aspose.com/display/imagingnet/How+to+Run+the+Examples) for details. 
+Visit [Aspose Documentation and Developer Guide]([https://docs.aspose.com/display/imagingnet/How+to+Run+the+Examples](https://docs.aspose.com/imaging/net/how-to-run-the-examples/)) for details. 
 
