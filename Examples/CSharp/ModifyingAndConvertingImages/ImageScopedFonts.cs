@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -47,7 +47,7 @@ namespace CSharp.ModifyingAndConvertingImages
             }
         }
 
-        // The custom fonts provider example. 
+        // Custom fonts provider example.
         public static Aspose.Imaging.CustomFontHandler.CustomFontData[] GetFontSource(params object[] args)
         {
             string fontsPath = string.Empty;

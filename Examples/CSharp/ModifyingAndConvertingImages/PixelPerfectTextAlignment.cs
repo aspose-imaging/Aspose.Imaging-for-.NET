@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -44,24 +44,24 @@ namespace CSharp.ModifyingAndConvertingImages
             using (System.IO.FileStream stream =
               new System.IO.FileStream(outputFileName, System.IO.FileMode.Create))
             {
-                //Create an instance of PngOptions and set its various properties
+                // Create an instance of PngOptions and set its various properties
                 Aspose.Imaging.ImageOptions.PngOptions pngOptions
                     = new Aspose.Imaging.ImageOptions.PngOptions();
 
-                //Set the Source for PngOptions
+                // Set the source for PngOptions
                 pngOptions.Source = new Aspose.Imaging.Sources.StreamSource(stream);
 
-                //Create an instance of Image 
+                // Create an instance of Image
                 using (Aspose.Imaging.Image image
                    = Aspose.Imaging.Image.Create(pngOptions, width, height))
                 {
-                    //Create and initialize an instance of Graphics class
+                    // Create and initialize an instance of Graphics class
                     Aspose.Imaging.Graphics graphics = new Aspose.Imaging.Graphics(image);
 
-                    //Clear Graphics surface
+                    // Clear graphics surface
                     graphics.Clear(Aspose.Imaging.Color.White);
 
-                    //Create a SolidBrush object and set its various properties
+                    // Create a SolidBrush object and set its various properties
                     Aspose.Imaging.Brushes.SolidBrush brush
                        = new Aspose.Imaging.Brushes.SolidBrush();
                     brush.Color = Color.Black;
@@ -110,7 +110,7 @@ namespace CSharp.ModifyingAndConvertingImages
 
                     graphics.DrawLine(pen, new Point(lineX, 0), new Point(lineX, (int)y));
 
-                    // save all changes.
+                    // Save all changes.
                     image.Save();
                 }
             }

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Avif;
 using System;
@@ -14,8 +14,8 @@ namespace CSharp.ModifyingAndConvertingImages.AVIF
     {
         public static void Run()
         {
-            //ExStart:LoadAvif
-            // The path to the documents directory.
+            // ExStart:LoadAvif
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AVIF();
 
             Console.WriteLine("Running example LoadAvif");
@@ -25,7 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages.AVIF
             }
 
             Console.WriteLine("Finished example LoadAvif");
-            //ExEnd:LoadAvif
+            // ExEnd:LoadAvif
         }
     }
 }

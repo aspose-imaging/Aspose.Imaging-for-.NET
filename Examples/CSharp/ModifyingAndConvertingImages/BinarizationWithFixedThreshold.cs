@@ -1,11 +1,10 @@
-﻿/*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+/*
+This project uses the Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API references 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions, 
+please feel free to contact us using https://forum.aspose.com/
 */
-
 
 using System;
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
@@ -18,18 +17,18 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
-            // Load an image in an instance of Image
+            // Load an image into an instance of Image
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Cast the image to RasterCachedImage and Check if image is cached                
+                // Cast the image to RasterCachedImage and check if the image is cached                
                 RasterCachedImage rasterCachedImage = (RasterCachedImage)image;
                 if (!rasterCachedImage.IsCached)
                 {
-                    // Cache image if not already cached
+                    // Cache the image if it is not already cached
                     rasterCachedImage.CacheData();
                 }
 
-                // Binarize image with predefined fixed threshold and Save the resultant image                
+                // Binarize the image with a predefined fixed threshold and save the resultant image                
                 rasterCachedImage.BinarizeFixed(100);
                 rasterCachedImage.Save(dataDir + "BinarizationWithFixedThreshold_out.jpg");
             }

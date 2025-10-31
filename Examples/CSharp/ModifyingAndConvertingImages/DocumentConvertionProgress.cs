@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="DocumentConvertionProgress.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="18.11.2019 21:46:12">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -16,7 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharp.ModifyingAndConvertingImages
-{    
+{
     class DocumentConvertionProgress
     {
         public static void Run()
@@ -36,11 +36,11 @@ namespace CSharp.ModifyingAndConvertingImages
                 image.Save(
                     Path.Combine(dataDir, "outputFile_Baseline.jpg"),
                     new JpegOptions
-                        {
-                            CompressionType = JpegCompressionMode.Baseline,
-                            Quality = 100,
-                            ProgressEventHandler = ExportProgressCallback
-                        });                
+                    {
+                        CompressionType = JpegCompressionMode.Baseline,
+                        Quality = 100,
+                        ProgressEventHandler = ExportProgressCallback
+                    });
             }
 
             Console.WriteLine("Finished example DocumentConvertionProgress");

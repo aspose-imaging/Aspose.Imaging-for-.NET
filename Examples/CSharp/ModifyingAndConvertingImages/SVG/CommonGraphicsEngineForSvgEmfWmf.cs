@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Svg;

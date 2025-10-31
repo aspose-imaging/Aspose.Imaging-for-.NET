@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging;
 using System;

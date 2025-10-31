@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,7 @@ namespace CSharp.ModifyingAndConvertingImages
         {
             Console.WriteLine("Running example BMPToPDF");
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
-            using (BmpImage image = (BmpImage)Image.Load(System.IO.Path.Combine(dataDir,"sample.bmp")))
+            using (BmpImage image = (BmpImage)Image.Load(System.IO.Path.Combine(dataDir, "sample.bmp")))
             {
                 Aspose.Imaging.ImageOptions.PdfOptions exportOptions = new PdfOptions();
                 exportOptions.PdfDocumentInfo = new Aspose.Imaging.FileFormats.Pdf.PdfDocumentInfo();

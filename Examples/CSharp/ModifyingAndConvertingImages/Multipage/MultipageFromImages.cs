@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="MultipageFromImages.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="15.01.2021 0:16:48">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -22,7 +22,7 @@ namespace CSharp.ModifyingAndConvertingImages.Multipage
         public static void Run()
         {
             Console.WriteLine("Running example MultipageFromImages");
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Multipage();
 
             string baseFolder = dataDir;
@@ -40,7 +40,6 @@ namespace CSharp.ModifyingAndConvertingImages.Multipage
                 string filePath = Path.Combine(baseFolder, file);
                 images.Add(Image.Load(filePath));
             }
-
 
             using (Image image = Image.Create(images.ToArray(), true))
             {

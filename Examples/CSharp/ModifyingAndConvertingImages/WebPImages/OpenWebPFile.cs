@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Webp;
 using System;
@@ -15,7 +15,7 @@ namespace CSharp.ModifyingAndConvertingImages.WebPImages
         public static void Run()
         {
             Console.WriteLine("Running example OpenWebPFile");
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WebPImages();
 
             string inputFile = Path.Combine(dataDir, "Animation1.webp");
@@ -37,7 +37,6 @@ namespace CSharp.ModifyingAndConvertingImages.WebPImages
             }
 
             Console.WriteLine("Finished example OpenWebPFile");
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -12,24 +12,24 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-
             Console.WriteLine("Running example ConvertWMFToPNG");
-            // The path to the documents directory.
+
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
 
             string inputFileName = dataDir + "thistlegirl_wmfsample.wmf";
             string outputFileNamePng = dataDir + "thistlegirl_wmfsample.png";
 
-
             using (Image image = Image.Load(inputFileName))
             {
-                WmfRasterizationOptions rasterizationOptions = new WmfRasterizationOptions();
-                rasterizationOptions.BackgroundColor = Color.WhiteSmoke;
-                rasterizationOptions.PageWidth = image.Width;
-                rasterizationOptions.PageHeight = image.Height;
+                WmfRasterizationOptions rasterizationOptions = new WmfRasterizationOptions
+                {
+                    BackgroundColor = Color.WhiteSmoke,
+                    PageWidth = image.Width,
+                    PageHeight = image.Height
+                };
 
-                image.Save(outputFileNamePng, new PngOptions() { VectorRasterizationOptions = rasterizationOptions });
-
+                image.Save(outputFileNamePng, new PngOptions { VectorRasterizationOptions = rasterizationOptions });
             }
 
             Console.WriteLine("Finished example ConvertWMFToPNG");

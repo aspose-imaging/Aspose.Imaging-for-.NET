@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="GraphCutAutoMasking.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="30.11.2020 2:41:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -26,7 +26,7 @@ namespace CSharp.ModifyingAndConvertingImages.Remove_background
         public static void Run()
         {
             Console.WriteLine("Running example GraphCutAutoMasking");
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
             string inputFile = Path.Combine(dataDir, "input.jpg");
@@ -34,21 +34,20 @@ namespace CSharp.ModifyingAndConvertingImages.Remove_background
             MaskingResult results;
             using (RasterImage image = (RasterImage)Image.Load(inputFile))
             {
-                // To use Graph Cut with auto calculated strokes, AutoMaskingGraphCutOptions is used.
+                // To use Graph Cut with auto‑calculated strokes, AutoMaskingGraphCutOptions is used.
                 AutoMaskingGraphCutOptions options = new AutoMaskingGraphCutOptions
                 {
-                    // Indicating that a new calculation of the default strokes should be performed during the image decomposition.
+                    // Indicates that a new calculation of the default strokes should be performed during image decomposition.
                     CalculateDefaultStrokes = true,
-                    // Setting post-process feathering radius based on the image size.
+                    // Sets the post‑process feathering radius based on the image size.
                     FeatheringRadius = (Math.Max(image.Width, image.Height) / 500) + 1,
                     Method = SegmentationMethod.GraphCut,
                     Decompose = false,
-                    ExportOptions =
-                        new PngOptions()
-                        {
-                            ColorType = PngColorType.TruecolorWithAlpha,
-                            Source = new FileCreateSource("tempFile")
-                        },
+                    ExportOptions = new PngOptions()
+                    {
+                        ColorType = PngColorType.TruecolorWithAlpha,
+                        Source = new FileCreateSource("tempFile")
+                    },
                     BackgroundReplacementColor = Color.Transparent
                 };
 

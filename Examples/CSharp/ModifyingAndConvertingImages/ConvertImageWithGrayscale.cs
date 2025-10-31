@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,7 @@ using Aspose.Imaging.FileFormats.Jpeg;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging;
 using Aspose.Imaging.ImageOptions;
+
 namespace CSharp.ModifyingAndConvertingImages
 {
     class ConvertImageWithGrayscale
@@ -27,7 +28,7 @@ namespace CSharp.ModifyingAndConvertingImages
             };
 
             string[] sourceFileNames = new string[]
-           {
+            {
               "Grayscale.jpg",
               "Grayscale.jpg",
               "Grayscale.jpg",
@@ -50,6 +51,5 @@ namespace CSharp.ModifyingAndConvertingImages
 
             Console.WriteLine("Finished example ConvertImageWithGrayscale");
         }
-
     }
 }

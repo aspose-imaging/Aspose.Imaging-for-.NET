@@ -1,13 +1,14 @@
+using Aspose.Imaging;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information.
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/,
+install it, and then add its reference to this project. For any issues, questions, or suggestions,
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
@@ -19,15 +20,16 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             Console.WriteLine("Running example CreatingAnImageBySettingPath");
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
-            
-            // Creates an instance of BmpOptions and set its various properties
+
+            // Create an instance of BmpOptions and set its properties.
             BmpOptions ImageOptions = new BmpOptions();
             ImageOptions.BitsPerPixel = 24;
 
-            // Define the source property for the instance of BmpOptions  Second boolean parameter determines if the file is temporal or not
+            // Define the source property for the BmpOptions instance.
+            // The second boolean parameter determines whether the file is temporary or not.
             ImageOptions.Source = new FileCreateSource(dataDir + "CreatingAnImageBySettingPath_out.bmp", false);
 
-            // Creates an instance of Image and call Create method by passing the BmpOptions object
+            // Create an Image instance using the BmpOptions object.
             using (Image image = Image.Create(ImageOptions, 500, 500))
             {
                 image.Save(dataDir + "CreatingAnImageBySettingPath1_out.bmp");

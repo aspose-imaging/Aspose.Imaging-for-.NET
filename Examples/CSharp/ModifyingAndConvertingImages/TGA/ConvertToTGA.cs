@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="ConvertToTGA.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="04.10.2020 17:39:43">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -22,7 +22,7 @@ namespace CSharp.ModifyingAndConvertingImages.TGA
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
+            // To get proper output, please apply a valid Aspose.Imaging license. You can purchase a full license or obtain a 30‑day temporary license from https://www.aspose.com/purchase/default.aspx.
 
             Console.WriteLine("Running example ConvertToTGA");
             // The path to the documents directory.

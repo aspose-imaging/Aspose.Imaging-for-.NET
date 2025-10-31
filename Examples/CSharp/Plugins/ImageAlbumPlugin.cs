@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
@@ -25,11 +25,11 @@ namespace CSharp.Plugins
         }
 
         //------------------------------------------------------------------
-        // Image album create plug-in example
+        // Image album creation plug-in example
         //------------------------------------------------------------------
         static void Run5()
         {
-            // Valid image album plug-in license use example
+            // Valid image album plug-in license usage example
             License license = new License();
             try
             {
@@ -63,7 +63,7 @@ namespace CSharp.Plugins
 
                 File.Delete(outputPath);
 
-                // Unlicensed use
+                // Unlicensed usage
                 outputPath = Path.Combine(templatesFolder, "trial_image_album.tiff");
                 MakeTiffAlbum(images, new TiffOptions(TiffExpectedFormat.TiffDeflateRgba), outputPath);
 

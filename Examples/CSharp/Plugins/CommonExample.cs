@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Aspose.Imaging;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Png;
@@ -10,10 +9,6 @@ using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Aspose.Imaging.Examples.CSharp;
 
 namespace CSharp.Plugins
@@ -22,7 +17,6 @@ namespace CSharp.Plugins
     {
         static string templatesFolder = RunExamples.GetDataDir_PNG();
         string dataDir = RunExamples.GetDataDir_PNG();
-
 
         public static void Run()
         {
@@ -38,19 +32,19 @@ namespace CSharp.Plugins
         }
 
         //------------------------------------------------------------------------
-        //  Conversion plug-in use sample
+        // Conversion plug‑in usage sample
         //------------------------------------------------------------------------
         static void Run1()
         {
-            // Conversion plug-in licensed use example
+            // Conversion plug‑in licensed‑use example
             License license = new License();
             try
             {
                 license.SetLicense(Path.Combine(Path.Combine(templatesFolder, "License/PlugIn"), "Aspose.Imaging.Conversion.NET.lic"));
             }
-            catch 
-            { 
-            }            
+            catch
+            {
+            }
 
             string OutputDirectory = templatesFolder;
 
@@ -61,7 +55,7 @@ namespace CSharp.Plugins
                 File.Delete(filePath);
             }
 
-            // Unlicensed use of resize with conversion license
+            // Unlicensed use of resize with conversion licence
             using (Image image = Image.Load(Path.Combine(templatesFolder, "template.png")))
             {
                 var filePath = Path.Combine(templatesFolder, "trial_tiger0.jpg");
@@ -74,11 +68,11 @@ namespace CSharp.Plugins
         }
 
         //-----------------------------------------------------------------
-        // Crop plug-in license use examples
+        // Crop plug‑in licence usage examples
         //-----------------------------------------------------------------
         static void Run2()
         {
-            // Valid crop licesing usage example
+            // Valid crop licence usage example
             License license = new License();
             try
             {
@@ -100,7 +94,7 @@ namespace CSharp.Plugins
                 File.Delete(filePath);
             }
 
-            // Unlicensed use of resize with crop license
+            // Unlicensed use of resize with crop licence
             using (Image image = Image.Load(Path.Combine(templatesFolder, "template.png")))
             {
                 var filePath = Path.Combine(OutputDirectory, "trial_tiger0.jpg");
@@ -113,12 +107,12 @@ namespace CSharp.Plugins
         }
 
         //------------------------------------------------------------------------------
-        // Resize plug-in license use examples
+        // Resize plug‑in licence usage examples
         //------------------------------------------------------------------------------
 
         static void Run3()
         {
-            // Valid resize license use example
+            // Valid resize licence usage example
             License license = new License();
             try
             {
@@ -143,7 +137,7 @@ namespace CSharp.Plugins
                 File.Delete(filePath);
             }
 
-            // Unlicensed use of flip rotate with resize license
+            // Unlicensed use of flip/rotate with resize licence
             using (Image image = Image.Load(Path.Combine(templatesFolder, "template.png")))
             {
                 var filePath = Path.Combine(OutputDirectory, "trial_tiger0.jpg");
@@ -156,12 +150,12 @@ namespace CSharp.Plugins
         }
 
         //---------------------------------------------------------------------------------------
-        //  Image merge plug-in use examples
+        // Image merge plug‑in usage examples
         //---------------------------------------------------------------------------------------
 
         static void Run4()
         {
-            // Valid resize license use example
+            // Valid merge licence usage example
             License license = new License();
             try
             {
@@ -215,21 +209,20 @@ namespace CSharp.Plugins
 
                 File.Delete(outputPath);
 
-                // Unlicensed crop with merge plug-in license
+                // Unlicensed crop with merge plug‑in licence
                 outputPath = Path.Combine(OutputDirectory, "trial_merge_vertical.jpg");
                 MergeImages(images, MergeDirection.Vertical, totalHeight, maxWidth, outputPath,
-                            (image) =>
-                            {
-                                var rasterImage = image as RasterImage;
-                                if (rasterImage == null)
-                                {
-                                    return false;
-                                }
+                    (image) =>
+                    {
+                        var rasterImage = image as RasterImage;
+                        if (rasterImage == null)
+                        {
+                            return false;
+                        }
 
-                                rasterImage.Crop(new Rectangle(0, 0, image.Width >> 1, image.Height >> 1));
-                                return true;
-                            }
-                            );
+                        rasterImage.Crop(new Rectangle(0, 0, image.Width >> 1, image.Height >> 1));
+                        return true;
+                    });
 
                 File.Delete(outputPath);
             }
@@ -240,11 +233,11 @@ namespace CSharp.Plugins
         }
 
         //------------------------------------------------------------------
-        // Image album create plug-in example
+        // Image album creation plug‑in example
         //------------------------------------------------------------------
         static void Run5()
         {
-            // Valid image album plug-in license use example
+            // Valid image album plug‑in licence usage example
             License license = new License();
             try
             {
@@ -291,11 +284,11 @@ namespace CSharp.Plugins
         }
 
         //----------------------------------------------------------
-        // Composite use of plug-in licenses example
+        // Composite use of plug‑in licences example
         //----------------------------------------------------------
         static void Run6()
         {
-            // Valid crop licesing usage example
+            // Valid crop licence usage example
             License license = new License();
             try
             {
@@ -330,7 +323,7 @@ namespace CSharp.Plugins
 
         static void Run7()
         {
-            // Valid image album plug-in license use example
+            // Valid image album plug‑in licence usage example
             License license = new License();
             try
             {
@@ -363,7 +356,6 @@ namespace CSharp.Plugins
                 outputPath = Path.Combine(templatesFolder, "trial_image_album.tiff");
                 MakeTiffAlbum(images, new TiffOptions(TiffExpectedFormat.TiffDeflateRgba), outputPath);
                 File.Delete(outputPath);
-
             }
             finally
             {
@@ -419,22 +411,17 @@ namespace CSharp.Plugins
                         }
                     });
 
-                    if (callback != null)
-                    {
-                        callback(image);
-                    }
+                    callback?.Invoke(image);
 
                     image.Save(outputPath);
                 }
             }
-
         }
 
         static void MakeTiffAlbum(List<Image> images, TiffOptions rgbOptions, string outputPath)
         {
             using (var tiffImage = new TiffImage(new TiffFrame[0]))
             {
-
                 foreach (var image in images.Where(image => image is RasterImage))
                 {
                     tiffImage.AddFrame(new TiffFrame(image as RasterImage, rgbOptions));

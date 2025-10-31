@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageOptions;
 using System;
@@ -10,10 +10,9 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
 {
     class ConvertWMFToSVG
     {
-
         public static void Run()
-        {            
-            // The path to the documents directory.
+        {
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
             string inputFileName = dataDir + "thistlegirl_wmfsample.wmf";
@@ -32,7 +31,6 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
                 {
                     VectorRasterizationOptions = rasterizationOptions
                 });
-
             }
 
             Console.WriteLine("Finished example ConvertWMFToSVG");

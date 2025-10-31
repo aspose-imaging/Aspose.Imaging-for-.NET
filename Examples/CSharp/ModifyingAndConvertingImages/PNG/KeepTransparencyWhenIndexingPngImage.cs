@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Png;
 using Aspose.Imaging.ImageOptions;
@@ -16,7 +16,7 @@ namespace CSharp.ModifyingAndConvertingImages.PNG
         public static void Run()
         {
             Console.WriteLine("Running example KeepTransparencyWhenIndexingPngImage");
-            
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PNG();
 

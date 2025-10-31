@@ -5,11 +5,11 @@ using Aspose.Imaging.Shapes;
 using Aspose.Imaging.Sources;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API references
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information.
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/,
+install it, and then add its reference to this project. For any issues, questions, or suggestions,
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
@@ -22,20 +22,20 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DrawingAndFormattingImages();
 
-            // Create an instance of BmpOptions and set its various properties
+            // Create an instance of BmpOptions and set its various properties.
             BmpOptions ImageOptions = new BmpOptions();
             ImageOptions.BitsPerPixel = 24;
 
-            // Create an instance of FileCreateSource and assign it to Source property
+            // Create an instance of FileCreateSource and assign it to the Source property.
             ImageOptions.Source = new FileCreateSource(dataDir + "sample_1.bmp", false);
 
-            // Create an instance of Image and initialize an instance of Graphics
+            // Create an Image instance and initialize a Graphics object.
             using (Image image = Image.Create(ImageOptions, 500, 500))
             {
                 Graphics graphics = new Graphics(image);
                 graphics.Clear(Color.White);
 
-                // Create an instance of GraphicsPath and Instance of Figure, add EllipseShape, RectangleShape and TextShape to the figure
+                // Create an instance of GraphicsPath and a Figure, then add EllipseShape, RectangleShape, and TextShape to the figure.
                 GraphicsPath graphicspath = new GraphicsPath();
                 Figure figure = new Figure();
                 figure.AddShape(new EllipseShape(new RectangleF(0, 0, 499, 499)));
@@ -44,7 +44,7 @@ namespace Aspose.Imaging.Examples.CSharp.DrawingAndFormattingImages
                 graphicspath.AddFigures(new[] { figure });
                 graphics.DrawPath(new Pen(Color.Blue), graphicspath);
 
-                // Create an instance of HatchBrush and set its properties also Fill path by supplying the brush and GraphicsPath objects
+                // Create an instance of HatchBrush, set its properties, and fill the path using the brush and the GraphicsPath objects.
                 HatchBrush hatchbrush = new HatchBrush();
                 hatchbrush.BackgroundColor = Color.Brown;
                 hatchbrush.ForegroundColor = Color.Blue;

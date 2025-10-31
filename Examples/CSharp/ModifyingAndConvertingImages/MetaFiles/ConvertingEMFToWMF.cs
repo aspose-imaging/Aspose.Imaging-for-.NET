@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Aspose.Imaging;
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
 {
@@ -9,11 +10,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
     {
         public static void Run()
         {
-            // To get proper output please apply a valid Aspose.Imaging License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx."
+            // To get proper output, please apply a valid Aspose.Imaging license. You can purchase a full license or obtain a 30‑day temporary license from https://www.aspose.com/purchase/default.aspx.
 
             // ExStart: SyncRootProperty
 
-            // List of existing EMF images. 
+            // List of existing EMF images.
             string path = @"";
             string[] files = new string[] { "TestEmfRotatedText.emf", "TestEmfPlusFigures.emf", "TestEmfBezier.emf" };
 

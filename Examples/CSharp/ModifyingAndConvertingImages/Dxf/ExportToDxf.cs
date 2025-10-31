@@ -1,5 +1,5 @@
-﻿//-----------------------------------------------------------------------------------------------------------
-// <copyright file="ExportToDxf.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="09.05.2021 15:55:25">
+//-----------------------------------------------------------------------------------------------------------
+// <copyright file="ExportToDxf.cs" company="Aspose Pty Ltd" author="Samer El‑Khatib" date="09.05.2021 15:55:25">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------------------------------------------
@@ -20,21 +20,23 @@ namespace CSharp.ModifyingAndConvertingImages.Dxf
     {
         public static void Run()
         {
-            Console.WriteLine("Running example ExportToDxf");
+            Console.WriteLine("Running the ExportToDxf example");
             string dataDir = RunExamples.GetDataDir_EPS();
 
             using (Image image = Image.Load(Path.Combine(dataDir, "Pooh group.eps")))
             {
-                DxfOptions options = new DxfOptions();
-                options.TextAsLines = true;
-                options.ConvertTextBeziers = true;
-                options.BezierPointCount = 20;
+                DxfOptions options = new DxfOptions
+                {
+                    TextAsLines = true,
+                    ConvertTextBeziers = true,
+                    BezierPointCount = 20
+                };
                 image.Save(System.IO.Path.Combine(dataDir, "output.dxf"), options);
             }
 
             File.Delete(System.IO.Path.Combine(dataDir, "output.dxf"));
 
-            Console.WriteLine("Finished example ExportToDxf");
-        }  
+            Console.WriteLine("Finished the ExportToDxf example");
+        }
     }
 }

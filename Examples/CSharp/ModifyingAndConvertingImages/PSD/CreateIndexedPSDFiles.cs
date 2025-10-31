@@ -1,14 +1,14 @@
-﻿using Aspose.Imaging.FileFormats.Psd;
+using Aspose.Imaging.FileFormats.Psd;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.Sources;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
@@ -21,18 +21,18 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.PSD
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PSD();
 
-            // Create an instance of PsdOptions and set it's properties
+            // Create an instance of PsdOptions and set its properties
             var createOptions = new PsdOptions();
             createOptions.Source = new FileCreateSource(dataDir + "Newsample_out.psd", false);
             createOptions.ColorMode = ColorModes.Rgb;
             createOptions.Version = 5;
 
-            // Create a new color patelle having RGB colors, Set Palette property & compression method
+            // Create a new color palette containing RGB colors, set the Palette property, and specify the compression method
             Color[] palette = { Color.Red, Color.Green, Color.Blue };
             //createOptions.Palette = new PsdColorPalette(palette);
             createOptions.CompressionMethod = CompressionMethod.RLE;
 
-            // Create a new PSD with PsdOptions created previously
+            // Create a new PSD with the PsdOptions created previously
             using (var psd = Image.Create(createOptions, 500, 500))
             {
                 // Draw some graphics over the newly created PSD

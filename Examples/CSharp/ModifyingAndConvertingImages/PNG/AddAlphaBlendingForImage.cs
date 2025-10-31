@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.IO;
 using System.Xml.Linq;
@@ -21,7 +21,7 @@ namespace CSharp.ModifyingAndConvertingImages.PNG
                 {
                     var center = new Point((background.Width - overlay.Width) / 2, (background.Height - overlay.Height) / 2);
                     background.Blend(center, overlay, overlay.Bounds, 127);
-                    background.Save(Path.Combine(dataDir, @"blended.png"), new PngOptions() { ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha});
+                    background.Save(Path.Combine(dataDir, @"blended.png"), new PngOptions() { ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha });
                     File.Delete(Path.Combine(dataDir, @"blended.png"));
                 }
             }

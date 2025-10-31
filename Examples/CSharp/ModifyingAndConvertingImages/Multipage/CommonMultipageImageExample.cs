@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CommonMultipageImageExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="28.02.2020 14:32:28">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -15,6 +15,7 @@ using Aspose.Imaging;
 using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
+
 namespace CSharp.ModifyingAndConvertingImages.Multipage
 {
     class CommonMultipageImageExample

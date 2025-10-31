@@ -1,14 +1,14 @@
-﻿using Aspose.Imaging.Exif;
+using Aspose.Imaging.Exif;
 using Aspose.Imaging.Exif.Enums;
 using Aspose.Imaging.FileFormats.Jpeg;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API references 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions, 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
@@ -17,18 +17,18 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
     {
         public static void Run()
         {
-            //ExStart:WritingAndModifyingEXIFData
+            // ExStart:WritingAndModifyingEXIFData
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_JPEG();
 
             Console.WriteLine("Running example WritingAndModifyingEXIFData");
-            // Load an image using the factory method Load exposed by Image class
+            // Load an image using the factory method Load exposed by the Image class.
             using (Image image = Image.Load(dataDir + "aspose-logo.jpg"))
             {
-                // Initialize an object of ExifData and fill it will image's EXIF information
+                // Initialize an object of ExifData and fill it with the image's EXIF information.
                 JpegExifData exif = ((JpegImage)image).ExifData;
 
-                // Set LensMake, WhiteBalance, Flash information Save the image
+                // Set LensMake, WhiteBalance, and Flash information. Save the image.
                 exif.LensMake = "Sony";
                 exif.WhiteBalance = ExifWhiteBalance.Auto;
                 exif.Flash = ExifFlash.Fired;
@@ -36,8 +36,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
             }
 
             Console.WriteLine("Finished example WritingAndModifyingEXIFData");
-            //ExEnd:WritingAndModifyingEXIFData
+            // ExEnd:WritingAndModifyingEXIFData
         }
     }
 }
-

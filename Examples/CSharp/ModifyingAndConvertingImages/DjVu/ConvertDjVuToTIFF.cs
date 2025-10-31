@@ -4,11 +4,11 @@ using Aspose.Imaging.ImageOptions;
 using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
@@ -21,13 +21,13 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.DjVu
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_DjVu();
 
-            // Load a DjVu image
+            // Load a DjVu image.
             using (DjvuImage image = (DjvuImage)Image.Load(dataDir + "Sample.djvu"))
             {
-                // Create an instance of TiffOptions & use preset options for Black n While with Deflate compression
+                // Create an instance of TiffOptions and use preset options for Black and White with Deflate compression.
                 TiffOptions exportOptions = new TiffOptions(TiffExpectedFormat.TiffDeflateBw);
 
-                // Initialize the DjvuMultiPageOptions and Call Save method while passing instance of TiffOptions
+                // Initialize the DjvuMultiPageOptions and call the Save method while passing the instance of TiffOptions.
                 exportOptions.MultiPageOptions = new DjvuMultiPageOptions();
                 image.Save(dataDir + "ConvertDjVuToTIFFFormat_out.tiff", exportOptions);
             }

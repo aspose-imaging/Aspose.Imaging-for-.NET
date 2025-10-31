@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging;
 using System;
 using System.Collections.Generic;
@@ -22,16 +22,16 @@ namespace CSharp.ModifyingAndConvertingImages
 
             Console.WriteLine("Running example ExtendExifMetadataForRasterImage");
 
-            //# Signing limitations:
-            //#  - The LSB steganography algorithm requires the image to be at least 8 pixels in width and height, with a minimum of 16,384 total pixels.
-            //#  - Password must be at least 4 characters long.
+            // Signing limitations:
+            //  - The LSB steganography algorithm requires the image to be at least 8 pixels wide and high, with a minimum of 16,384 total pixels.
+            //  - Password must be at least 4 characters long.
 
             //            var password = "1234";
-            //            var filePath = "c:\sunflower.jpg";
+            //            var filePath = "c:\\sunflower.jpg";
 
             //#################################### Example 1 ###############################
-            //# Faster checking method with partial data extraction.                     #
-            //# Set detectionThreasholdPercentage value to 75% (default value).          #
+            // Faster checking method with partial data extraction.
+            // Set detectionThresholdPercentage value to 75% (default value).
             //##############################################################################
 
             string filePath = Path.Combine(dataDir, @"00020.png");
@@ -69,7 +69,7 @@ namespace CSharp.ModifyingAndConvertingImages
         {
             using (Image inputImage = Image.Load(inputPath))
             {
-                // Set KeepMetadata to true to export inputImage metadata profiles, if outputOptions instance does not contain ones.
+                // Set KeepMetadata to true to export inputImage metadata profiles if the outputOptions instance does not contain any.
                 outputOptions.KeepMetadata = true;
 
                 inputImage.Save(outputPath, outputOptions);
@@ -83,7 +83,7 @@ namespace CSharp.ModifyingAndConvertingImages
 
                 var newMetadata = GetNewMetadata();
 
-                // Try to set metadata, if the image format support metadata format type.
+                // Try to set metadata if the image format supports the metadata format type.
                 foreach (var metadata in newMetadata)
                 {
                     if (outputOptions.TrySetMetadata(metadata))
@@ -109,11 +109,11 @@ namespace CSharp.ModifyingAndConvertingImages
 
             return new IImageMetadataFormat[]
             {
-        xmpData,
-        new ExifData
-        {
-            Orientation = ExifOrientation.RightTop,
-        },
+                xmpData,
+                new ExifData
+                {
+                    Orientation = ExifOrientation.RightTop,
+                },
             };
         }
     }

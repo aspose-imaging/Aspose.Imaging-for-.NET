@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInResize.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 14:09:47">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -24,12 +24,12 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
 
             string fileName = "SampleTiff1.tiff";
             string output = "SampleTiff1.out.tiff";
-            string inputFileName = Path.Combine(dataDir, fileName);            
+            string inputFileName = Path.Combine(dataDir, fileName);
 
-            // Setting a memory limit of 50 megabytes for target loaded image
+            // Set a memory limit of 50 MB for the loaded image.
             using (var image = Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
             {
-                // perform Resize operation
+                // Perform resize operation.
                 image.Resize(300, 200, ResizeType.LanczosResample);
                 image.Save(Path.Combine(dataDir, output));
             }

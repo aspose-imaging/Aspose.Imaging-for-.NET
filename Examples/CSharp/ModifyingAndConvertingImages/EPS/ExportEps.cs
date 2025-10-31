@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportEps.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="29.08.2020 10:33:39">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -24,7 +24,7 @@ namespace CSharp.ModifyingAndConvertingImages.EPS
         public static void Run()
         {
             Console.WriteLine("Running example ExportEps");
-            // The path to the documents directory.
+            // Gets the path to the documents directory.
             string dataDir = RunExamples.GetDataDir_EPS();
 
             Stream tiffPreviewStream = null;
@@ -36,7 +36,7 @@ namespace CSharp.ModifyingAndConvertingImages.EPS
                     tiffPreviewStream = new MemoryStream();
                     tiffPreview.Save(tiffPreviewStream);
                 }
-            }            
+            }
 
             Console.WriteLine("Finished example ExportEps");
         }

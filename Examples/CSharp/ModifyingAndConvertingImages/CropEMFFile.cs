@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Emf;
 using System;
@@ -12,7 +12,7 @@ namespace CSharp.ModifyingAndConvertingImages
     {
         public static void Run()
         {
-            Console.WriteLine("Running example CropEMFFile");
+            Console.WriteLine("Running example: CropEMFFile");
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ModifyingAndConvertingImages();
@@ -25,7 +25,7 @@ namespace CSharp.ModifyingAndConvertingImages
                 image.Save(dataDir + "test.emf_crop.emf");
             }
 
-            Console.WriteLine("Finished example CropEMFFile");
+            Console.WriteLine("Finished example: CropEMFFile");
         }
 
     }

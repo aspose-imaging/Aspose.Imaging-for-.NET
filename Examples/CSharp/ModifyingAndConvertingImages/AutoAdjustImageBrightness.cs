@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging;
+using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;
 using System.Collections.Generic;
@@ -19,7 +19,7 @@ namespace CSharp.ModifyingAndConvertingImages
 
             string outputFilePath = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "result.png";
             string outputFilePath2 = RunExamples.GetDataDir_ModifyingAndConvertingImages() + "result2.png";
-            // Load an existing JPG image
+            // Load an existing PNG image.
             using (RasterImage image = (RasterImage)Image.Load(dataDir + "sample.png"))
             {
                 image.NormalizeHistogram();

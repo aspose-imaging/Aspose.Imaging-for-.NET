@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInRotate.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="31.07.2019 13:03:38">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -24,13 +24,13 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
 
             string fileName = "SampleTiff1.tiff";
             string inputFileName = Path.Combine(dataDir, fileName);
-            Console.WriteLine("Memory optimization in Rotate started..");
+            Console.WriteLine("Memory optimization during rotation started.");
             using (var image = Image.Load(inputFileName, new LoadOptions() { BufferSizeHint = 50 }))
             {
-                // perform RotateFlip operation
+                // Perform RotateFlip operation.
                 image.RotateFlip(RotateFlipType.Rotate90FlipNone);
-                // perform Rotate operation
-                ((RasterImage)image).Rotate(60); // rotate 60 degrees clockwise
+                // Perform Rotate operation.
+                ((RasterImage)image).Rotate(60); // Rotate 60 degrees clockwise.
             }
 
             Console.WriteLine("Finished example OptimizationStrategyInRotate");

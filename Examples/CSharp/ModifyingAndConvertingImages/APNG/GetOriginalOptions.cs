@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="GetOriginalOptions.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="04.06.2021 3:37:14">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -29,7 +29,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
                 ApngOptions options = (ApngOptions)image.GetOriginalOptions();
                 if (options.NumPlays != 0 || options.DefaultFrameTime != 10 || options.BitDepth != 8)
                 {
-                    Console.WriteLine("Exist some errors in default options");
+                    Console.WriteLine("There are some errors in the default options");
                 }
             }
 

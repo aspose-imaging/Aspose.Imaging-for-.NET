@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportToHtml5Canvas.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="29.04.2020 2:14:07">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -28,10 +28,10 @@ namespace CSharp.ModifyingAndConvertingImages.Html5Canvas
                 image.Save(
                     System.IO.Path.Combine(dataDir, "Sample.html"),
                     new Html5CanvasOptions
-                        {
-                            VectorRasterizationOptions =
-                                new SvgRasterizationOptions() { PageWidth = 100, PageHeight = 100 }
-                        });
+                    {
+                        VectorRasterizationOptions =
+                            new SvgRasterizationOptions() { PageWidth = 100, PageHeight = 100 }
+                    });
             }
 
             Console.WriteLine("Finished example ExportToHtml5Canvas");

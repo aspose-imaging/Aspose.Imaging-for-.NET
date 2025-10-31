@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInJPEG2000.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="18.12.2019 16:05:55">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -27,21 +27,19 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
 
             Console.WriteLine("Running example OptimizationStrategyInJPEG2000");
 
-            // Setting a memory limit of 100 megabytes for target loaded image
-            // JP2 codec
+            // Set a memory limit of 100 megabytes for the loaded image (JP2 codec).
             using (Image image = Image.Load(Path.Combine(dataDir, "inputFile.jp2"), new LoadOptions() { BufferSizeHint = 100 }))
             {
-                image.Save(Path.Combine(dataDir,"outputFile.jp2"));
-            }            
+                image.Save(Path.Combine(dataDir, "outputFile.jp2"));
+            }
 
-            // Setting a memory limit of 10 megabytes for target created image
-            // JP2 codec
+            // Set a memory limit of 100 megabytes for the created image (JP2 codec).
             ImageOptionsBase createOptions = new Jpeg2000Options { Codec = Jpeg2000Codec.Jp2 };
             createOptions.BufferSizeHint = 100;
-            createOptions.Source = new FileCreateSource(Path.Combine(dataDir,"createdFile.jp2"), false);
+            createOptions.Source = new FileCreateSource(Path.Combine(dataDir, "createdFile.jp2"), false);
             using (var image = Image.Create(createOptions, 1000, 1000))
             {
-                image.Save(); // save to same location
+                image.Save(); // Save to the same location.
             }
 
             Console.WriteLine("Finished example OptimizationStrategyInJPEG2000");

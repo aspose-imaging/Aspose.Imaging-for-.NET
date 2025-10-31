@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateAPNGAnimationFromGraphics.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:20:32">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -26,7 +26,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
         {
             Console.WriteLine("Running example CreateAPNGAnimationFromGraphics");
 
-            const int AnimationDuration = 1000; // 1 s
+            const int AnimationDuration = 1000; // 1 s
 
             string dataDir = RunExamples.GetDataDir_APNG();
             string fileName = "not_animated.png";
@@ -34,7 +34,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
             string outputFilePath = Path.Combine(dataDir, "vector_animation.png");
 
 
-            // preparing the animation scene
+            // Preparing the animation scene
             const int SceneWidth = 400;
             const int SceneHeigth = 400;
             const uint ActDuration = 1000; // Act duration, in milliseconds
@@ -140,7 +140,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
             IAnimation fullEllipseAnimation = new SequentialAnimation() { ellipseAnimation1, ellipseAnimation2, ellipseAnimation3, ellipseAnimation4 };
             scene.Animation = new ParallelAnimation() { fullLineAnimation, fullEllipseAnimation };
 
-            // playing the scene on the newly created ApngImage
+            // Playing the scene on the newly created APNG image
             ApngOptions createOptions = new ApngOptions
             {
                 Source = new FileCreateSource(outputFilePath, false),
@@ -281,14 +281,14 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
         }
     }
 
-    // The simple delay between other animations
+    // A simple delay between other animations
     public class Delay : IAnimation
     {
         public uint Duration { get; set; }
 
         public void Update(uint elapsed)
         {
-            // nop
+            // No operation
         }
     }
 
@@ -356,7 +356,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
                 if (totalDuration > elapsed)
                 {
                     break;
-                } 
+                }
 
                 animation.Update(elapsed - totalDuration);
                 totalDuration += animation.Duration;

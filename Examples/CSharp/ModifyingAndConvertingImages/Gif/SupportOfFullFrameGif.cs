@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportOfFullFrameGif.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.05.2020 11:32:56">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInFilters.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 13:51:13">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -31,7 +31,8 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 inputFileName,
                 new LoadOptions { BufferSizeHint = 50 }))
             {
-                FilterOptionsBase filterOptions = new MedianFilterOptions(6 /*size*/);
+                // Median filter size
+                FilterOptionsBase filterOptions = new MedianFilterOptions(6);
                 rasterImage.Filter(rasterImage.Bounds, filterOptions);
                 rasterImage.Save(Path.Combine(dataDir, output));
             }

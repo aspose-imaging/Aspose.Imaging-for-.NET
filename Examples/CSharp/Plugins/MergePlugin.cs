@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,6 @@ using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Aspose.Imaging.Sources;
 using Aspose.Imaging.FileFormats.Png;
 
@@ -32,12 +27,12 @@ namespace CSharp.Plugins
         }
 
         //---------------------------------------------------------------------------------------
-        //  Image merge plug-in use examples
+        // Image merge plug-in usage examples
         //---------------------------------------------------------------------------------------
 
         static void Run4()
         {
-            // Valid resize license use example
+            // Valid resize license usage example
             License license = new License();
             try
             {
@@ -91,7 +86,7 @@ namespace CSharp.Plugins
 
                 File.Delete(outputPath);
 
-                // Unlicensed crop with merge plug-in license
+                // Unlicensed crop with merge plug-in (trial)
                 outputPath = Path.Combine(OutputDirectory, "trial_merge_vertical.jpg");
                 MergeImages(images, MergeDirection.Vertical, totalHeight, maxWidth, outputPath,
                             (image) =>

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInDicom.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.05.2020 11:27:11">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -29,16 +29,16 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 100,
                 100))
             {
-                // Draw something using vector graphics
+                // Draw something using vector graphics.
                 Graphics graphics = new Graphics(image);
                 graphics.FillRectangle(new SolidBrush(Color.BlueViolet), image.Bounds);
                 graphics.FillRectangle(new SolidBrush(Color.Aqua), 10, 20, 50, 20);
                 graphics.FillEllipse(new SolidBrush(Color.Orange), 30, 50, 70, 30);
 
-                // Save the pixels of the drawn image. They are now on the first page of the Dicom image.
+                // Save the pixels of the drawn image. They are now on the first page of the DICOM image.
                 int[] pixels = image.LoadArgb32Pixels(image.Bounds);
 
-                // Add a few pages after, making them darker
+                // Add a few pages after the first page, making them darker.
                 for (int i = 1; i < 5; i++)
                 {
                     DicomPage page = image.AddPage();
@@ -46,7 +46,7 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                     page.AdjustBrightness(i * 30);
                 }
 
-                // Add a few pages in front of the main page, making them brighter
+                // Add a few pages before the main page, making them brighter.
                 for (int i = 1; i < 5; i++)
                 {
                     DicomPage page = image.InsertPage(0);
@@ -55,7 +55,7 @@ namespace CSharp.ModifyingAndConvertingImages.MemoryStrategies
                 }
 
                 string path = Path.GetTempFileName() + ".dcm";
-                // Save the created multi-page image to the output file
+                // Save the created multi-page image to the output file.
                 image.Save(path);
                 File.Delete(path);
             }

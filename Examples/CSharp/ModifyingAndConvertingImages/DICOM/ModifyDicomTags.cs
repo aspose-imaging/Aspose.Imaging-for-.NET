@@ -1,4 +1,4 @@
-﻿using Aspose.Imaging.Examples.CSharp;
+using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageFilters.ComplexUtils;
 using Aspose.Imaging.ImageFilters.Convolution;
 using Aspose.Imaging.ImageFilters.FilterOptions;
@@ -24,9 +24,9 @@ namespace CSharp.ModifyingAndConvertingImages.DICOM
 
             using (DicomImage image = (DicomImage)Image.Load(dataDir + "file.dcm"))
             {
-                image.FileInfo.UpdateTagAt(33, "Test Patient"); // "Patient's Name"
+                image.FileInfo.UpdateTagAt(33, "Test Patient"); // Patient's Name
                 image.FileInfo.AddTag("Angular View Vector", 234);
-                image.FileInfo.RemoveTagAt(29); // "Station Name"
+                image.FileInfo.RemoveTagAt(29); // Station Name
 
                 image.Save(dataDir + "output.dcm");                
             }

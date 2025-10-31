@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="SetDPIInExportedPdf.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="10.03.2021 21:25:51">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -21,25 +21,24 @@ namespace CSharp.ModifyingAndConvertingImages.Tiff
     {
         public static void Run()
         {
-            Console.WriteLine("Running example SetDPIInExportedTiff");
+            Console.WriteLine("Running example SetDPIInExportedPdf");
 
             var filePath = RunExamples.GetDataDir_Tiff();
             using (TiffImage image = (TiffImage)Image.Load(Path.Combine(filePath, "AFREY-Original.tif")))
             {
                 PdfOptions pdfOptions = new PdfOptions()
-                                            {
-                                                ResolutionSettings = new ResolutionSetting(
-                                                    image.HorizontalResolution,
-                                                    image.VerticalResolution)
-                                            };
+                {
+                    ResolutionSettings = new ResolutionSetting(
+                        image.HorizontalResolution,
+                        image.VerticalResolution)
+                };
 
                 image.Save(Path.Combine(filePath, "result.pdf"), pdfOptions);
-
             }
 
             File.Delete(Path.Combine(filePath, "result.pdf"));
 
-            Console.WriteLine("Finished example SetDPIInExportedTiff");
+            Console.WriteLine("Finished example SetDPIInExportedPdf");
         }
     }
 }

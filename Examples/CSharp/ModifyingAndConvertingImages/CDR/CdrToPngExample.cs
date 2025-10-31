@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // <copyright file="CdrToPngExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 17:35:44">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
 // </copyright>
@@ -34,7 +34,7 @@ namespace CSharp.ModifyingAndConvertingImages.CDR
 
                 options.ColorType = Aspose.Imaging.FileFormats.Png.PngColorType.TruecolorWithAlpha;
 
-                // Set rasterization options for fileformat
+                // Set rasterization options for the file format.
                 options.VectorRasterizationOptions = image.GetDefaultOptions(new object[] { Color.White, image.Width, image.Height }).VectorRasterizationOptions;
                 options.VectorRasterizationOptions.TextRenderingHint = TextRenderingHint.SingleBitPerPixel;
                 options.VectorRasterizationOptions.SmoothingMode = SmoothingMode.None;

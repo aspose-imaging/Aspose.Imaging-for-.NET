@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using Aspose.Imaging.ImageOptions;
 using Aspose.Imaging.FileFormats.Svg;
@@ -6,10 +6,9 @@ using Aspose.Imaging;
 
 internal class SvgFontTester
 {
-     
     #region Constants
-       
-        //ExStart:SavingSVGWithFonts
+
+    // ExStart:SavingSVGWithFonts
     private const string FontFolderName = "fonts";
     private const string OutFolderName = "Out";
     private const string SourceFolder = @"D:\FontTests";
@@ -33,11 +32,11 @@ internal class SvgFontTester
     public void SaveWithEmbeddedFonts()
     {
         string[] files = new string[3]
-            {
-                "exportedFonts.svg", // File with exported fonts
-                "embeddedFonts.svg", // File with embedded fonts
-                "mysvg.svg" // simple file
-            };
+        {
+            "exportedFonts.svg", // File with exported fonts
+            "embeddedFonts.svg", // File with embedded fonts
+            "mysvg.svg"          // Simple file
+        };
 
         for (int i = 0; i < files.Length; i++)
         {
@@ -48,11 +47,11 @@ internal class SvgFontTester
     public void SaveWithExportFonts()
     {
         string[] files = new string[3]
-            {
-                "exportedFonts.svg", // File with exported fonts
-                "embeddedFonts.svg", // File with embedded fonts
-                "mysvg.svg" // simple file
-            };
+        {
+            "exportedFonts.svg", // File with exported fonts
+            "embeddedFonts.svg", // File with embedded fonts
+            "mysvg.svg"          // Simple file
+        };
 
         int[] expectedFontsCount = new int[3] { 4, 4, 1 };
 
@@ -73,8 +72,12 @@ internal class SvgFontTester
         string outFile = Path.Combine(OutFolder, inputFileName + ".pdf");
         using (Image image = Image.Load(inputFile))
         {
-            image.Save(outFile,
-                new PdfOptions { VectorRasterizationOptions = new SvgRasterizationOptions { PageSize = image.Size } });
+            image.Save(
+                outFile,
+                new PdfOptions
+                {
+                    VectorRasterizationOptions = new SvgRasterizationOptions { PageSize = image.Size }
+                });
         }
     }
 
@@ -84,11 +87,13 @@ internal class SvgFontTester
         {
             Directory.CreateDirectory(OutFolder);
         }
+
         string fontStoreType = useEmbedded ? "Embedded" : "Stream";
         string inputFile = Path.Combine(SourceFolder, fileName);
         string outFileName = Path.GetFileNameWithoutExtension(fileName) + "_" + fontStoreType + ".svg";
         string outputFile = Path.Combine(OutFolder, outFileName);
         string fontFolder = string.Empty;
+
         using (Image image = Image.Load(inputFile))
         {
             EmfRasterizationOptions emfRasterizationOptions = new EmfRasterizationOptions();
@@ -97,15 +102,15 @@ internal class SvgFontTester
             emfRasterizationOptions.PageHeight = image.Height;
             string testingFileName = Path.GetFileNameWithoutExtension(inputFile);
             fontFolder = Path.Combine(FontFolder, testingFileName);
-            image.Save(outputFile,
+            image.Save(
+                outputFile,
                 new SvgOptions
                 {
                     VectorRasterizationOptions = emfRasterizationOptions,
-                    Callback =
-                        new SvgCallbackFontTest(useEmbedded, fontFolder)
-                        {
-                            Link = FontFolderName + "/" + testingFileName
-                        }
+                    Callback = new SvgCallbackFontTest(useEmbedded, fontFolder)
+                    {
+                        Link = FontFolderName + "/" + testingFileName
+                    }
                 });
         }
 
@@ -114,9 +119,11 @@ internal class SvgFontTester
             string[] files = Directory.GetFiles(fontFolder);
             if (files.Length != expectedCountFonts)
             {
-                throw new Exception(string.Format(
-                    "Expected count font files = {0}, Current count font files = {1}", expectedCountFonts,
-                    files.Length));
+                throw new Exception(
+                    string.Format(
+                        "Expected count font files = {0}, Current count font files = {1}",
+                        expectedCountFonts,
+                        files.Length));
             }
         }
     }
@@ -128,17 +135,17 @@ internal class SvgFontTester
         #region Fields
 
         /// <summary>
-        ///     The out folder
+        /// Output folder for stored fonts.
         /// </summary>
         private readonly string outFolder;
 
         /// <summary>
-        ///     The use embedded font
+        /// Indicates whether to store fonts as embedded resources.
         /// </summary>
         private readonly bool useEmbeddedFont;
 
         /// <summary>
-        /// The font counter
+        /// Counter for generated font filenames.
         /// </summary>
         private int fontCounter = 0;
 
@@ -147,13 +154,13 @@ internal class SvgFontTester
         #region Constructors
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="SvgTests.SvgCallbackFontTest" /> class.
+        /// Initializes a new instance of the <see cref="SvgCallbackFontTest"/> class.
         /// </summary>
-        /// <param name="useEbeddedFont">if set to <c>true</c> [use ebedded font].</param>
-        /// <param name="outFolder">The out folder.</param>
-        public SvgCallbackFontTest(bool useEbeddedFont, string outFolder)
+        /// <param name="useEmbeddedFont">If set to <c>true</c>, use embedded fonts.</param>
+        /// <param name="outFolder">The output folder where font files will be saved.</param>
+        public SvgCallbackFontTest(bool useEmbeddedFont, string outFolder)
         {
-            this.useEmbeddedFont = useEbeddedFont;
+            this.useEmbeddedFont = useEmbeddedFont;
             this.outFolder = outFolder;
             if (Directory.Exists(outFolder))
             {
@@ -172,13 +179,12 @@ internal class SvgFontTester
         #region Methods
 
         /// <summary>
-        ///     Called when font resource ready to be saved to storage.
+        /// Called when a font resource is ready to be saved to storage.
         /// </summary>
-        /// <param name="args">The arguments.</param>
+        /// <param name="args">The arguments describing the font resource.</param>
         /// <returns>
-        ///     Returns path to saved resource. Path should be relative to target SVG document.
+        /// Returns the path to the saved resource. The path should be relative to the target SVG document.
         /// </returns>
-        /// <exception cref="System.NotImplementedException"></exception>
         public override void OnFontResourceReady(FontStoringArgs args)
         {
             if (this.useEmbeddedFont)
@@ -209,8 +215,7 @@ internal class SvgFontTester
         }
 
         #endregion
-   
-    //ExEnd:SavingSVGWithFonts
-    
+
+        // ExEnd:SavingSVGWithFonts
     }
 }

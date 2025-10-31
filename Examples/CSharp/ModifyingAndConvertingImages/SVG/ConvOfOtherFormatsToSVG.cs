@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,13 +13,13 @@ namespace CSharp.ModifyingAndConvertingImages.SVG
         public static void Run()
         {
             //ExStart:ConvOfOtherFormatsToSVG
-            // The path to the documents directory.
+            // Path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SVG();
 
             Console.WriteLine("Running example ConvOfOtherFormatsToSVG");
-            using (Image image = Image.Load(dataDir+"mysvg.svg"))
+            using (Image image = Image.Load(dataDir + "mysvg.svg"))
             {
-                using (FileStream fs = new FileStream(dataDir+"yoursvg.svg", FileMode.Create, FileAccess.ReadWrite))
+                using (FileStream fs = new FileStream(dataDir + "yoursvg.svg", FileMode.Create, FileAccess.ReadWrite))
                 {
                     image.Save(fs);
                 }

@@ -1,15 +1,16 @@
-﻿using System.IO;
+using System;
+using System.IO;
+using System.Drawing;
 using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.ImageOptions;
-using System;
 
 /*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Imaging for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference 
+when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Imaging for .NET API from https://releases.aspose.com/, 
+install it, and then add its reference to this project. For any issues, questions, or suggestions, 
+please feel free to contact us using https://forum.aspose.com/
 */
 
 namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
@@ -39,12 +40,16 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.MetaFiles
                         throw new ImageLoadException(string.Format("The file {0} is not valid", outPath));
                     }
 
-                    EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions();
-                    emfRasterization.PageWidth = image.Width;
-                    emfRasterization.PageHeight = image.Height;
-                    emfRasterization.BackgroundColor = Color.WhiteSmoke;
-                    PdfOptions pdfOptions = new PdfOptions();
-                    pdfOptions.VectorRasterizationOptions = emfRasterization;
+                    EmfRasterizationOptions emfRasterization = new EmfRasterizationOptions
+                    {
+                        PageWidth = image.Width,
+                        PageHeight = image.Height,
+                        BackgroundColor = Color.WhiteSmoke
+                    };
+                    PdfOptions pdfOptions = new PdfOptions
+                    {
+                        VectorRasterizationOptions = emfRasterization
+                    };
                     image.Save(outputStream, pdfOptions);
                 }
             }
