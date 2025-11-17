@@ -1,3 +1,4 @@
+// GIST-ID: cf6072d60af07c0377515b0866c2b7a4
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="MultipageFromImages.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="15.01.2021 0:16:48">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

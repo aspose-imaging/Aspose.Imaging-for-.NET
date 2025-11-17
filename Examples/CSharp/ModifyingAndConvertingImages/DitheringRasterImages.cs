@@ -1,3 +1,4 @@
+// GIST-ID: 2890e005f3d8b07752bc3ceb222d7cc8
 using Aspose.Imaging.FileFormats.Jpeg;
 using System;
 

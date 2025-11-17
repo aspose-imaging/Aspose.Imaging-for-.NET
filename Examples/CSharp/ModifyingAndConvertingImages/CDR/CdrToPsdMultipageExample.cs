@@ -1,3 +1,4 @@
+// GIST-ID: 637e483a521dce5b31c458d197b312c6
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CdrToPsdMultipageExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 17:15:39">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

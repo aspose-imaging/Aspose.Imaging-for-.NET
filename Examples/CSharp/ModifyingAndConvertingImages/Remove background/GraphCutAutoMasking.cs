@@ -1,3 +1,4 @@
+// GIST-ID: 617e8e7c69c9bcaced82c71cc514e65d
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="GraphCutAutoMasking.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="30.11.2020 2:41:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

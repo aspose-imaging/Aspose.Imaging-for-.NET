@@ -1,3 +1,4 @@
+// GIST-ID: 83c15fb75937a059fe680a9c13d315e8
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.FileFormats.Wmf;
 using Aspose.Imaging.FileFormats.Wmf.Graphics;

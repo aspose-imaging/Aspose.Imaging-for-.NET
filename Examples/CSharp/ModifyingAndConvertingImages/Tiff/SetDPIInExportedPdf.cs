@@ -1,3 +1,4 @@
+// GIST-ID: 36bb6c6492e7e7f3e691162cd0c1f76b
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SetDPIInExportedPdf.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="10.03.2021 21:25:51">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

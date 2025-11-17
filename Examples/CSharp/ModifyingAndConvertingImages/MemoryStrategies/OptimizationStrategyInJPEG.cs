@@ -1,3 +1,4 @@
+// GIST-ID: 4c37537917fe640ddf1c4585f894f2a4
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInJPEG.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="08.10.2019 11:16:55">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

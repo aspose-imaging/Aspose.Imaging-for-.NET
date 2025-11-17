@@ -1,3 +1,4 @@
+// GIST-ID: da5be1210da6641be6bb539d2fb6cfd7
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="DicomCompression.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="04.10.2020 16:58:17">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

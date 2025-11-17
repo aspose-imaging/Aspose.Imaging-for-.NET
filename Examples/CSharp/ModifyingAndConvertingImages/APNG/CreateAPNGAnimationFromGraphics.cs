@@ -1,3 +1,4 @@
+// GIST-ID: 6f8ce3293dacb72c073b3a78168bd163
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateAPNGAnimationFromGraphics.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:20:32">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

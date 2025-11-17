@@ -1,3 +1,4 @@
+// GIST-ID: b2017daa35288c46be70d41a3568c240
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportToHtml5Canvas.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="29.04.2020 2:14:07">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

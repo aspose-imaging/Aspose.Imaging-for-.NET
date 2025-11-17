@@ -1,3 +1,4 @@
+// GIST-ID: 272127e44ac3c63fe428fa0d25ceb2a1
 using System.IO;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.ImageOptions;

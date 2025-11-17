@@ -1,3 +1,4 @@
+// GIST-ID: ec8e0d50cbe23bbd77e44682c87e353c
 using Aspose.Imaging.FileFormats.Bmp;
 using Aspose.Imaging.FileFormats.Tiff;
 using Aspose.Imaging.ImageOptions;

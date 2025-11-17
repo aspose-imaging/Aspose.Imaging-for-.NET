@@ -1,3 +1,4 @@
+// GIST-ID: 140bbbd3c9a491887f1ed8d16d82fe85
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportExtractingPathsFromTiff.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.05.2020 11:18:58">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

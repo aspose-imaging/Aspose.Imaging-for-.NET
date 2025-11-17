@@ -1,3 +1,4 @@
+// GIST-ID: dc6c139db8760615fbd022299d16cfb5
 using System;
 using System.IO;
 using System.Drawing;

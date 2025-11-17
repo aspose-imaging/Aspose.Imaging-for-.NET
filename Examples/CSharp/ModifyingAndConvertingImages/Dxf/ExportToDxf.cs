@@ -1,3 +1,4 @@
+// GIST-ID: 025334f905cf5b16998540ddf28bf140
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportToDxf.cs" company="Aspose Pty Ltd" author="Samer El‑Khatib" date="09.05.2021 15:55:25">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

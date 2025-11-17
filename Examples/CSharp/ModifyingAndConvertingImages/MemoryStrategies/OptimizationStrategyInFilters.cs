@@ -1,3 +1,4 @@
+// GIST-ID: 3e26dc837e8b359996840f8f7d28c8f7
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInFilters.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 13:51:13">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

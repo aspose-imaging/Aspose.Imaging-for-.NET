@@ -1,3 +1,4 @@
+// GIST-ID: 638460790f837395948e1a520d1a0c26
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.MagicWand.ImageMasks;
 using Aspose.Imaging.MagicWand;

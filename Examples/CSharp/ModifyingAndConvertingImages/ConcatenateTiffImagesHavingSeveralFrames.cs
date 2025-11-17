@@ -1,3 +1,4 @@
+// GIST-ID: 18f596fba6d942e8d5bf62bd47f6b7e1
 using System;
 using System.Collections.Generic;
 using Aspose.Imaging.FileFormats.Tiff;

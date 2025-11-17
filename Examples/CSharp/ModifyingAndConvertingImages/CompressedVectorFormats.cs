@@ -1,3 +1,4 @@
+// GIST-ID: 8eceba9c4295a162bf268a9eac38a6ad
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CompressedVectorFormats.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="29.04.2020 2:22:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

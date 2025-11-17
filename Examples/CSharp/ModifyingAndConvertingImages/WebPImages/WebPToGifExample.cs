@@ -1,3 +1,4 @@
+// GIST-ID: 836560ae97b8902ec53e2f796d94b3f7
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="WebPToGifExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 18:24:02">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

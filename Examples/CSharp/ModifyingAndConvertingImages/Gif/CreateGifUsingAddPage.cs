@@ -1,3 +1,4 @@
+// GIST-ID: dde5dd23d7d15cb456f81993b84859bb
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateGifUsingAddPage.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="30.11.2020 2:55:56">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

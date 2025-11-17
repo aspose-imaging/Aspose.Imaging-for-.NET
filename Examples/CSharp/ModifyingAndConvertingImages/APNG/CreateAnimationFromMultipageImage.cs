@@ -1,3 +1,4 @@
+// GIST-ID: d7ca5eda87507ce948eceef58b808eab
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateAnimationFromMultipageImage.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:13:14">
 //     Copyright (c) 2001-2012 Aspense Pty Ltd. All rights reserved.

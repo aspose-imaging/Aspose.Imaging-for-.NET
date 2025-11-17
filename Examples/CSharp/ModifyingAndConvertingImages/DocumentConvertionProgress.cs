@@ -1,3 +1,4 @@
+// GIST-ID: 1e7db04ecd185aac96f3d3a32ae87804
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="DocumentConvertionProgress.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="18.11.2019 21:46:12">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

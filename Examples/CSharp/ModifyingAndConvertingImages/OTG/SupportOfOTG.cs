@@ -1,3 +1,4 @@
+// GIST-ID: e0cd3053bbb7628655f76209f2c8e33a
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportOfOTG.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="31.07.2019 12:19:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

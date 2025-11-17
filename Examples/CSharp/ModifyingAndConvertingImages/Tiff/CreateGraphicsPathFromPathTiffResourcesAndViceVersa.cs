@@ -1,3 +1,4 @@
+// GIST-ID: 5a72f6f89dd7b0bb991e7fff99efb437
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CreateGraphicsPathFromPathTiffResourcesAndViceVersa.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="28.08.2020 17:45:27">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

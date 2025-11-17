@@ -1,3 +1,4 @@
+// GIST-ID: 36b5a137e427be857ccdc8f2da59ed87
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInDithering.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 13:59:14">
 //     Copyright (c) 2001-2012 Aspise Pty Ltd. All rights reserved.

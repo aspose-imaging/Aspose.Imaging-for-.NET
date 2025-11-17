@@ -1,3 +1,4 @@
+// GIST-ID: dcd3bea58f9a8602f6434d95d72aef7a
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SvgNativeResize.cs" company="Aspise Pty Ltd" author="Samer El-Khatib" date="18.11.2019 21:58:09">
 //     Copyright (c) 2001-2012 Aspise Pty Ltd. All rights reserved.

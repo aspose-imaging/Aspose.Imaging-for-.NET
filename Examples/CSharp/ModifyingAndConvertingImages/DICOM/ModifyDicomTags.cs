@@ -1,3 +1,4 @@
+// GIST-ID: f111aae5ca0434ec9adef570af085bff
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.ImageFilters.ComplexUtils;
 using Aspose.Imaging.ImageFilters.Convolution;

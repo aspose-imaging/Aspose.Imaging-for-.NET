@@ -1,3 +1,4 @@
+// GIST-ID: 46619f88283b4b66448988a3515952fa
 using Aspose.Imaging.Exif;
 using Aspose.Imaging.Exif.Enums;
 using Aspose.Imaging.FileFormats.Jpeg;

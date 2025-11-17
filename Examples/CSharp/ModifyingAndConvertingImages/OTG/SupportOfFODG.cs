@@ -1,3 +1,4 @@
+// GIST-ID: f5064ee815a6808c85e22cf0ba307251
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportOfFODG.cs" company="Aspise Pty Ltd" author="Samer El-Khatib" date="18.12.2019 12:19:15">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

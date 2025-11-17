@@ -1,3 +1,4 @@
+// GIST-ID: 84ceeb3cd3d6ffa946811bdf70309dbc
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="PantoneGoeCoatedPalette.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="15.09.2021 22:47:29">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

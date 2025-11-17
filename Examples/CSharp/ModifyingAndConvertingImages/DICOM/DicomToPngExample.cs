@@ -1,3 +1,4 @@
+// GIST-ID: d7de039e68252d63ce21c6c2e4fb83c1
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="DicomToPngExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="21.06.2020 19:13:33">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

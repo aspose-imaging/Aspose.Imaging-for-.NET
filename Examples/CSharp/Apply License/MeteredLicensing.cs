@@ -1,3 +1,4 @@
+// GIST-ID: d227122f0abe833cdf837bbe2b9ba467
 using System;
 using System.Collections.Generic;
 using System.Linq;

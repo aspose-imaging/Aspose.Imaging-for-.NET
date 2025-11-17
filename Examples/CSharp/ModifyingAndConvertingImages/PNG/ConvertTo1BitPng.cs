@@ -1,3 +1,4 @@
+// GIST-ID: 2ec84408c15966053affba007d442ba8
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ConvertTo1BitPng.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="25.07.2020 3:07:14">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

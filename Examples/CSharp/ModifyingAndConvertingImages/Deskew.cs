@@ -1,3 +1,4 @@
+// GIST-ID: aaeed86fab81ec6ab045ad9c227a62e3
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="Deskew.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="11.09.2019 14:12:18">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
