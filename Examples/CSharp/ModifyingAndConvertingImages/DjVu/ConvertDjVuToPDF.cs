@@ -1,3 +1,4 @@
+// GIST-ID: 8cb4d54ade9d8cceaa0f3bba804db38d
 using Aspose.Imaging.FileFormats.Djvu;
 using Aspose.Imaging.FileFormats.Pdf;
 using Aspose.Imaging.ImageOptions;

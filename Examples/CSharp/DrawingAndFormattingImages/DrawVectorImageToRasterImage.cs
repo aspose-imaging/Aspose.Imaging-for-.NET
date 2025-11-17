@@ -1,3 +1,4 @@
+// GIST-ID: 7c125ae34666c88af70bfa6f39c9a4fe
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Svg;

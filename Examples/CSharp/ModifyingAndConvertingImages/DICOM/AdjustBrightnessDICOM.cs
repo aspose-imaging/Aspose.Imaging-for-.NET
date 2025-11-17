@@ -1,3 +1,4 @@
+// GIST-ID: 980862855f978a888703f8fa18ac65dc
 using Aspose.Imaging.FileFormats.Dicom;
 using Aspose.Imaging.ImageOptions;
 using System;

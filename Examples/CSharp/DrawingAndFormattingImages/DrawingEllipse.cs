@@ -1,3 +1,4 @@
+// GIST-ID: e92e1bd1576b7afef5549fed29ae6229
 using System.IO;
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.ImageOptions;

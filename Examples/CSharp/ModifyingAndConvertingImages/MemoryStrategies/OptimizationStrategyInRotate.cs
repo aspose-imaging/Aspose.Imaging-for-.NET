@@ -1,3 +1,4 @@
+// GIST-ID: 344419ea6156ab8f0c664c9c1bbb7b84
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="OptimizationStrategyInRotate.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="31.07.2019 13:03:38">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

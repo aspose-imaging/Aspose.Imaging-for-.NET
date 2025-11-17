@@ -1,3 +1,4 @@
+// GIST-ID: 9ea760d380825c1e2a6ef2160d7ccb98
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportTiffBatchMode.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="27.03.2020 10:42:48">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

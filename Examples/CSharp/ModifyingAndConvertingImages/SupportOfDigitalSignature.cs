@@ -1,3 +1,4 @@
+// GIST-ID: c26a5135de64f09911ec344b49f5d338
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using System;

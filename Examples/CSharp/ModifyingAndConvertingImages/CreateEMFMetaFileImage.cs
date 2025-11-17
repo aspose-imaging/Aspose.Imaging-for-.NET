@@ -1,3 +1,4 @@
+// GIST-ID: f9b0cf7de4207bdbf17fbd516c71a946
 using Aspose.Imaging.Brushes;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Emf.Emf.Consts;

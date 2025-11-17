@@ -1,3 +1,4 @@
+// GIST-ID: dd8158f55b5eb6f06bc830d825691b6d
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="BmpRLE4.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="10.02.2021 11:59:34">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

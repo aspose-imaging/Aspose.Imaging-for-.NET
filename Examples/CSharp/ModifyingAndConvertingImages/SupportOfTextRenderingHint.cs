@@ -1,3 +1,4 @@
+// GIST-ID: 651e6957984503ee4babcbc2e629f680
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Cdr;

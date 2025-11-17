@@ -1,3 +1,4 @@
+// GIST-ID: 15c92804534b69467126ab5d829487d9
 using Aspose.Imaging;
 using Aspose.Imaging.FileFormats.Tiff.Enums;
 using Aspose.Imaging.ImageOptions;

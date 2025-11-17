@@ -1,3 +1,4 @@
+// GIST-ID: 83092ab6efd5f4cb094f922bcfddf066
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportToDicom.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="27.03.2020 10:54:17">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

@@ -1,3 +1,4 @@
+// GIST-ID: 6c283fd369e368281b92cb05c2973dee
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ConvertToTGA.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="04.10.2020 17:39:43">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

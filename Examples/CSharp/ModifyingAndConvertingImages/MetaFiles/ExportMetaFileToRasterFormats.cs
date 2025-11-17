@@ -1,3 +1,4 @@
+// GIST-ID: b092d582240c111d602e06c47c70c730
 using Aspose.Imaging.CoreExceptions;
 using Aspose.Imaging.FileFormats.Emf;
 using Aspose.Imaging.FileFormats.Tiff.Enums;

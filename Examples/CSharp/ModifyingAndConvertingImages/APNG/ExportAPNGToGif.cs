@@ -1,3 +1,4 @@
+// GIST-ID: c7ff17f0ec19f4bade69392bb3f246b8
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="ExportAPNGToGif.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="20.06.2020 18:02:20">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

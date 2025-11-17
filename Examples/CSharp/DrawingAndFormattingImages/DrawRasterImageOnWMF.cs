@@ -1,3 +1,4 @@
+// GIST-ID: 9ce1b33e54420f16f1534ec4a831b928
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Wmf;

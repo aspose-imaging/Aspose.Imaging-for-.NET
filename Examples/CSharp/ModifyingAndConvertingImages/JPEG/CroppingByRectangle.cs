@@ -1,3 +1,4 @@
+// GIST-ID: 2c872364943e3b2f2256414328a6da93
 /*
 This project uses the Automatic Package Restore feature of NuGet to resolve the Aspose.Imaging for .NET API reference 
 when the project is built. Please check https://learn.microsoft.com/en-us/nuget/resources/nuget-faq for more information. 

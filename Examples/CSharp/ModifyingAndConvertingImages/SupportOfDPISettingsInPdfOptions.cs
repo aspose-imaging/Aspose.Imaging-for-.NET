@@ -1,3 +1,4 @@
+// GIST-ID: 53f40a5d29b3caf7380f0ca23e11e900
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="SupportOfDPISettingsInPdfOptions.cs" company="Aspose Pty Ltd" author="Samer El‑Khatib" date="31.07.2019 12:51:44">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.

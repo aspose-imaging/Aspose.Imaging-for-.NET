@@ -1,3 +1,4 @@
+// GIST-ID: a0c81b764fc7738449d50e230127ad9d
 using Aspose.Imaging.FileFormats.Gif;
 using Aspose.Imaging.FileFormats.Gif.Blocks;
 using Aspose.Imaging.FileFormats.Webp;

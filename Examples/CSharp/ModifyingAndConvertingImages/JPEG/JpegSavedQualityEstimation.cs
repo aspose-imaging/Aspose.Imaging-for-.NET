@@ -1,3 +1,4 @@
+// GIST-ID: 5b0daf51663be837c74c91d1b1f58088
 using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
 using Aspose.Imaging.FileFormats.Jpeg;

@@ -1,3 +1,4 @@
+// GIST-ID: 0ded044fcba24d5a74656dfe3423c46c
 //-----------------------------------------------------------------------------------------------------------
 // <copyright file="CmxToTiffExample.cs" company="Aspose Pty Ltd" author="Samer El-Khatib" date="28.10.2020 18:51:20">
 //     Copyright (c) 2001-2012 Aspose Pty Ltd. All rights reserved.
