@@ -31,7 +31,11 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                 PropertyInfo[] properties = type.GetProperties();
                 foreach (PropertyInfo property in properties)
                 {
-                    Console.WriteLine(property.Name + ":" + property.GetValue(exifData, null));
+                    try
+                    {
+                        Console.WriteLine(property.Name + ":" + property.GetValue(exifData, null));
+                    }
+                    catch { }
                 }
             }
 

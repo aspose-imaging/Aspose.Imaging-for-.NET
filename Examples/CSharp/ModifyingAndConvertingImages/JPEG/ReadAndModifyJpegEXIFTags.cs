@@ -1,5 +1,6 @@
 // GIST-ID: 07a101161e184f9dd4517a6577f386e5
 using System;
+using System.Linq.Expressions;
 using System.Reflection;
 using Aspose.Imaging.Exif;
 using Aspose.Imaging.FileFormats.Jpeg;
@@ -36,8 +37,13 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.JPEG
                     PropertyInfo[] properties = type.GetProperties();
                     foreach (PropertyInfo property in properties)
                     {
-                        // Display property name and its value.
-                        Console.WriteLine(property.Name + ":" + property.GetValue(exif, null));
+                        try
+                        {
+                            // Display property name and its value.
+                            Console.WriteLine(property.Name + ":" + property.GetValue(exif, null));
+                        }
+                        catch 
+                        { }
                     }
                 }
             }

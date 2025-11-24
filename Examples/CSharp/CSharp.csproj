@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Imaging, Version=25.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Imaging.25.10.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    <Reference Include="Aspose.Imaging, Version=25.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.25.11.0\lib\net40\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -316,13 +316,7 @@
     <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\OpenWebPFile.cs" />
     <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToGifExample.cs" />
-    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToPdfExample.cs" />
-    <Compile Include="Plugins\CommonExample.cs" />
-    <Compile Include="Plugins\ConversionPlugin.cs" />
-    <Compile Include="Plugins\CropPlugin.cs" />
-    <Compile Include="Plugins\ImageAlbumPlugin.cs" />
-    <Compile Include="Plugins\MergePlugin.cs" />
-    <Compile Include="Plugins\ResizePlugin.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToPdfExample.cs" />    
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingArc.cs" />
     <Compile Include="DrawingAndFormattingImages\DrawingBezier.cs" />
@@ -331,6 +325,12 @@
     <Compile Include="DrawingAndFormattingImages\DrawingRectangle.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="Plugins\CommonExample.cs" />
+    <Compile Include="Plugins\ConversionPlugin.cs" />
+    <Compile Include="Plugins\CropPlugin.cs" />
+    <Compile Include="Plugins\ImageAlbumPlugin.cs" />
+    <Compile Include="Plugins\MergePlugin.cs" />
+    <Compile Include="Plugins\ResizePlugin.cs" />	
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
