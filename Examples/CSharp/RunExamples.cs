@@ -38,6 +38,7 @@ using CSharp.Plugins;
 using CSharp.ModifyingAndConvertingImages.BigTiff;
 using CSharp.ModifyingAndConvertingImages;
 using CSharp.ModifyingAndConvertingImages.AVIF;
+using CSharp.ModifyingAndConvertingImages.Hdr;
 
 namespace Aspose.Imaging.Examples.CSharp
 {
@@ -121,7 +122,9 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
-            
+
+            SupportOfHdrImages.Run();
+
             // =====================================================
             // =====================================================
             //                        Gif
