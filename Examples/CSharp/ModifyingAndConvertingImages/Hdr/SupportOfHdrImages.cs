@@ -1,8 +1,6 @@
 ﻿using Aspose.Imaging;
 using Aspose.Imaging.Examples.CSharp;
-using Aspose.Imaging.Exif;
 using Aspose.Imaging.FileFormats.Core.Photo.Hdr;
-using Aspose.Imaging.FileFormats.Jpeg;
 using Aspose.Imaging.FileFormats.Png;
 using System;
 using System.Collections.Generic;
