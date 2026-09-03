@@ -122,8 +122,7 @@ namespace Aspose.Imaging.Examples.CSharp
         private static void RunTestFileFormats()
         {
             Console.WriteLine("Running file formats tests:");
-
-            SupportOfHdrImages.Run();
+            CreateVectorImageWithoutSpecifyingFormat.Run();            
 
             // =====================================================
             // =====================================================
@@ -230,6 +229,7 @@ namespace Aspose.Imaging.Examples.CSharp
             ConvertWMFToSVG.Run();
             SVGToBMPConversion.Run();
             SvgNativeResize.Run();
+            SupportOfHdrImages.Run();
 
             // =====================================================
             // =====================================================
