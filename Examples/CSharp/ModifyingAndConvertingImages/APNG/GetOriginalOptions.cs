@@ -28,7 +28,7 @@ namespace CSharp.ModifyingAndConvertingImages.APNG
             using (ApngImage image = (ApngImage)Image.Load(Path.Combine(dataDir, "SteamEngine.png")))
             {
                 ApngOptions options = (ApngOptions)image.GetOriginalOptions();
-                if (options.NumPlays != 0 || options.DefaultFrameTime != 10 || options.BitDepth != 8)
+                if (options.LoopCount != 0 || options.DefaultFrameTime != 10 || options.BitDepth != 8)
                 {
                     Console.WriteLine("There are some errors in the default options");
                 }

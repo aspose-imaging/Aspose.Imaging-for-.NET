@@ -57,7 +57,7 @@ namespace Aspose.Imaging.Examples.CSharp.ModifyingAndConvertingImages.WebPImages
 
                     // Set properties of the WebP image.
                     webp.Options.AnimBackgroundColor = 0xff; // Black
-                    webp.Options.AnimLoopCount = 0; // Infinity
+                    webp.Options.LoopCount = 0; // Infinity
                     webp.Options.Quality = 50;
                     webp.Options.Lossless = false;
 

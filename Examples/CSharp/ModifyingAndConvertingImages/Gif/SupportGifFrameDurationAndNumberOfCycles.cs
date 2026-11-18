@@ -32,7 +32,7 @@ namespace CSharp.ModifyingAndConvertingImages.Gif
             {
                 image.SetFrameTime(2000);
                 ((GifFrameBlock)image.Pages[0]).FrameTime = 200;
-                image.Save(outputPath, new GifOptions() { LoopsCount = 4 });
+                image.Save(outputPath, new GifOptions() { LoopCount = 4 });
             }
 
             File.Delete(outputPath);
